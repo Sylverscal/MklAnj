@@ -7,7 +7,7 @@
  *
  * @author veroscal
  */
-class COU_onglet_administration extends COU_onglet_principal {
+class COU_onglet_administration extends MKL_onglet_principal {
 
     /**
      * Affiche la page d'accueil

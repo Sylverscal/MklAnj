@@ -1,0 +1,368 @@
+<?php
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/PHPClass.php to edit this template
+ */
+
+/**
+ * Description of TBL_Achats_s
+ *
+ * @author sylverscal
+ */
+class TBL_Achat_s extends LIB_Table_s{
+    
+    public function __construct() {
+        parent::__construct();
+    }
+    
+    /**
+     * Charge la liste des fonctions de la table
+     * @global LIB_BDD $CXO
+     * @global LIB_DistributeurObjetTable $DOT
+     */
+//    public function chargePourDomaine($domaine) {
+//        global $CXO;
+//        global $DOT;
+//        
+//        $r = $CXO->executeRequete($this->getRequete($domaine));
+//        if ($r->isOk()) {
+//            foreach ($r->getResultat() as $ligne) {
+//                $o = $DOT->getObjet("Achat");
+//                $o->setId($ligne['id']);
+//                $o->setDonneesPourAffichage($ligne);
+//                $this->ajoute($o);
+//            }
+//        } else {
+//            $r->affiche();
+//        }
+//        
+//    }
+    
+    /**
+     * Constitue la partie de requête where à partie du tableau de filtres
+     */
+    private function getPartieWhereDeFiltre() {
+        $requete_where = "";
+        
+        foreach ($this->filtres as $filtre) {
+            $colonne = LIB_Util::convertiTablonneEnSelect($filtre[0]);
+            $valeur = $filtre[1];
+            
+            
+            $s = sprintf(" and %s = '%s' ",$colonne,$valeur);
+            $requete_where = sprintf("%s%s",$requete_where,$s);
+        }
+        
+        return $requete_where;
+    }
+    
+    public function setFiltre($filtres) {
+        $this->filtres = $filtres;
+    }
+    
+    public function afficheDonnees() {
+        ?>
+        <tbody>
+            <?php
+                foreach ($this as $value) {
+                    $id = $value->getId();
+                    $idTr = sprintf("%s",$id);
+                ?>
+                    <tr id="<?php echo $idTr; ?>">
+                    <?php
+                        $value->affiche();
+                    ?>
+                    </tr>
+                <?php
+                    }
+                ?>
+        </tbody>
+        <?php
+    }
+    
+    /**
+     * Constitution de la requête
+     * @param string $domaine
+     * @return string
+     */
+    private function getRequete($domaine) {
+        $where_de_filtre = $this->getPartieWhereDeFiltre();
+        $requete = "select
+	Achat.id as id, Achat.id_Article, Achat.id_Commerce,
+	Enseigne.nom as Enseigne_nom,
+	Ville.nom as Ville_nom,
+        Ville.code_postal as Ville_code_postal,
+        Commerce.localisation as Commerce_localisation,
+            Produit.nom as Produit_nom,
+        Marque.nom as Marque_nom,
+        TypeProduit.nom as TypeProduit_nom,
+        Famille.nom as Famille_nom,
+        Domaine.nom as Domaine_nom,
+        Contenant.nom as Contenant_nom,
+        TypeContenant.nom as TypeContenant_nom,
+        Contenant.quantite as Contenant_quantite,
+        Contenant.capacite as Contenant_capacite,
+        Contenant.capacite_reference as Contenant_capacite_reference,
+        Unite.nom as Unite_nom,
+        Contenant.is_a_la_piece as Contenant_is_a_la_piece,
+        TypeRegroupement.nom as TypeRegroupement_nom,
+        Regroupement.quantite as Regroupement_quantite,
+        Article.capacite as Article_capacite,
+        Achat.datation as Achat_datation,
+        Achat.montant as Achat_montant
+        from Achat
+        join Commerce on Commerce.id = Achat.id_Commerce
+        join Enseigne on Enseigne.id = Commerce.id_Enseigne
+        join Ville on Ville.id = Commerce.id_Ville
+        join Article on Article.id = Achat.id_Article
+        join Produit on Produit.id = Article.id_Produit
+        join TypeProduit on TypeProduit.id = Produit.id_TypeProduit
+        join Famille on Famille.id = TypeProduit.id_Famille
+        join Domaine on Domaine.id = Famille.id_Domaine
+        join Marque on Marque.id = Produit.id_Marque
+        join Conditionnement on Conditionnement.id = Article.id_Conditionnement
+        join Contenant on Contenant.id = Conditionnement.id_Contenant
+        join TypeContenant on TypeContenant.id = Contenant.id_TypeContenant
+        join Unite on Unite.id = Contenant.id_Unite
+        join Regroupement on Regroupement.id = Conditionnement.id_Regroupement
+        join TypeRegroupement on TypeRegroupement.id = Regroupement.id_TypeRegroupement
+        where 
+        1 = 1
+        $where_de_filtre 
+        and Domaine.nom = '$domaine' 
+        order by Achat.datation desc
+        limit 500
+        ";
+        return $requete;
+    }
+    
+    public function getItemsIndex($index) {
+        global $CXO;
+        
+        $index_avec_point = LIB_Util::convertiTablonneEnSelect($index);
+        
+        $select = sprintf("%s as %s",$index_avec_point,$index);
+        
+        $filtre = "";
+        
+        $order = "order by $index_avec_point";
+        
+        $requete = $this->getRequeteParametrable($select, $filtre, $order);
+        
+        $items = [];
+        $r = $CXO->executeRequete($requete);
+        if ($r->isOk()) {
+            foreach ($r->getResultat() as $ligne) {
+                $valeur = 0;
+                $libelle = $ligne[$index];
+
+                $items[] = ["valeur" => $valeur , "libelle" => $libelle];
+            }
+        } else {
+            $r->affiche();
+        }
+        
+        return $items;
+    }
+    
+    public function getItemsPourIndexEtDomaine($index,$domaine) {
+        global $CXO;
+        
+        $index_avec_point = LIB_Util::convertiTablonneEnSelect($index);
+        
+        $select = sprintf("%s as %s",$index_avec_point,$index);
+        
+        $filtre = "and Domaine.nom = '$domaine'";
+        
+        $order = "order by $index_avec_point";
+        
+        $requete = $this->getRequeteParametrable($select, $filtre, $order);
+        
+        $items = [];
+        $r = $CXO->executeRequete($requete);
+        if ($r->isOk()) {
+            foreach ($r->getResultat() as $ligne) {
+                $items[] = $ligne[$index];
+            }
+        } else {
+            $r->affiche();
+        }
+        
+        return $items;
+    }
+    
+    public function getProduitDeAchat($id_achat) {
+        global $CXO;
+        global $DOT;
+        
+        $index = "Produit_id";
+        $index_avec_point = LIB_Util::convertiTablonneEnSelect($index);
+        
+        $select = sprintf("%s as %s",$index_avec_point,$index);
+        
+        $filtre = "and Achat.id = '$id_achat'";
+        
+        $order = "order by Produit.id ";
+        
+        $requete = $this->getRequeteParametrable($select, $filtre, $order);
+        
+        $id_produit = 0;
+        
+        $r = $CXO->executeRequete($requete);
+        if ($r->isOk()) {
+            foreach ($r->getResultat() as $index => $ligne) {
+                $id_produit = $ligne[$index];
+            }
+        } else {
+            $r->affiche();
+        }
+
+        $produit = $DOT->getObjet("Produit");
+        $produit->setId($id_produit);
+        $produit->charge();
+        return $produit;
+    }
+    
+    public function getArticleDeAchat($id_achat) {
+        global $CXO;
+        global $DOT;
+        
+        $index = "Article_id";
+        $index_avec_point = LIB_Util::convertiTablonneEnSelect($index);
+        
+        $select = sprintf("%s as %s",$index_avec_point,$index);
+        
+        $filtre = "and Achat.id = '$id_achat'";
+        
+        $order = "order by Article.id ";
+        
+        $requete = $this->getRequeteParametrable($select, $filtre, $order);
+        
+        $id_produit = 0;
+        
+        $r = $CXO->executeRequete($requete);
+        if ($r->isOk()) {
+            foreach ($r->getResultat() as $index => $ligne) {
+                $id_produit = $ligne[$index];
+            }
+        } else {
+            $r->affiche();
+        }
+
+        $produit = $DOT->getObjet("Article");
+        $produit->setId($id_produit);
+        $produit->charge();
+        return $produit;
+    }
+    
+    /**
+     * Renvoie liste de tous les montants d'un article
+     * - id_commerce
+     * - date 
+     * - montant
+     * @global LIB_BDD $CXO
+     * @global LIB_DistributeurObjetTable $DOT
+     * @param type $id_article
+     * @return type
+     */
+    public function getMontantsAchatsPourArticle($id_article) {
+        global $CXO;
+        
+        $select = sprintf("Commerce.id as Commerce_id , Achat.montant as Achat_montant , Achat.datation as Achat_datation");
+        
+        $filtre = "and Article.id = '$id_article'";
+        
+        $order = "order by Achat.datation ";
+        
+        $requete = $this->getRequeteParametrable($select, $filtre, $order);
+        
+        $tab = [];
+        
+        $r = $CXO->executeRequete($requete);
+        if ($r->isOk()) {
+            foreach ($r->getResultat() as $ligne) {
+                $elm = [];
+                $elm["id_commerce"] = $ligne["Commerce_id"];
+                $elm["montant"] = $ligne["Achat_montant"];
+                $elm["datation"] = $ligne["Achat_datation"];
+                $tab[] = $elm;
+            }
+        } else {
+            $r->affiche();
+        }
+
+        return $tab;
+    }
+
+
+    /**
+     * Constitution de la requête
+     * Recherche fonction de constitution de la requête paramétrable
+     * @param string $domaine
+     * @return string
+     */
+    private function getRequeteParametrable($select="",$filtre="",$order="") {
+        if ($select == "") {
+            $select = $this->getSelectTout();
+        }
+        
+        if ($order == "") {
+            $order = "order by Achat.datation desc ";
+        }
+        
+        $requete = "select 
+        distinct
+	$select 
+        from Achat
+        join Commerce on Commerce.id = Achat.id_Commerce
+        join Enseigne on Enseigne.id = Commerce.id_Enseigne
+        join Ville on Ville.id = Commerce.id_Ville
+        join Article on Article.id = Achat.id_Article
+        join Produit on Produit.id = Article.id_Produit
+        join TypeProduit on TypeProduit.id = Produit.id_TypeProduit
+        join Famille on Famille.id = TypeProduit.id_Famille
+        join Domaine on Domaine.id = Famille.id_Domaine
+        join Marque on Marque.id = Produit.id_Marque
+        join Conditionnement on Conditionnement.id = Article.id_Conditionnement
+        join Contenant on Contenant.id = Conditionnement.id_Contenant
+        join TypeContenant on TypeContenant.id = Contenant.id_TypeContenant
+        join Unite on Unite.id = Contenant.id_Unite
+        join Regroupement on Regroupement.id = Conditionnement.id_Regroupement
+        join TypeRegroupement on TypeRegroupement.id = Regroupement.id_TypeRegroupement
+        where 
+        1 = 1
+        $filtre 
+        $order 
+        limit 500
+        ";
+        return $requete;
+    }
+    
+    private function getSelectTout() {
+        $select = "Achat.id as id, Achat.id_Article, Achat.id_Commerce,
+	Enseigne.nom as Enseigne_nom,
+	Ville.nom as Ville_nom,
+        Ville.code_postal as Ville_code_postal,
+        Commerce.localisation as Commerce_localisation,
+            Produit.nom as Produit_nom,
+        Marque.nom as Marque_nom,
+        TypeProduit.nom as TypeProduit_nom,
+        Famille.nom as Famille_nom,
+        Domaine.nom as Domaine_nom,
+        Contenant.nom as Contenant_nom,
+        TypeContenant.nom as TypeContenant_nom,
+        Contenant.quantite as Contenant_quantite,
+        Contenant.capacite as Contenant_capacite,
+        Contenant.capacite_reference as Contenant_capacite_reference,
+        Unite.nom as Unite_nom,
+        Contenant.is_a_la_piece as Contenant_is_a_la_piece,
+        TypeRegroupement.nom as TypeRegroupement_nom,
+        Regroupement.quantite as Regroupement_quantite,
+        Article.capacite as Article_capacite,
+        Achat.datation as Achat_datation,
+        Achat.montant as Achat_montant ";
+                
+        return $select;
+    }
+}

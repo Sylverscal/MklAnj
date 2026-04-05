@@ -6,7 +6,7 @@
  */
 
 /**
- * Description of COU_DistributeurObjets
+ * Description of MKL_DistributeurObjets
  *
  * Classe pour servir de distributeur d'objets clonés.
  * Au lieu de créer un objet à chaque fois ce qui prend beaucoup plus de temps.
@@ -17,7 +17,7 @@
  * 
  * @author sylverscal
  */
-class COU_DistributeurObjets {
+class MKL_DistributeurObjets {
     private $liste_objets;
     
     public function __construct() {
@@ -26,11 +26,8 @@ class COU_DistributeurObjets {
     
     public function constitueListeObjets() {
         $liste_noms_classes = [];
-        $liste_noms_classes[] = "TBL_Achat";
-        $liste_noms_classes[] = "TBL_Achat_s";
-        $liste_noms_classes[] = "TBL_Contenant";
-        $liste_noms_classes[] = "TBL_Domaine_s";
-        $liste_noms_classes[] = "TBL_VariableSysteme";
+        $liste_noms_classes[] = "TBL_Course";
+        $liste_noms_classes[] = "TBL_Course_s";
         
         $this->liste_objets = [];
         

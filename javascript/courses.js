@@ -55,8 +55,8 @@ function affiche_barre_navigation_retour(data) {
         affiche_barre_navigation("COU_onglet_home");
         affiche_onglet_home();
     });
-    $('#COU_onglet_achats').click(function () {
-        affiche_barre_navigation('COU_onglet_achats');
+    $('#MKL_onglet_mklanj').click(function () {
+        affiche_barre_navigation('MKL_onglet_mklanj');
         affiche_onglet_achats();
     });
     $('#COU_onglet_tables').click(function () {

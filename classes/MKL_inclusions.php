@@ -39,10 +39,10 @@ class COU_inclusions {
         $this->inclutLibrairie('LIB_TableColonne.php');
         $this->inclutLibrairie('LIB_TableColonne_s.php');
         
-        $this->inclutClasses('COU_onglet_principal.php');
+        $this->inclutClasses('MKL_onglet_principal.php');
         $this->inclutClasses('COU_onglet_home.php');
         $this->inclutClasses('COU_onglet_essais.php');
-        $this->inclutClasses('COU_onglet_achats.php');
+        $this->inclutClasses('MKL_onglet_mklanj.php');
         $this->inclutClasses('COU_onglet_tables.php');
         $this->inclutClasses('COU_onglet_administration.php');
         $this->inclutClasses('COU_barre_navigation.php');
@@ -52,7 +52,7 @@ class COU_inclusions {
         $this->inclutClasses('COU_TransfertArticles.php');
         $this->inclutClasses('COU_TransfertReleves.php');
         $this->inclutClasses('COU_Achats.php');
-        $this->inclutClasses('COU_DistributeurObjets.php');
+        $this->inclutClasses('MKL_DistributeurObjets.php');
         $this->inclutClasses('COU_DonneesPourGraphique.php');
         $this->inclutClasses('COU_RamasseMiettes.php');
         $this->inclutClasses('COU_Accueil.php');

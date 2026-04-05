@@ -94,7 +94,7 @@ class COU_onglet_Ajax extends MKL_mklanj_Ajax {
     }
     
     protected function achats($post) {
-        new COU_onglet_achats();
+        new MKL_onglet_mklanj();
     }
     
     protected function essais($post) {

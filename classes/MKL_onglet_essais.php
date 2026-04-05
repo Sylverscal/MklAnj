@@ -12,7 +12,7 @@
  * @author sylverscal
  */
         
-class COU_onglet_essais extends COU_onglet_principal {
+class COU_onglet_essais extends MKL_onglet_principal {
 
     
     

@@ -7,7 +7,7 @@
  *
  * @author Sylverscal
  */
-abstract class COU_onglet_principal {
+abstract class MKL_onglet_principal {
 
     public function __construct() {
         $this->affiche();
