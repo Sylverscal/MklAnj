@@ -1,8 +1,17 @@
-05-04-2026 22:04:27 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-05-04-2026 22:04:27 : ? -> ? -> ? -> 0 : POST
-05-04-2026 22:04:27 : ? -> ? -> ? -> 0 : Array
+06-04-2026 12:13:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+06-04-2026 12:13:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+06-04-2026 12:13:39 : ? -> ? -> ? -> 0 : POST
+06-04-2026 12:13:39 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => onglet
     [action] => home
+)
+
+06-04-2026 12:13:39 : ? -> ? -> ? -> 0 : POST
+06-04-2026 12:13:39 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_home
 )
 
