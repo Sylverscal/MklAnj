@@ -12,7 +12,7 @@
  *
  * @author sylverscal
  */
-class COU_InitialisationBase {
+class CLA_InitialisationBase {
     private $compteur_achats_ajoutes;
     
     public function affiche_bloc() {

@@ -12,7 +12,7 @@
  *
  * @author sylverscal
  */
-class COU_AccueilCourses {
+class CLA_AccueilCourses {
     public function affiche() {
         ?>
         <div id="barre_navigation">

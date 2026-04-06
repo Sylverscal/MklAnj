@@ -1,6 +1,6 @@
 <?php
 
-class COU_inclusions {
+class CLA_inclusions {
 
     private $document_root;
 
@@ -39,35 +39,22 @@ class COU_inclusions {
         $this->inclutLibrairie('LIB_TableColonne.php');
         $this->inclutLibrairie('LIB_TableColonne_s.php');
         
-        $this->inclutClasses('MKL_onglet_principal.php');
-        $this->inclutClasses('COU_onglet_home.php');
-        $this->inclutClasses('COU_onglet_essais.php');
-        $this->inclutClasses('MKL_onglet_mklanj.php');
-        $this->inclutClasses('COU_onglet_tables.php');
-        $this->inclutClasses('COU_onglet_administration.php');
-        $this->inclutClasses('COU_barre_navigation.php');
-        $this->inclutClasses('COU_InitialisationBase.php');
-        $this->inclutClasses('COU_TransfertBase.php');
-        $this->inclutClasses('COU_TransfertTable.php');
-        $this->inclutClasses('COU_TransfertArticles.php');
-        $this->inclutClasses('COU_TransfertReleves.php');
-        $this->inclutClasses('COU_Achats.php');
-        $this->inclutClasses('MKL_DistributeurObjets.php');
-        $this->inclutClasses('COU_DonneesPourGraphique.php');
-        $this->inclutClasses('COU_RamasseMiettes.php');
-        $this->inclutClasses('COU_Accueil.php');
-        $this->inclutClasses('COU_AccueilCourses.php');
-        $this->inclutClasses('COU_Acces.php');
+        $this->inclutClasses('CLA_onglet_principal.php');
+        $this->inclutClasses('CLA_onglet_home.php');
+        $this->inclutClasses('CLA_onglet_essais.php');
+        $this->inclutClasses('CLA_onglet_liste_courses.php');
+        $this->inclutClasses('CLA_onglet_tables.php');
+        $this->inclutClasses('CLA_onglet_administration.php');
+        $this->inclutClasses('CLA_barre_navigation.php');
+        $this->inclutClasses('CLA_InitialisationBase.php');
+        $this->inclutClasses('CLA_DistributeurObjets.php');
+        $this->inclutClasses('CLA_Accueil.php');
+        $this->inclutClasses('CLA_AccueilCourses.php');
+        $this->inclutClasses('CLA_Acces.php');
         $this->inclutParametres('PRM_Base.php');
         $this->inclutParametres('PRM_Bases.php');
-        $this->inclutTables('TBL_Achat.php');
-        $this->inclutTables('TBL_Achat_s.php');
-        $this->inclutTables('TBL_Article.php');
-        $this->inclutTables('TBL_Commerce.php');
-        $this->inclutTables('TBL_Contenant.php');
-        $this->inclutTables('TBL_Domaine_s.php');
-        $this->inclutTables('TBL_Personne.php');
-        $this->inclutTables('TBL_VariableSysteme.php');
+        $this->inclutTables('TBL_Course.php');
+        $this->inclutTables('TBL_Course_s.php');
         
     }
 

@@ -29,7 +29,7 @@ class LIB_Util {
 
         $log = $d->getDateTime_pourAffichage() . ' : ' . $lieu . ' : ' . $s . "\r\n";
 
-        $f = (new COU_inclusions())->getRacine() . '/log/Log.txt';
+        $f = (new CLA_inclusions())->getRacine() . '/log/Log.txt';
 
         if ($raz == TRUE) {
             if (file_exists($f)) {

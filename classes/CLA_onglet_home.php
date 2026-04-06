@@ -7,7 +7,7 @@
  *
  * @author veroscal
  */
-class COU_onglet_home extends MKL_onglet_principal {
+class CLA_onglet_home extends CLA_onglet_principal {
 
     /**
      * Affiche la page d'accueil
@@ -18,7 +18,7 @@ class COU_onglet_home extends MKL_onglet_principal {
         <div class="w3-container">
             <div class="w3-panel ">
                 <div class="w3-tag w3-xlarge w3-padding-large w3-round-large w3-yellow w3-text-red w3-center">
-                    RELEVE DES ACHATS FAITS PENDANT LES COURSES
+                    LISTE DES COURSES
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@
  *
  * @author sylverscal
  */
-class TBL_Achat_s extends LIB_Table_s{
+class TBL_Course_s extends LIB_Table_s{
     
     public function __construct() {
         parent::__construct();

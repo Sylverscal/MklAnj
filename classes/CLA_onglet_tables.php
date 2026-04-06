@@ -7,7 +7,7 @@
  *
  * @author veroscal
  */
-class COU_onglet_tables extends MKL_onglet_principal {
+class CLA_onglet_tables extends CLA_onglet_principal {
     
     
     /**

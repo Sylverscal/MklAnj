@@ -9,7 +9,7 @@
  *
  * @author sylverscal
  */
-class MKL_barre_navigation {
+class CLA_barre_navigation {
     
     public function affiche($onglet_surligne) {
         ?>
@@ -18,11 +18,11 @@ class MKL_barre_navigation {
                 
                 <?php
                 $this->affiche_bouton_accueil();
-                $this->affiche_bouton_onglet("ACHATS","MKL_onglet_home", $onglet_surligne );
-                $this->affiche_bouton_onglet("Courses","MKL_onglet_achats", $onglet_surligne );
-                $this->affiche_bouton_onglet("Tables","MKL_onglet_tables", $onglet_surligne );
-                $this->affiche_bouton_onglet("Administration","MKL_onglet_administration", $onglet_surligne );
-                $this->affiche_bouton_onglet("Essais","MKL_onglet_essais", $onglet_surligne, true );
+                $this->affiche_bouton_onglet("ACHATS","CLA_onglet_home", $onglet_surligne );
+                $this->affiche_bouton_onglet("Liste de courses","CLA_onglet_liste_courses", $onglet_surligne );
+                $this->affiche_bouton_onglet("Tables","CLA_onglet_tables", $onglet_surligne );
+                $this->affiche_bouton_onglet("Administration","CLA_onglet_administration", $onglet_surligne );
+                $this->affiche_bouton_onglet("Essais","CLA_onglet_essais", $onglet_surligne, true );
                 ?>
             </div>
         </div>

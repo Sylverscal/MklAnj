@@ -12,7 +12,7 @@
  *
  * @author sylverscal
  */
-class COU_Acces {
+class CLA_Acces {
     public function affiche() {
         ?>
         <div class="w3-container w3-deep-orange w3-center w3-block">

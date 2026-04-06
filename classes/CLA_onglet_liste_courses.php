@@ -7,16 +7,16 @@
  *
  * @author veroscal
  */
-class MKL_onglet_mklanj extends MKL_onglet_principal {
+class CLA_onglet_liste_courses extends CLA_onglet_principal {
 
     /**
      * Affiche la page d'accueil
      */
     #[\Override]
     final function affiche() {
-        $this->affiche_entete("Achats");
+        $this->affiche_entete("Liste de courses");
         
-        $a = new COU_Achats();
+        $a = new CLA_MklAnj();
         $a->affiche();
     }
 }

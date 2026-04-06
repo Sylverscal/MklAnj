@@ -1,13 +1,12 @@
 <?php
 
-include_once $_SERVER['DOCUMENT_ROOT'] . "/classes/COU_inclusions.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/classes/CLA_inclusions.php";
 
-$i = new COU_inclusions();
+$i = new CLA_inclusions();
 $i->inclut();
 
 global $CXO;
 global $CXO_ST; // Pour accéder à la base "structure"
-global $CXO_A; // Pour accéder à la base "achats"
 global $DOT;
 
 LIB_Util::log("Entrée dans AJAX", $_POST['action']=='affichePosteDeCommande' ? FALSE : TRUE);
@@ -17,20 +16,17 @@ LIB_Util::log("Entrée dans AJAX", $_POST['action']=='affichePosteDeCommande' ? 
 LIB_Util::logPrintR($_POST,'POST');
 
 $domaine = $_POST['domaine'];
-$nomClasse = "COU_" . $domaine . "_Ajax";
+$nomClasse = "CLA_" . $domaine . "_Ajax";
 $tests = new $nomClasse($_POST);
 
-abstract class MKL_mklanj_Ajax {
+abstract class AJX_MklAnj_Ajax {
 
     function __construct($post) {
         global $CXO;
-        $CXO = new LIB_BDD(new PRM_Courses());
+        $CXO = new LIB_BDD(new PRM_BaseLocale());
         
         global $CXO_ST;
         $CXO_ST = new LIB_BDD_Structure();
-        
-        global $CXO_A;
-        $CXO_A = new LIB_BDD(new PRM_Achats());
         
         global $DOT;
         $DOT = new LIB_DistributeurObjetTable();
@@ -73,9 +69,9 @@ abstract class MKL_mklanj_Ajax {
 
 }
 
-class COU_barre_navigation_Ajax extends MKL_mklanj_Ajax {
+class CLA_barre_navigation_Ajax extends AJX_MklAnj_Ajax {
     protected function affiche($post) {
-        $bn = new COU_barre_navigation();
+        $bn = new CLA_barre_navigation();
         
         $onglet = isset($post ['onglet']) ? $post ['onglet'] : 0;
 
@@ -87,10 +83,10 @@ class COU_barre_navigation_Ajax extends MKL_mklanj_Ajax {
 /**
  * Classe pour gérer les onglets principaux
  */
-class COU_onglet_Ajax extends MKL_mklanj_Ajax {
+class CLA_onglet_Ajax extends AJX_MklAnj_Ajax {
 
     protected function home($post) {
-        new COU_onglet_home();
+        new CLA_onglet_home();
     }
     
     protected function achats($post) {
@@ -98,20 +94,20 @@ class COU_onglet_Ajax extends MKL_mklanj_Ajax {
     }
     
     protected function essais($post) {
-        new COU_onglet_essais();
+        new CLA_onglet_essais();
     }
 
     protected function administration($post) {
-        new COU_onglet_administration();
+        new CLA_onglet_administration();
     }
 
     protected function tables($post) {
-        new COU_onglet_tables();
+        new CLA_onglet_tables();
     }
 
 }
 
-class COU_gestion_administration_Ajax extends MKL_mklanj_Ajax {
+class CLA_gestion_administration_Ajax extends AJX_MklAnj_Ajax {
     protected function afficheAdministration($post) {
         $nom_administration = $post['nom_administration'];
         
@@ -119,30 +115,30 @@ class COU_gestion_administration_Ajax extends MKL_mklanj_Ajax {
     }
     
     private function INIT_BASE() {
-        $o = new COU_InitialisationBase();
+        $o = new CLA_InitialisationBase();
         $o->affiche_bloc();
     }
     
     private function TRANSFERT_BASE() {
-        $o = new COU_TransfertBase();
+        $o = new CLA_TransfertBase();
         $o->affichePosteCommande();
     }
     
     private function RAMASSE_MIETTES() {
-        $o = new COU_RamasseMiettes();
+        $o = new CLA_RamasseMiettes();
         $o->affiche();
     }
 }
 
-class COU_transfert_base_Ajax extends MKL_mklanj_Ajax {
+class CLA_transfert_base_Ajax extends AJX_MklAnj_Ajax {
     protected function vidageBases() {
-        $o = new COU_TransfertBase();
+        $o = new CLA_TransfertBase();
         $o->afficheVidageBase();
     }
     
     protected function vidageUneBase($post) {
         $nom_base = $post['nom_base'];
-        $o = new COU_TransfertBase();
+        $o = new CLA_TransfertBase();
         LIB_Util::logPrintR($post);
         $liste_crdus = $o->vidageUneBase($nom_base);
         
@@ -150,25 +146,25 @@ class COU_transfert_base_Ajax extends MKL_mklanj_Ajax {
     }
     
     protected function getTauxTransfert() {
-        $o = new COU_TransfertBase();
+        $o = new CLA_TransfertBase();
         $donnees = $o->getTauxTransfert();
         
         LIB_Util::jsonise($donnees);
     }
 }
 
-class COU_transfert_table_Ajax extends MKL_mklanj_Ajax {
+class CLA_transfert_table_Ajax extends AJX_MklAnj_Ajax {
     protected function affiche($post) {
         $table_source = $post['table_source'];
         $table_destination = $post['table_destination'];
-        $tm = new COU_TransfertTable($table_source,$table_destination);
+        $tm = new CLA_TransfertTable($table_source,$table_destination);
         $tm->affiche();
     }
     
     protected function afficheTableau($post) {
         $table_source = $post['table_source'];
         $table_destination = $post['table_destination'];
-        $tm = new COU_TransfertTable($table_source,$table_destination);
+        $tm = new CLA_TransfertTable($table_source,$table_destination);
         $tm->afficheTableau($post['avec_deja_associes']);
     }
     
@@ -219,13 +215,13 @@ class COU_transfert_table_Ajax extends MKL_mklanj_Ajax {
         $id_source = $post['id_source'];
         $donnees = $post['donnees'];
         
-        $tm = new COU_TransfertTable($table_source, $table_destination);
+        $tm = new CLA_TransfertTable($table_source, $table_destination);
         $tm->associeSourceADestination($id_source, $donnees);
         
         /**
          * Lecture du taux de transfert pour le mettre à jour à l'affichage
          */
-        $o = new COU_TransfertBase();
+        $o = new CLA_TransfertBase();
         $taux = $o->getTauxTransfert();
         LIB_Util::jsonise($taux);
         
@@ -236,7 +232,7 @@ class COU_transfert_table_Ajax extends MKL_mklanj_Ajax {
         $table_source = $post['table_source'];
         $table_destination = $post['table_destination'];
         
-        $tm = new COU_TransfertTable($table_source, $table_destination);
+        $tm = new CLA_TransfertTable($table_source, $table_destination);
         $tm->affichePropositions($donnees);
     }
     
@@ -245,44 +241,44 @@ class COU_transfert_table_Ajax extends MKL_mklanj_Ajax {
         $table_source = $post['table_source'];
         $table_destination = $post['table_destination'];
         
-        $tm = new COU_TransfertTable($table_source, $table_destination);
+        $tm = new CLA_TransfertTable($table_source, $table_destination);
         $proposition = $tm->calculeProposition($id_source);
         
         LIB_Util::jsonise($proposition);
     }
 }
 
-class COU_transfert_articles_Ajax extends MKL_mklanj_Ajax {
+class CLA_transfert_articles_Ajax extends AJX_MklAnj_Ajax {
     protected function affiche() {
-        $tm = new COU_TransfertArticles();
+        $tm = new CLA_TransfertArticles();
         $tm->affiche();
     }
 }
 
-class COU_transfert_releves_Ajax extends MKL_mklanj_Ajax {
+class CLA_transfert_releves_Ajax extends AJX_MklAnj_Ajax {
     protected function affiche() {
-        $tm = new COU_TransfertReleves();
+        $tm = new CLA_TransfertReleves();
         $tm->affiche();
     }
     
     protected function affiche_liste_releves($post) {
         $nb_releves = $post['nb_releves'];
         
-        $tr = new COU_TransfertReleves();
+        $tr = new CLA_TransfertReleves();
         $tr->afficheListeReleves($nb_releves);
     }
     
     protected function affiche_liste_en_attente($post) {
         $nb_releves = $post['nb_releves'];
         
-        $tr = new COU_TransfertReleves();
+        $tr = new CLA_TransfertReleves();
         $tr->afficheListeEnAttente($nb_releves);
     }
     
     protected function affiche_liste_rejetes($post) {
         $nb_releves = $post['nb_releves'];
         
-        $tr = new COU_TransfertReleves();
+        $tr = new CLA_TransfertReleves();
         $tr->afficheListeRejetes($nb_releves);
     }
     
@@ -290,7 +286,7 @@ class COU_transfert_releves_Ajax extends MKL_mklanj_Ajax {
         $id = $post['id'];
         $automatique = $post['automatique'];
         
-        $tr = new COU_TransfertReleves();
+        $tr = new CLA_TransfertReleves();
         $tr->afficheTransfert($id,$automatique);
         if ($automatique == 1) {
             $tr->transfertAutomatique($id);
@@ -300,45 +296,45 @@ class COU_transfert_releves_Ajax extends MKL_mklanj_Ajax {
     protected function transfert($post) {
         $id = $post['id'];
         
-        $tr = new COU_TransfertReleves();
+        $tr = new CLA_TransfertReleves();
         $tr->transfereReleve($id);
     }
     
     protected function rejet($post) {
         $id = $post['id'];
         
-        $tr = new COU_TransfertReleves();
+        $tr = new CLA_TransfertReleves();
         $tr->rejeteReleve($id);
     }
     
     protected function en_attente($post) {
         $id = $post['id'];
         
-        $tr = new COU_TransfertReleves();
+        $tr = new CLA_TransfertReleves();
         $tr->metReleveEnAttente($id);
     }
     
     protected function reinitialisation_releves($post) {
-        $tr = new COU_TransfertReleves();
+        $tr = new CLA_TransfertReleves();
         $tr->reinitialise();
     }
 }
 
-class COU_achats_Ajax extends MKL_mklanj_Ajax {
+class CLA_achats_Ajax extends AJX_MklAnj_Ajax {
     protected function enregistreDomaineChoisi($post) {
         $id = $post["id"];
-        $o = new COU_Achats();
+        $o = new CLA_Achats();
         $crdu = $o->enregistreDomaineChoisi($id);
         $crdu->emissionJson();
     }
     
     protected function afficheListeAchats($post) {
-        $o = new COU_Achats();
+        $o = new CLA_Achats();
         $o->afficheListeAchats();
     }
     
     protected function afficheListeAchatsFiltree($post) {
-        $o = new COU_Achats();
+        $o = new CLA_Achats();
         if (isset($post['filtre'])) {
             $o->afficheListeAchatsFiltree($post['filtre']);
         } else {
@@ -351,7 +347,7 @@ class COU_achats_Ajax extends MKL_mklanj_Ajax {
         $colonne = $post['colonne'];
         $valeur = $post['valeur'];
         
-        $o = new COU_Achats();
+        $o = new CLA_Achats();
         $crdu = $o->modifieValeur($id, $colonne, $valeur);
         $crdu->emissionJson();
     }
@@ -391,7 +387,7 @@ class COU_achats_Ajax extends MKL_mklanj_Ajax {
     }
 
     protected function affichePosteDeCommande($post) {
-        $o = new COU_Achats();
+        $o = new CLA_Achats();
         $o->affichePosteDeCommande();
     }
 
@@ -423,15 +419,15 @@ class COU_achats_Ajax extends MKL_mklanj_Ajax {
     
     protected function afficheListeAchatsMemeArticle($post) {
         $id_achat = $post['id_achat'];
-        $o = new COU_Achats();
+        $o = new CLA_Achats();
         $o->afficheListeAchatsMemeArticle($id_achat);
     }
 }
 
-class COU_graphiques_Ajax extends MKL_mklanj_Ajax {
+class CLA_graphiques_Ajax extends AJX_MklAnj_Ajax {
     protected function affiche($post) {
         $id_achat = $post['id_achat']; 
-        $gra = new COU_Graphiques($id_achat);
+        $gra = new CLA_Graphiques($id_achat);
         $gra->affiche();
     }
 }
@@ -439,7 +435,7 @@ class COU_graphiques_Ajax extends MKL_mklanj_Ajax {
 /**
  * Classe pour gérer le mode gestion des tables
  */
-class COU_gestion_table_Ajax extends MKL_mklanj_Ajax {
+class CLA_gestion_table_Ajax extends AJX_MklAnj_Ajax {
 
     protected function affiche_liste_tables($post) {
         $gt = new LIB_MenuTables();
@@ -571,27 +567,27 @@ class COU_gestion_table_Ajax extends MKL_mklanj_Ajax {
 
 }
 
-class COU_initialisation_base_Ajax extends MKL_mklanj_Ajax {
+class CLA_initialisation_base_Ajax extends AJX_MklAnj_Ajax {
     protected function affiche_bloc($post) {
 
-        $ca = new COU_InitialisationBase();
+        $ca = new CLA_InitialisationBase();
         $ca->affiche_bloc();
         
     }
     
     protected function choix_tables($post) {
 
-        $ca = new COU_InitialisationBase();
+        $ca = new CLA_InitialisationBase();
         $ca->choix_tables($post['donnees']);
         
     }
 }
 
-class COU_ramasse_miettes_Ajax extends MKL_mklanj_Ajax {
+class CLA_ramasse_miettes_Ajax extends AJX_MklAnj_Ajax {
     protected function traite_table($post) {
         $nom_table = $post['nom_table'];
         
-        $rm = new COU_RamasseMiettes();
+        $rm = new CLA_RamasseMiettes();
         $rm->TraiteTable($nom_table);
     }
     
@@ -614,21 +610,21 @@ class COU_ramasse_miettes_Ajax extends MKL_mklanj_Ajax {
     }
 }
 
-class COU_accueil_Ajax extends COU_achats_Ajax {
+class CLA_accueil_Ajax extends CLA_achats_Ajax {
     protected function affiche($post) {
-        $a = new COU_Accueil();
+        $a = new CLA_Accueil();
         $a->affiche();
     }
     
     protected function affiche_accueil_courses($post) {
-        $ac = new COU_AccueilCourses();
+        $ac = new CLA_AccueilCourses();
         $ac->affiche();
     }
 }
     
-class COU_acces_Ajax extends COU_achats_Ajax {
+class CLA_acces_Ajax extends CLA_achats_Ajax {
     protected function affiche($post) {
-        $a = new COU_Acces();
+        $a = new CLA_Acces();
         $a->affiche();
     }
     
@@ -636,7 +632,7 @@ class COU_acces_Ajax extends COU_achats_Ajax {
         $donnees = $post['donnees'];
         LIB_Util::logPrintR($donnees);
 
-        $a = new COU_Acces();
+        $a = new CLA_Acces();
         $crdu = $a->controle($donnees);
 
         $crdu->emissionJson();

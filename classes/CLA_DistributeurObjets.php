@@ -17,7 +17,7 @@
  * 
  * @author sylverscal
  */
-class MKL_DistributeurObjets {
+class CLA_DistributeurObjets {
     private $liste_objets;
     
     public function __construct() {
