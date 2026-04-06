@@ -1,7 +1,7 @@
 /* global g_achats */
 
 $(function () {
-    g_achats = new C_Achats();
+//    g_achats = new C_Achats();
     if ($("#barre_navigation").length) {
         affiche_barre_navigation("COU_onglet_home");
         affiche_onglet_home();
@@ -59,8 +59,8 @@ function affiche_barre_navigation_retour(data) {
         affiche_barre_navigation('MKL_onglet_mklanj');
         affiche_onglet_achats();
     });
-    $('#COU_onglet_tables').click(function () {
-        affiche_barre_navigation('COU_onglet_tables');
+    $('#CLA_onglet_tables').click(function () {
+        affiche_barre_navigation('CLA_onglet_tables');
         affiche_onglet_tables();
     });
     $('#COU_onglet_administration').click(function () {
