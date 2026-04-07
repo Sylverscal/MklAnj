@@ -51,11 +51,11 @@ function affiche_barre_navigation_retour(data) {
     $('#BTN_ACCUEIL').click(function () {
         g_accueil.affiche();
     });
-    $('#COU_onglet_home').click(function () {
+    $('#CLA_onglet_home').click(function () {
         affiche_barre_navigation("COU_onglet_home");
         affiche_onglet_home();
     });
-    $('#MKL_onglet_mklanj').click(function () {
+    $('#CLA_onglet_mklanj').click(function () {
         affiche_barre_navigation('MKL_onglet_mklanj');
         affiche_onglet_achats();
     });
@@ -63,25 +63,13 @@ function affiche_barre_navigation_retour(data) {
         affiche_barre_navigation('CLA_onglet_tables');
         affiche_onglet_tables();
     });
-    $('#COU_onglet_administration').click(function () {
+    $('#CLA_onglet_administration').click(function () {
         affiche_barre_navigation('COU_onglet_administration');
         affiche_onglet_administration();
     });
-    $('#COU_onglet_essais').click(function () {
+    $('#CLA_onglet_essais').click(function () {
         affiche_barre_navigation('COU_onglet_essais');
         affiche_onglet_essais();
-    });
-    $('#informations_utilisateur').click(function () {
-        g_informations_utilisateur = new C_informations_utilisateur();
-        g_informations_utilisateur.affiche_formulaire();
-    });
-    $('#authentification').click(function () {
-        g_authentification = new C_authentification();
-        g_authentification.affiche_formulaire();
-    });
-    $('#desauthentification').click(function () {
-        g_authentification = new C_authentification();
-        g_authentification.affiche_menus_selon_personne();
     });
 }
 

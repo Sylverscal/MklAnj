@@ -18,7 +18,7 @@ class CLA_barre_navigation {
                 
                 <?php
                 $this->affiche_bouton_accueil();
-                $this->affiche_bouton_onglet("ACHATS","CLA_onglet_home", $onglet_surligne );
+                $this->affiche_bouton_onglet("LISTE DE COURSES","CLA_onglet_home", $onglet_surligne );
                 $this->affiche_bouton_onglet("Liste de courses","CLA_onglet_liste_courses", $onglet_surligne );
                 $this->affiche_bouton_onglet("Tables","CLA_onglet_tables", $onglet_surligne );
                 $this->affiche_bouton_onglet("Administration","CLA_onglet_administration", $onglet_surligne );

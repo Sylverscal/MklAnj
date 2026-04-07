@@ -29,7 +29,9 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
         global $CXO;
         
         $schema = $CXO->getSchema();
-        $resultat = $this->executeRequete("select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = '$schema'");
+        $requete = "select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = '$schema'";
+        $resultat = $this->executeRequete($requete);
+        LIB_Util::log($requete);
         $tableNoms = [];
         if ($resultat->isOk()) {
             foreach ($resultat->getResultat() as $ligne) {

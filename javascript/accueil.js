@@ -32,10 +32,8 @@ class C_Accueil {
     }
     
     ecoute_evenements() {
-        $('#BTN_ACC_RELEVE_COURSES').click(function() {
+        $('#BTN_ACC_LISTE_COURSES').click(function() {
             g_accueil.affiche_accueil_courses();
-        });
-        $('#BTN_ACC_RELEVE_COURSES').click(function() {
         });
     }
     

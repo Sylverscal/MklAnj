@@ -25,9 +25,9 @@ class PRM_MklAnj extends PRM_Base {
 
     public function __construct() {
         if ($this->is_distant) {
-            $this->setParametres('MklAng', 'db371772461', 'db371772461.db.1and1.com', 'ds4thp200', 'dbo371772461');
+            $this->setParametres('MklAnj', 'db371772461', 'db371772461.db.1and1.com', 'ds4thp200', 'dbo371772461');
         } else {
-            $this->setParametres('MklAng', 'MklAng', 'localhost:8889', 'MklAng', 'MklAng');
+            $this->setParametres('MklAnj', 'MklAnj', 'localhost:8889', 'MklAnj', 'MklAnj');
         }
     }
 }
