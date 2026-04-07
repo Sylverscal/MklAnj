@@ -16,7 +16,7 @@ class CLA_onglet_liste_courses extends CLA_onglet_principal {
     final function affiche() {
         $this->affiche_entete("Liste de courses");
         
-        $a = new CLA_MklAnj();
+        $a = new CLA_ListeCourses();
         $a->affiche();
     }
 }

@@ -55,7 +55,7 @@ function affiche_barre_navigation_retour(data) {
         affiche_barre_navigation("COU_onglet_home");
         affiche_onglet_home();
     });
-    $('#CLA_onglet_mklanj').click(function () {
+    $('#CLA_onglet_liste_courses').click(function () {
         affiche_barre_navigation('MKL_onglet_mklanj');
         affiche_onglet_achats();
     });
