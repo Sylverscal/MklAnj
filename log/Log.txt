@@ -1,9 +1,8 @@
-06-04-2026 14:48:10 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-06-04-2026 14:48:10 : ? -> ? -> ? -> 0 : POST
-06-04-2026 14:48:10 : ? -> ? -> ? -> 0 : Array
+07-04-2026 12:16:05 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+07-04-2026 12:16:05 : ? -> ? -> ? -> 0 : POST
+07-04-2026 12:16:05 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => gestion_table
-    [action] => afficheTable
-    [nom_table] => Ville
+    [domaine] => acces
+    [action] => affiche
 )
 

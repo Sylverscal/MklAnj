@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * AJAX de LISTE DE COURSES : MklAnj
+ */
+
 include_once $_SERVER['DOCUMENT_ROOT'] . "/classes/CLA_inclusions.php";
 
 $i = new CLA_inclusions();
@@ -23,7 +27,9 @@ abstract class AJX_MklAnj_Ajax {
 
     function __construct($post) {
         global $CXO;
-        $CXO = new LIB_BDD(new PRM_BaseLocale());
+        $CXO = new LIB_BDD(new PRM_MklAnj());
+//        $CXO = new LIB_BDD(new PRM_Courses());
+        
         
         global $CXO_ST;
         $CXO_ST = new LIB_BDD_Structure();

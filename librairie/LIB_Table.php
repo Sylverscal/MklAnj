@@ -248,6 +248,12 @@ $tab
                 $colonne = $this->colonnes->get($nomColonne);
                 // Contrôle format bon si colonne est une datation
                 if ($colonne->isColonneDatation()) {
+                    if (strlen($valeur) == 0) {
+                        LIB_Util::log($valeur);
+                        $valeur = null;
+                        LIB_Util::log($valeur);
+                        continue;
+                    }
                     $d = new LIB_Datation($valeur);
                     if (!$d->is_date_valide()) {
                         $tab = array();
