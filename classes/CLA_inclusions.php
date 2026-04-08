@@ -51,6 +51,7 @@ class CLA_inclusions {
         $this->inclutClasses('CLA_Accueil.php');
         $this->inclutClasses('CLA_AccueilCourses.php');
         $this->inclutClasses('CLA_Acces.php');
+        $this->inclutClasses('CLA_ListeCourses.php');
         $this->inclutParametres('PRM_Base.php');
         $this->inclutParametres('PRM_Bases.php');
         $this->inclutTables('TBL_Course.php');

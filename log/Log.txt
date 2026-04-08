@@ -1,19 +1,9 @@
-07-04-2026 17:53:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-07-04-2026 17:53:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-07-04-2026 17:53:42 : ? -> ? -> ? -> 0 : POST
-07-04-2026 17:53:42 : ? -> ? -> ? -> 0 : POST
-07-04-2026 17:53:42 : ? -> ? -> ? -> 0 : Array
+08-04-2026 12:18:04 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+08-04-2026 12:18:04 : ? -> ? -> ? -> 0 : POST
+08-04-2026 12:18:04 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => onglet
-    [action] => home
-)
-
-07-04-2026 17:53:42 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
+    [domaine] => liste_courses
     [action] => affiche
-    [onglet] => COU_onglet_home
 )
 
-07-04-2026 17:53:42 : LIB_BDD_Structure -> LIB_BDD_Structure -> getListeNomTables -> 29 : select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = 'MklAnj'
-07-04-2026 17:53:42 : LIB_BDD_Structure -> LIB_BDD_Structure -> getListeNomTables -> 29 : select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = 'MklAnj'
+08-04-2026 12:18:04 : LIB_BDD_Structure -> LIB_BDD_Structure -> getListeNomTables -> 29 : select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = 'MklAnj'

@@ -20,16 +20,12 @@ class CLA_ListeCourses {
     private $liste;
     
     public function __construct() {
-        $this->liste = new TBL_Achat_s();
     }
     
     
     final function affiche() {
         ?>
-        <div id="DIV_ACH_GDA" class="w3-container">
-            <h1>Poste de commande</h1>
-        </div>
-        <div id="DIV_ACH_ACHATS" class="w3-container" style="overflow-y: scroll; height:1200px">
+        <div id="DIV_LISTE_COURSES" class="w3-container" style="overflow-y: scroll; height:1200px">
             <h1>Liste</h1>
         </div>
         <?php

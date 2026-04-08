@@ -95,8 +95,8 @@ class CLA_onglet_Ajax extends AJX_MklAnj_Ajax {
         new CLA_onglet_home();
     }
     
-    protected function achats($post) {
-        new MKL_onglet_mklanj();
+    protected function liste_courses($post) {
+        new CLA_onglet_liste_courses();
     }
     
     protected function essais($post) {
@@ -313,3 +313,9 @@ class CLA_acces_Ajax extends AJX_MklAnj_Ajax {
 
 }
     
+class CLA_liste_courses_Ajax extends AJX_MklAnj_Ajax {
+    protected function affiche($post) {
+        $a = new CLA_ListeCourses();
+        $a->affiche();
+    }
+}

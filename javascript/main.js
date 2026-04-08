@@ -52,12 +52,12 @@ function affiche_barre_navigation_retour(data) {
         g_accueil.affiche();
     });
     $('#CLA_onglet_home').click(function () {
-        affiche_barre_navigation("COU_onglet_home");
+        affiche_barre_navigation("CLA_onglet_home");
         affiche_onglet_home();
     });
     $('#CLA_onglet_liste_courses').click(function () {
-        affiche_barre_navigation('MKL_onglet_mklanj');
-        affiche_onglet_achats();
+        affiche_barre_navigation('CLA_onglet_liste_courses');
+        affiche_onglet_liste_courses();
     });
     $('#CLA_onglet_tables').click(function () {
         affiche_barre_navigation('CLA_onglet_tables');
@@ -97,11 +97,11 @@ function affiche_onglet_home_retour(data) {
     $('#onglet').html(data);
 }
 
-function affiche_onglet_achats() {
+function affiche_onglet_liste_courses() {
     $('#onglet').html("<h4>Op&eacuteration en cours</h4>");
     var json = {
         domaine: 'onglet',
-        action: 'achats'
+        action: 'liste_courses'
     };
     $.ajax(
             {
@@ -111,15 +111,16 @@ function affiche_onglet_achats() {
                 dataType: 'html',
                 async: 'false',
                 success: function (data) {
-                    affiche_onglet_achats_retour(data);
+                    affiche_onglet_liste_courses_retour(data);
                 }
             }
     );
 }
 
-function affiche_onglet_achats_retour(data) {
+function affiche_onglet_liste_courses_retour(data) {
     $('#onglet').html(data);
-    g_achats.afficheFenetre();
+    g_liste_courses =  new C_ListeCourses();
+    g_liste_courses.affiche();
 }
 
 function affiche_onglet_tables() {
