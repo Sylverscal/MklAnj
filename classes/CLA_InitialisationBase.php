@@ -139,6 +139,12 @@ class CLA_InitialisationBase {
             }
         }
         
+        $requete = "INSERT IGNORE INTO `Commerce` (`nom`) VALUES ('-');";
+                
+        $rlt = $CXO->executeRequete($requete);
+        
+        $crdu = $rlt->getCompteRendu();
+        
         return $crdu;
     }
     
@@ -187,7 +193,7 @@ class CLA_InitialisationBase {
         
         $requete_courses = "select 
 distinct concat(TypeProduit.nom,' ',Produit.nom  ) as nom 
-from Produit join TypeProduit on TypeProduit.id = Produit.id_TypeProduit order by nom";
+from Produit join TypeProduit on TypeProduit.id = Produit.id_TypeProduit where TypeProduit.nom <> '?' and Produit.nom <> '?' order by nom";
         
         $rlt_courses = $CXO_C->executeRequete($requete_courses);
         
@@ -205,6 +211,11 @@ from Produit join TypeProduit on TypeProduit.id = Produit.id_TypeProduit order b
             }
         }
         
+        $requete = "INSERT IGNORE INTO `Article` (`nom`) VALUES ('-');";
+                
+        $rlt = $CXO->executeRequete($requete);
+        
+        $crdu = $rlt->getCompteRendu();
         return $crdu;
     }
     
@@ -234,6 +245,7 @@ from Produit join TypeProduit on TypeProduit.id = Produit.id_TypeProduit order b
         global $CXO;
 
         $requete = "INSERT IGNORE INTO `Zone` (`nom`) VALUES
+('-'),
 ('Alpha Park'),
 ('Mon Grand Plaisir')
 ;";
