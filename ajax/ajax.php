@@ -303,7 +303,6 @@ class CLA_acces_Ajax extends AJX_MklAnj_Ajax {
     
     protected function controle($post) {
         $donnees = $post['donnees'];
-        LIB_Util::logPrintR($donnees);
 
         $a = new CLA_Acces();
         $crdu = $a->controle($donnees);
