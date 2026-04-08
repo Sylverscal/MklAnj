@@ -1,9 +1,10 @@
-08-04-2026 13:02:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-08-04-2026 13:02:31 : ? -> ? -> ? -> 0 : POST
-08-04-2026 13:02:31 : ? -> ? -> ? -> 0 : Array
+08-04-2026 22:17:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+08-04-2026 22:17:29 : ? -> ? -> ? -> 0 : POST
+08-04-2026 22:17:29 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => accueil
-    [action] => affiche
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Article
 )
 
-08-04-2026 13:02:31 : LIB_BDD_Structure -> LIB_BDD_Structure -> getListeNomTables -> 29 : select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = 'MklAnj'
+08-04-2026 22:17:29 : LIB_BDD_Structure -> LIB_BDD_Structure -> getListeNomTables -> 29 : select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = 'MklAnj'

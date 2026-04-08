@@ -58,7 +58,7 @@ class CLA_Acces {
 
         $crdu = new LIB_CompteRendu(true, "");
         
-//        return $crdu;
+        return $crdu;
         
         $tab = [];
 
@@ -69,6 +69,7 @@ class CLA_Acces {
         $compte = $tab['a'];
         $mot_de_passe = $tab['b'];
 
+        
 
         if ($compte == "Marcel" && $mot_de_passe == "Mordekhai") {
             return $crdu;

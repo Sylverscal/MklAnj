@@ -56,10 +56,6 @@ class LIB_DistributeurObjetTable {
 
         $nom_classe_table = strpos($nom_table, "TBL_") !== 0 ? sprintf("TBL_%s", $nom_table) : $nom_table;
         
-//        if ($DOT_COU->isExisteObjet($nom_classe_table)) {
-//            return $DOT_COU->getObjet($nom_classe_table);
-//        }
-//
         if (isset($this->liste_tables[$nom_classe_table])) {
             return clone $this->liste_tables[$nom_classe_table];
         }

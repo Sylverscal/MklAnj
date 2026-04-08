@@ -11,6 +11,7 @@ $i->inclut();
 
 global $CXO;
 global $CXO_ST; // Pour accéder à la base "structure"
+global $CXO_C; // Pour accéder à la base "Courses"
 global $DOT;
 
 LIB_Util::log("Entrée dans AJAX", $_POST['action']=='affichePosteDeCommande' ? FALSE : TRUE);
@@ -28,8 +29,9 @@ abstract class AJX_MklAnj_Ajax {
     function __construct($post) {
         global $CXO;
         $CXO = new LIB_BDD(new PRM_MklAnj());
-//        $CXO = new LIB_BDD(new PRM_Courses());
         
+        global $CXO_C;
+        $CXO_C = new LIB_BDD(new PRM_Courses());
         
         global $CXO_ST;
         $CXO_ST = new LIB_BDD_Structure();
@@ -113,6 +115,16 @@ class CLA_onglet_Ajax extends AJX_MklAnj_Ajax {
 
 }
 
+class CLA_adm_init_base_Ajax extends AJX_MklAnj_Ajax {
+    protected function import_donnees($post) {
+        $ib = new CLA_InitialisationBase();
+        $crdu = $ib->importDonnees();
+        
+        $crdu->emissionJson();
+    }
+    
+}
+
 class CLA_gestion_administration_Ajax extends AJX_MklAnj_Ajax {
     protected function afficheAdministration($post) {
         $nom_administration = $post['nom_administration'];
@@ -126,11 +138,6 @@ class CLA_gestion_administration_Ajax extends AJX_MklAnj_Ajax {
     }
     
 }
-
-
-
-
-
 
 /**
  * Classe pour gérer le mode gestion des tables

@@ -27,7 +27,6 @@ class CLA_onglet_tables extends CLA_onglet_principal {
         global $CXO_ST;
         
         $lnt = $CXO_ST->getListeNomTables();
-        LIB_Util::logPrintR($lnt);
         ?>
         <div class="w3-container">
             <div class="w3-sidebar w3-bar-block w3-border" style="width:25%">

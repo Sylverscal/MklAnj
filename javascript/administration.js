@@ -66,15 +66,8 @@ class C_Administration {
     
     affiche_retour () {
         if (this.nom_administration === "INIT_BASE") {
-            ecoute_objets_bloc_initialisation_base();
-        }
-        if (this.nom_administration === "TRANSFERT_BASE") {
-            g_transfert_base = new C_TransfertBase();
-            g_transfert_base.ecoute_poste_commande();
-        }
-        if (this.nom_administration === "RAMASSE_MIETTES") {
-            g_ramasse_miettes = new C_RamasseMiettes();
-            g_ramasse_miettes.ecoute_evenements_liste_tables();
+            g_adm_init_base = new C_adm_init_base();
+            g_adm_init_base.ecoute_objets_bloc_initialisation_base();
         }
     }
 }

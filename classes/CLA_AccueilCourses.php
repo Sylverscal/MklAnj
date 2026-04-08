@@ -22,7 +22,7 @@ class CLA_AccueilCourses {
 
         </div>
         <!-- comment -->
-        <div class="w3-modal" id="COU_MODAL_ERREUR">
+<!--        <div class="w3-modal" id="COU_MODAL_ERREUR">
             <div class="w3-modal-content">
                 <div class="w3-container w3-amber">
                     <h4 class="modal-title">Il y a un bucre</H4>
@@ -37,7 +37,7 @@ class CLA_AccueilCourses {
                     <button class="w3-button w3-green" type="button" onclick="document.getElementById('COU_MODAL_ERREUR').style.display='none'">Ok</button>
                 </div>
             </div>
-        </div>
+        </div>-->
         <?php
     }
 }

@@ -47,7 +47,7 @@ class CLA_inclusions {
         $this->inclutClasses('CLA_onglet_administration.php');
         $this->inclutClasses('CLA_barre_navigation.php');
         $this->inclutClasses('CLA_InitialisationBase.php');
-        $this->inclutClasses('CLA_DistributeurObjets.php');
+//        $this->inclutClasses('CLA_DistributeurObjets.php');
         $this->inclutClasses('CLA_Accueil.php');
         $this->inclutClasses('CLA_AccueilCourses.php');
         $this->inclutClasses('CLA_Acces.php');
