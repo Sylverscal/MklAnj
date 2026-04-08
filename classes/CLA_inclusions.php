@@ -56,6 +56,7 @@ class CLA_inclusions {
         $this->inclutParametres('PRM_Bases.php');
         $this->inclutTables('TBL_Course.php');
         $this->inclutTables('TBL_Course_s.php');
+        $this->inclutTables('TBL_Personne.php');
         
     }
 

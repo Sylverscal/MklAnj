@@ -58,7 +58,7 @@ class CLA_Acces {
 
         $crdu = new LIB_CompteRendu(true, "");
         
-        return $crdu;
+//        return $crdu;
         
         $tab = [];
 
@@ -71,7 +71,7 @@ class CLA_Acces {
 
 
         if ($compte == "Marcel" && $mot_de_passe == "Mordekhai") {
-            return;
+            return $crdu;
         }
 
         $p = $DOT->getObjet("Personne");
