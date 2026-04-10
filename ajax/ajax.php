@@ -320,8 +320,8 @@ class CLA_acces_Ajax extends AJX_MklAnj_Ajax {
 }
     
 class CLA_liste_courses_Ajax extends AJX_MklAnj_Ajax {
-    protected function affiche($post) {
+    protected function affiche_vue_principale($post) {
         $a = new CLA_ListeCourses();
-        $a->affiche();
+        $a->afficheVuePrincipale();
     }
 }

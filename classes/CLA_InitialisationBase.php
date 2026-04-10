@@ -107,6 +107,12 @@ class CLA_InitialisationBase {
             }
         }
         
+        $requete = "INSERT IGNORE INTO `Ville` (`nom`) VALUES ('-');";
+                
+        $rlt = $CXO->executeRequete($requete);
+        
+        $crdu = $rlt->getCompteRendu();
+        
         return $crdu;
     }
     
@@ -169,13 +175,19 @@ class CLA_InitialisationBase {
         }
         
         foreach ($rlt_courses->getResultat() as $value) {
-            $requete_mklanj = sprintf("insert ignore into marque (nom) values ('%s')",$value['nom']);
+            $requete_mklanj = sprintf("insert ignore into Marque (nom) values ('%s')",$value['nom']);
             $rlt_mklanj = $CXO->executeRequete($requete_mklanj);
             if ($rlt_mklanj->isKo()) {
                 $crdu = $rlt_mklanj->getCompteRendu();
                 return $crdu;
             }
         }
+        
+        $requete = "INSERT IGNORE INTO `Marque` (`nom`) VALUES ('-');";
+                
+        $rlt = $CXO->executeRequete($requete);
+        
+        $crdu = $rlt->getCompteRendu();
         
         return $crdu;
     }

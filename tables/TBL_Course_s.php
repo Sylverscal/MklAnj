@@ -111,7 +111,7 @@ class TBL_Course_s extends LIB_Table_s{
         Article.capacite as Article_capacite,
         Achat.datation as Achat_datation,
         Achat.montant as Achat_montant
-        from Achat
+        from Course
         join Commerce on Commerce.id = Achat.id_Commerce
         join Enseigne on Enseigne.id = Commerce.id_Enseigne
         join Ville on Ville.id = Commerce.id_Ville
@@ -130,8 +130,7 @@ class TBL_Course_s extends LIB_Table_s{
         where 
         1 = 1
         $where_de_filtre 
-        and Domaine.nom = '$domaine' 
-        order by Achat.datation desc
+        order by Course.datation desc
         limit 500
         ";
         return $requete;
@@ -164,64 +163,6 @@ class TBL_Course_s extends LIB_Table_s{
         }
         
         return $items;
-    }
-    
-    public function getItemsPourIndexEtDomaine($index,$domaine) {
-        global $CXO;
-        
-        $index_avec_point = LIB_Util::convertiTablonneEnSelect($index);
-        
-        $select = sprintf("%s as %s",$index_avec_point,$index);
-        
-        $filtre = "and Domaine.nom = '$domaine'";
-        
-        $order = "order by $index_avec_point";
-        
-        $requete = $this->getRequeteParametrable($select, $filtre, $order);
-        
-        $items = [];
-        $r = $CXO->executeRequete($requete);
-        if ($r->isOk()) {
-            foreach ($r->getResultat() as $ligne) {
-                $items[] = $ligne[$index];
-            }
-        } else {
-            $r->affiche();
-        }
-        
-        return $items;
-    }
-    
-    public function getProduitDeAchat($id_achat) {
-        global $CXO;
-        global $DOT;
-        
-        $index = "Produit_id";
-        $index_avec_point = LIB_Util::convertiTablonneEnSelect($index);
-        
-        $select = sprintf("%s as %s",$index_avec_point,$index);
-        
-        $filtre = "and Achat.id = '$id_achat'";
-        
-        $order = "order by Produit.id ";
-        
-        $requete = $this->getRequeteParametrable($select, $filtre, $order);
-        
-        $id_produit = 0;
-        
-        $r = $CXO->executeRequete($requete);
-        if ($r->isOk()) {
-            foreach ($r->getResultat() as $index => $ligne) {
-                $id_produit = $ligne[$index];
-            }
-        } else {
-            $r->affiche();
-        }
-
-        $produit = $DOT->getObjet("Produit");
-        $produit->setId($id_produit);
-        $produit->charge();
-        return $produit;
     }
     
     public function getArticleDeAchat($id_achat) {
@@ -257,46 +198,6 @@ class TBL_Course_s extends LIB_Table_s{
     }
     
     /**
-     * Renvoie liste de tous les montants d'un article
-     * - id_commerce
-     * - date 
-     * - montant
-     * @global LIB_BDD $CXO
-     * @global LIB_DistributeurObjetTable $DOT
-     * @param type $id_article
-     * @return type
-     */
-    public function getMontantsAchatsPourArticle($id_article) {
-        global $CXO;
-        
-        $select = sprintf("Commerce.id as Commerce_id , Achat.montant as Achat_montant , Achat.datation as Achat_datation");
-        
-        $filtre = "and Article.id = '$id_article'";
-        
-        $order = "order by Achat.datation ";
-        
-        $requete = $this->getRequeteParametrable($select, $filtre, $order);
-        
-        $tab = [];
-        
-        $r = $CXO->executeRequete($requete);
-        if ($r->isOk()) {
-            foreach ($r->getResultat() as $ligne) {
-                $elm = [];
-                $elm["id_commerce"] = $ligne["Commerce_id"];
-                $elm["montant"] = $ligne["Achat_montant"];
-                $elm["datation"] = $ligne["Achat_datation"];
-                $tab[] = $elm;
-            }
-        } else {
-            $r->affiche();
-        }
-
-        return $tab;
-    }
-
-
-    /**
      * Constitution de la requête
      * Recherche fonction de constitution de la requête paramétrable
      * @param string $domaine
@@ -314,22 +215,12 @@ class TBL_Course_s extends LIB_Table_s{
         $requete = "select 
         distinct
 	$select 
-        from Achat
-        join Commerce on Commerce.id = Achat.id_Commerce
-        join Enseigne on Enseigne.id = Commerce.id_Enseigne
-        join Ville on Ville.id = Commerce.id_Ville
-        join Article on Article.id = Achat.id_Article
-        join Produit on Produit.id = Article.id_Produit
-        join TypeProduit on TypeProduit.id = Produit.id_TypeProduit
-        join Famille on Famille.id = TypeProduit.id_Famille
-        join Domaine on Domaine.id = Famille.id_Domaine
-        join Marque on Marque.id = Produit.id_Marque
-        join Conditionnement on Conditionnement.id = Article.id_Conditionnement
-        join Contenant on Contenant.id = Conditionnement.id_Contenant
-        join TypeContenant on TypeContenant.id = Contenant.id_TypeContenant
-        join Unite on Unite.id = Contenant.id_Unite
-        join Regroupement on Regroupement.id = Conditionnement.id_Regroupement
-        join TypeRegroupement on TypeRegroupement.id = Regroupement.id_TypeRegroupement
+        from Course
+        join Article on Article.id = Course.id_Article
+        join Marque on Marque.id = Course.id_Marque
+        join Commerce on Commerce.id = Course.id_Commerce
+        join Ville on Ville.id = Course.id_Ville
+        join Zone on Zode.id = Course.id_Zone
         where 
         1 = 1
         $filtre 
@@ -339,30 +230,12 @@ class TBL_Course_s extends LIB_Table_s{
         return $requete;
     }
     
-    private function getSelectTout() {
-        $select = "Achat.id as id, Achat.id_Article, Achat.id_Commerce,
-	Enseigne.nom as Enseigne_nom,
-	Ville.nom as Ville_nom,
-        Ville.code_postal as Ville_code_postal,
-        Commerce.localisation as Commerce_localisation,
-            Produit.nom as Produit_nom,
-        Marque.nom as Marque_nom,
-        TypeProduit.nom as TypeProduit_nom,
-        Famille.nom as Famille_nom,
-        Domaine.nom as Domaine_nom,
-        Contenant.nom as Contenant_nom,
-        TypeContenant.nom as TypeContenant_nom,
-        Contenant.quantite as Contenant_quantite,
-        Contenant.capacite as Contenant_capacite,
-        Contenant.capacite_reference as Contenant_capacite_reference,
-        Unite.nom as Unite_nom,
-        Contenant.is_a_la_piece as Contenant_is_a_la_piece,
-        TypeRegroupement.nom as TypeRegroupement_nom,
-        Regroupement.quantite as Regroupement_quantite,
-        Article.capacite as Article_capacite,
-        Achat.datation as Achat_datation,
-        Achat.montant as Achat_montant ";
-                
+    private function getSelectComplet() {
+        $select = "";
+        
+        // JENSUISLA ECRIRE LE SELECT COMPLET
+        
         return $select;
     }
+    
 }

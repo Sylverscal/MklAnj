@@ -23,12 +23,36 @@ class CLA_ListeCourses {
     }
     
     
-    final function affiche() {
+    final function afficheEmplacementFonctionListeCourses() {
         ?>
-        <div id="DIV_LISTE_COURSES" class="w3-container" style="overflow-y: scroll; height:1200px">
-            <h1>Liste</h1>
+        <div id="DIV_FONCTION_LISTE_COURSES" class="w3-container w3-brown">
         </div>
         <?php
     }
     
+    public function afficheVuePrincipale() {
+        ?>
+        <div id="DIV_VUE_PRINCIPALE" class="w3-container w3-sand" style="overflow-y: scroll; height:1200px">
+            <div id="DIV_RECHERCHE" class="w3-container w3-yellow">
+                <h2>Recherche</h2>
+                
+            </div>
+            <div id="DIV_LISTE_COURSES" class="w3-container w3-yellow">
+                <h2>Liste des courses</h2>
+            </div>
+            <div id="DIV_FILTRES" class="w3-container w3-yellow">
+                <h2>Filtres</h2>
+                
+            </div>
+            <div id="DIV_FONCTIONS" class="w3-container w3-yellow">
+                <h2>Fonctions</h2>
+                
+            </div>
+        </div>
+        <?php
+    }
+    
+    public function afficheListeCourses() {
+        
+    }
 }

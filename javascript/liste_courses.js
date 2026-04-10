@@ -12,26 +12,12 @@ class C_ListeCourses {
     affiche() {
         this.affiche();
     }
-    ecouteEvenements() {
-        // Ecoute le choix dans le menu Domaine
-//        $('#SEL_ACH_DOMAINE').change(function () {
-//            var id = $(this).val();
-//            g_achats.enregistreDomaineChoisi(id);
-//        });
-        // Ecoute d'un clic sur le bouton de raz du filtre
-//        $('#BTN_ACH_FILTRE_RAZ').click(function(e) {
-//            e.preventDefault();
-//            g_achats.filtres = new C_Filtres();
-//            g_achats.filtres.affiche();
-//            g_achats.affiche();
-//        });
-    }
     
     affiche() {
         $('#ONG_contenu').html("<h4>Op&eacuteration en cours</h4>");
         var json = {
             domaine: 'liste_courses',
-            action: 'affiche'
+            action: 'affiche_vue_principale'
         };
         $.ajax(
                 {
@@ -48,7 +34,23 @@ class C_ListeCourses {
     }
     
     affiche_Retour(html) {
-        $("#DIV_LISTE_COURSES").html(html);
+        $("#DIV_FONCTION_LISTE_COURSES").html(html);
+        g_liste_courses.ecouteEvenements();
+    }
+
+    ecouteEvenements() {
+        // Ecoute le choix dans le menu Domaine
+//        $('#SEL_ACH_DOMAINE').change(function () {
+//            var id = $(this).val();
+//            g_achats.enregistreDomaineChoisi(id);
+//        });
+        // Ecoute d'un clic sur le bouton de raz du filtre
+//        $('#BTN_ACH_FILTRE_RAZ').click(function(e) {
+//            e.preventDefault();
+//            g_achats.filtres = new C_Filtres();
+//            g_achats.filtres.affiche();
+//            g_achats.affiche();
+//        });
     }
 }
     
