@@ -99,9 +99,10 @@ class LIB_ArbreTablesColonnes {
             }
         }
         
-        if (preg_match("/^id_(.*)/", $nom_colonne, $tab) == 0) {
+        // Autrisation de mettre la lecture des id dans les parties de from
+//        if (preg_match("/^id_(.*)/", $nom_colonne, $tab) == 0) {
             $this->parties_de_from->ajoute($nom_table, $nom_colonne);
-        }
+//        }
         
         
     }
@@ -319,6 +320,7 @@ class ATC_ListePartiesDeFrom extends ATC_ListeParties {
     /**
      * Utilisation de cette liste pour calculer la liste des arguments reçus 
      * dans la méthode set de la table.
+     * @param array Liste des arguments du "set" (invsible dans les paramètres de la fonction car à taille variable)
      * @return \ATC_Arguments Liste des arguments du set de la table courante 
      */
     public function getListeArguments() {
