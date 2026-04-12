@@ -31,7 +31,14 @@ class CLA_onglet_essais extends CLA_onglet_principal {
         global $CXO_ST;
         global $DOT;
         
-        LIB_Util::trace("Pas d'essai pour l'instant");
+        $c = $DOT->getObjet("Course");
+        
+        $ac = $c->getArbreTablesColonnes();
+        
+        LIB_Util::printR($ac);
+        
+        $s = $ac->getRequetePourFiltre();
+        LIB_Util::log($s);
 
         return;
     }

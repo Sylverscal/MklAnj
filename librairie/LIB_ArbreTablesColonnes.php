@@ -189,7 +189,7 @@ class LIB_ArbreTablesColonnes {
      * 
      * @global LIB_DistributeurObjetTable $DOT
      */
-    public function getRequetePourFiltre($donnees) {
+    public function getRequetePourFiltre($donnees=[]) {
         global $DOT;
         
         $requete = sprintf("%s where (1=1) ",$this->getRequetePartieSelect());

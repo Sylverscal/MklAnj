@@ -220,7 +220,7 @@ class TBL_Course_s extends LIB_Table_s{
         join Marque on Marque.id = Course.id_Marque
         join Commerce on Commerce.id = Course.id_Commerce
         join Ville on Ville.id = Course.id_Ville
-        join Zone on Zode.id = Course.id_Zone
+        join Zone on Zone.id = Course.id_Zone
         where 
         1 = 1
         $filtre 

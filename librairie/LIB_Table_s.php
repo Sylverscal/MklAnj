@@ -373,16 +373,27 @@ class LIB_Table_s extends LIB_Liste {
     }
 
     /**
-     * Renvoie la section des noms de colonnes pour une requête select
+     * Renvoie la section des noms de colonnes de la table pour une requête select
      * @return string
+     * Exemple :
+     * Course.id as Course_id,Course.id_Article as Course_id_Article,
+     * Course.id_Marque as Course_id_Marque,Course.id_Commerce as Course_id_Commerce,
+     * Course.id_Ville as Course_id_Ville,Course.id_Zone as Course_id_Zone,
+     * Course.datation as Course_datation,Course.nombre as Course_nombre,
+     * Course.capacite as Course_capacite,Course.commentaire as Course_commentaire,Course.faite as Course_faite     
      */
-    protected function getSqlSelectColonnes() {
-        $nt = $this->getNomTable();
+    public function getSqlSelectColonnes() {
+        $nomTable = $this->getNomTable();
         $liste = $this->getListeNomsColonnes();
         $tab = [];
 
         foreach (array_keys($liste) as $nomColonne) {
-            $tab[] = "`$nt`.`$nomColonne`";
+            $tab_valeurs = 
+                [
+                '{nom_table}' => $nomTable ,
+                '{nom_colonne}' => $nomColonne
+                ];
+            $tab[] = strtr("{nom_table}.{nom_colonne} as {nom_table}_{nom_colonne}",$tab_valeurs);
         }
 
         $s = implode(',', $tab);
@@ -394,7 +405,22 @@ class LIB_Table_s extends LIB_Liste {
      * Renvoie la liste des lignes de la table sous forme d'un tableau
      * compatible avec l'input Select
      * Le libellé c'est le condensé de toutes les valeurs an aval d'une colonne.
-     * @return array items à afficher dans le menu
+     * Exemple:
+Array
+(
+    [0] => Array
+        (
+            [valeur] => 1
+            [libelle] =>  Cacao Poudre cacaotée bio - Intermarché Jouars Pontchartrain - 2026-04-08 22:26:59 1 0  0
+        )
+
+    [1] => Array
+        (
+            [valeur] => 2
+            [libelle] =>  Echalion Echalion - - - - 2026-04-11 13:19:07 0 5  0
+        )
+
+)     * @return array items à afficher dans le menu
      */
     public function getItemsPourInputSelect() {
         $this->charge();
@@ -427,9 +453,20 @@ class LIB_Table_s extends LIB_Liste {
     
     /**
      * Renvoie la liste des lignes de la table sous forme d'un tableau
-     * compatible avec l'input Select
-     * Le libellé c'est le condensé de toutes les valeurs an aval d'une colonne.
      * @return array items à afficher dans le menu
+     * Exemple :
+    Array
+    (
+        [0] => -
+        [1] => Abricot Abricot
+        [2] => Agneau Côte filet
+        [3] => Ail Ail blanc
+        [4] => Ananas Ananas en morceaux bio
+        [5] => Apéritif Martini Rosso 14,4°
+        [6] => Artichaut Artichaut
+        [7] => Aubergine Aubergine     
+    } 
+     *      
      */
     public function getItemsPourMenuFiltre() {
         $this->charge();
@@ -437,7 +474,14 @@ class LIB_Table_s extends LIB_Liste {
         $items = [];
         
         foreach ($this as $ligne) {
-            $nom = $ligne->getNom();
+            LIB_Util::logPrintR($ligne);
+            try {
+                $nom = $ligne->getNom();
+                
+            } catch (Exception $ex) {
+                $nom = $ligne->getLibelle();
+
+            }
             
             $items[] = $nom;
         }

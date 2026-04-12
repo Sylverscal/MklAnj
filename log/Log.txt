@@ -1,9 +1,18 @@
-09-04-2026 17:18:21 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-09-04-2026 17:18:21 : ? -> ? -> ? -> 0 : POST
-09-04-2026 17:18:21 : ? -> ? -> ? -> 0 : Array
+12-04-2026 09:07:14 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+12-04-2026 09:07:14 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+12-04-2026 09:07:14 : ? -> ? -> ? -> 0 : POST
+12-04-2026 09:07:14 : ? -> ? -> ? -> 0 : POST
+12-04-2026 09:07:14 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
+    [domaine] => onglet
+    [action] => essais
 )
 
-09-04-2026 17:18:21 : LIB_BDD_Structure -> LIB_BDD_Structure -> getListeNomTables -> 29 : select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = 'MklAnj'
+12-04-2026 09:07:14 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+12-04-2026 09:07:14 : CLA_onglet_essais -> CLA_onglet_essais -> affiche -> 13 : select  Course.id as id , Article.nom as Article_nom , Marque.nom as Marque_nom , Commerce.nom as Commerce_nom , Ville.nom as Ville_nom , Zone.nom as Zone_nom , Course.datation as Course_datation , Course.nombre as Course_nombre , Course.capacite as Course_capacite , Course.commentaire as Course_commentaire , Course.faite as Course_faite from Course join Article on Article.id = Course.id_Article join Marque on Marque.id = Course.id_Marque join Commerce on Commerce.id = Course.id_Commerce join Ville on Ville.id = Course.id_Ville join Zone on Zone.id = Course.id_Zone where (1=1) 
