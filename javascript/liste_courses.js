@@ -7,6 +7,7 @@ var g_liste_courses;
 
 class C_ListeCourses {
     constructor() {
+        this.gestion_liste = new C_GestionListe();
     }
     
     affiche() {
@@ -35,10 +36,13 @@ class C_ListeCourses {
     
     affiche_Retour(html) {
         $("#DIV_FONCTION_LISTE_COURSES").html(html);
-        g_liste_courses.affiche_liste_courses();
+        g_liste_courses.gestion_liste.affiche();
     }
 
-    affiche_liste_courses() {
+}
+    
+class C_GestionListe {
+    affiche() {
         var json = {
             domaine: 'liste_courses',
             action: 'affiche_liste_courses'
@@ -51,23 +55,25 @@ class C_ListeCourses {
                     dataType: 'html',
                     async: 'false',
                     success: function (html) {
-                        g_liste_courses.affiche_liste_courses_Retour(html);
+                        g_liste_courses.gestion_liste.affiche_Retour(html);
                     }
                 }
         );
     }
     
-    affiche_liste_courses_Retour(html) {
+    affiche_Retour(html) {
         $("#DIV_LISTE_COURSES").html(html);
-        g_liste_courses.ecouteEvenements_listeCourses();
+        g_liste_courses.gestion_liste.ecouteEvenements();
     }
 
-    ecouteEvenements_listeCourses() {
-        // Ecoute le choix dans le menu Domaine
-//        $('#SEL_ACH_DOMAINE').change(function () {
-//            var id = $(this).val();
-//            g_achats.enregistreDomaineChoisi(id);
-//        });
+    ecouteEvenements() {
+        // Ecoute le état case à cocher "course faite"
+        $('.CBX_COURSE_FAITE').change(function () {
+            var id = $(this).attr('id');
+            var etat = ($(this).is(':checked')) ? 1 : 0;
+            
+            console.log(id+' '+etat);
+        });
         // Ecoute d'un clic sur le bouton de raz du filtre
 //        $('#BTN_ACH_FILTRE_RAZ').click(function(e) {
 //            e.preventDefault();
@@ -76,9 +82,28 @@ class C_ListeCourses {
 //            g_achats.affiche();
 //        });
     }
-}
+
+    changeEtatFaite(id,etat) {
+        var json = {
+            domaine: 'gestion_liste_courses',
+            action: 'change_etat_faite',
+            id: id,
+            etat: etat
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'json',
+                    async: 'false',
+                    success: function (data) {
+                    }
+                }
+        );
+    }
     
-        
+}  
         
     
     

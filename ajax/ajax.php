@@ -330,3 +330,9 @@ class CLA_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         $lc->afficheListeCourses();
     }
 }
+
+class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
+    protected function change_etat_faite($post) {
+        
+    }
+}
