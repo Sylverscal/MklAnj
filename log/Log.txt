@@ -1,9 +1,8 @@
-12-04-2026 09:26:34 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-04-2026 09:26:34 : ? -> ? -> ? -> 0 : POST
-12-04-2026 09:26:34 : ? -> ? -> ? -> 0 : Array
+13-04-2026 07:02:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-04-2026 07:02:50 : ? -> ? -> ? -> 0 : POST
+13-04-2026 07:02:50 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => onglet
-    [action] => essais
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses
 )
 
-12-04-2026 09:26:35 : CLA_onglet_essais -> CLA_onglet_essais -> affiche -> 13 : select  Course.id as id , Article.nom as Article_nom , Course.id_Article as Course_id_Article , Marque.nom as Marque_nom , Course.id_Marque as Course_id_Marque , Commerce.nom as Commerce_nom , Course.id_Commerce as Course_id_Commerce , Ville.nom as Ville_nom , Course.id_Ville as Course_id_Ville , Zone.nom as Zone_nom , Course.id_Zone as Course_id_Zone , Course.datation as Course_datation , Course.nombre as Course_nombre , Course.capacite as Course_capacite , Course.commentaire as Course_commentaire , Course.faite as Course_faite from Course join Article on Article.id = Course.id_Article join Marque on Marque.id = Course.id_Marque join Commerce on Commerce.id = Course.id_Commerce join Ville on Ville.id = Course.id_Ville join Zone on Zone.id = Course.id_Zone where (1=1) 

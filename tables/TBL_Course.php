@@ -19,5 +19,26 @@ class TBL_Course extends LIB_Table{
 //        $this->calculeRequeteSelectLibelle();
         
     }
+    
+    public function affiche() {
+        $id = $this->getId();
+        $libelle = $this->getLibelle();
+        ?>
+            <tr id="<?php echo $id; ?>">
+                <td>
+                    <input class="w3-check" type="checkbox">
+                </td>
+                <td>
+                    <?php echo $libelle; ?>
+                </td>
+                <td>
+                    <button class="w3-button"><i class="fa fa-work"></i></button>
+                </td>
+            <?php
+
+            ?>
+            </tr>
+        <?php
+    }
         
 }

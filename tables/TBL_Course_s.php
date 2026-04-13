@@ -16,6 +16,19 @@ class TBL_Course_s extends LIB_Table_s{
         parent::__construct();
     }
     
+    public function afficheListe() {
+        $this->charge();
+        
+        ?>
+            <table class="w3-table">
+            <?php
+                foreach ($this as $course) {
+                    $course->affiche();
+                }
+            ?>
+            </table>
+        <?php
+    }
     /**
      * Charge la liste des fonctions de la table
      * @global LIB_BDD $CXO
@@ -86,7 +99,7 @@ class TBL_Course_s extends LIB_Table_s{
      * @param string $domaine
      * @return string
      */
-    private function getRequete($domaine) {
+    private function getRequete() {
         $where_de_filtre = $this->getPartieWhereDeFiltre();
         $requete = "select
 	Achat.id as id, Achat.id_Article, Achat.id_Commerce,
@@ -165,38 +178,6 @@ class TBL_Course_s extends LIB_Table_s{
         return $items;
     }
     
-    public function getArticleDeAchat($id_achat) {
-        global $CXO;
-        global $DOT;
-        
-        $index = "Article_id";
-        $index_avec_point = LIB_Util::convertiTablonneEnSelect($index);
-        
-        $select = sprintf("%s as %s",$index_avec_point,$index);
-        
-        $filtre = "and Achat.id = '$id_achat'";
-        
-        $order = "order by Article.id ";
-        
-        $requete = $this->getRequeteParametrable($select, $filtre, $order);
-        
-        $id_produit = 0;
-        
-        $r = $CXO->executeRequete($requete);
-        if ($r->isOk()) {
-            foreach ($r->getResultat() as $index => $ligne) {
-                $id_produit = $ligne[$index];
-            }
-        } else {
-            $r->affiche();
-        }
-
-        $produit = $DOT->getObjet("Article");
-        $produit->setId($id_produit);
-        $produit->charge();
-        return $produit;
-    }
-    
     /**
      * Constitution de la requête
      * Recherche fonction de constitution de la requête paramétrable
@@ -237,5 +218,7 @@ class TBL_Course_s extends LIB_Table_s{
         
         return $select;
     }
+    
+    
     
 }

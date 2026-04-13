@@ -31,14 +31,13 @@ class CLA_onglet_essais extends CLA_onglet_principal {
         global $CXO_ST;
         global $DOT;
         
-        $c = $DOT->getObjet("Course");
+        $c = $DOT->getObjet_s("Course");
         
-        $ac = $c->getArbreTablesColonnes();
         
-        LIB_Util::printR($ac);
+        LIB_Util::printR($c);
         
-        $s = $ac->getRequetePourFiltre();
-        LIB_Util::log($s);
+        $c->afficheListe();
+        
 
         return;
     }

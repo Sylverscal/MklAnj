@@ -324,4 +324,9 @@ class CLA_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         $a = new CLA_ListeCourses();
         $a->afficheVuePrincipale();
     }
+    
+    protected function affiche_liste_courses($post) {
+        $lc = new CLA_ListeCourses();
+        $lc->afficheListeCourses();
+    }
 }

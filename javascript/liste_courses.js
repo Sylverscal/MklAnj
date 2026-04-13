@@ -35,10 +35,34 @@ class C_ListeCourses {
     
     affiche_Retour(html) {
         $("#DIV_FONCTION_LISTE_COURSES").html(html);
-        g_liste_courses.ecouteEvenements();
+        g_liste_courses.affiche_liste_courses();
     }
 
-    ecouteEvenements() {
+    affiche_liste_courses() {
+        var json = {
+            domaine: 'liste_courses',
+            action: 'affiche_liste_courses'
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'html',
+                    async: 'false',
+                    success: function (html) {
+                        g_liste_courses.affiche_liste_courses_Retour(html);
+                    }
+                }
+        );
+    }
+    
+    affiche_liste_courses_Retour(html) {
+        $("#DIV_LISTE_COURSES").html(html);
+        g_liste_courses.ecouteEvenements_listeCourses();
+    }
+
+    ecouteEvenements_listeCourses() {
         // Ecoute le choix dans le menu Domaine
 //        $('#SEL_ACH_DOMAINE').change(function () {
 //            var id = $(this).val();

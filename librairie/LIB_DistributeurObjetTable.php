@@ -39,9 +39,12 @@ class LIB_DistributeurObjetTable {
             }
             
             $nom_classe_table_s = sprintf("%s_s", $nom_classe_table);
-                        
-            $this->liste_tables[$nom_classe_table_s] = new LIB_Table_s($nom_table);
-            
+                                    
+            if (LIB_Util::isExisteFichierClasseTable($nom_table."_s")) {
+                $this->liste_tables[$nom_classe_table_s] = new $nom_classe_table_s();
+            } else {
+                $this->liste_tables[$nom_classe_table_s] = new LIB_Table_s($nom_table);
+            }
         }
                 
     }
