@@ -1,9 +1,10 @@
-14-04-2026 10:15:36 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-14-04-2026 10:15:36 : ? -> ? -> ? -> 0 : POST
-14-04-2026 10:15:36 : ? -> ? -> ? -> 0 : Array
+14-04-2026 10:25:04 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+14-04-2026 10:25:04 : ? -> ? -> ? -> 0 : POST
+14-04-2026 10:25:04 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => gestion_table
-    [action] => afficheTable
-    [nom_table] => Course
+    [domaine] => gestion_liste_courses
+    [action] => change_etat_faite
+    [id] => 5
+    [etat] => 1
 )
 

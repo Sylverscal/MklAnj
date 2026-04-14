@@ -365,7 +365,7 @@ order by nom";
                 "01-01-2000",
                 "1","0","-",
                 "-",
-                "0"
+                "1"
                 );
         $crdu = $this->affiche_crdu_ajout($c) ;
         
@@ -379,7 +379,7 @@ order by nom";
                 "01-01-2000",
                 "1","0","-",
                 "-",
-                "0"
+                "1"
                 );
         $crdu = $this->affiche_crdu_ajout($c) ;
         
@@ -393,7 +393,7 @@ order by nom";
                 "01-01-2000",
                 "1","0","-",
                 "-",
-                "0"
+                "1"
                 );
         $crdu = $this->affiche_crdu_ajout($c) ;
         
@@ -407,7 +407,7 @@ order by nom";
                 "01-01-2000",
                 "4","0","-",
                 "-",
-                "0"
+                "1"
                 );
         $crdu = $this->affiche_crdu_ajout($c) ;
         
@@ -421,7 +421,7 @@ order by nom";
                 "01-01-2000",
                 "1","0","-",
                 "-",
-                "0"
+                "1"
                 );
         $crdu = $this->affiche_crdu_ajout($c) ;
         
@@ -435,7 +435,7 @@ order by nom";
                 "01-01-2000",
                 "1","0","-",
                 "-",
-                "0"
+                "1"
                 );
         $crdu = $this->affiche_crdu_ajout($c) ;
         
@@ -449,7 +449,7 @@ order by nom";
                 "01-01-2000",
                 "1","0","-",
                 "-",
-                "0"
+                "1"
                 );
         $crdu = $this->affiche_crdu_ajout($c) ;
         
@@ -463,7 +463,7 @@ order by nom";
                 "01-01-2000",
                 "1","0","-",
                 "-",
-                "0"
+                "1"
                 );
         $crdu = $this->affiche_crdu_ajout($c) ;
         
@@ -477,7 +477,7 @@ order by nom";
                 "01-01-2000",
                 "1","0","-",
                 "-",
-                "0"
+                "1"
                 );
         $crdu = $this->affiche_crdu_ajout($c) ;
         
@@ -491,7 +491,7 @@ order by nom";
                 "01-01-2000",
                 "1","0","-",
                 "-",
-                "0"
+                "1"
                 );
         $crdu = $this->affiche_crdu_ajout($c) ;
         
@@ -505,7 +505,7 @@ order by nom";
                 "01-01-2000",
                 "1","0","-",
                 "-",
-                "0"
+                "1"
                 );
         $crdu = $this->affiche_crdu_ajout($c) ;
         
