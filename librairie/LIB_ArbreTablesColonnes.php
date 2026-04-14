@@ -99,10 +99,9 @@ class LIB_ArbreTablesColonnes {
             }
         }
         
-        // Autrisation de mettre la lecture des id dans les parties de from
-//        if (preg_match("/^id_(.*)/", $nom_colonne, $tab) == 0) {
+        if (preg_match("/^id_(.*)/", $nom_colonne, $tab) == 0) {
             $this->parties_de_from->ajoute($nom_table, $nom_colonne);
-//        }
+        }
         
         
     }
