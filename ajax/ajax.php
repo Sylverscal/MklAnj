@@ -333,6 +333,13 @@ class CLA_liste_courses_Ajax extends AJX_MklAnj_Ajax {
 
 class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
     protected function change_etat_faite($post) {
+        global $DOT;
         
+        $id = $post['id'];
+        $etat =$post['etat'];
+        
+        $c = $DOT->getObjet("Course");
+        $c->setId($id);
+        $c->majEtatCourseFaite($etat);
     }
 }

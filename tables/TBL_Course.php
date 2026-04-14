@@ -117,6 +117,12 @@ class TBL_Course extends LIB_Table{
     public function majEtatCourseFaite($etat) {
         global $CXO;
         
+        $requete = sprintf("update Course set faite = '%s' where id = '%d'",$etat,$this->getId());
+        
+        $rlt = $CXO->executeRequete($requete);
+        
+        $rlt->afficheSiKo();
+        
     }
         
 }

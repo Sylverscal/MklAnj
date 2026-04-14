@@ -72,7 +72,7 @@ class C_GestionListe {
             var id = $(this).attr('id');
             var etat = ($(this).is(':checked')) ? 1 : 0;
             
-            console.log(id+' '+etat);
+            g_liste_courses.gestion_liste.changeEtatFaite(id,etat);
         });
         // Ecoute d'un clic sur le bouton de raz du filtre
 //        $('#BTN_ACH_FILTRE_RAZ').click(function(e) {
