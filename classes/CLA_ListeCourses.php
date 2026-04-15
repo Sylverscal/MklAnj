@@ -32,7 +32,7 @@ class CLA_ListeCourses {
     
     public function afficheVuePrincipale() {
         ?>
-        <div id="DIV_VUE_PRINCIPALE" class="w3-container w3-sand" style="overflow-y: scroll; height:1200px">
+        <div id="DIV_VUE_PRINCIPALE" class="w3-container w3-sand">
             <div id="DIV_RECHERCHE" class="w3-container w3-yellow">
                 <h2>Recherche</h2>
             </div>

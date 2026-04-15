@@ -20,13 +20,16 @@ class TBL_Course_s extends LIB_Table_s{
         $this->charge();
         
         ?>
-            <table class="w3-table">
+        <div class="w3-container" style="overflow-y: scroll; height:600px">
+    
+            <table id="TBL_LISTE_COURSES" class="w3-table-all w3-hoverable">
             <?php
                 foreach ($this as $course) {
                     $course->affiche();
                 }
             ?>
             </table>
+        </div>
         <?php
     }
     /**

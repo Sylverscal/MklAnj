@@ -14,9 +14,9 @@ global $CXO_ST; // Pour accéder à la base "structure"
 global $CXO_C; // Pour accéder à la base "Courses"
 global $DOT;
 
-LIB_Util::log("Entrée dans AJAX", $_POST['action']=='affichePosteDeCommande' ? FALSE : TRUE);
+//LIB_Util::log("Entrée dans AJAX", $_POST['action']=='affichePosteDeCommande' ? FALSE : TRUE);
 //LIB_Util::log("Entrée dans AJAX",true);
-//LIB_Util::log("Entrée dans AJAX");
+LIB_Util::log("Entrée dans AJAX");
 
 LIB_Util::logPrintR($_POST,'POST');
 
@@ -341,5 +341,29 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         $c = $DOT->getObjet("Course");
         $c->setId($id);
         $c->majEtatCourseFaite($etat);
+    }
+    
+    protected function affiche_formulaire($post) {
+        global $DOT;
+        
+        $id = $post['id'];
+        
+        $c = $DOT->getObjet("Course");
+        $c->setId($id);
+        $c->afficheFormulaire();
+    }
+    
+    protected function valide_formulaire($post) {
+        global $DOT;
+        
+        $donnees = $post['donnees'];
+        LIB_Util::logPrintR($donnees);
+        $id = $donnees[0]['value'];
+        
+        $c = $DOT->getObjet("Course");
+        $c->setId($id);
+        $crdu = $c->valideFormulaire($donnees);
+        
+        $crdu->emissionJson();
     }
 }

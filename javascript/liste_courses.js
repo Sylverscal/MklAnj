@@ -69,18 +69,22 @@ class C_GestionListe {
     ecouteEvenements() {
         // Ecoute le état case à cocher "course faite"
         $('.CBX_COURSE_FAITE').change(function () {
-            var id = $(this).attr('id');
+            var th = $(this).closest("tr");
+            var id = $(th).attr(('id'));
             var etat = ($(this).is(':checked')) ? 1 : 0;
             
             g_liste_courses.gestion_liste.changeEtatFaite(id,etat);
         });
         // Ecoute d'un clic sur le bouton de raz du filtre
-//        $('#BTN_ACH_FILTRE_RAZ').click(function(e) {
-//            e.preventDefault();
-//            g_achats.filtres = new C_Filtres();
-//            g_achats.filtres.affiche();
-//            g_achats.affiche();
-//        });
+        $('.BTN_ACTION').click(function() {
+            var th = $(this).closest("tr");
+            var id = $(th).attr('id');
+        });
+        $('.TD_COURSE').dblclick(function() {
+            var th = $(this).closest("tr");
+            var id = $(th).attr('id');
+            g_liste_courses.gestion_liste.affiche_formulaire(id);
+        });
     }
 
     changeEtatFaite(id,etat) {
@@ -103,11 +107,64 @@ class C_GestionListe {
         );
     }
     
+    affiche_formulaire(id) {
+        var json = {
+            domaine: 'gestion_liste_courses',
+            action: 'affiche_formulaire',
+            id: id
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'html',
+                    async: 'false',
+                    success: function (html) {
+                        g_liste_courses.gestion_liste.affiche_formulaire_retour(html);
+                    }
+                }
+        );
+    }
+    
+    affiche_formulaire_retour(html) {
+        $("#DIV_FONCTION_LISTE_COURSES").html(html);
+        g_liste_courses.gestion_liste.ecouteEvenementsFormulaire(html);
+    }
+    
+    ecouteEvenementsFormulaire() {
+        $('#BTN_FRM_VALIDER').on( "click", function( e ){
+            e.preventDefault();
+            var donnees = $('#FRM_COURSE').serializeArray();
+            g_liste_courses.gestion_liste.valideFormulaire(donnees);
+        });
+        $('#BTN_FRM_ANNULER').on( "click", function( e ){
+            e.preventDefault();
+            g_liste_courses.affiche();
+        });
+    }
+
+    valideFormulaire(donnees) {
+        var json = {
+            domaine: 'gestion_liste_courses',
+            action: 'valide_formulaire',
+            donnees: donnees
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'json',
+                    success: function (crdu) {
+                        if (crdu.erreur === "non") {
+                            g_liste_courses.affiche();
+                        } else {
+                            afficheModalCompteRendu(crdu);
+                        }
+                    }
+                }
+        );
+    }
+    
 }  
-        
-    
-    
-    
-    
-    
-    
