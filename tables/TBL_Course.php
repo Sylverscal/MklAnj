@@ -267,7 +267,7 @@ class TBL_Course extends LIB_Table{
         
         $d_ref = new LIB_Datation("01-01-2000");
         
-        if ($datation->isInferieureOuEgaleA($d_ref)) {
+        if ($datation->isEgaleA($d_ref)) {
             ?>
             <p>-</p>
             <?php

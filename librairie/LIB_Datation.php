@@ -390,7 +390,7 @@ class LIB_Datation {
         if ($d == NULL) {
             return TRUE;
         }
-        if ($this->getDate() == $d->getDate()) {
+        if ($this->getDate_DD_MM_AAAA() == $d->getDate_DD_MM_AAAA()) {
             return TRUE;
         }
         return FALSE;
