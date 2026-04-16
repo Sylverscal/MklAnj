@@ -96,7 +96,8 @@ class TBL_Course extends LIB_Table{
                     </p>
                     <p>
                         <label>Course faite</label>
-                        <input class="w3-check" type="checkbox" name="Course_faite" <?php echo $checked; ?>>
+                        <input type="hidden" name="Course_faite" value='0'>
+                        <input class="w3-check" type="checkbox" name="Course_faite" <?php echo $checked; ?> value='1'>
                     </p>
                 </div>
                 <div class="w3-container w3-pale-blue">

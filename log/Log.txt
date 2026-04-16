@@ -1,324 +1,6 @@
-15-04-2026 21:09:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:42 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:42 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-15-04-2026 21:09:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:44 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:44 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-15-04-2026 21:09:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:44 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:44 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-15-04-2026 21:09:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:46 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:46 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-15-04-2026 21:09:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:46 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:46 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-15-04-2026 21:09:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:46 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:46 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-15-04-2026 21:09:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:48 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:48 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-15-04-2026 21:09:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:48 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:48 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-15-04-2026 21:09:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:48 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:48 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-15-04-2026 21:09:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:48 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:48 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-15-04-2026 21:09:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:49 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:49 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => gestion_liste_courses
-    [action] => affiche_formulaire
-    [id] => 3
-)
-
-15-04-2026 21:09:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:50 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:50 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-15-04-2026 21:09:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:50 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:50 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-15-04-2026 21:09:51 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:51 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:51 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => gestion_liste_courses
-    [action] => affiche_formulaire
-    [id] => 2
-)
-
-15-04-2026 21:09:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:53 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:53 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => gestion_liste_courses
-    [action] => valide_formulaire
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => id
-                    [value] => 2
-                )
-
-            [1] => Array
-                (
-                    [name] => Article_nom
-                    [value] => Croûtons Nature
-                )
-
-            [2] => Array
-                (
-                    [name] => Marque_nom
-                    [value] => -
-                )
-
-            [3] => Array
-                (
-                    [name] => Commerce_nom
-                    [value] => G20
-                )
-
-            [4] => Array
-                (
-                    [name] => Ville_nom
-                    [value] => -
-                )
-
-            [5] => Array
-                (
-                    [name] => Zone_nom
-                    [value] => -
-                )
-
-            [6] => Array
-                (
-                    [name] => Course_datation
-                    [value] => G20
-                )
-
-            [7] => Array
-                (
-                    [name] => Course_nombre
-                    [value] => 1
-                )
-
-            [8] => Array
-                (
-                    [name] => Course_capacite
-                    [value] => 0
-                )
-
-            [9] => Array
-                (
-                    [name] => Unite_nom
-                    [value] => -
-                )
-
-            [10] => Array
-                (
-                    [name] => Course_commentaire
-                    [value] => -
-                )
-
-            [11] => Array
-                (
-                    [name] => Course_faite
-                    [value] => on
-                )
-
-        )
-
-)
-
-15-04-2026 21:09:53 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 45 : 
-15-04-2026 21:09:53 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 45 : Array
-(
-    [0] => Array
-        (
-            [name] => id
-            [value] => 2
-        )
-
-    [1] => Array
-        (
-            [name] => Article_nom
-            [value] => Croûtons Nature
-        )
-
-    [2] => Array
-        (
-            [name] => Marque_nom
-            [value] => -
-        )
-
-    [3] => Array
-        (
-            [name] => Commerce_nom
-            [value] => G20
-        )
-
-    [4] => Array
-        (
-            [name] => Ville_nom
-            [value] => -
-        )
-
-    [5] => Array
-        (
-            [name] => Zone_nom
-            [value] => -
-        )
-
-    [6] => Array
-        (
-            [name] => Course_datation
-            [value] => G20
-        )
-
-    [7] => Array
-        (
-            [name] => Course_nombre
-            [value] => 1
-        )
-
-    [8] => Array
-        (
-            [name] => Course_capacite
-            [value] => 0
-        )
-
-    [9] => Array
-        (
-            [name] => Unite_nom
-            [value] => -
-        )
-
-    [10] => Array
-        (
-            [name] => Course_commentaire
-            [value] => -
-        )
-
-    [11] => Array
-        (
-            [name] => Course_faite
-            [value] => on
-        )
-
-)
-
-15-04-2026 21:09:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:53 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:53 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-15-04-2026 21:09:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:09:53 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:09:53 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-15-04-2026 21:10:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:10:50 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:10:50 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => gestion_liste_courses
-    [action] => affiche_formulaire
-    [id] => 4
-)
-
-15-04-2026 21:10:52 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:10:52 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:10:52 : ? -> ? -> ? -> 0 : Array
+16-04-2026 06:54:11 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-04-2026 06:54:11 : ? -> ? -> ? -> 0 : POST
+16-04-2026 06:54:11 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => valide_formulaire
@@ -390,12 +72,18 @@
                     [value] => -
                 )
 
+            [11] => Array
+                (
+                    [name] => Course_faite
+                    [value] => 0
+                )
+
         )
 
 )
 
-15-04-2026 21:10:52 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 45 : 
-15-04-2026 21:10:52 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 45 : Array
+16-04-2026 06:54:11 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
+16-04-2026 06:54:11 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
 (
     [0] => Array
         (
@@ -463,19 +151,42 @@
             [value] => -
         )
 
+    [11] => Array
+        (
+            [name] => Course_faite
+            [value] => 0
+        )
+
 )
 
-15-04-2026 21:10:58 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:10:58 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:10:58 : ? -> ? -> ? -> 0 : Array
+16-04-2026 06:54:11 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
+16-04-2026 06:54:11 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
+(
+    [id] => 4
+    [Article_nom] => Jambon Blanc
+    [Marque_nom] => -
+    [Commerce_nom] => -
+    [Ville_nom] => -
+    [Zone_nom] => -
+    [Course_datation] => -
+    [Course_nombre] => 4
+    [Course_capacite] => 0
+    [Unite_nom] => -
+    [Course_commentaire] => -
+    [Course_faite] => 0
+)
+
+16-04-2026 06:54:11 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-04-2026 06:54:11 : ? -> ? -> ? -> 0 : POST
+16-04-2026 06:54:11 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-15-04-2026 21:10:58 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-15-04-2026 21:10:58 : ? -> ? -> ? -> 0 : POST
-15-04-2026 21:10:58 : ? -> ? -> ? -> 0 : Array
+16-04-2026 06:54:11 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-04-2026 06:54:11 : ? -> ? -> ? -> 0 : POST
+16-04-2026 06:54:11 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses

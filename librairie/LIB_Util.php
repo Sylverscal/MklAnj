@@ -153,16 +153,6 @@ class LIB_Util {
         LIB_Util::EOL();
     }
 
-    static function autoAppel() {
-        $page = $_SERVER['PHP_SELF'];
-        $adresseAppelante = $_SERVER['HTTP_REFERER'];
-        if (strstr($adresseAppelante, $page)) {
-            return TRUE;
-        } else {
-            return FALSE;
-        }
-    }
-
     static function formateChainePourSQL($chaine) {
         $s = str_replace("'", "''", $chaine);
         return $s;
@@ -170,13 +160,6 @@ class LIB_Util {
 
     static function formateChaineDeSQL($content) {
         return trim($content);
-    }
-
-    static function formateCommentaireGamme($commentaire) {
-        $s = LIB_Util::formateChaineDeSQL($commentaire);
-        $s = str_replace('_|_', '<BR>', $s);
-
-        return $s;
     }
 
     static function getHostPatron() {
@@ -527,5 +510,57 @@ class LIB_Util {
         }
         
         return $nom_colonne;
+    }
+    
+    /**
+     * Convertit le tableau reçu par POST au travers d'ajax 
+     * en un tableau plus facile à utiliser.
+     * Exemple données reçues :
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => id
+                    [value] => 2
+                )
+
+            [1] => Array
+                (
+                    [name] => Article_nom
+                    [value] => Croûtons Nature
+                )
+
+            [2] => Array
+                (
+                    [name] => Marque_nom
+                    [value] => -
+                )
+
+            [3] => Array
+                (
+                    [name] => Commerce_nom
+                    [value] => G20
+                )
+        )
+     * Tableau renvoyé :
+    Array
+        (
+            [id] => 2
+            [Article_nom] = Croûtons Nature
+            [Marque_nom] = -
+            [Commerce_nom] = G20
+        )
+
+     * @param array $donnees Données reçues du formulaire
+     * @return array Tableau converti
+     */
+    public static function getTableauDeDonneesFormulaire($donnees) {
+        $tab = [];
+        
+        foreach ($donnees as $value) {
+            $tab[$value['name']] = $value['value'];
+        }
+        
+        return $tab;
     }
 }

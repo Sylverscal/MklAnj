@@ -15,8 +15,9 @@ global $CXO_C; // Pour accéder à la base "Courses"
 global $DOT;
 
 //LIB_Util::log("Entrée dans AJAX", $_POST['action']=='affichePosteDeCommande' ? FALSE : TRUE);
+LIB_Util::log("Entrée dans AJAX", $_POST['domaine']=='gestion_liste_courses' ? TRUE : FALSE);
 //LIB_Util::log("Entrée dans AJAX",true);
-LIB_Util::log("Entrée dans AJAX");
+//LIB_Util::log("Entrée dans AJAX");
 
 LIB_Util::logPrintR($_POST,'POST');
 
@@ -358,6 +359,9 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         
         $donnees = $post['donnees'];
         LIB_Util::logPrintR($donnees);
+        $tab = LIB_Util::getTableauDeDonneesFormulaire($donnees);
+        LIB_Util::logPrintR($tab);
+        
         $id = $donnees[0]['value'];
         
         $c = $DOT->getObjet("Course");
