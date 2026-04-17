@@ -42,6 +42,9 @@ class C_ListeCourses {
 }
     
 class C_GestionListe {
+    constructor () {
+        this.id_selectionne = 0;
+    }
     affiche() {
         var json = {
             domaine: 'liste_courses',
@@ -76,14 +79,15 @@ class C_GestionListe {
             g_liste_courses.gestion_liste.changeEtatFaite(id,etat);
         });
         // Ecoute d'un clic sur le bouton de raz du filtre
-        $('.BTN_ACTION').click(function() {
-            var th = $(this).closest("tr");
-            var id = $(th).attr('id');
-        });
-        $('.TD_COURSE').dblclick(function() {
+        $('.BTN_FORMULAIRE').click(function() {
             var th = $(this).closest("tr");
             var id = $(th).attr('id');
             g_liste_courses.gestion_liste.affiche_formulaire(id);
+        });
+        $('.TD_COURSE').click(function() {
+            var th = $(this).closest("tr");
+            var id = $(th).attr('id');
+            g_liste_courses.gestion_liste.id_selectionne = id;
         });
     }
 

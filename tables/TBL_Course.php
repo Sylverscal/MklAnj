@@ -13,7 +13,12 @@
  * @author sylverscal
  */
 class TBL_Course extends LIB_Table{
-
+    /**
+     * Valeurs sous forme de tablonnes pour un accès plus simple aux valeurs des sous tables
+     * @var array
+     */
+    private $valeurs = null;
+    
     public function __construct() {
         parent::__construct();
 //        $this->calculeRequeteSelectLibelle();
@@ -21,24 +26,22 @@ class TBL_Course extends LIB_Table{
     }
     
     public function affiche() {
-        $id = $this->getId();
-        
-        $valeurs = $this->getValeurs();
+        $this->chargeValeurs();
         
         $checked = $this->isCourseFaite() ? "checked" : "";
         ?>
-            <tr id="<?php echo $id; ?>" class="w3-hover-pale-yellow">
+            <tr id="<?php echo $this->getId(); ?>" class="w3-hover-pale-yellow">
                 <td>
                     <input class="w3-check CBX_COURSE_FAITE" type="checkbox" name="is_course_faite" value="faite" <?php echo $checked; ?>>
                 </td>
                 <td class="TD_COURSE">
-                    <?php $this->afficheCourse($valeurs); ?>
+                    <?php $this->afficheCourse(); ?>
                 </td>
                 <td>
                     <?php $this->afficheDatation(); ?>
                 </td>
                 <td>
-                    <button class="w3-button BTN_ACTION"><i class="fa fa-edit"></i></button>
+                    <button class="w3-button BTN_FORMULAIRE"><i class="fa fa-edit"></i></button>
                 </td>
             <?php
 
@@ -48,51 +51,51 @@ class TBL_Course extends LIB_Table{
     }
     
     public function afficheFormulaire() {
-        $valeurs = $this->getValeurs();
-        $checked = $valeurs["Course_faite"] == 1 ? "checked" : "";
+        $this->chargeValeurs();
+        $checked = $this->valeurs["Course_faite"] == 1 ? "checked" : "";
         ?>
             <form id="FRM_COURSE" class="w3-container w3-pale-red">
                 <input type="hidden" id="id" name="id" value="<?php echo $this->getId(); ?>">
                 <div class="w3-container w3-pale-green" style="overflow-y: scroll; height:600px">
                     <p>
                         <label>Article</label>
-                        <input class="w3-input" type="text" name="Article_nom" value="<?php echo $valeurs['Article_nom']; ?>">
+                        <input class="w3-input" type="text" name="Article_nom" value="<?php echo $this->valeurs['Article_nom']; ?>">
                     </p>
                     <p>
                         <label>Marque</label>
-                        <input class="w3-input" type="text" name="Marque_nom" value="<?php echo $valeurs['Marque_nom']; ?>">
+                        <input class="w3-input" type="text" name="Marque_nom" value="<?php echo $this->valeurs['Marque_nom']; ?>">
                     </p>
                     <p>
                         <label>Commerce</label>
-                        <input class="w3-input" type="text" name="Commerce_nom" value="<?php echo $valeurs['Commerce_nom']; ?>">
+                        <input class="w3-input" type="text" name="Commerce_nom" value="<?php echo $this->valeurs['Commerce_nom']; ?>">
                     </p>
                     <p>
                         <label>Ville</label>
-                        <input class="w3-input" type="text" name="Ville_nom" value="<?php echo $valeurs['Ville_nom']; ?>">
+                        <input class="w3-input" type="text" name="Ville_nom" value="<?php echo $this->valeurs['Ville_nom']; ?>">
                     </p>
                     <p>
                         <label>Zone</label>
-                        <input class="w3-input" type="text" name="Zone_nom" value="<?php echo $valeurs['Zone_nom']; ?>">
+                        <input class="w3-input" type="text" name="Zone_nom" value="<?php echo $this->valeurs['Zone_nom']; ?>">
                     </p>
                     <p>
                         <label>Date</label>
-                        <input class="w3-input" type="text" name="Course_datation" value="<?php echo $valeurs['Commerce_nom']; ?>">
+                        <input class="w3-input" type="text" name="Course_datation" value="<?php echo $this->valeurs['Commerce_nom']; ?>">
                     </p>
                     <p>
                         <label>Nombre</label>
-                        <input class="w3-input" type="text" name="Course_nombre" value="<?php echo $valeurs['Course_nombre']; ?>">
+                        <input class="w3-input" type="text" name="Course_nombre" value="<?php echo $this->valeurs['Course_nombre']; ?>">
                     </p>
                     <p>
                         <label>Capacité</label>
-                        <input class="w3-input" type="text" name="Course_capacite" value="<?php echo $valeurs['Course_capacite']; ?>">
+                        <input class="w3-input" type="text" name="Course_capacite" value="<?php echo $this->valeurs['Course_capacite']; ?>">
                     </p>
                     <p>
                         <label>Unité</label>
-                        <input class="w3-input" type="text" name="Unite_nom" value="<?php echo $valeurs['Unite_nom']; ?>">
+                        <input class="w3-input" type="text" name="Unite_nom" value="<?php echo $this->valeurs['Unite_nom']; ?>">
                     </p>
                     <p>
                         <label>Commentaire</label>
-                        <input class="w3-input" type="text" name="Course_commentaire" value="<?php echo $valeurs['Course_commentaire']; ?>">
+                        <input class="w3-input" type="text" name="Course_commentaire" value="<?php echo $this->valeurs['Course_commentaire']; ?>">
                     </p>
                     <p>
                         <label>Course faite</label>
@@ -110,36 +113,35 @@ class TBL_Course extends LIB_Table{
     /**
      * Renvoie le libellé de la courses
      */
-    public function afficheCourse($valeurs) {
-        if ($valeurs == null) {
+    public function afficheCourse() {
+        if ($this->valeurs == null) {
             ?>
             <p class="w3-red">Les valeurs n'ont pas pu être lues</p>
             <?php
             return;
         }
         
-        $texte = $valeurs['Article_nom'];
+        $texte = $this->valeurs['Article_nom'];
 
-        if ($valeurs['Marque_nom'] != "-" ) {
-            $texte = $texte." ".$valeurs['Marque_nom'];
+        if ($this->valeurs['Marque_nom'] != "-" ) {
+            $texte = $texte." ".$this->valeurs['Marque_nom'];
         }
 
-        $nombre = $valeurs['Course_nombre'];
+        $nombre = $this->valeurs['Course_nombre'];
 
         if ($nombre > 1) {
             $texte = sprintf("%s x %d",$texte,$nombre);
         }
 
-        $capacite = $valeurs['Course_capacite'];
+        $capacite = $this->valeurs['Course_capacite'];
 
         if ($capacite > 0) {
-            $unite = $valeurs['Unite_nom'];
+            $unite = $this->valeurs['Unite_nom'];
             $texte = sprintf("%s %d%s",$texte,$capacite,$unite);
 
         }
         
-        $commentaire = $valeurs['Course_commentaire'];
-        
+        $commentaire = $this->valeurs['Course_commentaire'];
         
         ?>
         <p><?php echo $texte; ?></p>
@@ -151,10 +153,10 @@ class TBL_Course extends LIB_Table{
     }
     
     /**
-     * Renvoie les valeurs de la course
+     * Charge les valeurs de la course
      * @global LIB_BDD $CXO
      */
-    public function getValeurs() {
+    public function chargeValeurs() {
         global $CXO;
         
         $requete = $this->arbre_tables_colonnes->getRequetePourFiltre();
@@ -165,13 +167,13 @@ class TBL_Course extends LIB_Table{
         
         $rlt = $CXO->executeRequete($requete_complete);
         
+        $this->valeurs = null;
+        
         if ($rlt->isOk()) {
             foreach ($rlt->getResultat() as $valeurs) {
-                return $valeurs;
+                $this->valeurs = $valeurs;
             }
         }
-        
-        return null;
     }
     
     /**
@@ -180,25 +182,12 @@ class TBL_Course extends LIB_Table{
      * @return bool Vrai si la course a été faite
      */
     public function isCourseFaite() {
-        global $CXO;
-        
-        $requete = $this->arbre_tables_colonnes->getRequetePourFiltre();
-        
-        $where = sprintf(" and Course.id = '%s'",$this->getId());
-        
-        $requete_complete = sprintf("%s%s",$requete,$where);
-        
-        $rlt = $CXO->executeRequete($requete_complete);
-        
         $is_faite = false;
-        
-        if ($rlt->isOk()) {
-            foreach ($rlt->getResultat() as $key => $valeurs) {
-                $course_faite = $valeurs['Course_faite'];
-                
-                if ($course_faite == 1) {
-                    $is_faite = true;
-                }
+        if (isset($this->valeurs['Course_faite'])) {
+            $course_faite = $this->valeurs['Course_faite'];
+
+            if ($course_faite == 1) {
+                $is_faite = true;
             }
         }
         
@@ -228,26 +217,13 @@ class TBL_Course extends LIB_Table{
      * @return LIB_Datation Date
      */
     public function getDatation() {
-        global $CXO;
+        $datation = new LIB_Datation("01-01-1900");
         
-        $requete = $this->arbre_tables_colonnes->getRequetePourFiltre();
-        
-        $where = sprintf(" and Course.id = '%s'",$this->getId());
-        
-        $requete_complete = sprintf("%s%s",$requete,$where);
-        
-        $rlt = $CXO->executeRequete($requete_complete);
-        
-        $datation = null;
-        
-        if ($rlt->isOk()) {
-            foreach ($rlt->getResultat() as $key => $valeurs) {
-                $s_date = $valeurs['Course_datation'];
-
-                $datation = new LIB_Datation($s_date);
-            }
+        if (isset($this->valeurs['Course_datation'])) {
+            $datation = new LIB_Datation($this->valeurs['Course_datation']);
         }
         
+
         return $datation;
     }
     
