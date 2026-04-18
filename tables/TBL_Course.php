@@ -141,15 +141,40 @@ class TBL_Course extends LIB_Table{
 
         }
         
+        $localisation = $this->getLocalisation();
+        
         $commentaire = $this->valeurs['Course_commentaire'];
         
+        
         ?>
-        <p><?php echo $texte; ?></p>
+        <p>
+            <span><?php echo $texte; ?></span><span class='w3-text-blue w3-right w3-small'><?php echo $localisation; ?></span>
+        </p>
             <?php if ($commentaire != "" && $commentaire != "-") { ?>
-            <p class="w3-text-gray"><i><?php echo $commentaire; ?></i></p>
+            <p class="w3-text-gray w3-small"><i><?php echo $commentaire; ?></i></p>
                 
             <?php } ?>
         <?php
+    }
+    
+    private function getLocalisation() {
+        $commerce = $this->valeurs['Commerce_nom'];
+        $ville = $this->valeurs['Ville_nom'];
+        $zone = $this->valeurs['Zone_nom'];
+        
+        $localisation = "";
+        
+        if ($commerce != "" && $commerce != "-") {
+            $localisation = sprintf("%s%s",$localisation,$commerce);
+        }
+        if ($ville != "" && $ville != "-") {
+            $localisation = sprintf("%s%s%s",$localisation,$localisation == "" ? "" : "<br>",$ville);
+        }
+        if ($zone != "" && $zone != "-") {
+            $localisation = sprintf("%s%s%s",$localisation,$localisation == "" ? "" : "<br>",$zone);
+        }
+        
+        return $localisation;
     }
     
     /**
