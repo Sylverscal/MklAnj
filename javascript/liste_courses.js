@@ -70,6 +70,8 @@ class C_GestionListe {
     }
 
     ecouteEvenements() {
+            g_liste_courses.gestion_liste.majCouleurLignes();
+       
         // Ecoute le état case à cocher "course faite"
         $('.CBX_COURSE_FAITE').change(function () {
             var th = $(this).closest("tr");
@@ -88,6 +90,31 @@ class C_GestionListe {
             var th = $(this).closest("tr");
             var id = $(th).attr('id');
             g_liste_courses.gestion_liste.id_selectionne = id;
+            g_liste_courses.gestion_liste.majCouleurLignes();
+        });
+    }
+    
+    /**
+     * Met à jour la couleur des ligns en fonction de celle qui est sélectionnée 
+     * 
+     */
+    majCouleurLignes() {
+        $("#TBL_LISTE_COURSES tr").each(function(index){
+            var id = $(this).attr('id');
+            console.log(index + " : "+$(this).attr('id'));
+            
+            if (id === g_liste_courses.gestion_liste.id_selectionne) {
+                $(this).css('background-color','lightblue');
+            } else {
+                if (index % 2 === 0) {
+                    $(this).css('background-color','white');
+                } else {
+                    $(this).css('background-color','lightgrey');
+                    
+                }
+            }
+                
+                
         });
     }
 

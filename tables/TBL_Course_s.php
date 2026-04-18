@@ -32,28 +32,6 @@ class TBL_Course_s extends LIB_Table_s{
         </div>
         <?php
     }
-    /**
-     * Charge la liste des fonctions de la table
-     * @global LIB_BDD $CXO
-     * @global LIB_DistributeurObjetTable $DOT
-     */
-//    public function chargePourDomaine($domaine) {
-//        global $CXO;
-//        global $DOT;
-//        
-//        $r = $CXO->executeRequete($this->getRequete($domaine));
-//        if ($r->isOk()) {
-//            foreach ($r->getResultat() as $ligne) {
-//                $o = $DOT->getObjet("Achat");
-//                $o->setId($ligne['id']);
-//                $o->setDonneesPourAffichage($ligne);
-//                $this->ajoute($o);
-//            }
-//        } else {
-//            $r->affiche();
-//        }
-//        
-//    }
     
     /**
      * Constitue la partie de requête where à partie du tableau de filtres
