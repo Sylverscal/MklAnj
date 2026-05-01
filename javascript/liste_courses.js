@@ -173,6 +173,11 @@ class C_GestionListe {
             e.preventDefault();
             g_liste_courses.affiche();
         });
+        $('#FRM_COURSE select').change(function(){
+            const id = $(this).val();
+            const text = $(this).find("option:selected").text();
+            console.log(id+' '+text);
+        });
     }
 
     valideFormulaire(donnees) {

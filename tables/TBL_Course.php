@@ -61,10 +61,9 @@ class TBL_Course extends LIB_Table{
                         <label>Article</label>
                         <input class="w3-input" type="text" name="Article_nom" value="<?php echo $this->valeurs['Article_nom']; ?>">
                     </p>
-                    <p>
-                        <label>Marque</label>
-                        <input class="w3-input" type="text" name="Marque_nom" value="<?php echo $this->valeurs['Marque_nom']; ?>">
-                    </p>
+                    <?php 
+                    $this->afficheFormulaireMarque();  
+                    ?>
                     <p>
                         <label>Commerce</label>
                         <input class="w3-input" type="text" name="Commerce_nom" value="<?php echo $this->valeurs['Commerce_nom']; ?>">
@@ -77,10 +76,9 @@ class TBL_Course extends LIB_Table{
                         <label>Zone</label>
                         <input class="w3-input" type="text" name="Zone_nom" value="<?php echo $this->valeurs['Zone_nom']; ?>">
                     </p>
-                    <p>
-                        <label>Date</label>
-                        <input class="w3-input" type="text" name="Course_datation" value="<?php echo $this->valeurs['Commerce_nom']; ?>">
-                    </p>
+                    <?php 
+                    $this->afficheFormulaireDate();  
+                    ?>
                     <p>
                         <label>Nombre</label>
                         <input class="w3-input" type="text" name="Course_nombre" value="<?php echo $this->valeurs['Course_nombre']; ?>">
@@ -108,6 +106,44 @@ class TBL_Course extends LIB_Table{
                     <button id="BTN_FRM_ANNULER" class="w3-button w3-yellow w3-left">Annuler</button>
                 </div>
             </form>
+        <?php
+    }
+    
+    private function afficheFormulaireMarque() {
+        global $DOT;
+        
+        $m_s = $DOT->getObjet_s("Marque");
+        
+        $tab = $m_s->getItemsPourInputSelect();
+        
+        $valeur = $this->valeurs['Marque_nom'];
+        ?>
+        <p>
+            <label>Marque</label>
+            <select class="w3-select">
+                <?php
+                        foreach ($tab as $value) {
+                            $selected = "";
+                            if (trim($valeur) == trim($value['libelle'])) {
+                                $selected = "selected";
+                            }
+                            ?>
+                            <option value="<?php echo $value['valeur'] ?>" <?php echo $selected ?>><?php echo $value['libelle'] ?></option>
+                            <?php
+                        }
+                ?>
+            </select>
+            <input class="w3-input" type="text" name="Marque_nom" value="<?php echo $valeur; ?>">
+        </p>
+        <?php
+    }
+    
+    private function afficheFormulaireDate() {
+        ?>
+        <p>
+            <label>Date</label>
+            <input class="w3-input" type="text" name="Course_datation" value="<?php echo new LIB_Datation($this->valeurs['Course_datation'])->getDate_DD_MM_AAAA(); ?>">
+        </p>
         <?php
     }
     /**
