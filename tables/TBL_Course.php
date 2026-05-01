@@ -62,12 +62,11 @@ class TBL_Course extends LIB_Table{
                         <input class="w3-input" type="text" name="Article_nom" value="<?php echo $this->valeurs['Article_nom']; ?>">
                     </p>
                     <?php 
-                    $this->afficheFormulaireMarque();  
+                    $this->afficheFormulaireElement("Marque","Marque","Marque_nom");  
                     ?>
-                    <p>
-                        <label>Commerce</label>
-                        <input class="w3-input" type="text" name="Commerce_nom" value="<?php echo $this->valeurs['Commerce_nom']; ?>">
-                    </p>
+                    <?php 
+                    $this->afficheFormulaireElement("Commerce","Commerce","Commerce_nom");  
+                    ?>
                     <p>
                         <label>Ville</label>
                         <input class="w3-input" type="text" name="Ville_nom" value="<?php echo $this->valeurs['Ville_nom']; ?>">
@@ -134,6 +133,35 @@ class TBL_Course extends LIB_Table{
                 ?>
             </select>
             <input class="w3-input" type="text" name="Marque_nom" value="<?php echo $valeur; ?>">
+        </p>
+        <?php
+    }
+    
+    private function afficheFormulaireElement($titre,$nom_table,$tablonne) {
+        global $DOT;
+        
+        $m_s = $DOT->getObjet_s($nom_table);
+        
+        $tab = $m_s->getItemsPourInputSelect();
+        
+        $valeur = $this->valeurs[$tablonne];
+        ?>
+        <p>
+            <label><?php echo $titre ?></label>
+            <select class="w3-select">
+                <?php
+                        foreach ($tab as $value) {
+                            $selected = "";
+                            if (trim($valeur) == trim($value['libelle'])) {
+                                $selected = "selected";
+                            }
+                            ?>
+                            <option value="<?php echo $value['valeur'] ?>" <?php echo $selected ?>><?php echo $value['libelle'] ?></option>
+                            <?php
+                        }
+                ?>
+            </select>
+            <input class="w3-input" type="text" name="<?php echo $tablonne ?>" value="<?php echo $valeur; ?>">
         </p>
         <?php
     }

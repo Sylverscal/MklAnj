@@ -1,9 +1,9 @@
-01-05-2026 13:34:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-01-05-2026 13:34:39 : ? -> ? -> ? -> 0 : POST
-01-05-2026 13:34:39 : ? -> ? -> ? -> 0 : Array
+01-05-2026 18:06:10 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-05-2026 18:06:10 : ? -> ? -> ? -> 0 : POST
+01-05-2026 18:06:10 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => affiche_formulaire
-    [id] => 5
+    [id] => 2
 )
 

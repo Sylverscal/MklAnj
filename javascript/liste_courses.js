@@ -177,6 +177,9 @@ class C_GestionListe {
             const id = $(this).val();
             const text = $(this).find("option:selected").text();
             console.log(id+' '+text);
+            const p = $(this).parent("p");
+            const i = $(p).children("input");
+            $(i).val(text);
         });
     }
 
