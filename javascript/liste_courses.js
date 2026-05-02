@@ -176,10 +176,9 @@ class C_GestionListe {
         $('#FRM_COURSE select').change(function(){
             const id = $(this).val();
             const text = $(this).find("option:selected").text();
-            console.log(id+' '+text);
-            const p = $(this).parent("p");
-            const i = $(p).children("input");
-            $(i).val(text);
+            const tag_p = $(this).parent("p");
+            const tag_input = $(tag_p).children("input");
+            $(tag_input).val(text);
         });
     }
 

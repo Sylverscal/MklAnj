@@ -67,14 +67,12 @@ class TBL_Course extends LIB_Table{
                     <?php 
                     $this->afficheFormulaireElement("Commerce","Commerce","Commerce_nom");  
                     ?>
-                    <p>
-                        <label>Ville</label>
-                        <input class="w3-input" type="text" name="Ville_nom" value="<?php echo $this->valeurs['Ville_nom']; ?>">
-                    </p>
-                    <p>
-                        <label>Zone</label>
-                        <input class="w3-input" type="text" name="Zone_nom" value="<?php echo $this->valeurs['Zone_nom']; ?>">
-                    </p>
+                    <?php 
+                    $this->afficheFormulaireElement("Ville","Ville","Ville_nom");  
+                    ?>
+                    <?php 
+                    $this->afficheFormulaireElement("Zone","Zone","Zone_nom");  
+                    ?>
                     <?php 
                     $this->afficheFormulaireDate();  
                     ?>
@@ -86,10 +84,9 @@ class TBL_Course extends LIB_Table{
                         <label>Capacité</label>
                         <input class="w3-input" type="text" name="Course_capacite" value="<?php echo $this->valeurs['Course_capacite']; ?>">
                     </p>
-                    <p>
-                        <label>Unité</label>
-                        <input class="w3-input" type="text" name="Unite_nom" value="<?php echo $this->valeurs['Unite_nom']; ?>">
-                    </p>
+                    <?php 
+                    $this->afficheFormulaireElement("Unité","Unite","Unite_nom");  
+                    ?>
                     <p>
                         <label>Commentaire</label>
                         <input class="w3-input" type="text" name="Course_commentaire" value="<?php echo $this->valeurs['Course_commentaire']; ?>">
