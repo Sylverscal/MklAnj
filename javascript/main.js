@@ -348,6 +348,25 @@ function afficheModalCompteRenduDetail (tab) {
     $('#COU_MODAL_ERREUR_DETAIL').html(html);
 
 };
+
+function isNombreEntierPositif(valeur,valeur_max = 0) {
+    if (isNaN(valeur)) {
+        return false;
+    }
+    
+    if (valeur < 0) {
+        return false;
+    }
+    
+    if (valeur_max > 0) {
+        if (valeur > valeur_max) {
+            return false;
+        }
+    }
+    
+    return true;
+}
+
 function parametre_datatable(id_table) {
     $("#"+id_table).DataTable({
         // Cible les colonnes N°2 et 3 (1 et 2 avec la numérotation à 0)

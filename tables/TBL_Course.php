@@ -57,10 +57,9 @@ class TBL_Course extends LIB_Table{
             <form id="FRM_COURSE" class="w3-container w3-pale-red">
                 <input type="hidden" id="id" name="id" value="<?php echo $this->getId(); ?>">
                 <div class="w3-container w3-pale-green" style="overflow-y: scroll; height:600px">
-                    <p>
-                        <label>Article</label>
-                        <input class="w3-input" type="text" name="Article_nom" value="<?php echo $this->valeurs['Article_nom']; ?>">
-                    </p>
+                    <?php 
+                    $this->afficheFormulaireElement("Article","Article","Article_nom");  
+                    ?>
                     <?php 
                     $this->afficheFormulaireElement("Marque","Marque","Marque_nom");  
                     ?>
@@ -78,11 +77,11 @@ class TBL_Course extends LIB_Table{
                     ?>
                     <p>
                         <label>Nombre</label>
-                        <input class="w3-input" type="text" name="Course_nombre" value="<?php echo $this->valeurs['Course_nombre']; ?>">
+                        <input class="w3-input input-nombre-entier" type="text" name="Course_nombre" value="<?php echo $this->valeurs['Course_nombre']; ?>">
                     </p>
                     <p>
                         <label>Capacité</label>
-                        <input class="w3-input" type="text" name="Course_capacite" value="<?php echo $this->valeurs['Course_capacite']; ?>">
+                        <input class="w3-input input-nombre-entier" type="text" name="Course_capacite" value="<?php echo $this->valeurs['Course_capacite']; ?>">
                     </p>
                     <?php 
                     $this->afficheFormulaireElement("Unité","Unite","Unite_nom");  
@@ -164,10 +163,11 @@ class TBL_Course extends LIB_Table{
     }
     
     private function afficheFormulaireDate() {
+        $d = new LIB_Datation($this->valeurs['Course_datation']);
         ?>
         <p>
             <label>Date</label>
-            <input class="w3-input" type="text" name="Course_datation" value="<?php echo new LIB_Datation($this->valeurs['Course_datation'])->getDate_DD_MM_AAAA(); ?>">
+            <input class="w3-input" type="text" name="Course_datation" value="<?php echo $d->getDate_DD_MM_AAAA(); ?>">
         </p>
         <?php
     }

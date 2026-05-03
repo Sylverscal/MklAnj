@@ -101,7 +101,6 @@ class C_GestionListe {
     majCouleurLignes() {
         $("#TBL_LISTE_COURSES tr").each(function(index){
             var id = $(this).attr('id');
-            console.log(index + " : "+$(this).attr('id'));
             
             if (id === g_liste_courses.gestion_liste.id_selectionne) {
                 $(this).css('background-color','lightblue');
@@ -179,6 +178,18 @@ class C_GestionListe {
             const tag_p = $(this).parent("p");
             const tag_input = $(tag_p).children("input");
             $(tag_input).val(text);
+        });
+        $('.input-nombre-entier').on('input',function(){
+            var tag = $(this);
+            const valeur = $(tag).val();
+            
+            console.log(valeur);
+            
+            if(isNombreEntierPositif(valeur)) {
+                $(tag).css('color','black');
+            } else {
+                $(tag).css('color','red');
+            }
         });
     }
 
