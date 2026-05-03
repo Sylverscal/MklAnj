@@ -165,6 +165,9 @@ class C_GestionListe {
     ecouteEvenementsFormulaire() {
         $('#BTN_FRM_VALIDER').on( "click", function( e ){
             e.preventDefault();
+            if (g_liste_courses.gestion_liste.isChampsNombresValides() === false) {
+                return;
+            }
             var donnees = $('#FRM_COURSE').serializeArray();
             g_liste_courses.gestion_liste.valideFormulaire(donnees);
         });
@@ -183,14 +186,34 @@ class C_GestionListe {
             var tag = $(this);
             const valeur = $(tag).val();
             
-            console.log(valeur);
-            
-            if(isNombreEntierPositif(valeur)) {
+            if (g_liste_courses.gestion_liste.isChampNombreValide($(this))) {
                 $(tag).css('color','black');
             } else {
                 $(tag).css('color','red');
             }
         });
+    }
+    isChampNombreValide(tag) {
+        const valeur = $(tag).val();
+
+
+        if(isNombreEntierPositif(valeur) === true) {
+            return true;
+        }
+        
+        return false;
+    }
+    
+    isChampsNombresValides() {
+        var is = true;
+        $('.input-nombre-entier').each(function(index){
+            if (g_liste_courses.gestion_liste.isChampNombreValide($(this)) === false) {
+                is = false;
+            }
+            
+        });
+        
+        return is;
     }
 
     valideFormulaire(donnees) {
