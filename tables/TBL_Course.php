@@ -59,31 +59,13 @@ class TBL_Course extends LIB_Table{
                 <div class="w3-container w3-pale-green" style="overflow-y: scroll; height:600px">
                     <?php 
                     $this->afficheFormulaireElement("Article","Article","Article_nom");  
-                    ?>
-                    <?php 
                     $this->afficheFormulaireElement("Marque","Marque","Marque_nom");  
-                    ?>
-                    <?php 
                     $this->afficheFormulaireElement("Commerce","Commerce","Commerce_nom");  
-                    ?>
-                    <?php 
                     $this->afficheFormulaireElement("Ville","Ville","Ville_nom");  
-                    ?>
-                    <?php 
                     $this->afficheFormulaireElement("Zone","Zone","Zone_nom");  
-                    ?>
-                    <?php 
                     $this->afficheFormulaireDate();  
-                    ?>
-                    <p>
-                        <label>Nombre</label>
-                        <input class="w3-input input-nombre-entier" type="text" name="Course_nombre" value="<?php echo $this->valeurs['Course_nombre']; ?>">
-                    </p>
-                    <p>
-                        <label>Capacité</label>
-                        <input class="w3-input input-nombre-entier" type="text" name="Course_capacite" value="<?php echo $this->valeurs['Course_capacite']; ?>">
-                    </p>
-                    <?php 
+                    $this->afficheFormulaireNombre("Nombre", "Course_nombre");
+                    $this->afficheFormulaireNombre("Capacité", "Course_capacite");
                     $this->afficheFormulaireElement("Unité","Unite","Unite_nom");  
                     ?>
                     <p>
@@ -104,31 +86,14 @@ class TBL_Course extends LIB_Table{
         <?php
     }
     
-    private function afficheFormulaireMarque() {
+    private function afficheFormulaireNombre($titre,$tablonne) {
         global $DOT;
         
-        $m_s = $DOT->getObjet_s("Marque");
-        
-        $tab = $m_s->getItemsPourInputSelect();
-        
-        $valeur = $this->valeurs['Marque_nom'];
+        $valeur = $this->valeurs[$tablonne];
         ?>
         <p>
-            <label>Marque</label>
-            <select class="w3-select">
-                <?php
-                        foreach ($tab as $value) {
-                            $selected = "";
-                            if (trim($valeur) == trim($value['libelle'])) {
-                                $selected = "selected";
-                            }
-                            ?>
-                            <option value="<?php echo $value['valeur'] ?>" <?php echo $selected ?>><?php echo $value['libelle'] ?></option>
-                            <?php
-                        }
-                ?>
-            </select>
-            <input class="w3-input" type="text" name="Marque_nom" value="<?php echo $valeur; ?>">
+            <label><?php echo $titre ?></label>
+            <input class="w3-input input-nombre-entier" type="text" name="<?php echo $tablonne ?>" value="<?php echo $valeur; ?>">
         </p>
         <?php
     }

@@ -1,6 +1,6 @@
-03-05-2026 13:09:51 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-03-05-2026 13:09:51 : ? -> ? -> ? -> 0 : POST
-03-05-2026 13:09:51 : ? -> ? -> ? -> 0 : Array
+04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : POST
+04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => valide_formulaire
@@ -9,19 +9,19 @@
             [0] => Array
                 (
                     [name] => id
-                    [value] => 3
+                    [value] => 1
                 )
 
             [1] => Array
                 (
                     [name] => Article_nom
-                    [value] => Désinfectant en pulvérisateur
+                    [value] => Biscuit Avoine complet Nutri+
                 )
 
             [2] => Array
                 (
                     [name] => Marque_nom
-                    [value] => Sanytol
+                    [value] => Bjorg
                 )
 
             [3] => Array
@@ -78,29 +78,35 @@
                     [value] => 0
                 )
 
+            [12] => Array
+                (
+                    [name] => Course_faite
+                    [value] => 1
+                )
+
         )
 
 )
 
-03-05-2026 13:09:51 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
-03-05-2026 13:09:51 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
+04-05-2026 10:02:28 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
+04-05-2026 10:02:28 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
 (
     [0] => Array
         (
             [name] => id
-            [value] => 3
+            [value] => 1
         )
 
     [1] => Array
         (
             [name] => Article_nom
-            [value] => Désinfectant en pulvérisateur
+            [value] => Biscuit Avoine complet Nutri+
         )
 
     [2] => Array
         (
             [name] => Marque_nom
-            [value] => Sanytol
+            [value] => Bjorg
         )
 
     [3] => Array
@@ -157,14 +163,20 @@
             [value] => 0
         )
 
+    [12] => Array
+        (
+            [name] => Course_faite
+            [value] => 1
+        )
+
 )
 
-03-05-2026 13:09:51 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
-03-05-2026 13:09:51 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
+04-05-2026 10:02:28 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
+04-05-2026 10:02:28 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
 (
-    [id] => 3
-    [Article_nom] => Désinfectant en pulvérisateur
-    [Marque_nom] => Sanytol
+    [id] => 1
+    [Article_nom] => Biscuit Avoine complet Nutri+
+    [Marque_nom] => Bjorg
     [Commerce_nom] => -
     [Ville_nom] => -
     [Zone_nom] => -
@@ -173,20 +185,20 @@
     [Course_capacite] => 0
     [Unite_nom] => -
     [Course_commentaire] => -
-    [Course_faite] => 0
+    [Course_faite] => 1
 )
 
-03-05-2026 13:09:51 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-03-05-2026 13:09:51 : ? -> ? -> ? -> 0 : POST
-03-05-2026 13:09:51 : ? -> ? -> ? -> 0 : Array
+04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : POST
+04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-03-05-2026 13:09:51 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-03-05-2026 13:09:51 : ? -> ? -> ? -> 0 : POST
-03-05-2026 13:09:51 : ? -> ? -> ? -> 0 : Array
+04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : POST
+04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses
