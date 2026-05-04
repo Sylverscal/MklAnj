@@ -128,11 +128,11 @@ class TBL_Course extends LIB_Table{
     }
     
     private function afficheFormulaireDate() {
-        $d = new LIB_Datation($this->valeurs['Course_datation']);
+        $d = new CLA_Datation($this->valeurs['Course_datation']);
         ?>
         <p>
             <label>Date</label>
-            <input class="w3-input" type="text" name="Course_datation" value="<?php echo $d->getDate_DD_MM_AAAA(); ?>">
+            <input class="w3-input input-date" type="text" name="Course_datation" value="<?php echo $d->getDate_pourFormulaire(); ?>">
         </p>
         <?php
     }

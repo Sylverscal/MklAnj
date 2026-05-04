@@ -367,6 +367,10 @@ function isNombreEntierPositif(valeur,valeur_max = 0) {
     return true;
 }
 
+function isDateValide(valeur) {
+    return true;
+}
+
 function parametre_datatable(id_table) {
     $("#"+id_table).DataTable({
         // Cible les colonnes N°2 et 3 (1 et 2 avec la numérotation à 0)

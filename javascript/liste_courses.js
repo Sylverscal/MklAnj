@@ -192,6 +192,16 @@ class C_GestionListe {
                 $(tag).css('color','red');
             }
         });
+        $('.input-date').on('input',function(){
+            var tag = $(this);
+            const valeur = $(tag).val();
+            
+            if (g_liste_courses.gestion_liste.isChampNombreValide($(this))) {
+                $(tag).css('color','black');
+            } else {
+                $(tag).css('color','red');
+            }
+        });
     }
     isChampNombreValide(tag) {
         const valeur = $(tag).val();
@@ -216,6 +226,17 @@ class C_GestionListe {
         return is;
     }
 
+    isChampDateValide(tag) {
+        const valeur = $(tag).val();
+
+
+        if(isDateValide()(valeur) === true) {
+            return true;
+        }
+        
+        return false;
+    }
+    
     valideFormulaire(donnees) {
         var json = {
             domaine: 'gestion_liste_courses',

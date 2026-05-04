@@ -1,6 +1,6 @@
-04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : POST
-04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : Array
+04-05-2026 16:22:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+04-05-2026 16:22:56 : ? -> ? -> ? -> 0 : POST
+04-05-2026 16:22:56 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => valide_formulaire
@@ -45,7 +45,7 @@
             [6] => Array
                 (
                     [name] => Course_datation
-                    [value] => 01-01-2000
+                    [value] => -klkl
                 )
 
             [7] => Array
@@ -88,8 +88,8 @@
 
 )
 
-04-05-2026 10:02:28 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
-04-05-2026 10:02:28 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
+04-05-2026 16:22:56 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
+04-05-2026 16:22:56 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
 (
     [0] => Array
         (
@@ -130,7 +130,7 @@
     [6] => Array
         (
             [name] => Course_datation
-            [value] => 01-01-2000
+            [value] => -klkl
         )
 
     [7] => Array
@@ -171,8 +171,8 @@
 
 )
 
-04-05-2026 10:02:28 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
-04-05-2026 10:02:28 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
+04-05-2026 16:22:56 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
+04-05-2026 16:22:56 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
 (
     [id] => 1
     [Article_nom] => Biscuit Avoine complet Nutri+
@@ -180,7 +180,7 @@
     [Commerce_nom] => -
     [Ville_nom] => -
     [Zone_nom] => -
-    [Course_datation] => 01-01-2000
+    [Course_datation] => -klkl
     [Course_nombre] => 1
     [Course_capacite] => 0
     [Unite_nom] => -
@@ -188,17 +188,17 @@
     [Course_faite] => 1
 )
 
-04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : POST
-04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : Array
+04-05-2026 16:22:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+04-05-2026 16:22:56 : ? -> ? -> ? -> 0 : POST
+04-05-2026 16:22:56 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : POST
-04-05-2026 10:02:28 : ? -> ? -> ? -> 0 : Array
+04-05-2026 16:22:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+04-05-2026 16:22:56 : ? -> ? -> ? -> 0 : POST
+04-05-2026 16:22:56 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses
