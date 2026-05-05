@@ -168,6 +168,10 @@ class C_GestionListe {
             if (g_liste_courses.gestion_liste.isChampsNombresValides() === false) {
                 return;
             }
+            if (g_liste_courses.gestion_liste.isChampsDatatationsValides()() === false) {
+                return;
+            }
+            
             var donnees = $('#FRM_COURSE').serializeArray();
             g_liste_courses.gestion_liste.valideFormulaire(donnees);
         });
@@ -192,11 +196,11 @@ class C_GestionListe {
                 $(tag).css('color','red');
             }
         });
-        $('.input-date').on('input',function(){
+        $('.input-datation').on('input',function(){
             var tag = $(this);
             const valeur = $(tag).val();
             
-            if (g_liste_courses.gestion_liste.isChampNombreValide($(this))) {
+            if (g_liste_courses.gestion_liste.isChampDatationValide($(this))) {
                 $(tag).css('color','black');
             } else {
                 $(tag).css('color','red');
@@ -226,17 +230,29 @@ class C_GestionListe {
         return is;
     }
 
-    isChampDateValide(tag) {
+    isChampDatationValide(tag) {
         const valeur = $(tag).val();
 
 
-        if(isDateValide()(valeur) === true) {
+        if(isDatationValide(valeur) === true) {
             return true;
         }
         
         return false;
     }
     
+    isChampsDatatationsValides() {
+        var is = true;
+        $('.input-datation').each(function(index){
+            if (g_liste_courses.gestion_liste.isChampDatationValide($(this)) === false) {
+                is = false;
+            }
+            
+        });
+        
+        return is;
+    }
+
     valideFormulaire(donnees) {
         var json = {
             domaine: 'gestion_liste_courses',

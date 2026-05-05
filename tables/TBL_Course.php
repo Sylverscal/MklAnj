@@ -132,7 +132,7 @@ class TBL_Course extends LIB_Table{
         ?>
         <p>
             <label>Date</label>
-            <input class="w3-input input-date" type="text" name="Course_datation" value="<?php echo $d->getDate_pourFormulaire(); ?>">
+            <input class="w3-input input-datation" type="text" name="Course_datation" value="<?php echo $d->getDate_pourFormulaire(); ?>">
         </p>
         <?php
     }

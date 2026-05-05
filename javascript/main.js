@@ -367,7 +367,106 @@ function isNombreEntierPositif(valeur,valeur_max = 0) {
     return true;
 }
 
-function isDateValide(valeur) {
+function isDatationValide(valeur) {
+    if (valeur === "-") {
+        return true;
+    }
+    const rlt = /^(\d{2})-(\d{2})-(\d{4})$/.exec(valeur);
+    
+    console.log(rlt);
+    if (rlt === null) {
+        return false;
+    }
+    
+    const jj = +rlt[1];
+    const mm = +rlt[2];
+    const aaaa = +rlt[3];
+    
+    if (aaaa < 2020 || aaaa > 2070) {
+        return false;
+    } 
+    
+    if (mm < 1 || mm > 13) {
+        return false;
+    }
+    
+    if (jj < 1) {
+        return false;
+    }
+    
+    switch (mm) {
+        case 1 :
+            if (jj > 31) {
+                return false;
+            }
+            break;
+        case 2 :
+            if (aaaa % 4 === 0) {
+                if (jj > 29) {
+                    return false;
+                }
+            } else {
+                if (jj > 28) {
+                    return false;
+                }
+            }
+            if (jj > 31) {
+                return false;
+            }
+            break;
+        case 3 :
+            if (jj > 31) {
+                return false;
+            }
+            break;
+        case 4 :
+            if (jj > 30) {
+                return false;
+            }
+            break;
+        case 5 :
+            if (jj > 31) {
+                return false;
+            }
+            break;
+        case 6 :
+            if (jj > 30) {
+                return false;
+            }
+            break;
+        case 7 :
+            if (jj > 31) {
+                return false;
+            }
+            break;
+        case 8 :
+            if (jj > 31) {
+                return false;
+            }
+            break;
+        case 9 :
+            if (jj > 30) {
+                return false;
+            }
+            break;
+        case 10 :
+            if (jj > 31) {
+                return false;
+            }
+            break;
+        case 11 :
+            if (jj > 30) {
+                return false;
+            }
+            break;
+        case 12 :
+            if (jj > 31) {
+                return false;
+            }
+            break;
+    }
+    
+    
     return true;
 }
 
