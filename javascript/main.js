@@ -373,7 +373,6 @@ function isDatationValide(valeur) {
     }
     const rlt = /^(\d{2})-(\d{2})-(\d{4})$/.exec(valeur);
     
-    console.log(rlt);
     if (rlt === null) {
         return false;
     }

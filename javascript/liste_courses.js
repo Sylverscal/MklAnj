@@ -168,7 +168,7 @@ class C_GestionListe {
             if (g_liste_courses.gestion_liste.isChampsNombresValides() === false) {
                 return;
             }
-            if (g_liste_courses.gestion_liste.isChampsDatatationsValides()() === false) {
+            if (g_liste_courses.gestion_liste.isChampsDatationsValides() === false) {
                 return;
             }
             
@@ -241,7 +241,7 @@ class C_GestionListe {
         return false;
     }
     
-    isChampsDatatationsValides() {
+    isChampsDatationsValides() {
         var is = true;
         $('.input-datation').each(function(index){
             if (g_liste_courses.gestion_liste.isChampDatationValide($(this)) === false) {
