@@ -206,6 +206,11 @@ class C_GestionListe {
                 $(tag).css('color','red');
             }
         });
+        $('#FRM_COURSE input[type="checkbox"').change(function(){
+            const etat = $(this).prop('checked') ? 1 : 0;
+            
+            $(this).next('input[type="hidden"').val(etat);
+        });
     }
     isChampNombreValide(tag) {
         const valeur = $(tag).val();

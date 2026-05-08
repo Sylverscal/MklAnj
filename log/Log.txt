@@ -1,6 +1,6 @@
-06-05-2026 06:59:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-06-05-2026 06:59:33 : ? -> ? -> ? -> 0 : POST
-06-05-2026 06:59:33 : ? -> ? -> ? -> 0 : Array
+08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : POST
+08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => valide_formulaire
@@ -45,7 +45,7 @@
             [6] => Array
                 (
                     [name] => Course_datation
-                    [value] => 12-03-2035
+                    [value] => -
                 )
 
             [7] => Array
@@ -75,12 +75,6 @@
             [11] => Array
                 (
                     [name] => Course_faite
-                    [value] => 0
-                )
-
-            [12] => Array
-                (
-                    [name] => Course_faite
                     [value] => 1
                 )
 
@@ -88,8 +82,8 @@
 
 )
 
-06-05-2026 06:59:33 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
-06-05-2026 06:59:33 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
+08-05-2026 16:40:45 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
+08-05-2026 16:40:45 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
 (
     [0] => Array
         (
@@ -130,7 +124,7 @@
     [6] => Array
         (
             [name] => Course_datation
-            [value] => 12-03-2035
+            [value] => -
         )
 
     [7] => Array
@@ -160,19 +154,13 @@
     [11] => Array
         (
             [name] => Course_faite
-            [value] => 0
-        )
-
-    [12] => Array
-        (
-            [name] => Course_faite
             [value] => 1
         )
 
 )
 
-06-05-2026 06:59:33 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
-06-05-2026 06:59:33 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
+08-05-2026 16:40:45 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
+08-05-2026 16:40:45 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
 (
     [id] => 1
     [Article_nom] => Biscuit Avoine complet Nutri+
@@ -180,7 +168,7 @@
     [Commerce_nom] => -
     [Ville_nom] => -
     [Zone_nom] => -
-    [Course_datation] => 12-03-2035
+    [Course_datation] => -
     [Course_nombre] => 1
     [Course_capacite] => 0
     [Unite_nom] => -
@@ -188,17 +176,17 @@
     [Course_faite] => 1
 )
 
-06-05-2026 06:59:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-06-05-2026 06:59:33 : ? -> ? -> ? -> 0 : POST
-06-05-2026 06:59:33 : ? -> ? -> ? -> 0 : Array
+08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : POST
+08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-06-05-2026 06:59:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-06-05-2026 06:59:33 : ? -> ? -> ? -> 0 : POST
-06-05-2026 06:59:33 : ? -> ? -> ? -> 0 : Array
+08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : POST
+08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses
