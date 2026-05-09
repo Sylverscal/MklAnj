@@ -708,7 +708,7 @@ $tab
     public function chargeIdParNom($cree_auto = false) {
         global $CXO;
         // Recherche de l'élément en fonction de son nom
-        $requete = sprintf("select id from %s where nom = '%s'",$this->nom_table,$this->get_nom());
+        $requete = sprintf("select id from %s where nom = '%s'",$this->nom_table,$this->getNom());
         $ret = $CXO->executeRequete($requete);
         if ($ret->isOk()) {
             $lignes = $ret->getResultat();

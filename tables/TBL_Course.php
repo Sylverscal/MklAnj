@@ -319,9 +319,71 @@ class TBL_Course extends LIB_Table{
             return;
         }
     }
-        
-    public function valideFormulaire($post) {
+    
+    /**
+     * Valide le formulaire de saisie d'une course.
+     * Si tout ok : Mise à jour base
+     * @param type $donnees
+     * Exemple :
+(
+    [id] => 1
+    [Article_nom] => Biscuit Avoine complet Nutri+
+    [Marque_nom] => Bjorg
+    [Commerce_nom] => -
+    [Ville_nom] => -
+    [Zone_nom] => -
+    [Course_datation] => -
+    [Course_nombre] => 1
+    [Course_capacite] => 0
+    [Unite_nom] => -
+    [Course_commentaire] => -
+    [Course_faite] => 1
+)
+     * @return \LIB_CompteRendu Compte rendu de l'opération
+     * @global LIB_DistributeurObjetTable $DOT
+     */
+    public function valideFormulaire($donnees) {
+        global $DOT;
         $crdu = new LIB_CompteRendu(true, "");
+        
+        LIB_Util::logPrintR($donnees);       
+        
+        
+        // Contrôle des données reçues
+        
+        $datation = new CLA_Datation($donnees['Course_datation']);
+        
+        if (!$datation->is_date_valide()) {
+            $detail = [$donnees['Course_datation']];
+            
+            $crdu = new LIB_CompteRendu(false, "Mauvais format date",$detail);
+            
+            return $crdu;
+        }
+        
+        LIB_Util::log("Datation : $datation");
+        
+        $nombre = $donnees['Course_nombre'];
+        $capacite = $donnees['Course_capacite'];
+        $course_faite = $donnees['Course_faite'];
+        
+        
+        // Préparation des colonnes liées de Course
+        $article = $DOT->getObjet('Article');
+        $article->set([$donnees['Article_nom']]);
+        $article->chargeIdParNom(true);
+        $idArticle = $article->getId();
+        LIB_Util::log("Article : $idArticle : $article");
+        
+        
+        
+        
+        // Préparer la course
+        
+        
+        
+        // Enregistrement Course
+        
         
         return $crdu;
     }

@@ -1,6 +1,6 @@
-08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : POST
-08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : Array
+09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : POST
+09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => valide_formulaire
@@ -82,85 +82,8 @@
 
 )
 
-08-05-2026 16:40:45 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
-08-05-2026 16:40:45 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
-(
-    [0] => Array
-        (
-            [name] => id
-            [value] => 1
-        )
-
-    [1] => Array
-        (
-            [name] => Article_nom
-            [value] => Biscuit Avoine complet Nutri+
-        )
-
-    [2] => Array
-        (
-            [name] => Marque_nom
-            [value] => Bjorg
-        )
-
-    [3] => Array
-        (
-            [name] => Commerce_nom
-            [value] => -
-        )
-
-    [4] => Array
-        (
-            [name] => Ville_nom
-            [value] => -
-        )
-
-    [5] => Array
-        (
-            [name] => Zone_nom
-            [value] => -
-        )
-
-    [6] => Array
-        (
-            [name] => Course_datation
-            [value] => -
-        )
-
-    [7] => Array
-        (
-            [name] => Course_nombre
-            [value] => 1
-        )
-
-    [8] => Array
-        (
-            [name] => Course_capacite
-            [value] => 0
-        )
-
-    [9] => Array
-        (
-            [name] => Unite_nom
-            [value] => -
-        )
-
-    [10] => Array
-        (
-            [name] => Course_commentaire
-            [value] => -
-        )
-
-    [11] => Array
-        (
-            [name] => Course_faite
-            [value] => 1
-        )
-
-)
-
-08-05-2026 16:40:45 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : 
-08-05-2026 16:40:45 : CLA_gestion_liste_courses_Ajax -> CLA_gestion_liste_courses_Ajax -> valide_formulaire -> 46 : Array
+09-05-2026 13:26:50 : TBL_Course -> TBL_Course -> valideFormulaire -> 367 : 
+09-05-2026 13:26:50 : TBL_Course -> TBL_Course -> valideFormulaire -> 367 : Array
 (
     [id] => 1
     [Article_nom] => Biscuit Avoine complet Nutri+
@@ -176,17 +99,19 @@
     [Course_faite] => 1
 )
 
-08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : POST
-08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : Array
+09-05-2026 13:26:50 : TBL_Course -> TBL_Course -> valideFormulaire -> 367 : Datation : 01-01-2000
+09-05-2026 13:26:50 : TBL_Course -> TBL_Course -> valideFormulaire -> 367 : Article : 598 :  Array
+09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : POST
+09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : POST
-08-05-2026 16:40:45 : ? -> ? -> ? -> 0 : Array
+09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : POST
+09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses

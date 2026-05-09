@@ -358,15 +358,13 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         global $DOT;
         
         $donnees = $post['donnees'];
-        LIB_Util::logPrintR($donnees);
         $tab = LIB_Util::getTableauDeDonneesFormulaire($donnees);
-        LIB_Util::logPrintR($tab);
         
         $id = $donnees[0]['value'];
         
         $c = $DOT->getObjet("Course");
         $c->setId($id);
-        $crdu = $c->valideFormulaire($donnees);
+        $crdu = $c->valideFormulaire($tab);
         
         $crdu->emissionJson();
     }
