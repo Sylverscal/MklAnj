@@ -1,6 +1,6 @@
-09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : POST
-09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : Array
+09-05-2026 17:07:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:19 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:19 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => valide_formulaire
@@ -15,37 +15,37 @@
             [1] => Array
                 (
                     [name] => Article_nom
-                    [value] => Biscuit Avoine complet Nutri+
+                    [value] => Purée
                 )
 
             [2] => Array
                 (
                     [name] => Marque_nom
-                    [value] => Bjorg
+                    [value] => Mousseliine
                 )
 
             [3] => Array
                 (
                     [name] => Commerce_nom
-                    [value] => -
+                    [value] =>  Auchan
                 )
 
             [4] => Array
                 (
                     [name] => Ville_nom
-                    [value] => -
+                    [value] => Maurepas
                 )
 
             [5] => Array
                 (
                     [name] => Zone_nom
-                    [value] => -
+                    [value] => ParisWest
                 )
 
             [6] => Array
                 (
                     [name] => Course_datation
-                    [value] => -
+                    [value] => 12-05-2026
                 )
 
             [7] => Array
@@ -57,19 +57,19 @@
             [8] => Array
                 (
                     [name] => Course_capacite
-                    [value] => 0
+                    [value] => 500
                 )
 
             [9] => Array
                 (
                     [name] => Unite_nom
-                    [value] => -
+                    [value] =>  g
                 )
 
             [10] => Array
                 (
                     [name] => Course_commentaire
-                    [value] => -
+                    [value] => A l'ancienne
                 )
 
             [11] => Array
@@ -82,38 +82,193 @@
 
 )
 
-09-05-2026 13:26:50 : TBL_Course -> TBL_Course -> valideFormulaire -> 367 : 
-09-05-2026 13:26:50 : TBL_Course -> TBL_Course -> valideFormulaire -> 367 : Array
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> valideFormulaire -> 367 : 
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> valideFormulaire -> 367 : Array
 (
     [id] => 1
-    [Article_nom] => Biscuit Avoine complet Nutri+
-    [Marque_nom] => Bjorg
-    [Commerce_nom] => -
-    [Ville_nom] => -
-    [Zone_nom] => -
-    [Course_datation] => -
+    [Article_nom] => Purée
+    [Marque_nom] => Mousseliine
+    [Commerce_nom] =>  Auchan
+    [Ville_nom] => Maurepas
+    [Zone_nom] => ParisWest
+    [Course_datation] => 12-05-2026
     [Course_nombre] => 1
-    [Course_capacite] => 0
-    [Unite_nom] => -
-    [Course_commentaire] => -
+    [Course_capacite] => 500
+    [Unite_nom] =>  g
+    [Course_commentaire] => A l'ancienne
     [Course_faite] => 1
 )
 
-09-05-2026 13:26:50 : TBL_Course -> TBL_Course -> valideFormulaire -> 367 : Datation : 01-01-2000
-09-05-2026 13:26:50 : TBL_Course -> TBL_Course -> valideFormulaire -> 367 : Article : 598 :  Array
-09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : POST
-09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : Array
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> valideFormulaire -> 367 : Datation : 12-05-2026
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> prepareColonne -> 372 : Purée
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> prepareColonne -> 372 : Article : 606 :  Purée
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> prepareColonne -> 373 : Mousseliine
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> prepareColonne -> 373 : Marque : 192 :  Mousseliine
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> prepareColonne -> 374 : Auchan
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> prepareColonne -> 374 : Commerce : 4 :  Auchan
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> prepareColonne -> 375 : Maurepas
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> prepareColonne -> 375 : Ville : 20 :  Maurepas
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> prepareColonne -> 376 : ParisWest
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> prepareColonne -> 376 : Zone : 5 :  ParisWest
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> prepareColonne -> 377 : g
+09-05-2026 17:07:19 : TBL_Course -> TBL_Course -> prepareColonne -> 377 : Unite : 1 :  g
+09-05-2026 17:07:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:19 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:19 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : POST
-09-05-2026 13:26:50 : ? -> ? -> ? -> 0 : Array
+09-05-2026 17:07:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:19 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:19 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses
+)
+
+09-05-2026 17:07:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:30 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:30 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Article
+)
+
+09-05-2026 17:07:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:30 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:30 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Article
+)
+
+09-05-2026 17:07:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:47 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:47 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Commerce
+)
+
+09-05-2026 17:07:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:47 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:47 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Commerce
+)
+
+09-05-2026 17:07:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:53 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:53 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Course
+)
+
+09-05-2026 17:07:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:53 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:53 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Course
+)
+
+09-05-2026 17:07:54 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:54 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:54 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Marque
+)
+
+09-05-2026 17:07:54 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:54 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:54 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Marque
+)
+
+09-05-2026 17:07:59 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:59 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:59 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Personne
+)
+
+09-05-2026 17:07:59 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:07:59 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:07:59 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Personne
+)
+
+09-05-2026 17:08:01 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:08:01 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:08:01 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Unite
+)
+
+09-05-2026 17:08:01 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:08:01 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:08:01 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Unite
+)
+
+09-05-2026 17:08:05 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:08:05 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:08:05 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Ville
+)
+
+09-05-2026 17:08:05 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:08:05 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:08:05 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Ville
+)
+
+09-05-2026 17:08:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:08:09 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:08:09 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Zone
+)
+
+09-05-2026 17:08:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+09-05-2026 17:08:09 : ? -> ? -> ? -> 0 : POST
+09-05-2026 17:08:09 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Zone
 )
 

@@ -369,13 +369,12 @@ class TBL_Course extends LIB_Table{
         
         
         // Préparation des colonnes liées de Course
-        $article = $DOT->getObjet('Article');
-        $article->set([$donnees['Article_nom']]);
-        $article->chargeIdParNom(true);
-        $idArticle = $article->getId();
-        LIB_Util::log("Article : $idArticle : $article");
-        
-        
+        $idArticle = $this->prepareColonne("Article", trim($donnees['Article_nom']));
+        $idMarque = $this->prepareColonne("Marque", trim($donnees['Marque_nom']));
+        $idCommerce = $this->prepareColonne("Commerce", trim($donnees['Commerce_nom']));
+        $idVille = $this->prepareColonne("Ville", trim($donnees['Ville_nom']));
+        $idZone = $this->prepareColonne("Zone", trim($donnees['Zone_nom']));
+        $idUnite = $this->prepareColonne("Unite", trim($donnees['Unite_nom']));
         
         
         // Préparer la course
@@ -386,5 +385,26 @@ class TBL_Course extends LIB_Table{
         
         
         return $crdu;
+    }
+    
+    /**
+     * Prépare une des données liée de la Course
+     * A n'utiliser que sur des tables ne contenant que les colonnes id et nom.
+     * @param type $nom_table
+     * @param type $donnee
+     * @global LIB_DistributeurObjetTable $DOT
+     */
+    private function prepareColonne($nom_table,$donnee) {
+        global $DOT;
+        
+        $objet = $DOT->getObjet($nom_table);
+        $objet->set(...[$donnee]);
+        LIB_Util::log($objet->getNom());
+        $objet->chargeIdParNom(true);
+        $id = $objet->getId();
+        
+        LIB_Util::log("$nom_table : $id : $objet");
+        
+        return $id;
     }
 }
