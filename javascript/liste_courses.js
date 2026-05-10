@@ -181,9 +181,10 @@ class C_GestionListe {
         });
         $('#BTN_FRM_SUPPRIMER').on("click",function(e){
             e.preventDefault();
-            if (confirm("Voulez vous vraiment supprimer cette Course ?")) {
-                g_liste_courses.gestion_liste.supprimeCourse();
-            }
+            afficheModalConfirmation();
+        });
+        $('#COU_MODAL_CONFIRMATION_OUI').on("click",function(){
+            g_liste_courses.gestion_liste.supprimeCourse();
         });
         $('#FRM_COURSE select').change(function(){
             const id = $(this).val();
@@ -313,3 +314,8 @@ class C_GestionListe {
     }
     
 }  
+
+function afficheModalConfirmation() {
+    document.getElementById('COU_MODAL_CONFIRMATION').style.display='block';
+}
+
