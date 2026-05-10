@@ -356,6 +356,7 @@ $tab
         // Recherche de l'élément en fonction de son nom
         $requete = sprintf("select * from %s where %s = '%s'",$this->nom_table,$nom_colonne,$valeur);
         $ret = $CXO->executeRequete($requete);
+        $this->setId(0);
         if ($ret->isOk()) {
             $lignes = $ret->getResultat();
             foreach ($lignes as $ligne) {

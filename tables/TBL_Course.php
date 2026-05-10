@@ -365,6 +365,7 @@ class TBL_Course extends LIB_Table{
         
         $nombre = $donnees['Course_nombre'];
         $capacite = $donnees['Course_capacite'];
+        $commentaire = $donnees['Course_commentaire'];
         $course_faite = $donnees['Course_faite'];
         
         
@@ -378,11 +379,33 @@ class TBL_Course extends LIB_Table{
         
         
         // Préparer la course
+        $crdu = $this->chargeParNomColonne('id_Article', "$idArticle");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        LIB_Util::log($this->getId());
+        
+        
+        
+        $this->setValeurColonne('id_Article', "$idArticle");
+        $this->setValeurColonne('id_Marque', "$idMarque");
+        $this->setValeurColonne('id_Commerce', "$idCommerce");
+        $this->setValeurColonne('id_Ville', "$idVille");
+        $this->setValeurColonne('id_Zone', "$idZone");
+        $this->setValeurColonne('datation', $datation->getDate_pourEcritureMySQLCourte());
+        $this->setValeurColonne('nombre', "$nombre");
+        $this->setValeurColonne('capacite', "$capacite");
+        $this->setValeurColonne('id_Unite', "$idUnite");
+        $this->setValeurColonne('commentaire', $commentaire);
+        $this->setValeurColonne('faite', $course_faite);
+        
         
         
         
         // Enregistrement Course
         
+        $crdu = $this->sauve();
         
         return $crdu;
     }
