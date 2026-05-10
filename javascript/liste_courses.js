@@ -182,7 +182,8 @@ class C_GestionListe {
         $('#BTN_FRM_SUPPRIMER').on("click",function(e){
             e.preventDefault();
             let val = $("#FRM_COURSE input[name='Article_nom'").val();
-            afficheModalConfirmation("Suppression course","Voulez-vous vraiment supprimer la course : "+val);
+            let fmt_val = "<span class='w3-red w3-text-yellow'>"+val+"</span>";
+            afficheModalConfirmation("Suppression course","Voulez-vous vraiment supprimer la course : "+fmt_val);
         });
         $('#COU_MODAL_CONFIRMATION_OUI').on("click",function(){
             g_liste_courses.gestion_liste.supprimeCourse();
