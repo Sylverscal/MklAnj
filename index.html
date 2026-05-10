@@ -48,5 +48,20 @@ Ecriture affichage de la listed es courses
                 </div>
             </div>
         </div>
+        <div class="w3-modal" id="COU_MODAL_CONFIRMATION">
+            <div class="w3-modal-content">
+                <div class="w3-container w3-amber">
+                    <div id="COU_MODAL_CONFIRMATION_TITRE"><h4>Demande de confirmation de l'opération</h4></div>
+                </div>
+                <div class="w3-container w3-sand">
+                    <div id="COU_MODAL_CONFIRMATION_TITRE_ACTION" class="w3-orange"><h4>Voulez-vous vraiment faire cette opération</h4></div>
+
+                </div>
+                <div class="w3-container w3-amber">
+                    <button class="w3-button w3-orange" type="button" onclick="document.getElementById('COU_MODAL_CONFIRMATION').style.display='none'">Non</button>
+                    <button id="COU_MODAL_CONFIRMATION_OUI" class="w3-button w3-green" type="button" onclick="document.getElementById('COU_MODAL_CONFIRMATION').style.display='none'">Oui</button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
