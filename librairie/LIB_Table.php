@@ -774,6 +774,7 @@ $tab
     /**
      * Supprime l'élément de la table.
      * @global LIB_BDD $CXO 
+     * @return LIB_CompteRendu Compte rendu suppression
      */
     public function supprime() : LIB_CompteRendu  {
         global $CXO;

@@ -179,6 +179,12 @@ class C_GestionListe {
             e.preventDefault();
             g_liste_courses.affiche();
         });
+        $('#BTN_FRM_SUPPRIMER').on("click",function(e){
+            e.preventDefault();
+            if (confirm("Voulez vous vraiment supprimer cette Course ?")) {
+                g_liste_courses.gestion_liste.supprimeCourse();
+            }
+        });
         $('#FRM_COURSE select').change(function(){
             const id = $(this).val();
             const text = $(this).find("option:selected").text();
@@ -263,6 +269,31 @@ class C_GestionListe {
             domaine: 'gestion_liste_courses',
             action: 'valide_formulaire',
             donnees: donnees
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'json',
+                    success: function (crdu) {
+                        if (crdu.erreur === "non") {
+                            g_liste_courses.affiche();
+                        } else {
+                            afficheModalCompteRendu(crdu);
+                        }
+                    }
+                }
+        );
+    }
+    
+    supprimeCourse() {
+        let id = $('#FRM_COURSE input[name=id]').val();
+        
+        var json = {
+            domaine: 'gestion_liste_courses',
+            action: 'supprime_course',
+            id: id
         };
         $.ajax(
                 {

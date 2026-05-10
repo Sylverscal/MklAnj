@@ -81,6 +81,7 @@ class TBL_Course extends LIB_Table{
                 </div>
                 <div class="w3-container w3-pale-blue">
                     <button id="BTN_FRM_VALIDER" class="w3-button w3-green w3-right">Valider</button>
+                    <button id="BTN_FRM_SUPPRIMER" class="w3-button w3-red w3-right">Supprimer</button>
                     <button id="BTN_FRM_ANNULER" class="w3-button w3-yellow w3-left">Annuler</button>
                 </div>
             </form>

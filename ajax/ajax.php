@@ -368,4 +368,16 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         
         $crdu->emissionJson();
     }
+    
+    protected function supprime_course($post) {
+        global $DOT;
+        
+        $id = $post['id'];
+        
+        $c = $DOT->getObjet("Course");
+        $c->setId($id);
+        $crdu = $c->supprime();
+        
+        $crdu->emissionJson();
+    }
 }
