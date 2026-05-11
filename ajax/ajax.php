@@ -330,6 +330,11 @@ class CLA_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         $lc = new CLA_ListeCourses();
         $lc->afficheListeCourses();
     }
+    
+    protected function affiche_fonctions($post) {
+        $lc = new CLA_ListeCourses();
+        $lc->afficheFonctions();
+    }
 }
 
 class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {

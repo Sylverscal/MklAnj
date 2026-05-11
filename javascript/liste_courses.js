@@ -8,6 +8,7 @@ var g_liste_courses;
 class C_ListeCourses {
     constructor() {
         this.gestion_liste = new C_GestionListe();
+        this.gestion_fonctions = new C_GestionFonctions();
     }
     
     affiche() {
@@ -28,13 +29,13 @@ class C_ListeCourses {
                     dataType: 'html',
                     async: 'false',
                     success: function (html) {
-                        g_liste_courses.affiche_Retour(html);
+                        g_liste_courses.affiche_retour(html);
                     }
                 }
         );
     }
     
-    affiche_Retour(html) {
+    affiche_retour(html) {
         $("#DIV_FONCTION_LISTE_COURSES").html(html);
         g_liste_courses.gestion_liste.affiche();
     }
@@ -58,19 +59,20 @@ class C_GestionListe {
                     dataType: 'html',
                     async: 'false',
                     success: function (html) {
-                        g_liste_courses.gestion_liste.affiche_Retour(html);
+                        g_liste_courses.gestion_liste.affiche_retour(html);
                     }
                 }
         );
     }
     
-    affiche_Retour(html) {
+    affiche_retour(html) {
         $("#DIV_LISTE_COURSES").html(html);
         g_liste_courses.gestion_liste.ecouteEvenements();
+        g_liste_courses.gestion_fonctions.affiche();
     }
 
     ecouteEvenements() {
-            g_liste_courses.gestion_liste.majCouleurLignes();
+        g_liste_courses.gestion_liste.majCouleurLignes();
        
         // Ecoute le état case à cocher "course faite"
         $('.CBX_COURSE_FAITE').change(function () {
@@ -186,7 +188,8 @@ class C_GestionListe {
             afficheModalConfirmation("Suppression course","Voulez-vous vraiment supprimer la course : "+fmt_val);
         });
         $('#COU_MODAL_CONFIRMATION_OUI').on("click",function(){
-            g_liste_courses.gestion_liste.supprimeCourse();
+            let id = $('#FRM_COURSE input[name=id]').val();
+            g_liste_courses.gestion_liste.supprimeCourse(id);
         });
         $('#FRM_COURSE select').change(function(){
             const id = $(this).val();
@@ -290,9 +293,7 @@ class C_GestionListe {
         );
     }
     
-    supprimeCourse() {
-        let id = $('#FRM_COURSE input[name=id]').val();
-        
+    supprimeCourse(id) {
         var json = {
             domaine: 'gestion_liste_courses',
             action: 'supprime_course',
@@ -316,6 +317,55 @@ class C_GestionListe {
     }
     
 }  
+
+class C_GestionFonctions {
+    
+    affiche() {
+        var json = {
+            domaine: 'liste_courses',
+            action: 'affiche_fonctions'
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'html',
+                    async: 'false',
+                    success: function (html) {
+                        g_liste_courses.gestion_fonctions.affiche_retour(html);
+                    }
+                }
+        );
+    }
+    
+    affiche_retour(html) {
+        $("#DIV_FONCTIONS").html(html);
+    }
+    
+    ecoute_evenements() {
+        $('#FCT_SUPPRIMER').click(function(){
+            let id = g_liste_courses.gestion_liste.id_selectionne;
+            
+            console.log(id);
+            
+            if (id === 0) {
+                return;
+            }
+            
+//            let val = $("#FRM_COURSE input[name='Article_nom'").val();
+            let val = "Course sélectionnée";
+            let fmt_val = "<span class='w3-red w3-text-yellow'>"+val+"</span>";
+            afficheModalConfirmation("Suppression course","Voulez-vous vraiment supprimer la course : "+fmt_val);
+            
+        });
+        $('#COU_MODAL_CONFIRMATION_OUI').on("click",function(){
+            let id = g_liste_courses.gestion_liste.id_selectionne;
+            g_liste_courses.gestion_liste.supprimeCourse(id);
+        });
+    }
+    
+}
 
 function afficheModalConfirmation(titre,action) {
     $('#COU_MODAL_CONFIRMATION_TITRE').html(titre);

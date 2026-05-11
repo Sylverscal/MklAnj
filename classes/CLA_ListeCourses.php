@@ -51,7 +51,7 @@ class CLA_ListeCourses {
     }
     
     /**
-     * 
+     * Affiche la liste des courses
      * @global LIB_DistributeurObjetTable $DOT
      */
     public function afficheListeCourses() {
@@ -59,5 +59,16 @@ class CLA_ListeCourses {
         
         $cs = $DOT->getObjet_s("Course");
         $cs->afficheListe();
+    }
+    
+    /**
+     * Affiche les fonctions possibles sur la course sélectionnée
+     */
+    public function afficheFonctions() {
+        ?>
+            <div class="w3-container w3-lime">
+                <button id="FCT_SUPPRIMER" class="w3-button w3-red w3-border w3-large w3-ripple w3-circle"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </div>
+        <?php
     }
 }
