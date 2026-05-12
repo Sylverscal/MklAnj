@@ -341,6 +341,7 @@ class C_GestionFonctions {
     
     affiche_retour(html) {
         $("#DIV_FONCTIONS").html(html);
+        g_liste_courses.gestion_fonctions.ecoute_evenements();
     }
     
     ecoute_evenements() {
@@ -353,8 +354,8 @@ class C_GestionFonctions {
                 return;
             }
             
-//            let val = $("#FRM_COURSE input[name='Article_nom'").val();
-            let val = "Course sélectionnée";
+            // Sélection du tr avec l'id de la ligne sélectionnée
+            let val = $("#COURSE_TEXTE_"+g_liste_courses.gestion_liste.id_selectionne).text();
             let fmt_val = "<span class='w3-red w3-text-yellow'>"+val+"</span>";
             afficheModalConfirmation("Suppression course","Voulez-vous vraiment supprimer la course : "+fmt_val);
             

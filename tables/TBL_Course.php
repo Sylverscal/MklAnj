@@ -176,7 +176,7 @@ class TBL_Course extends LIB_Table{
         
         ?>
         <p>
-            <span><?php echo $texte; ?></span><span class='w3-text-blue w3-right w3-small'><?php echo $localisation; ?></span>
+            <span id="COURSE_TEXTE_<?php echo $this->getId() ?>"><?php echo $texte; ?></span><span class='w3-text-blue w3-right w3-small'><?php echo $localisation; ?></span>
         </p>
             <?php if ($commentaire != "" && $commentaire != "-") { ?>
             <p class="w3-text-gray w3-small"><i><?php echo $commentaire; ?></i></p>
