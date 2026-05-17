@@ -1,215 +1,170 @@
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
+12-05-2026 07:36:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+12-05-2026 07:36:40 : ? -> ? -> ? -> 0 : POST
+12-05-2026 07:36:40 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => supprime_course
-    [id] => 11
+    [id] => 10
 )
 
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
+12-05-2026 07:36:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+12-05-2026 07:36:40 : ? -> ? -> ? -> 0 : POST
+12-05-2026 07:36:40 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
+12-05-2026 07:36:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+12-05-2026 07:36:40 : ? -> ? -> ? -> 0 : POST
+12-05-2026 07:36:40 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses
+)
+
+12-05-2026 07:36:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+12-05-2026 07:36:40 : ? -> ? -> ? -> 0 : POST
+12-05-2026 07:36:40 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_liste_courses
+)
+
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => liste_courses
+)
+
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses
+)
+
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:39:10 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_liste_courses
+)
+
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => liste_courses
+)
+
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses
+)
+
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:52:18 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_liste_courses
+)
+
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => liste_courses
+)
+
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses
 )
 
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : POST
+13-05-2026 15:56:56 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_fonctions
 )
 
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : POST
-11-05-2026 16:45:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-11-05-2026 17:43:36 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:43:36 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:43:36 : ? -> ? -> ? -> 0 : Array
+14-05-2026 09:54:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+14-05-2026 09:54:46 : ? -> ? -> ? -> 0 : POST
+14-05-2026 09:54:46 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => acces
     [action] => affiche
 )
 
-11-05-2026 17:43:38 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:43:38 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:43:38 : ? -> ? -> ? -> 0 : Array
+14-05-2026 09:54:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+14-05-2026 09:54:47 : ? -> ? -> ? -> 0 : POST
+14-05-2026 09:54:47 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => acces
     [action] => controle
@@ -231,91 +186,99 @@
 
 )
 
-11-05-2026 17:43:38 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:43:38 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:43:38 : ? -> ? -> ? -> 0 : Array
+14-05-2026 09:54:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+14-05-2026 09:54:47 : ? -> ? -> ? -> 0 : POST
+14-05-2026 09:54:47 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => accueil
     [action] => affiche
 )
 
-11-05-2026 17:43:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:43:39 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:43:39 : ? -> ? -> ? -> 0 : Array
+14-05-2026 09:54:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+14-05-2026 09:54:49 : ? -> ? -> ? -> 0 : POST
+14-05-2026 09:54:49 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => accueil
     [action] => affiche_accueil_courses
 )
 
-11-05-2026 17:43:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:43:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:43:39 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:43:39 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:43:39 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-11-05-2026 17:43:39 : ? -> ? -> ? -> 0 : Array
+14-05-2026 09:54:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+14-05-2026 09:54:49 : ? -> ? -> ? -> 0 : POST
+14-05-2026 09:54:49 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => barre_navigation
     [action] => affiche
     [onglet] => COU_onglet_home
 )
 
-11-05-2026 17:43:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:43:41 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:43:41 : ? -> ? -> ? -> 0 : Array
+14-05-2026 09:54:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+14-05-2026 09:54:49 : ? -> ? -> ? -> 0 : POST
+14-05-2026 09:54:49 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+14-05-2026 09:54:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+14-05-2026 09:54:50 : ? -> ? -> ? -> 0 : POST
+14-05-2026 09:54:50 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => barre_navigation
     [action] => affiche
     [onglet] => CLA_onglet_liste_courses
 )
 
-11-05-2026 17:43:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:43:41 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:43:41 : ? -> ? -> ? -> 0 : Array
+14-05-2026 09:54:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+14-05-2026 09:54:50 : ? -> ? -> ? -> 0 : POST
+14-05-2026 09:54:50 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => onglet
     [action] => liste_courses
 )
 
-11-05-2026 17:43:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:43:41 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:43:41 : ? -> ? -> ? -> 0 : Array
+14-05-2026 09:54:51 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+14-05-2026 09:54:51 : ? -> ? -> ? -> 0 : POST
+14-05-2026 09:54:51 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-11-05-2026 17:43:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:43:41 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:43:41 : ? -> ? -> ? -> 0 : Array
+14-05-2026 09:54:51 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+14-05-2026 09:54:51 : ? -> ? -> ? -> 0 : POST
+14-05-2026 09:54:51 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses
 )
 
-11-05-2026 17:43:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:43:42 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:43:42 : ? -> ? -> ? -> 0 : Array
+14-05-2026 09:54:51 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+14-05-2026 09:54:51 : ? -> ? -> ? -> 0 : POST
+14-05-2026 09:54:51 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_fonctions
 )
 
-11-05-2026 17:52:27 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:52:27 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:52:27 : ? -> ? -> ? -> 0 : Array
+15-05-2026 21:07:17 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+15-05-2026 21:07:17 : ? -> ? -> ? -> 0 : POST
+15-05-2026 21:07:17 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => acces
     [action] => affiche
 )
 
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : Array
+16-05-2026 11:14:14 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-05-2026 11:14:14 : ? -> ? -> ? -> 0 : POST
+16-05-2026 11:14:14 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+16-05-2026 11:14:15 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-05-2026 11:14:15 : ? -> ? -> ? -> 0 : POST
+16-05-2026 11:14:15 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => acces
     [action] => controle
@@ -337,1600 +300,75 @@
 
 )
 
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : Array
+16-05-2026 11:14:15 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-05-2026 11:14:15 : ? -> ? -> ? -> 0 : POST
+16-05-2026 11:14:15 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => accueil
     [action] => affiche
 )
 
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : Array
+16-05-2026 11:14:16 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-05-2026 11:14:16 : ? -> ? -> ? -> 0 : POST
+16-05-2026 11:14:16 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => accueil
     [action] => affiche_accueil_courses
 )
 
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : Array
+16-05-2026 11:14:16 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-05-2026 11:14:16 : ? -> ? -> ? -> 0 : POST
+16-05-2026 11:14:16 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+16-05-2026 11:14:16 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-05-2026 11:14:16 : ? -> ? -> ? -> 0 : POST
+16-05-2026 11:14:16 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => barre_navigation
     [action] => affiche
     [onglet] => COU_onglet_home
 )
 
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:52:30 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : Array
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : POST
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => barre_navigation
     [action] => affiche
     [onglet] => CLA_onglet_liste_courses
 )
 
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : Array
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : POST
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => onglet
     [action] => liste_courses
 )
 
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : Array
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : POST
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : Array
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : POST
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses
 )
 
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:52:31 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-11-05-2026 17:59:05 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:59:05 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:59:05 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-11-05-2026 17:59:06 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:59:06 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:59:06 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-11-05-2026 17:59:06 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:59:06 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:59:06 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-11-05-2026 17:59:07 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:59:07 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:59:07 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-11-05-2026 17:59:07 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:59:07 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:59:07 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-11-05-2026 17:59:07 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:59:07 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:59:07 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : POST
-11-05-2026 17:59:08 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 05:54:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:54:43 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:54:43 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 05:54:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:54:45 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:54:45 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 05:54:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:54:45 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:54:45 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 05:54:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:54:45 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:54:45 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 05:54:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:54:46 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:54:46 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 05:54:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:54:46 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:54:46 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:54:47 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 05:55:37 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:55:37 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:55:37 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:55:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : POST
-12-05-2026 05:55:41 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 06:23:51 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:23:51 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:23:51 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 06:24:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:24:22 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:24:22 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 06:24:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:24:22 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:24:22 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 06:24:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:24:23 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:24:23 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 06:24:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:24:23 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:24:23 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 06:24:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:24:23 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:24:23 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:24:25 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 06:28:52 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:28:52 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:28:52 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 06:28:54 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:28:54 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:28:54 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 06:28:54 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:28:54 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:28:54 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 06:28:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:28:55 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:28:55 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 06:28:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:28:55 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:28:55 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 06:28:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:28:55 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:28:55 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:28:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 06:32:51 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:32:51 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:32:51 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 06:32:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:32:53 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:32:53 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 06:32:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:32:53 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:32:53 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 06:32:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:32:55 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:32:55 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 06:32:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:32:55 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:32:55 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 06:32:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:32:55 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:32:55 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:32:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 06:33:36 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:33:36 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:33:36 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 06:33:38 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:33:38 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:33:38 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 06:33:38 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:33:38 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:33:38 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 06:33:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:33:39 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:33:39 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 06:33:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:33:39 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:33:39 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 06:33:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:33:39 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:33:39 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : POST
-12-05-2026 06:33:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 07:11:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:11:41 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:11:41 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 07:11:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:11:43 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:11:43 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 07:11:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:11:43 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:11:43 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 07:11:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:11:44 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:11:44 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 07:11:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:11:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:11:44 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:11:44 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:11:44 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 07:11:44 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:11:46 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 07:12:52 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:12:52 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:12:52 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 07:12:54 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:12:54 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:12:54 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 07:12:54 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:12:54 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:12:54 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 07:12:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:12:55 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:12:55 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 07:12:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:12:55 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:12:55 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 07:12:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:12:55 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:12:55 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:12:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 07:15:26 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:15:26 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:15:26 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 07:15:28 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:15:28 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:15:28 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 07:15:28 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:15:28 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:15:28 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 07:15:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:15:29 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:15:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 07:15:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:15:29 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:15:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 07:15:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:15:29 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:15:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 07:15:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:15:30 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:15:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:15:30 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 07:15:30 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:15:30 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 07:15:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:15:30 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:15:30 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 07:15:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:15:31 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:15:31 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 07:15:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:15:31 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:15:31 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 07:22:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:22:19 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:22:19 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 07:22:20 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:22:20 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:22:20 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 07:22:20 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:22:20 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:22:20 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 07:22:21 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:22:21 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:22:21 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 07:22:21 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:22:21 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:22:21 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:22:21 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 07:22:21 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:22:21 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:22:22 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 07:26:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:26:39 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:26:39 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 07:26:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:26:40 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:26:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 07:26:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:26:40 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:26:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 07:26:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:26:41 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:26:41 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 07:26:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:26:41 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:26:41 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 07:26:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:26:41 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:26:41 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 07:26:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:26:42 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:26:42 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 07:26:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:26:42 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:26:42 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 07:26:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:26:42 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:26:42 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 07:26:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:26:42 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:26:42 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 07:26:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:26:43 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:26:43 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 07:29:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:29:29 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:29:29 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 07:29:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:29:30 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:29:30 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 07:29:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:29:31 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:29:31 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 07:29:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:29:31 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:29:31 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 07:29:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:29:31 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:29:31 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 07:29:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:29:31 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:29:31 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 07:29:32 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:29:32 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:29:32 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 07:29:32 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:29:32 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:29:32 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 07:29:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:29:33 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:29:33 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 07:29:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:29:33 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:29:33 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 07:29:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:29:33 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:29:33 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:33:53 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-12-05-2026 07:35:36 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:35:36 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:35:36 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => affiche
-)
-
-12-05-2026 07:35:37 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:35:37 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:35:37 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => acces
-    [action] => controle
-    [donnees] => Array
-        (
-            [0] => Array
-                (
-                    [name] => a
-                    [value] => 
-                )
-
-            [1] => Array
-                (
-                    [name] => b
-                    [value] => 
-                )
-
-        )
-
-)
-
-12-05-2026 07:35:37 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:35:37 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:35:37 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche
-)
-
-12-05-2026 07:35:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:35:42 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:35:42 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => accueil
-    [action] => affiche_accueil_courses
-)
-
-12-05-2026 07:35:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:35:42 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:35:42 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => COU_onglet_home
-)
-
-12-05-2026 07:35:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:35:42 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:35:42 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => home
-)
-
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : POST
-12-05-2026 07:35:43 : ? -> ? -> ? -> 0 : Array
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : POST
+16-05-2026 11:14:18 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_fonctions

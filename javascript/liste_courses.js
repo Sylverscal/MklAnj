@@ -316,6 +316,28 @@ class C_GestionListe {
         );
     }
     
+    afficheNouvelleCourse() {
+        var json = {
+            domaine: 'gestion_liste_courses',
+            action: 'affiche_nouvelle_course'
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'html',
+                    async: 'false',
+                    success: function (html) {
+                        g_liste_courses.gestion_liste.afficheNouvelleCourse_retour(html);
+                    }
+                }
+        );
+    }
+    
+    afficheNouvelleCourse_retour(html) {
+        
+    }
 }  
 
 class C_GestionFonctions {
@@ -345,10 +367,8 @@ class C_GestionFonctions {
     }
     
     ecoute_evenements() {
-        $('#FCT_SUPPRIMER').click(function(){
+        $('#BTN_FCT_SUPPRIMER').click(function(){
             let id = g_liste_courses.gestion_liste.id_selectionne;
-            
-            console.log(id);
             
             if (id === 0) {
                 return;
@@ -360,11 +380,15 @@ class C_GestionFonctions {
             afficheModalConfirmation("Suppression course","Voulez-vous vraiment supprimer la course : "+fmt_val);
             
         });
+        $('#BTN_FCT_CREER').on("click",function(){
+            
+        });
         $('#COU_MODAL_CONFIRMATION_OUI').on("click",function(){
             let id = g_liste_courses.gestion_liste.id_selectionne;
             g_liste_courses.gestion_liste.supprimeCourse(id);
         });
     }
+    
     
 }
 

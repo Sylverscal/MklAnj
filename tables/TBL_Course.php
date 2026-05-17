@@ -431,4 +431,20 @@ class TBL_Course extends LIB_Table{
         
         return $id;
     }
+    
+    public function afficheLigneEditable($id = 0) {
+        ?>
+            <tr id="<?php echo $id; ?>" class="w3-hover-pale-yellow">
+                <td>
+                    <input id="INP_LIGNE_EDITABLE_VALEUR" class="w3-input" type="text" name="nom_article" value="">
+                </td>
+                <td>
+                    <button id="BTN_LIGNE_EDITABLE_OK" class="w3-button w3-circle w3-right"><i class="fa fa-check"></i></button>
+                </td>
+            <?php
+
+            ?>
+            </tr>
+        <?php
+    }
 }

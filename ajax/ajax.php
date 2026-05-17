@@ -374,6 +374,13 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         $crdu->emissionJson();
     }
     
+    protected function affiche_nouvelle_course($post) {
+        global $DOT;
+
+        $c = $DOT->getObjet("Course");
+        $c->afficheLigneEditable();
+    }
+    
     protected function supprime_course($post) {
         global $DOT;
         
