@@ -336,6 +336,13 @@ class C_GestionListe {
     }
     
     afficheNouvelleCourse_retour(html) {
+        $('#TBL_LISTE_COURSES').append(html);
+        
+        $('#BTN_LIGNE_EDITABLE_OK').on("click",function(){
+            let nom_article = $('#INP_LIGNE_EDITABLE_VALEUR').val();
+            
+            console.log(nom_article);
+        });
         
     }
 }  
@@ -381,7 +388,7 @@ class C_GestionFonctions {
             
         });
         $('#BTN_FCT_CREER').on("click",function(){
-            
+            g_liste_courses.gestion_liste.afficheNouvelleCourse();
         });
         $('#COU_MODAL_CONFIRMATION_OUI').on("click",function(){
             let id = g_liste_courses.gestion_liste.id_selectionne;
