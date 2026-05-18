@@ -347,6 +347,8 @@ class C_GestionListe {
             let nom_article = $('#INP_LIGNE_EDITABLE_VALEUR').val();
             
             console.log(nom_article);
+            $(this).parent().parent().remove();
+            g_liste_courses.gestion_liste.valideNouvelleCourse(nom_article);
         });
         $('#BTN_LIGNE_EDITABLE_KO').on("click",function(){
             $(this).parent().parent().remove();
@@ -376,9 +378,35 @@ class C_GestionListe {
     controleArticleExisteDeja_retour(data) {
         if (data.is_existe === "oui") {
             $('#INP_LIGNE_EDITABLE_VALEUR').css('color','orange');
+            $('#BTN_LIGNE_EDITABLE_OK').prop('disabled',true);
         } else {
             $('#INP_LIGNE_EDITABLE_VALEUR').css('color','black');
+            $('#BTN_LIGNE_EDITABLE_OK').prop('disabled',false);
         }
+    }
+    
+    valideNouvelleCourse(nom_article) {
+        var json = {
+            domaine: 'gestion_liste_courses',
+            action: 'valide_nouvelle_course',
+            nom_article: nom_article
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'html',
+                    async: 'false',
+                    success: function (html) {
+                        g_liste_courses.gestion_liste.valideNouvelleCourse_retour(html);
+                    }
+                }
+        );
+    }
+    
+    valideNouvelleCourse_retour(html) {
+        $('#TBL_LISTE_COURSES').append(html);
     }
 }  
 

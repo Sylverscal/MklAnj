@@ -84,6 +84,7 @@ class LIB_CompteRendu {
     
     public function affiche($couleur = "") {
         ?>
+            <tr>
                 <td class="<?php echo $couleur ?>"><?php echo $this->is_ok ? "Ok" : "Ko"; ?></td>
             </tr>
             <tr>

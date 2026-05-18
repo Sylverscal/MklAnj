@@ -1,8 +1,40 @@
-18-05-2026 16:21:10 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-18-05-2026 16:21:10 : ? -> ? -> ? -> 0 : POST
-18-05-2026 16:21:10 : ? -> ? -> ? -> 0 : Array
+18-05-2026 19:46:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+18-05-2026 19:46:33 : ? -> ? -> ? -> 0 : POST
+18-05-2026 19:46:33 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
-    [action] => affiche_nouvelle_course
+    [action] => valide_nouvelle_course
+    [nom_article] => Champagne
 )
 
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> valideFormulaire -> 461 : 
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> valideFormulaire -> 461 : Array
+(
+    [id] => 0
+    [Article_nom] => Champagne
+    [Marque_nom] => -
+    [Commerce_nom] => -
+    [Ville_nom] => -
+    [Zone_nom] => -
+    [Course_datation] => 01-01-2000
+    [Course_nombre] => 1
+    [Course_capacite] => 0
+    [Unite_nom] => -
+    [Course_commentaire] => -
+    [Course_faite] => 0
+)
+
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> valideFormulaire -> 461 : Datation : 01-01-2000
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> prepareColonne -> 374 : Champagne
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> prepareColonne -> 374 : Article : 608 :  Champagne
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> prepareColonne -> 375 : -
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> prepareColonne -> 375 : Marque : 1 :  -
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> prepareColonne -> 376 : -
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> prepareColonne -> 376 : Commerce : 30 :  -
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> prepareColonne -> 377 : -
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> prepareColonne -> 377 : Ville : 1 :  -
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> prepareColonne -> 378 : -
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> prepareColonne -> 378 : Zone : 1 :  -
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> prepareColonne -> 379 : -
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> prepareColonne -> 379 : Unite : 4 :  -
+18-05-2026 19:46:33 : TBL_Course -> TBL_Course -> valideFormulaire -> 461 : 0

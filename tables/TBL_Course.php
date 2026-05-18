@@ -448,4 +448,64 @@ class TBL_Course extends LIB_Table{
             </tr>
         <?php
     }
+    
+    /**
+     * Création d'une nouvelle course à partir de l'aticle saisi
+     * @param type $nom_article
+     */
+    public function creationNouvelleCourse($nom_article) {
+        $donnees = $this->getTableauDonneesVierge();
+        
+        $donnees['Article_nom'] = $nom_article;
+        
+        $crdu = $this->valideFormulaire($donnees);
+        
+        if ($crdu->isKo()) {
+            $crdu->affiche();
+            return;
+        }
+        
+        $this->affiche();
+    }
+    
+    /**
+     * Renvoie un modèle de tableau de données vierge
+     * @return array
+     */
+    private function getTableauDonneesVierge() {
+        $tab = [];
+        $tab['id'] = 0;
+        $tab['Article_nom'] = "-";
+        $tab['Marque_nom'] = "-";
+        $tab['Commerce_nom'] = "-";
+        $tab['Ville_nom'] = "-";
+        $tab['Zone_nom'] = "-";
+        $tab['Course_datation'] = "01-01-2000";
+        $tab['Course_nombre'] = 1;
+        $tab['Course_capacite'] = 0;
+        $tab['Unite_nom'] = "-";
+        $tab['Course_commentaire'] = "-";
+        $tab['Course_faite'] = 0;
+        
+        return $tab;
+    }
+    
+    public function isCourseExistePourArticle($nom_article) {
+        global $CXO;
+        
+        $requete = "SELECT count(Course.id) as nb FROM MklAnj.Course
+        join Article on Article.id = Course.id_Article
+        where Article.nom = '$nom_article'";
+        
+        $rlt = $CXO->executeRequete($requete);
+        
+        $nb = 0;
+        if ($rlt->isOk()) {
+            foreach ($rlt->getResultat() as $valeur) {
+                $nb = $valeur['nb'];
+            }
+        }
+        
+        return $nb == 1;
+    }
 }

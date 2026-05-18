@@ -381,6 +381,17 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         $c->afficheLigneEditable();
     }
     
+    protected function valide_nouvelle_course($post) {
+        global $DOT;
+        
+        $c = $DOT->getObjet("Course");
+        
+        $nom_article = $post['nom_article'];
+        
+        $c->creationNouvelleCourse($nom_article);
+        
+    }
+    
     protected function supprime_course($post) {
         global $DOT;
         
@@ -398,13 +409,12 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         
         $nom_article = $post['nom_article'];
         
-        $c = $DOT->getObjet("Article");
-        $c->chargeParNomColonne("nom",$nom_article);
+        $c = $DOT->getObjet("Course");
         
         $tab = [];
         $tab['is_existe'] = "non";
         
-        if ($c->getId() > 0) {
+        if ($c->isCourseExistePourArticle($nom_article)) {
             $tab['is_existe'] = "oui";
         }
         
