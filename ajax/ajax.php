@@ -392,4 +392,22 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         
         $crdu->emissionJson();
     }
+    
+    protected function controle_article_existe_deja($post) {
+        global $DOT;
+        
+        $nom_article = $post['nom_article'];
+        
+        $c = $DOT->getObjet("Article");
+        $c->chargeParNomColonne("nom",$nom_article);
+        
+        $tab = [];
+        $tab['is_existe'] = "non";
+        
+        if ($c->getId() > 0) {
+            $tab['is_existe'] = "oui";
+        }
+        
+        LIB_Util::jsonise($tab);
+    }
 }

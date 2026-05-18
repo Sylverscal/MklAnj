@@ -338,12 +338,47 @@ class C_GestionListe {
     afficheNouvelleCourse_retour(html) {
         $('#TBL_LISTE_COURSES').append(html);
         
+        $('#INP_LIGNE_EDITABLE_VALEUR').on("input",function(){
+            let nom_article = $('#INP_LIGNE_EDITABLE_VALEUR').val();
+            
+            g_liste_courses.gestion_liste.controleArticleExisteDeja(nom_article);
+        });
         $('#BTN_LIGNE_EDITABLE_OK').on("click",function(){
             let nom_article = $('#INP_LIGNE_EDITABLE_VALEUR').val();
             
             console.log(nom_article);
         });
+        $('#BTN_LIGNE_EDITABLE_KO').on("click",function(){
+            $(this).parent().parent().remove();
+        });
         
+    }
+    
+    controleArticleExisteDeja(nom_article) {
+        var json = {
+            domaine: 'gestion_liste_courses',
+            action: 'controle_article_existe_deja',
+            nom_article: nom_article
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'json',
+                    success: function (data) {
+                        g_liste_courses.gestion_liste.controleArticleExisteDeja_retour(data);
+                    }
+                }
+        );
+    }
+    
+    controleArticleExisteDeja_retour(data) {
+        if (data.is_existe === "oui") {
+            $('#INP_LIGNE_EDITABLE_VALEUR').css('color','orange');
+        } else {
+            $('#INP_LIGNE_EDITABLE_VALEUR').css('color','black');
+        }
     }
 }  
 

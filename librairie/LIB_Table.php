@@ -351,7 +351,7 @@ $tab
      * @param string $nom_colonne Nom de la colonne 
      * @param styring $valeur Valeur
      */
-    protected function chargeParNomColonne($nom_colonne,$valeur) : LIB_CompteRendu {
+    public function chargeParNomColonne($nom_colonne,$valeur) : LIB_CompteRendu {
         global $CXO;
         // Recherche de l'élément en fonction de son nom
         $requete = sprintf("select * from %s where %s = '%s'",$this->nom_table,$nom_colonne,$valeur);

@@ -439,6 +439,7 @@ class TBL_Course extends LIB_Table{
                     <input id="INP_LIGNE_EDITABLE_VALEUR" class="w3-input" type="text" name="nom_article" value="">
                 </td>
                 <td colspan="3">
+                    <button id="BTN_LIGNE_EDITABLE_KO" class="w3-button w3-red w3-circle w3-right"><i class="fa fa-ban"></i></button>
                     <button id="BTN_LIGNE_EDITABLE_OK" class="w3-button w3-green w3-circle w3-right"><i class="fa fa-check"></i></button>
                 </td>
             <?php
