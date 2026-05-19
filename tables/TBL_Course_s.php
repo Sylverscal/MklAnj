@@ -23,11 +23,13 @@ class TBL_Course_s extends LIB_Table_s{
         <div class="w3-container" style="overflow-y: scroll; height:600px">
     
             <table id="TBL_LISTE_COURSES" class="w3-table-all w3-hoverable">
-            <?php
-                foreach ($this as $course) {
-                    $course->affiche();
-                }
-            ?>
+                <tbody id="TBL_LISTE_COURSES_BODY">
+                <?php
+                    foreach ($this as $course) {
+                        $course->affiche();
+                    }
+                ?>
+                </tbody>
             </table>
         </div>
         <?php

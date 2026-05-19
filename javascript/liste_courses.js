@@ -12,10 +12,6 @@ class C_ListeCourses {
     }
     
     affiche() {
-        this.affiche();
-    }
-    
-    affiche() {
         $('#ONG_contenu').html("<h4>Op&eacuteration en cours</h4>");
         var json = {
             domaine: 'liste_courses',
@@ -183,14 +179,18 @@ class C_GestionListe {
         });
         $('#BTN_FRM_SUPPRIMER').on("click",function(e){
             e.preventDefault();
-            let val = $("#FRM_COURSE input[name='Article_nom'").val();
-            let fmt_val = "<span class='w3-red w3-text-yellow'>"+val+"</span>";
-            afficheModalConfirmation("Suppression course","Voulez-vous vraiment supprimer la course : "+fmt_val);
-        });
-        $('#COU_MODAL_CONFIRMATION_OUI').on("click",function(){
+//            let val = $("#FRM_COURSE input[name='Article_nom'").val();
+//            let fmt_val = "<span class='w3-red w3-text-yellow'>"+val+"</span>";
+//            afficheModalConfirmation("Suppression course","Voulez-vous vraiment supprimer la course : "+fmt_val);
             let id = $('#FRM_COURSE input[name=id]').val();
+            console.log(id);
             g_liste_courses.gestion_liste.supprimeCourse(id);
         });
+//        $('#COU_MODAL_CONFIRMATION_OUI').on("click",function(){
+//            let id = $('#FRM_COURSE input[name=id]').val();
+//            console.log(id);
+//            g_liste_courses.gestion_liste.supprimeCourse(id);
+//        });
         $('#FRM_COURSE select').change(function(){
             const id = $(this).val();
             const text = $(this).find("option:selected").text();
@@ -336,7 +336,7 @@ class C_GestionListe {
     }
     
     afficheNouvelleCourse_retour(html) {
-        $('#TBL_LISTE_COURSES').append(html);
+        $('#TBL_LISTE_COURSES_BODY').append(html);
         
         $('#INP_LIGNE_EDITABLE_VALEUR').on("input",function(){
             let nom_article = $('#INP_LIGNE_EDITABLE_VALEUR').val();
@@ -346,7 +346,6 @@ class C_GestionListe {
         $('#BTN_LIGNE_EDITABLE_OK').on("click",function(){
             let nom_article = $('#INP_LIGNE_EDITABLE_VALEUR').val();
             
-            console.log(nom_article);
             $(this).parent().parent().remove();
             g_liste_courses.gestion_liste.valideNouvelleCourse(nom_article);
         });
@@ -406,7 +405,7 @@ class C_GestionListe {
     }
     
     valideNouvelleCourse_retour(html) {
-        $('#TBL_LISTE_COURSES').append(html);
+        $('#TBL_LISTE_COURSES_BODY').append(html);
     }
 }  
 
@@ -445,18 +444,21 @@ class C_GestionFonctions {
             }
             
             // Sélection du tr avec l'id de la ligne sélectionnée
-            let val = $("#COURSE_TEXTE_"+g_liste_courses.gestion_liste.id_selectionne).text();
-            let fmt_val = "<span class='w3-red w3-text-yellow'>"+val+"</span>";
-            afficheModalConfirmation("Suppression course","Voulez-vous vraiment supprimer la course : "+fmt_val);
+//            let val = $("#COURSE_TEXTE_"+g_liste_courses.gestion_liste.id_selectionne).text();
+//            let fmt_val = "<span class='w3-red w3-text-yellow'>"+val+"</span>";
+//            afficheModalConfirmation("Suppression course","Voulez-vous vraiment supprimer la course : "+fmt_val);
             
+            console.log(id);
+            g_liste_courses.gestion_liste.supprimeCourse(id);
         });
         $('#BTN_FCT_CREER').on("click",function(){
             g_liste_courses.gestion_liste.afficheNouvelleCourse();
         });
-        $('#COU_MODAL_CONFIRMATION_OUI').on("click",function(){
-            let id = g_liste_courses.gestion_liste.id_selectionne;
-            g_liste_courses.gestion_liste.supprimeCourse(id);
-        });
+//        $('#COU_MODAL_CONFIRMATION_OUI').on("click",function(){
+//            let id = g_liste_courses.gestion_liste.id_selectionne;
+//            console.log(id);
+//            g_liste_courses.gestion_liste.supprimeCourse(id);
+//        });
     }
     
     
