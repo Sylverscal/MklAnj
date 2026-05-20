@@ -1,33 +1,9 @@
-20-05-2026 07:38:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-20-05-2026 07:38:49 : ? -> ? -> ? -> 0 : POST
-20-05-2026 07:38:49 : ? -> ? -> ? -> 0 : Array
+20-05-2026 16:17:20 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+20-05-2026 16:17:20 : ? -> ? -> ? -> 0 : POST
+20-05-2026 16:17:20 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
-    [action] => supprime_course
-    [id] => 7
-)
-
-20-05-2026 07:38:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-20-05-2026 07:38:49 : ? -> ? -> ? -> 0 : POST
-20-05-2026 07:38:49 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-20-05-2026 07:38:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-20-05-2026 07:38:49 : ? -> ? -> ? -> 0 : POST
-20-05-2026 07:38:49 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-20-05-2026 07:38:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-20-05-2026 07:38:49 : ? -> ? -> ? -> 0 : POST
-20-05-2026 07:38:49 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
+    [action] => affiche_formulaire
+    [id] => 55
 )
 

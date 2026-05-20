@@ -203,5 +203,4 @@ class TBL_Course_s extends LIB_Table_s{
     }
     
     
-    
 }

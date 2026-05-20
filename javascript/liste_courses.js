@@ -380,7 +380,10 @@ class C_GestionListe {
         $('#BTN_LIGNE_EDITABLE_KO').on("click",function(){
             $(this).parent().parent().remove();
         });
-        
+        $('#SEL_NOM_ARTICLE').on("change",function(){
+            let val = $(this).val();
+            $(this).parents('tr').find('input').val(val);
+        });
     }
     
     controleArticleExisteDeja(nom_article) {
@@ -472,18 +475,12 @@ class C_GestionFonctions {
                 return;
             }
             
-            console.log(id);
             g_liste_courses.gestion_liste.supprimeCourse(id);
         });
         $('#BTN_FCT_CREER').on("click",function(){
             g_liste_courses.gestion_liste.afficheNouvelleCourse();
         });
         $('#BTN_FCT_MODIFIER').on("click",function(){
-            let id = $('#TBL_LISTE_COURSES_BODY').find('tr').last().attr('id');
-            console.log(id);
-            let sltr_nd = "tr#"+id;
-            console.log(sltr_nd);
-            let nd = $(sltr_nd);
         });
     }
     

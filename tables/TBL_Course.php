@@ -433,9 +433,23 @@ class TBL_Course extends LIB_Table{
     }
     
     public function afficheLigneEditable($id = 0) {
+        global $DOT;
+        
+        $a_s = $DOT->getObjet_s("Article");
+        $tab_articles = $a_s->getArticlesInutilises();
+        
         ?>
             <tr id="<?php echo $id; ?>" class="w3-hover-pale-yellow">
                 <td>
+                    <select id="SEL_NOM_ARTICLE" class="w3-select">
+                        <?php
+                                foreach ($tab_articles as $value) {
+                                    ?>
+                                    <option value="<?php echo $value ?>"><?php echo $value ?></option>
+                                    <?php
+                                }
+                        ?>
+                    </select>
                     <input id="INP_LIGNE_EDITABLE_VALEUR" class="w3-input" type="text" name="nom_article" value="">
                 </td>
                 <td colspan="3">
