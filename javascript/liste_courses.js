@@ -94,14 +94,12 @@ class C_GestionListe {
     
     ecouteEvenementsDerniereLigne() {
         let id = $('#TBL_LISTE_COURSES_BODY').find('tr').last().attr('id');
-        console.log(id);
 
         g_liste_courses.gestion_liste.majCouleurLignes();
        
-        let nd = $('#TBL_LISTE_COURSES_BODY').find('tr#47');
+        let nd = $('#TBL_LISTE_COURSES_BODY').find('tr#'+id);
         // Ecoute le état case à cocher "course faite"
-        let nd_cbx = $('#TBL_LISTE_COURSES_BODY').find('tr#47').find('input.CBX_COURSE_FAITE');
-        $('#TBL_LISTE_COURSES_BODY').find('tr#'+id).find('input.CBX_COURSE_FAITE').on("change",function () {
+        $(nd).find('input.CBX_COURSE_FAITE').on("change",function () {
             var th = $(this).closest("tr");
             var id = $(th).attr(('id'));
             var etat = ($(this).is(':checked')) ? 1 : 0;
@@ -109,12 +107,12 @@ class C_GestionListe {
             g_liste_courses.gestion_liste.changeEtatFaite(id,etat);
         });
         // Ecoute d'un clic sur le bouton de raz du filtre
-        $('#TBL_LISTE_COURSES_BODY').find('tr#'+id).find('button.BTN_FORMULAIRE').on("click",function() {
+        $(nd).find('button.BTN_FORMULAIRE').on("click",function() {
             var th = $(this).closest("tr");
             var id = $(th).attr('id');
             g_liste_courses.gestion_liste.affiche_formulaire(id);
         });
-        $('#TBL_LISTE_COURSES_BODY').find('tr#'+id).find('td.TD_COURSE').on("click",function() {
+        $(nd).find('td.TD_COURSE').on("click",function() {
             var th = $(this).closest("tr");
             var id = $(th).attr('id');
             g_liste_courses.gestion_liste.id_selectionne = id;
