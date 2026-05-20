@@ -71,7 +71,7 @@ class C_GestionListe {
         g_liste_courses.gestion_liste.majCouleurLignes();
        
         // Ecoute le état case à cocher "course faite"
-        $('.CBX_COURSE_FAITE').change(function () {
+        $('.CBX_COURSE_FAITE').on("change",function () {
             var th = $(this).closest("tr");
             var id = $(th).attr(('id'));
             var etat = ($(this).is(':checked')) ? 1 : 0;
@@ -79,12 +79,42 @@ class C_GestionListe {
             g_liste_courses.gestion_liste.changeEtatFaite(id,etat);
         });
         // Ecoute d'un clic sur le bouton de raz du filtre
-        $('.BTN_FORMULAIRE').click(function() {
+        $('.BTN_FORMULAIRE').on("click",function() {
             var th = $(this).closest("tr");
             var id = $(th).attr('id');
             g_liste_courses.gestion_liste.affiche_formulaire(id);
         });
-        $('.TD_COURSE').click(function() {
+        $('.TD_COURSE').on("click",function() {
+            var th = $(this).closest("tr");
+            var id = $(th).attr('id');
+            g_liste_courses.gestion_liste.id_selectionne = id;
+            g_liste_courses.gestion_liste.majCouleurLignes();
+        });
+    }
+    
+    ecouteEvenementsDerniereLigne() {
+        let id = $('#TBL_LISTE_COURSES_BODY').find('tr').last().attr('id');
+        console.log(id);
+
+        g_liste_courses.gestion_liste.majCouleurLignes();
+       
+        let nd = $('#TBL_LISTE_COURSES_BODY').find('tr#47');
+        // Ecoute le état case à cocher "course faite"
+        let nd_cbx = $('#TBL_LISTE_COURSES_BODY').find('tr#47').find('input.CBX_COURSE_FAITE');
+        $('#TBL_LISTE_COURSES_BODY').find('tr#'+id).find('input.CBX_COURSE_FAITE').on("change",function () {
+            var th = $(this).closest("tr");
+            var id = $(th).attr(('id'));
+            var etat = ($(this).is(':checked')) ? 1 : 0;
+            
+            g_liste_courses.gestion_liste.changeEtatFaite(id,etat);
+        });
+        // Ecoute d'un clic sur le bouton de raz du filtre
+        $('#TBL_LISTE_COURSES_BODY').find('tr#'+id).find('button.BTN_FORMULAIRE').on("click",function() {
+            var th = $(this).closest("tr");
+            var id = $(th).attr('id');
+            g_liste_courses.gestion_liste.affiche_formulaire(id);
+        });
+        $('#TBL_LISTE_COURSES_BODY').find('tr#'+id).find('td.TD_COURSE').on("click",function() {
             var th = $(this).closest("tr");
             var id = $(th).attr('id');
             g_liste_courses.gestion_liste.id_selectionne = id;
@@ -406,6 +436,7 @@ class C_GestionListe {
     
     valideNouvelleCourse_retour(html) {
         $('#TBL_LISTE_COURSES_BODY').append(html);
+        g_liste_courses.gestion_liste.ecouteEvenementsDerniereLigne();        
     }
 }  
 
@@ -443,22 +474,19 @@ class C_GestionFonctions {
                 return;
             }
             
-            // Sélection du tr avec l'id de la ligne sélectionnée
-//            let val = $("#COURSE_TEXTE_"+g_liste_courses.gestion_liste.id_selectionne).text();
-//            let fmt_val = "<span class='w3-red w3-text-yellow'>"+val+"</span>";
-//            afficheModalConfirmation("Suppression course","Voulez-vous vraiment supprimer la course : "+fmt_val);
-            
             console.log(id);
             g_liste_courses.gestion_liste.supprimeCourse(id);
         });
         $('#BTN_FCT_CREER').on("click",function(){
             g_liste_courses.gestion_liste.afficheNouvelleCourse();
         });
-//        $('#COU_MODAL_CONFIRMATION_OUI').on("click",function(){
-//            let id = g_liste_courses.gestion_liste.id_selectionne;
-//            console.log(id);
-//            g_liste_courses.gestion_liste.supprimeCourse(id);
-//        });
+        $('#BTN_FCT_MODIFIER').on("click",function(){
+            let id = $('#TBL_LISTE_COURSES_BODY').find('tr').last().attr('id');
+            console.log(id);
+            let sltr_nd = "tr#"+id;
+            console.log(sltr_nd);
+            let nd = $(sltr_nd);
+        });
     }
     
     
