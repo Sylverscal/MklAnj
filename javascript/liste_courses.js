@@ -207,18 +207,10 @@ class C_GestionListe {
         });
         $('#BTN_FRM_SUPPRIMER').on("click",function(e){
             e.preventDefault();
-//            let val = $("#FRM_COURSE input[name='Article_nom'").val();
-//            let fmt_val = "<span class='w3-red w3-text-yellow'>"+val+"</span>";
-//            afficheModalConfirmation("Suppression course","Voulez-vous vraiment supprimer la course : "+fmt_val);
             let id = $('#FRM_COURSE input[name=id]').val();
             console.log(id);
             g_liste_courses.gestion_liste.supprimeCourse(id);
         });
-//        $('#COU_MODAL_CONFIRMATION_OUI').on("click",function(){
-//            let id = $('#FRM_COURSE input[name=id]').val();
-//            console.log(id);
-//            g_liste_courses.gestion_liste.supprimeCourse(id);
-//        });
         $('#FRM_COURSE select').change(function(){
             const id = $(this).val();
             const text = $(this).find("option:selected").text();
@@ -251,7 +243,26 @@ class C_GestionListe {
             
             $(this).next('input[type="hidden"').val(etat);
         });
+        $('input[name=Article_nom]').on('input',function(){
+            let nom_article = $(this).val();
+            
+            console.log(nom_article);
+            var select = $(this).parent('p').find('select option');
+            
+            let is_nom_dans_liste = g_liste_courses.gestion_liste.isValeurDansMenu(select,nom_article);
+            
+        });
     }
+    
+    isValeurDansMenu(menu,valeur) {
+        var is = true;
+        $(menu).each(function(index,element){
+            const nom = $(element).text();
+            console.log(nom);
+        });
+        return is;
+    }
+    
     isChampNombreValide(tag) {
         const valeur = $(tag).val();
 
