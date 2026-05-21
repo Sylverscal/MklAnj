@@ -17,9 +17,8 @@ class TBL_Article_s extends LIB_Table_s {
      */
     public function getArticlesInutilises() {
         global $CXO;
-        LIB_Util::log("getArticlesInutilises");
         
-        $requete = "SELECT Article.nom as nom FROM Article
+        $requete = "SELECT Article.id as id,Article.nom as nom FROM Article
             left join Course on Course.id_Article = Article.id
             where Course.id is null";
         
@@ -30,7 +29,7 @@ class TBL_Article_s extends LIB_Table_s {
         
         if ($rlt->isOk()) {
             foreach ($rlt->getResultat() as $value) {
-                $tab[] = $value[0];
+                $tab[] = ["valeur" => $value['id'] , "libelle" => $value['nom']];
             }
         }
         

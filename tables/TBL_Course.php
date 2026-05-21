@@ -105,7 +105,11 @@ class TBL_Course extends LIB_Table{
         
         $m_s = $DOT->getObjet_s($nom_table);
         
-        $tab = $m_s->getItemsPourInputSelect();
+        if ($nom_table == "Article") {
+            $tab = $m_s->getArticlesInutilises();
+        } else {
+            $tab = $m_s->getItemsPourInputSelect();
+        }
         
         $valeur = $this->valeurs[$tablonne];
         ?>
@@ -114,9 +118,12 @@ class TBL_Course extends LIB_Table{
             <select class="w3-select">
                 <?php
                         foreach ($tab as $value) {
+                            LIB_Util::logPrintR($value);
                             $selected = "";
-                            if (trim($valeur) == trim($value['libelle'])) {
-                                $selected = "selected";
+                            if (isset($value['libelle'])) {
+                                if (trim($valeur) == trim($value['libelle'])) {
+                                    $selected = "selected";
+                                }
                             }
                             ?>
                             <option value="<?php echo $value['valeur'] ?>" <?php echo $selected ?>><?php echo $value['libelle'] ?></option>
@@ -445,7 +452,7 @@ class TBL_Course extends LIB_Table{
                         <?php
                                 foreach ($tab_articles as $value) {
                                     ?>
-                                    <option value="<?php echo $value ?>"><?php echo $value ?></option>
+                                    <option value="<?php echo $value['libelle'] ?>"><?php echo $value['libelle'] ?></option>
                                     <?php
                                 }
                         ?>
