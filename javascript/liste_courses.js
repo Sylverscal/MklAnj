@@ -246,26 +246,37 @@ class C_GestionListe {
         $('input[name=Article_nom]').on('input',function(){
             let nom_article = $(this).val();
             
-            console.log(nom_article);
             var select = $(this).parent('p').find('select option');
             
             let is_nom_dans_liste = g_liste_courses.gestion_liste.isValeurDansMenu(select,nom_article);
+            
+            if (is_nom_dans_liste) {
+                $('#BTN_FRM_VALIDER').prop('disabled',true);
+                $(this).css('color','red');
+        } else {
+                $('#BTN_FRM_VALIDER').prop('disabled',false);
+                $(this).css('color','black');
+            }
+
+            
             
         });
     }
     
     isValeurDansMenu(menu,valeur) {
-        var is = true;
+        var is = false;
         $(menu).each(function(index,element){
             const nom = $(element).text();
-            console.log(nom);
+            if (valeur === nom) {
+                is = true;
+                return;
+            }
         });
         return is;
     }
     
     isChampNombreValide(tag) {
         const valeur = $(tag).val();
-
 
         if(isNombreEntierPositif(valeur) === true) {
             return true;
