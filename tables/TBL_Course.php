@@ -353,8 +353,8 @@ class TBL_Course extends LIB_Table{
     public function valideFormulaire($donnees) {
         global $DOT;
         $crdu = new LIB_CompteRendu(true, "");
-        
-        LIB_Util::logPrintR($donnees);       
+                
+        $this->charge();
         
         
         // Contrôle des données reçues
@@ -378,7 +378,7 @@ class TBL_Course extends LIB_Table{
         
         
         // Préparation des colonnes liées de Course
-        $idArticle = $this->prepareColonne("Article", trim($donnees['Article_nom']));
+        $idArticle = $this->getValeurColonne("id_Article");
         $idMarque = $this->prepareColonne("Marque", trim($donnees['Marque_nom']));
         $idCommerce = $this->prepareColonne("Commerce", trim($donnees['Commerce_nom']));
         $idVille = $this->prepareColonne("Ville", trim($donnees['Ville_nom']));
@@ -394,7 +394,13 @@ class TBL_Course extends LIB_Table{
         
         LIB_Util::log($this->getId());
         
-        
+        // JENSUISLA : Mettre à jour le nom de l'article dans la table Article
+        $a = $DOT->getObjet("Article");
+        $a->charge($idArticle);
+        $tab = [];
+        $tab[0] = trim($donnees['Article_nom']);
+        $a->set(...$tab);
+        $a->sauve();
         
         $this->setValeurColonne('id_Article', "$idArticle");
         $this->setValeurColonne('id_Marque', "$idMarque");
@@ -430,7 +436,6 @@ class TBL_Course extends LIB_Table{
         
         $objet = $DOT->getObjet($nom_table);
         $objet->set(...[$donnee]);
-        LIB_Util::log($objet->getNom());
         $objet->chargeIdParNom(true);
         $id = $objet->getId();
         
