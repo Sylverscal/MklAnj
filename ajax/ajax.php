@@ -385,6 +385,7 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         global $DOT;
         
         $c = $DOT->getObjet("Course");
+        $c->setId(0);
         
         $nom_article = $post['nom_article'];
         

@@ -141,6 +141,7 @@ class TBL_Course extends LIB_Table{
         ?>
         <p>
             <label>Date</label>
+            <div id="inline" data-date="05/22/2026"></div>
             <input class="w3-input input-datation" type="text" name="Course_datation" value="<?php echo $d->getDate_pourFormulaire(); ?>">
         </p>
         <?php
@@ -378,7 +379,13 @@ class TBL_Course extends LIB_Table{
         
         
         // Préparation des colonnes liées de Course
-        $idArticle = $this->getValeurColonne("id_Article");
+        $id = $this->getId();
+        if ($id == 0) {
+            $idArticle = $this->prepareColonne("Article", trim($donnees['Article_nom']));
+            
+        } else {
+            $idArticle = $this->getValeurColonne("id_Article");
+        }
         $idMarque = $this->prepareColonne("Marque", trim($donnees['Marque_nom']));
         $idCommerce = $this->prepareColonne("Commerce", trim($donnees['Commerce_nom']));
         $idVille = $this->prepareColonne("Ville", trim($donnees['Ville_nom']));
@@ -484,6 +491,7 @@ class TBL_Course extends LIB_Table{
         
         $donnees['Article_nom'] = $nom_article;
         
+        LIB_Util::logPrintR($donnees);
         $crdu = $this->valideFormulaire($donnees);
         
         if ($crdu->isKo()) {

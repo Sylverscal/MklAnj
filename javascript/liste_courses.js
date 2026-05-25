@@ -257,10 +257,11 @@ class C_GestionListe {
                 $('#BTN_FRM_VALIDER').prop('disabled',false);
                 $(this).css('color','black');
             }
-
-            
-            
         });
+        const elem = document.querySelector('input[name="Course_datation"]');
+//        const datepicker = new DatePicker(elem,{
+//            
+//        });
     }
     
     isValeurDansMenu(menu,valeur) {
