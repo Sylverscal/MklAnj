@@ -41,6 +41,8 @@ class C_ListeCourses {
 class C_GestionListe {
     constructor () {
         this.id_selectionne = 0;
+        this.liste_articles_interdits = [];
+        this.article_course_courante = "";
     }
     affiche() {
         var json = {
@@ -185,7 +187,34 @@ class C_GestionListe {
     
     affiche_formulaire_retour(html) {
         $("#DIV_FONCTION_LISTE_COURSES").html(html);
-        g_liste_courses.gestion_liste.ecouteEvenementsFormulaire(html);
+        g_liste_courses.gestion_liste.getListeArticlesInterdits();
+    }
+    
+    getListeArticlesInterdits() {
+        var json = {
+            domaine: 'gestion_liste_courses',
+            action: 'get_liste_articles_interdits'
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'json',
+                    async: 'false',
+                    success: function (data) {
+                        g_liste_courses.gestion_liste.getListeArticlesInterdits_retour(data);
+                    }
+                }
+        );
+    }
+
+    getListeArticlesInterdits_retour(data) {
+        g_liste_courses.gestion_liste.liste_articles_interdits = data;
+        let acc = $("#FRM_COURSE input[name=Article_nom]").val();
+        g_liste_courses.gestion_liste.article_course_courante = $("#FRM_COURSE input[name=Article_nom]").val();
+        g_liste_courses.gestion_liste.ecouteEvenementsFormulaire();
+        
     }
     
     ecouteEvenementsFormulaire() {
@@ -266,9 +295,8 @@ class C_GestionListe {
     
     isValeurDansMenu(menu,valeur) {
         var is = false;
-        $(menu).each(function(index,element){
-            const nom = $(element).text();
-            if (valeur === nom) {
+        g_liste_courses.gestion_liste.liste_articles_interdits.forEach((article,index) => {
+            if (valeur === article) {
                 is = true;
                 return;
             }

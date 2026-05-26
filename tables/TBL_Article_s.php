@@ -37,4 +37,31 @@ class TBL_Article_s extends LIB_Table_s {
         
         return $tab;
     }
+    
+    /**
+     * Renvoie la liste des articles pas encore utilisés dans une course
+     * @global LIB_BDD $CXO
+     */
+    public function getArticlesUtilises() {
+        global $CXO;
+        
+        $requete = "SELECT Article.id as id,Article.nom as nom FROM Article
+            left join Course on Course.id_Article = Article.id
+            where Course.id is not null";
+        
+        
+        $rlt = $CXO->executeRequete($requete);
+        
+        $tab = [];
+        
+        if ($rlt->isOk()) {
+            foreach ($rlt->getResultat() as $value) {
+                $tab[] = ["valeur" => $value['id'] , "libelle" => $value['nom']];
+            }
+        }
+        
+        $rlt->afficheSiKo();
+        
+        return $tab;
+    }
 }

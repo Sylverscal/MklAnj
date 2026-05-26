@@ -563,4 +563,14 @@ class LIB_Util {
         
         return $tab;
     }
+    
+    public static function getListeDeDonneesFormulaires($donnees) {
+        $tab = [];
+        
+        foreach ($donnees as $value) {
+            $tab[] = $value['libelle'];
+        }
+        
+        return $tab;
+    }
 }

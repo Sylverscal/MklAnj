@@ -421,4 +421,14 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         
         LIB_Util::jsonise($tab);
     }
+    
+    protected function get_liste_articles_interdits($post) {
+        global $DOT;
+        
+        $a_s = $DOT->getObjet_s("Article");
+        
+        $tab = LIB_Util::getListeDeDonneesFormulaires($a_s->getArticlesUtilises());
+        
+        LIB_Util::jsonise($tab);
+    }
 }
