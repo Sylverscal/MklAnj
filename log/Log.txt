@@ -1,8 +1,32 @@
-26-05-2026 15:04:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-26-05-2026 15:04:55 : ? -> ? -> ? -> 0 : POST
-26-05-2026 15:04:55 : ? -> ? -> ? -> 0 : Array
+26-05-2026 17:05:03 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+26-05-2026 17:05:03 : ? -> ? -> ? -> 0 : POST
+26-05-2026 17:05:03 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
-    [action] => get_liste_articles_interdits
+    [action] => valide_nouvelle_course
+    [nom_article] => Abricot
 )
 
+26-05-2026 17:05:03 : TBL_Course -> TBL_Course -> creationNouvelleCourse -> 393 : 
+26-05-2026 17:05:03 : TBL_Course -> TBL_Course -> creationNouvelleCourse -> 393 : Array
+(
+    [id] => 0
+    [Article_nom] => Abricot
+    [Marque_nom] => -
+    [Commerce_nom] => -
+    [Ville_nom] => -
+    [Zone_nom] => -
+    [Course_datation] => 01-01-2000
+    [Course_nombre] => 1
+    [Course_capacite] => 0
+    [Unite_nom] => -
+    [Course_commentaire] => -
+    [Course_faite] => 0
+)
+
+26-05-2026 17:05:03 : TBL_Course -> TBL_Course -> prepareColonne -> 381 : Article : 610 :  Abricot
+26-05-2026 17:05:03 : TBL_Course -> TBL_Course -> prepareColonne -> 383 : Marque : 1 :  -
+26-05-2026 17:05:03 : TBL_Course -> TBL_Course -> prepareColonne -> 384 : Commerce : 30 :  -
+26-05-2026 17:05:03 : TBL_Course -> TBL_Course -> prepareColonne -> 385 : Ville : 1 :  -
+26-05-2026 17:05:03 : TBL_Course -> TBL_Course -> prepareColonne -> 386 : Zone : 1 :  -
+26-05-2026 17:05:03 : TBL_Course -> TBL_Course -> prepareColonne -> 387 : Unite : 4 :  -

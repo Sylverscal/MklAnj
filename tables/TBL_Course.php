@@ -357,7 +357,6 @@ class TBL_Course extends LIB_Table{
                 
         $this->charge();
         
-        
         // Contrôle des données reçues
         
         $datation = new CLA_Datation($donnees['Course_datation']);
@@ -370,8 +369,6 @@ class TBL_Course extends LIB_Table{
             return $crdu;
         }
         
-        LIB_Util::log("Datation : $datation");
-        
         $nombre = $donnees['Course_nombre'];
         $capacite = $donnees['Course_capacite'];
         $commentaire = $donnees['Course_commentaire'];
@@ -380,12 +377,9 @@ class TBL_Course extends LIB_Table{
         
         // Préparation des colonnes liées de Course
         $id = $this->getId();
-        if ($id == 0) {
-            $idArticle = $this->prepareColonne("Article", trim($donnees['Article_nom']));
+        
+        $idArticle = $this->prepareColonne("Article", trim($donnees['Article_nom']));
             
-        } else {
-            $idArticle = $this->getValeurColonne("id_Article");
-        }
         $idMarque = $this->prepareColonne("Marque", trim($donnees['Marque_nom']));
         $idCommerce = $this->prepareColonne("Commerce", trim($donnees['Commerce_nom']));
         $idVille = $this->prepareColonne("Ville", trim($donnees['Ville_nom']));
@@ -393,15 +387,6 @@ class TBL_Course extends LIB_Table{
         $idUnite = $this->prepareColonne("Unite", trim($donnees['Unite_nom']));
         
         
-        // Préparer la course
-        $crdu = $this->chargeParNomColonne('id_Article', "$idArticle");
-        if ($crdu->isKo()) {
-            return $crdu;
-        }
-        
-        LIB_Util::log($this->getId());
-        
-        // JENSUISLA : Mettre à jour le nom de l'article dans la table Article
         $a = $DOT->getObjet("Article");
         $a->charge($idArticle);
         $tab = [];
@@ -420,9 +405,6 @@ class TBL_Course extends LIB_Table{
         $this->setValeurColonne('id_Unite', "$idUnite");
         $this->setValeurColonne('commentaire', $commentaire);
         $this->setValeurColonne('faite', $course_faite);
-        
-        
-        
         
         // Enregistrement Course
         
@@ -445,8 +427,6 @@ class TBL_Course extends LIB_Table{
         $objet->set(...[$donnee]);
         $objet->chargeIdParNom(true);
         $id = $objet->getId();
-        
-        LIB_Util::log("$nom_table : $id : $objet");
         
         return $id;
     }
@@ -491,7 +471,6 @@ class TBL_Course extends LIB_Table{
         
         $donnees['Article_nom'] = $nom_article;
         
-        LIB_Util::logPrintR($donnees);
         $crdu = $this->valideFormulaire($donnees);
         
         if ($crdu->isKo()) {

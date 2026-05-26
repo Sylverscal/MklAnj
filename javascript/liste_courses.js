@@ -287,7 +287,7 @@ class C_GestionListe {
                 $(this).css('color','black');
             }
         });
-        const elem = document.querySelector('input[name="Course_datation"]');
+        const elem = document.querySelector('#FRM_COURSE input[name="Course_datation"]');
 //        const datepicker = new DatePicker(elem,{
 //            
 //        });
@@ -296,7 +296,7 @@ class C_GestionListe {
     isValeurDansMenu(menu,valeur) {
         var is = false;
         g_liste_courses.gestion_liste.liste_articles_interdits.forEach((article,index) => {
-            if (valeur === article) {
+            if (valeur === article && valeur !== g_liste_courses.gestion_liste.article_course_courante) {
                 is = true;
                 return;
             }
