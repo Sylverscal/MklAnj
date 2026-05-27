@@ -260,15 +260,29 @@ class TBL_Course extends LIB_Table{
      * Modifie l'état "Course faite"
      * @param int $etat = 1 : la course a été faite
      * @global LIB_BDD $CXO
+     * @global LIB_DistributeurObjetTable $DOT
      */
     public function majEtatCourseFaite($etat) {
         global $CXO;
+        global $DOT;
         
         $requete = sprintf("update Course set faite = '%s' where id = '%d'",$etat,$this->getId());
         
         $rlt = $CXO->executeRequete($requete);
         
         $rlt->afficheSiKo();
+        
+        // Mise à jour des tables statistiques
+        if ($etat == 1) {
+            $cf = $DOT->getObjet_s("Course_Faite");
+            $cf->ferme($this);
+            $caf = $DOT->getObjet_s("Course_Afaire");
+            $caf->ferme($this);
+        } else {
+            $caf = $DOT->getObjet_s("Course_Afaire");
+            $caf->ouvre($this);
+        }
+        
         
     }
     

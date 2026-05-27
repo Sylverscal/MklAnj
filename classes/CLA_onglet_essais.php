@@ -36,9 +36,7 @@ class CLA_onglet_essais extends CLA_onglet_principal {
         
         $c = $c_s->getCoursePourArticle("Abricot");
         
-        LIB_Util::trace($c);
-        
-        $caf = $DOT->getObjet("Course_AFaire_s");
+        $caf = $DOT->getObjet("Course_Faite_s");
         
         $caf->ouvre($c);
         
