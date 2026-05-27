@@ -29,24 +29,21 @@ class CLA_onglet_essais extends CLA_onglet_principal {
      */
     final function affiche() {
         global $CXO_ST;
+        global $CXO;
         global $DOT;
         
-        $c = $DOT->getObjet("Course");
+        $c_s = $DOT->getObjet_s("Course");
         
-        $r = $c->getRequeteLibelle();
+        $c = $c_s->getCoursePourArticle("Abricot");
+        
+        LIB_Util::trace($c);
+        
+        $caf = $DOT->getObjet("Course_AFaire_s");
+        
+        $caf->ouvre($c);
         
         
-        LIB_Util::trace($r);
         
-        $c->setId(2);
-        $c->charge();
-        
-        $d = $c->getDonneesPourAffichage();
-        LIB_Util::printR($d);
-
-        $d = $c->getDonnees();
-        LIB_Util::printR($d);
-
         return;
     }
 }

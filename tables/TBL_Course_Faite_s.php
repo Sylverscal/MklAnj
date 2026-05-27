@@ -10,6 +10,6 @@
  *
  * @author veroscal
  */
-class TBL_Course_Faite extends LIB_Table {
+class TBL_Course_Faite_s extends LIB_Table {
     //put your code here
 }

@@ -58,8 +58,8 @@ class CLA_inclusions {
         $this->inclutTables('TBL_Article_s.php');
         $this->inclutTables('TBL_Course.php');
         $this->inclutTables('TBL_Course_s.php');
-        $this->inclutTables('TBL_Course_Faite.php');
-        $this->inclutTables('TBL_Course_AFaire.php');
+        $this->inclutTables('TBL_Course_Faite_s.php');
+        $this->inclutTables('TBL_Course_AFaire_s.php');
         $this->inclutTables('TBL_Personne.php');
         
     }

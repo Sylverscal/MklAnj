@@ -202,5 +202,32 @@ class TBL_Course_s extends LIB_Table_s{
         return $select;
     }
     
-    
+    /**
+     * Renvoie une course en fonction de son article
+     * @param string $nom_article Nom de l'article
+     * @return TBL_Course Course (NULL si pas trouvé)
+     * @global LIB_DistributeurObjetTable $DOT
+     * @global LIB_BDD $CXO
+     */
+    public function getCoursePourArticle($nom_article) {
+        global $CXO;
+        global $DOT;
+        
+        $requete = "SELECT Course.id as id FROM Course
+            join Article on Article.id = Course.id_Article
+            where Article.nom = '$nom_article'";
+        
+        $rlt = $CXO->executeRequete($requete);
+        
+        $course = NULL;
+        if ($rlt->isOk()) {
+            foreach ($rlt->getResultat() as $value) {
+                $id = $value['id'];
+                $course = $DOT->getObjet("Course");
+                $course->charge($id);
+            }
+        }
+        
+        return $course;
+    }
 }
