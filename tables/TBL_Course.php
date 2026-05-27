@@ -243,14 +243,24 @@ class TBL_Course extends LIB_Table{
      * @return bool Vrai si la course a été faite
      */
     public function isCourseFaite() {
-        $is_faite = false;
-        if (isset($this->valeurs['Course_faite'])) {
-            $course_faite = $this->valeurs['Course_faite'];
+        global $CXO;
+        
+        $id = $this->getId();
+        $requete = "SELECT count(Course_AFaire.id) as nb FROM MklAnj.Course_AFaire
+            where id_Course = $id";
 
-            if ($course_faite == 1) {
-                $is_faite = true;
+        $is_faite = false;
+
+        $rlt = $CXO->executeRequete($requete);
+        
+        if ($rlt->isOk()) {
+            foreach ($rlt->getResultat() as $value) {
+                if ($value['nb'] == 0) {
+                    $is_faite = true;
+                }
             }
         }
+        
         
         return $is_faite;
         
