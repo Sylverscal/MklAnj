@@ -44,7 +44,6 @@ class CLA_ListeCourses {
             </div>
             <div id="DIV_FONCTIONS" class="w3-container w3-yellow">
                 <h2>Fonctions</h2>
-                
             </div>
         </div>
         <?php
