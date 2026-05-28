@@ -53,6 +53,7 @@ class TBL_Course extends LIB_Table{
     public function afficheFormulaire() {
         $this->chargeValeurs();
         $checked = $this->isCourseFaite() ? "checked" : "";
+        $value_course_faite = $this->isCourseFaite() ? 1 : 0;
         ?>
             <form id="FRM_COURSE" class="w3-container w3-pale-red">
                 <input type="hidden" id="id" name="id" value="<?php echo $this->getId(); ?>">
@@ -75,7 +76,7 @@ class TBL_Course extends LIB_Table{
                     <p>
                         <label>Course faite</label>
                         <input class="w3-check" type="checkbox" <?php echo $checked; ?>>
-                        <input type="hidden" name="Course_faite" value='<?php echo $this->valeurs["Course_faite"]; ?>'>
+                        <input type="hidden" name="Course_faite" value='<?php echo $value_course_faite; ?>'>
                     </p>
                 </div>
                 <div class="w3-container w3-pale-blue">
@@ -515,7 +516,7 @@ class TBL_Course extends LIB_Table{
         $tab['Course_capacite'] = 0;
         $tab['Unite_nom'] = "-";
         $tab['Course_commentaire'] = "-";
-        $tab['Course_faite'] = 0;
+        $tab['Course_faite'] = 1;
         
         return $tab;
     }

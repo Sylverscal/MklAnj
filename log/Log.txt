@@ -1,6 +1,6 @@
-28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : POST
-28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Array
+28-05-2026 08:07:32 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+28-05-2026 08:07:32 : ? -> ? -> ? -> 0 : POST
+28-05-2026 08:07:32 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => valide_formulaire
@@ -9,13 +9,13 @@
             [0] => Array
                 (
                     [name] => id
-                    [value] => 60
+                    [value] => 73
                 )
 
             [1] => Array
                 (
                     [name] => Article_nom
-                    [value] => Champagne rosé
+                    [value] => Encre Waterman noire
                 )
 
             [2] => Array
@@ -51,7 +51,7 @@
             [7] => Array
                 (
                     [name] => Course_nombre
-                    [value] => 12
+                    [value] => 1
                 )
 
             [8] => Array
@@ -82,25 +82,25 @@
 
 )
 
-28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : POST
-28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Array
+28-05-2026 08:07:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+28-05-2026 08:07:33 : ? -> ? -> ? -> 0 : POST
+28-05-2026 08:07:33 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : POST
-28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Array
+28-05-2026 08:07:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+28-05-2026 08:07:33 : ? -> ? -> ? -> 0 : POST
+28-05-2026 08:07:33 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses
 )
 
-28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : POST
-28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Array
+28-05-2026 08:07:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+28-05-2026 08:07:33 : ? -> ? -> ? -> 0 : POST
+28-05-2026 08:07:33 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_fonctions
