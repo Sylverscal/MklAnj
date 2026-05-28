@@ -43,7 +43,6 @@ class C_Recherche {
     
     applique_filtre() {
         let filtre = $("#INP_RCH_TEXTE").val();
-        console.log(filtre);
 
         g_liste_courses.gestion_liste.affiche_filtree(filtre);
     }
