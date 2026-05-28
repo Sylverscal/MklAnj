@@ -74,4 +74,5 @@ class CLA_ListeCourses {
             </div>
         <?php
     }
+    
 }

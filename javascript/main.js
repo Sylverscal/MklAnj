@@ -121,6 +121,8 @@ function affiche_onglet_liste_courses_retour(data) {
     $('#onglet').html(data);
     g_liste_courses =  new C_ListeCourses();
     g_liste_courses.affiche();
+    g_recherche = new C_Recherche();
+    g_recherche.affiche();
 }
 
 function affiche_onglet_tables() {

@@ -432,3 +432,11 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         LIB_Util::jsonise($tab);
     }
 }
+
+class CLA_recherche_Ajax extends AJX_MklAnj_Ajax {
+    protected function affiche($post) {
+        $r = new CLA_Recherche();
+        
+        $r->affiche();
+    }
+}
