@@ -380,7 +380,7 @@ class LIB_Table_s extends LIB_Liste {
      * Course.id_Marque as Course_id_Marque,Course.id_Commerce as Course_id_Commerce,
      * Course.id_Ville as Course_id_Ville,Course.id_Zone as Course_id_Zone,
      * Course.datation as Course_datation,Course.nombre as Course_nombre,
-     * Course.capacite as Course_capacite,Course.commentaire as Course_commentaire,Course.faite as Course_faite     
+     * Course.capacite as Course_capacite,Course.commentaire as Course_commentaire     
      */
     public function getSqlSelectColonnes() {
         $nomTable = $this->getNomTable();

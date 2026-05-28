@@ -28,7 +28,6 @@ class TBL_Course_AFaire_s extends LIB_Table_s{
         $caf->setValeurColonne("datation",$d->getDate_pourEcritureMySQL());
         
         $crdu = $caf->sauve();
-        LIB_Util::trace("$crdu");
     }
     
     /**

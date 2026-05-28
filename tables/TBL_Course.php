@@ -52,7 +52,7 @@ class TBL_Course extends LIB_Table{
     
     public function afficheFormulaire() {
         $this->chargeValeurs();
-        $checked = $this->valeurs["Course_faite"] == 1 ? "checked" : "";
+        $checked = $this->isCourseFaite() ? "checked" : "";
         ?>
             <form id="FRM_COURSE" class="w3-container w3-pale-red">
                 <input type="hidden" id="id" name="id" value="<?php echo $this->getId(); ?>">
@@ -76,7 +76,6 @@ class TBL_Course extends LIB_Table{
                         <label>Course faite</label>
                         <input class="w3-check" type="checkbox" <?php echo $checked; ?>>
                         <input type="hidden" name="Course_faite" value='<?php echo $this->valeurs["Course_faite"]; ?>'>
-                        <!--<input class="w3-check" type="checkbox" name="Course_faite" <?php echo $checked; ?> value='1'>-->
                     </p>
                 </div>
                 <div class="w3-container w3-pale-blue">
@@ -276,12 +275,6 @@ class TBL_Course extends LIB_Table{
         global $CXO;
         global $DOT;
         
-        $requete = sprintf("update Course set faite = '%s' where id = '%d'",$etat,$this->getId());
-        
-        $rlt = $CXO->executeRequete($requete);
-        
-        $rlt->afficheSiKo();
-        
         // Mise à jour des tables statistiques
         if ($etat == 1) {
             $cf = $DOT->getObjet_s("Course_Faite");
@@ -292,7 +285,6 @@ class TBL_Course extends LIB_Table{
             $caf = $DOT->getObjet_s("Course_Afaire");
             $caf->ouvre($this);
         }
-        
         
     }
     
@@ -428,7 +420,8 @@ class TBL_Course extends LIB_Table{
         $this->setValeurColonne('capacite', "$capacite");
         $this->setValeurColonne('id_Unite', "$idUnite");
         $this->setValeurColonne('commentaire', $commentaire);
-        $this->setValeurColonne('faite', $course_faite);
+        
+        $this->majEtatCourseFaite($course_faite);
         
         // Enregistrement Course
         

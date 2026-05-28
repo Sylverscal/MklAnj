@@ -1,69 +1,108 @@
-27-05-2026 15:53:57 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-27-05-2026 15:53:57 : ? -> ? -> ? -> 0 : POST
-27-05-2026 15:53:57 : ? -> ? -> ? -> 0 : Array
+28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : POST
+28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
-    [action] => change_etat_faite
-    [id] => 65
-    [etat] => 1
+    [action] => valide_formulaire
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => id
+                    [value] => 60
+                )
+
+            [1] => Array
+                (
+                    [name] => Article_nom
+                    [value] => Champagne rosé
+                )
+
+            [2] => Array
+                (
+                    [name] => Marque_nom
+                    [value] => -
+                )
+
+            [3] => Array
+                (
+                    [name] => Commerce_nom
+                    [value] => -
+                )
+
+            [4] => Array
+                (
+                    [name] => Ville_nom
+                    [value] => -
+                )
+
+            [5] => Array
+                (
+                    [name] => Zone_nom
+                    [value] => -
+                )
+
+            [6] => Array
+                (
+                    [name] => Course_datation
+                    [value] => -
+                )
+
+            [7] => Array
+                (
+                    [name] => Course_nombre
+                    [value] => 12
+                )
+
+            [8] => Array
+                (
+                    [name] => Course_capacite
+                    [value] => 0
+                )
+
+            [9] => Array
+                (
+                    [name] => Unite_nom
+                    [value] => -
+                )
+
+            [10] => Array
+                (
+                    [name] => Course_commentaire
+                    [value] => -
+                )
+
+            [11] => Array
+                (
+                    [name] => Course_faite
+                    [value] => 1
+                )
+
+        )
+
 )
 
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : POST
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => barre_navigation
-    [action] => affiche
-    [onglet] => CLA_onglet_liste_courses
-)
-
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : POST
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => onglet
-    [action] => liste_courses
-)
-
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : POST
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : Array
+28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : POST
+28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : POST
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : Array
+28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : POST
+28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses
 )
 
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : POST
-27-05-2026 15:54:00 : ? -> ? -> ? -> 0 : Array
+28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : POST
+28-05-2026 06:43:31 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_fonctions
-)
-
-27-05-2026 15:55:59 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-27-05-2026 15:55:59 : ? -> ? -> ? -> 0 : POST
-27-05-2026 15:55:59 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => gestion_table
-    [action] => afficheTitre
-    [nom_table] => Course
-)
-
-27-05-2026 15:55:59 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-27-05-2026 15:55:59 : ? -> ? -> ? -> 0 : POST
-27-05-2026 15:55:59 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => gestion_table
-    [action] => afficheTable
-    [nom_table] => Course
 )
 
