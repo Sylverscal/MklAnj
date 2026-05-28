@@ -331,6 +331,12 @@ class CLA_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         $lc->afficheListeCourses();
     }
     
+    protected function affiche_liste_courses_filtree($post) {
+        $filtre = $post['filtre'];
+        $lc = new CLA_ListeCourses();
+        $lc->afficheListeCourses($filtre);
+    }
+    
     protected function affiche_fonctions($post) {
         $lc = new CLA_ListeCourses();
         $lc->afficheFonctions();
@@ -438,5 +444,7 @@ class CLA_recherche_Ajax extends AJX_MklAnj_Ajax {
         $r = new CLA_Recherche();
         
         $r->affiche();
+        
+        
     }
 }

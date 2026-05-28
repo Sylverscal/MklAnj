@@ -53,11 +53,11 @@ class CLA_ListeCourses {
      * Affiche la liste des courses
      * @global LIB_DistributeurObjetTable $DOT
      */
-    public function afficheListeCourses() {
+    public function afficheListeCourses($filtre = "") {
         global $DOT;
         
         $cs = $DOT->getObjet_s("Course");
-        $cs->afficheListe();
+        $cs->afficheListe($filtre);
     }
     
     /**

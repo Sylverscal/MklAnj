@@ -28,5 +28,23 @@ class C_Recherche {
     
     affiche_retour(html) {
         $('#DIV_RECHERCHE').html(html);
+        g_recherche.ecoute_evenements();
+    }
+    
+    ecoute_evenements() {
+        $('#INP_RCH_TEXTE').on('input',function(){
+            g_recherche.applique_filtre();
+        });
+        $('#BTN_RCH_RAZ_FILTRE').click(function(){
+            $('#INP_RCH_TEXTE').val("");
+            g_recherche.applique_filtre();
+        });
+    }
+    
+    applique_filtre() {
+        let filtre = $("#INP_RCH_TEXTE").val();
+        console.log(filtre);
+
+        g_liste_courses.gestion_liste.affiche_filtree(filtre);
     }
 }

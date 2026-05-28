@@ -16,8 +16,8 @@ class TBL_Course_s extends LIB_Table_s{
         parent::__construct();
     }
     
-    public function afficheListe() {
-        $this->charge();
+    public function afficheListe($filtre="") {
+        $this->charge($filtre);
         
         ?>
         <div class="w3-container" style="overflow-y: scroll; height:600px">
@@ -26,7 +26,7 @@ class TBL_Course_s extends LIB_Table_s{
                 <tbody id="TBL_LISTE_COURSES_BODY">
                 <?php
                     foreach ($this as $course) {
-                        $course->affiche();
+                        $course->affiche($filtre);
                     }
                 ?>
                 </tbody>
@@ -229,5 +229,30 @@ class TBL_Course_s extends LIB_Table_s{
         }
         
         return $course;
+    }
+    
+    #[\Override]
+    public function charge($filtre = "") {
+        global $CXO;
+        global $DOT;
+        
+        if ($filtre == "") {
+            parent::charge();
+            return;
+        }
+        
+        $requete = "select Course.id as id,id_Article,id_Marque,id_Commerce,id_Ville,id_Zone,datation,nombre,capacite,id_Unite,commentaire from Course
+            join Article on Article.id = Course.id_Article where upper(Article.nom) like '%$filtre%'";
+        
+        $r = $CXO->executeRequete($requete);
+        if ($r->isOk()) {
+            foreach ($r->getResultat() as $ligne) {
+                $o = $DOT->getObjet($this->getNomClasseTable());
+                $o->setDeLigne($ligne);
+                $this->ajoute($o);
+            }
+        } else {
+            $r->affiche();
+        }
     }
 }

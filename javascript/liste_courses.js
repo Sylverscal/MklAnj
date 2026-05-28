@@ -63,6 +63,26 @@ class C_GestionListe {
         );
     }
     
+    affiche_filtree(filtre) {
+        var json = {
+            domaine: 'liste_courses',
+            action: 'affiche_liste_courses_filtree',
+            filtre: filtre
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'html',
+                    async: 'false',
+                    success: function (html) {
+                        g_liste_courses.gestion_liste.affiche_retour(html);
+                    }
+                }
+        );
+    }
+    
     affiche_retour(html) {
         $("#DIV_LISTE_COURSES").html(html);
         g_liste_courses.gestion_liste.ecouteEvenements();
@@ -211,7 +231,6 @@ class C_GestionListe {
 
     getListeArticlesInterdits_retour(data) {
         g_liste_courses.gestion_liste.liste_articles_interdits = data;
-        let acc = $("#FRM_COURSE input[name=Article_nom]").val();
         g_liste_courses.gestion_liste.article_course_courante = $("#FRM_COURSE input[name=Article_nom]").val();
         g_liste_courses.gestion_liste.ecouteEvenementsFormulaire();
         
@@ -282,7 +301,7 @@ class C_GestionListe {
             if (is_nom_dans_liste) {
                 $('#BTN_FRM_VALIDER').prop('disabled',true);
                 $(this).css('color','red');
-        } else {
+            } else {
                 $('#BTN_FRM_VALIDER').prop('disabled',false);
                 $(this).css('color','black');
             }

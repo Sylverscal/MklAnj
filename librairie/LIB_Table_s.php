@@ -248,7 +248,7 @@ class LIB_Table_s extends LIB_Liste {
      * Renvoie le nom de la classe de la tble
      * @return char nom de la classe de la table
      */
-    private function getNomClasseTable() {
+    protected function getNomClasseTable() {
         $nc = $this->nom_classe;
         $tab = [];
         preg_match('@(.*)_s@i', $nc, $tab);
