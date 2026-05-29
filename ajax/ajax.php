@@ -448,3 +448,13 @@ class CLA_recherche_Ajax extends AJX_MklAnj_Ajax {
         
     }
 }
+
+class CLA_filtrage_Ajax extends AJX_MklAnj_Ajax {
+    protected function affiche($post) {
+        $r = new CLA_Filtrage();
+        
+        $r->affiche();
+        
+        
+    }
+}

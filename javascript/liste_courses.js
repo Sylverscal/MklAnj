@@ -34,6 +34,10 @@ class C_ListeCourses {
     affiche_retour(html) {
         $("#DIV_FONCTION_LISTE_COURSES").html(html);
         g_liste_courses.gestion_liste.affiche();
+        g_recherche = new C_Recherche();
+        g_recherche.affiche();
+        g_filtrage = new C_Filtrage();
+        g_filtrage.affiche();
     }
 
 }

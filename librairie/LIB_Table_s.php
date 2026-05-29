@@ -474,7 +474,6 @@ Array
         $items = [];
         
         foreach ($this as $ligne) {
-            LIB_Util::logPrintR($ligne);
             try {
                 $nom = $ligne->getNom();
                 

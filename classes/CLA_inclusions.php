@@ -54,6 +54,7 @@ class CLA_inclusions {
         $this->inclutClasses('CLA_Acces.php');
         $this->inclutClasses('CLA_ListeCourses.php');
         $this->inclutClasses('CLA_Recherche.php');
+        $this->inclutClasses('CLA_Filtrage.php');
         $this->inclutParametres('PRM_Base.php');
         $this->inclutParametres('PRM_Bases.php');
         $this->inclutTables('TBL_Article_s.php');

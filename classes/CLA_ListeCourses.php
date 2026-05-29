@@ -39,8 +39,8 @@ class CLA_ListeCourses {
             <div id="DIV_LISTE_COURSES" class="w3-container w3-yellow">
                 <h2>Liste des courses</h2>
             </div>
-            <div id="DIV_FILTRES" class="w3-container w3-yellow">
-                <h2>Filtres</h2>
+            <div id="DIV_FILTRAGE" class="w3-container w3-yellow">
+                <h2>Filtrage</h2>
             </div>
             <div id="DIV_FONCTIONS" class="w3-container w3-yellow">
                 <h2>Fonctions</h2>

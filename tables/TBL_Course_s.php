@@ -232,6 +232,11 @@ class TBL_Course_s extends LIB_Table_s{
     }
     
     #[\Override]
+    /**
+     * Charge la liste des fonctions de la table
+     * @global LIB_BDD $CXO
+     * @global LIB_DistributeurObjetTable $DOT
+     */
     public function charge($filtre = "") {
         global $CXO;
         global $DOT;
