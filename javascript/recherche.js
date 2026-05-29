@@ -32,18 +32,19 @@ class C_Recherche {
     }
     
     ecoute_evenements() {
-        $('#INP_RCH_TEXTE').on('input',function(){
-            g_recherche.applique_filtre();
+        $('#INP_RCH').on('input',function(){
+            g_recherche.applique_recherche();
         });
-        $('#BTN_RCH_RAZ_FILTRE').click(function(){
-            $('#INP_RCH_TEXTE').val("");
-            g_recherche.applique_filtre();
+        $('#BTN_RCH_RAZ').click(function(){
+            $('#INP_RCH').val("");
+            g_recherche.applique_recherche();
         });
     }
     
-    applique_filtre() {
-        let filtre = $("#INP_RCH_TEXTE").val();
+    applique_recherche() {
+        let recherche = $("#INP_RCH").val();
+        let filtrage = $("#SEL_FTR").val();
 
-        g_liste_courses.gestion_liste.affiche_filtree(filtre);
+        g_liste_courses.gestion_liste.affiche_filtree(recherche,filtrage);
     }
 }

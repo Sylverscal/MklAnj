@@ -24,15 +24,23 @@ class CLA_Filtrage {
         
         ?>
         <div class="w3-container w3-lime w3-padding">
-            <select class="w3-select">
-                <?php
-                foreach ($tab as $value) {
-                    ?>
-                    <option value="<?php echo $value['valeur'] ?>"><?php echo $value['libelle'] ?></option>
-                    <?php
-                }
-                ?>
-            </select>
+            <div class="w3-row">
+                <div class="w3-container w3-pale-yellow w3-padding w3-threequarter">
+                    <select id="SEL_FTR" class="w3-select">
+                        <option value="0">Sans filtre</option>
+                        <?php
+                        foreach ($tab as $value) {
+                            ?>
+                            <option value="<?php echo $value['valeur'] ?>"><?php echo $value['libelle'] ?></option>
+                            <?php
+                        }
+                        ?>
+                    </select>
+                </div>
+                <div class="w3-container w3-rest">
+                    <button id="BTN_FTR_RAZ" class="w3-button w3-green w3-border w3-large w3-ripple w3-circle w3-right"><i class="fa fa-eraser" aria-hidden="true"></i></button>
+                </div>
+            </div>
         </div>
         <?php
     }

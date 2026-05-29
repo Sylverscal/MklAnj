@@ -67,11 +67,12 @@ class C_GestionListe {
         );
     }
     
-    affiche_filtree(filtre) {
+    affiche_filtree(recherche,filtrage) {
         var json = {
             domaine: 'liste_courses',
             action: 'affiche_liste_courses_filtree',
-            filtre: filtre
+            recherche: recherche,
+            filtrage: filtrage
         };
         $.ajax(
                 {

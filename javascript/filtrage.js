@@ -31,6 +31,19 @@ class C_Filtrage {
     }
     
     ecoute_evenements() {
+        $('#SEL_FTR').change(function(){
+            g_filtrage.applique_filtrage();
+        });
+        $('#BTN_FTR_RAZ').click(function(){
+            $('#SEL_FTR').val(0);
+            g_recherche.applique_recherche();
+        });
     }
     
+    applique_filtrage() {
+        let recherche = $("#INP_RCH").val();
+        let filtrage = $("#SEL_FTR").val();
+        
+        g_liste_courses.gestion_liste.affiche_filtree(recherche,filtrage);
+    }
 }
