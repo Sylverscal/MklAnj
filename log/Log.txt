@@ -1960,3 +1960,60 @@
     [action] => affiche_fonctions
 )
 
+29-05-2026 14:08:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+29-05-2026 14:08:02 : ? -> ? -> ? -> 0 : POST
+29-05-2026 14:08:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_liste_courses
+)
+
+29-05-2026 14:08:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+29-05-2026 14:08:02 : ? -> ? -> ? -> 0 : POST
+29-05-2026 14:08:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => liste_courses
+)
+
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : POST
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_vue_principale
+)
+
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : POST
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses
+)
+
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : POST
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => recherche
+    [action] => affiche
+)
+
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : POST
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => filtrage
+    [action] => affiche
+)
+
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : POST
+29-05-2026 14:08:03 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+

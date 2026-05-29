@@ -429,7 +429,12 @@ Array
         
         foreach ($this as $ligne) {
             $valeur = $ligne->getId();
-            $libelle = $ligne->getLibelle();
+            try {
+                $libelle = $ligne->getNom();
+                
+            } catch (Exception $ex) {
+                $libelle = $ligne->getLibelle();
+            }
             
             $items[] = ["valeur" => $valeur , "libelle" => $libelle];
         }
@@ -479,7 +484,6 @@ Array
                 
             } catch (Exception $ex) {
                 $nom = $ligne->getLibelle();
-
             }
             
             $items[] = $nom;
