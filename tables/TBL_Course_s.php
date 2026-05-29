@@ -246,8 +246,17 @@ class TBL_Course_s extends LIB_Table_s{
             return;
         }
         
-        $requete = "select Course.id as id,id_Article,id_Marque,id_Commerce,id_Ville,id_Zone,datation,nombre,capacite,id_Unite,commentaire from Course
-            join Article on Article.id = Course.id_Article where upper(Article.nom) like '%$recherche%'";
+        if ($filtrage == 0) {
+            $requete = "select * from Course";
+        } else {
+            $rq = $DOT->getObjet("Requete");
+            $rq->charge($filtrage);
+            $requete = $rq->getValeurColonne("requete");
+        }
+        
+        // Requête recherche
+//        $requete = "select Course.id as id,id_Article,id_Marque,id_Commerce,id_Ville,id_Zone,datation,nombre,capacite,id_Unite,commentaire from Course
+//            join Article on Article.id = Course.id_Article where upper(Article.nom) like '%$recherche%'";
         
         $r = $CXO->executeRequete($requete);
         if ($r->isOk()) {
