@@ -41,7 +41,7 @@ class TBL_Course extends LIB_Table{
                     <?php $this->afficheDatation(); ?>
                 </td>
                 <td>
-                    <button class="w3-button BTN_FORMULAIRE"><i class="fa fa-edit"></i></button>
+                    <button class="w3-button w3-green w3-border w3-large w3-ripple w3-circle w3-right BTN_FORMULAIRE"><i class="fa fa-edit"></i></button>
                 </td>
             <?php
 
@@ -538,5 +538,19 @@ class TBL_Course extends LIB_Table{
         }
         
         return $nb == 1;
+    }
+    
+    public function isCorrespond($recherche){
+        if ($recherche == "") {
+            return true;
+        }
+        $nom = $this->getValeurDeColonne("Article_nom");
+        LIB_Util::log($nom." ".$recherche);
+        
+        if (preg_match("/$recherche/i", $nom) == 1) {
+            return true;
+        }
+        
+        return $false;
     }
 }

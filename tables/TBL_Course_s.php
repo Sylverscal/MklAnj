@@ -263,7 +263,9 @@ class TBL_Course_s extends LIB_Table_s{
             foreach ($r->getResultat() as $ligne) {
                 $o = $DOT->getObjet($this->getNomClasseTable());
                 $o->setDeLigne($ligne);
-                $this->ajoute($o);
+                if ($o->isCorrespond($recherche)) {
+                    $this->ajoute($o);
+                }
             }
         } else {
             $r->affiche();
