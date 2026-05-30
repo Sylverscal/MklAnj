@@ -1,6 +1,6 @@
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : POST
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : Array
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : POST
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => valide_formulaire
@@ -9,13 +9,13 @@
             [0] => Array
                 (
                     [name] => id
-                    [value] => 13
+                    [value] => 14
                 )
 
             [1] => Array
                 (
                     [name] => Article_nom
-                    [value] => Boeuf Onglet
+                    [value] => Brioche Nature
                 )
 
             [2] => Array
@@ -27,49 +27,49 @@
             [3] => Array
                 (
                     [name] => Commerce_nom
-                    [value] => -
+                    [value] => Marie Blachère
                 )
 
             [4] => Array
                 (
                     [name] => Ville_nom
-                    [value] => -
+                    [value] => Les Clayes Sous Bois
                 )
 
             [5] => Array
                 (
                     [name] => Zone_nom
-                    [value] => -
+                    [value] => Zone commerciale Grand Plaisir
                 )
 
             [6] => Array
                 (
                     [name] => Course_datation
-                    [value] => -
+                    [value] => 30-05-2026
                 )
 
             [7] => Array
                 (
                     [name] => Course_nombre
-                    [value] => 0
+                    [value] => 2
                 )
 
             [8] => Array
                 (
                     [name] => Course_capacite
-                    [value] => 500
+                    [value] => 0
                 )
 
             [9] => Array
                 (
                     [name] => Unite_nom
-                    [value] => g
+                    [value] => -
                 )
 
             [10] => Array
                 (
                     [name] => Course_commentaire
-                    [value] => Faire ouvrir en 2 le morceau
+                    [value] => 
                 )
 
             [11] => Array
@@ -82,41 +82,41 @@
 
 )
 
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : POST
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : Array
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : POST
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : POST
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : Array
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : POST
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses
 )
 
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : POST
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : Array
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : POST
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => recherche
     [action] => affiche
 )
 
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : POST
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : Array
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : POST
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => filtrage
     [action] => affiche
 )
 
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : POST
-29-05-2026 17:52:43 : ? -> ? -> ? -> 0 : Array
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : POST
+30-05-2026 13:17:31 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_fonctions

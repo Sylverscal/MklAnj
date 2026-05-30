@@ -118,7 +118,6 @@ class TBL_Course extends LIB_Table{
             <select class="w3-select">
                 <?php
                         foreach ($tab as $value) {
-                            LIB_Util::logPrintR($value);
                             $selected = "";
                             if (isset($value['libelle'])) {
                                 if (trim($valeur) == trim($value['libelle'])) {
@@ -331,19 +330,20 @@ class TBL_Course extends LIB_Table{
         
         $d_ahui = new LIB_Datation();
         
-        if ($datation->isInferieureOuEgaleA($d_ahui)) {
-            ?>
-            <p class="w3-red"><?php echo $datation->getDate_pourAffichage(); ?></p>
-            <?php
-            return;
+        $couleur = "";
+        if (!$this->isCourseFaite()) {
+            if ($datation->isInferieureOuEgaleA($d_ahui)) {
+                $couleur = "w3-red";
+            }
+
+            if ($datation->isSuperieureA($d_ahui)) {
+                $couleur = "w3-green";
+            }
         }
         
-        if ($datation->isSuperieureA($d_ahui)) {
-            ?>
-            <p class="w3-green"><?php echo $datation->getDate_pourAffichage(); ?></p>
-            <?php
-            return;
-        }
+        ?>
+        <p class="<?php echo $couleur; ?>"><?php echo $datation->getDate_pourAffichage(); ?></p>
+        <?php
     }
     
     /**

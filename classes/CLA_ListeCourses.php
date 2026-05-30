@@ -65,7 +65,7 @@ class CLA_ListeCourses {
      */
     public function afficheFonctions() {
         ?>
-            <div class="w3-container w3-lime">
+            <div class="w3-container w3-lime w3-padding">
                 <button id="BTN_FCT_SUPPRIMER" class="w3-button w3-red w3-border w3-large w3-ripple w3-circle"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 <button id="BTN_FCT_MODIFIER" class="w3-button w3-green w3-border w3-large w3-ripple w3-circle w3-right"><i class="fa fa-edit" aria-hidden="true"></i></button>
                 <button id="BTN_FCT_EDITER" class="w3-button w3-green w3-border w3-large w3-ripple w3-circle w3-right"><i class="fa fa-wpforms" aria-hidden="true"></i></button>

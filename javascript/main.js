@@ -465,6 +465,13 @@ function isDatationValide(valeur) {
             break;
     }
     
+    const ahui = new Date();
+    
+    const datation = new Date(aaaa,mm-1,jj,23,59,59,0);
+        
+    if (datation < ahui) {
+        return false;
+    }
     
     return true;
 }
