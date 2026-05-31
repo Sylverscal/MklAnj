@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+4.0 : Création fonction recherche
+28 Mai 2026
+-->
+<html lang="en">
+    <head>
+        <title>Liste de Courses</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">        
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.3.5/css/dataTables.dataTables.css" />
+        <link rel='stylesheet' type="text/css" href="http://mklanj.sylverscal.net/styles/style.css"/>
+        <link rel="shortcut icon" href="http://mklanj.sylverscal.net/icone/favicon.ico"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="ext/vanillajs-datepicker-master/dist/css/datepicker.min.css" />        
+        <!--<link rel="stylesheet" href="https://mklanj/ext/vanillajs-datepicker-master/dist/css/datepicker.min.css" />-->        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/2.3.5/js/dataTables.js"></script>
+        <script src="http://mklanj.sylverscal.net/javascript/acces.js"></script>
+        <script src="http://mklanj.sylverscal.net/javascript/accueil.js"></script>
+        <script src="http://mklanj.sylverscal.net/javascript/parametres.js"></script>
+        <script src="http://mklanj.sylverscal.net/javascript/adm_init_base.js"></script>
+        <script src="http://mklanj.sylverscal.net/javascript/administration.js"></script>    
+        <script src="http://mklanj.sylverscal.net/javascript/tables.js"></script>
+        <script src="http://mklanj.sylverscal.net/javascript/main.js"></script>
+        <script src="http://mklanj.sylverscal.net/javascript/liste_courses.js"></script>
+        <script src="http://mklanj.sylverscal.net/javascript/recherche.js"></script>
+        <script src="http://mklanj.sylverscal.net/javascript/filtrage.js"></script>
+        <script src="ext/vanillajs-datepicker-master/dist/js/datepicker-full.min.js"></script>        
+<!--        <script src="ext/vanillajs-datepicker-master/dist/js/locales/fr.min.js"></script>        -->
+        <!--<script src="https://mklanj/ext/vanillajs-datepicker-master/dist/js/datepicker-full.min.js"></script>-->        
+    </head>
+    <body>
+        <div id="DIV_ACCUEIL">
+
+        </div>
+        <div class="w3-modal" id="COU_MODAL_ERREUR">
+            <div class="w3-modal-content">
+                <div class="w3-container w3-amber">
+                    <div id="COU_MODAL_TITRE"><h4>Il y a un problème</h4></div>
+                </div>
+                <div class="w3-container w3-sand">
+                    <div id="COU_MODAL_ACTION" class="w3-orange"><h4>Corrigez les erreurs</h4></div>
+                    <button id="COU_MODAL_ERREUR_RESUME" onclick="gereAccordeon('COU_MODAL_ERREUR_DETAIL')" class="w3-bouton w3-block w3-yellow w3-left-align"></button>
+                    <div id="COU_MODAL_ERREUR_DETAIL" class="w3-container w3-pale-yellow w3-hide"></div>
+
+                </div>
+                <div class="w3-container w3-amber">
+                    <button class="w3-button w3-green" type="button" onclick="document.getElementById('COU_MODAL_ERREUR').style.display='none'">Ok</button>
+                </div>
+            </div>
+        </div>
+        <div class="w3-modal" id="COU_MODAL_CONFIRMATION">
+            <div class="w3-modal-content">
+                <div class="w3-container w3-amber">
+                    <div id="COU_MODAL_CONFIRMATION_TITRE"><h4>Demande de confirmation de l'opération</h4></div>
+                </div>
+                <div class="w3-container w3-sand">
+                    <div id="COU_MODAL_CONFIRMATION_ACTION" class="w3-orange"><h4>Voulez-vous vraiment faire cette opération</h4></div>
+
+                </div>
+                <div class="w3-container w3-amber">
+                    <button class="w3-button w3-orange" type="button" onclick="document.getElementById('COU_MODAL_CONFIRMATION').style.display='none'">Non</button>
+                    <button id="COU_MODAL_CONFIRMATION_OUI" class="w3-button w3-green w3-right" type="button" onclick="document.getElementById('COU_MODAL_CONFIRMATION').style.display='none'">Oui</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

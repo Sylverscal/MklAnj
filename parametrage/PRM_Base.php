@@ -24,6 +24,14 @@ abstract class PRM_Base {
         $this->setParametres("", "", "", "", "");
     }
     
+    /**
+     * Renseigne les paramètres de connexion
+     * @param type $schema
+     * @param type $database
+     * @param type $hostname
+     * @param type $password
+     * @param type $username
+     */
     protected function setParametres ($schema,$database,$hostname,$password,$username) {
         $this->schema = $schema;
         $this->database = $database;
