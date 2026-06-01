@@ -10,14 +10,36 @@ include_once 'LIB_BDD_MySQL_PDO.php';
  * @author C320688
  */
 class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
-
+    protected $infos_systeme;
+    protected $db;
     /**
      * Etablit la connexion à la base
      */
     public function __construct() {
-        parent::__construct(new PRM_Structure());
+        $prm = new PRM_Structure();
+        parent::__construct($prm);
         
         $this->ouvre();
+        
+        $this->infos_systeme = new LIB_infos_systeme();
+                
+        if ($this->infos_systeme->getLocal() == false) {
+            $database = 'information_schema';
+            $hostname = 'db5020579532.hosting-data.io';
+            $password = '>P1eTa&6XTiNe@ST_PieRRe<';
+            $username = 'dbu5155308';
+            $schema = 'dbs15734873';
+        } else {
+            $database = 'information_schema';
+            $hostname = 'localhost';
+            $password = 'structure';
+            $username = 'structure';
+            $schema = 'MklAnj';
+        }
+        
+        $this->db = new PDO("mysql:host=$hostname;dbname=$database", $username, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
+        $this->db->exec("SET CHARACTER SET utf8");
+        
     }
 
     /**
@@ -29,11 +51,18 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
         global $CXO;
         
         $schema = $CXO->getSchema();
+//        $schema = $this->getParametrage()->schema;
         $requete = "select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = '$schema'";
-        $resultat = $this->executeRequete($requete);
+        $resultat = $this->db->query($requete);
         $tableNoms = [];
-        if ($resultat->isOk()) {
-            foreach ($resultat->getResultat() as $ligne) {
+        if ($resultat === FALSE) {
+                $this->trace('Ko');
+                $this->trace($db->errorInfo()[0]);
+                $this->trace($db->errorInfo()[1]);
+                $this->trace($db->errorInfo()[2]);
+        } else {
+            $lignes = $resultat->fetchAll();
+            foreach ($lignes as $ligne) {
                 $nt = $ligne['TABLE_NAME'];
                 $tableNoms[] = $nt;
             }
@@ -51,10 +80,16 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
         
         $schema = $CXO->getSchema();
         $requete = "select COLUMN_NAME from `COLUMNS` where TABLE_SCHEMA = '$schema' and TABLE_NAME = '$nom_table' and COLUMN_NAME <> 'id'";
-        $resultat = $this->executeRequete($requete);
+        $resultat = $this->db->query($requete);
         $tableNoms = [];
-        if ($resultat->isOk()) {
-            foreach ($resultat->getResultat() as $ligne) {
+        if ($resultat === FALSE) {
+                $this->trace('Ko');
+                $this->trace($db->errorInfo()[0]);
+                $this->trace($db->errorInfo()[1]);
+                $this->trace($db->errorInfo()[2]);
+        } else {
+            $lignes = $resultat->fetchAll();
+            foreach ($lignes as $ligne) {
                 $nt = $ligne['COLUMN_NAME'];
                 $tableNoms[] = $nt;
             }
@@ -73,10 +108,16 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
         $nt = $nom_table;
         $s = $CXO->getSchema();
         $requete = "select column_name,column_comment from columns where table_schema = '$s' and table_name = '$nt'";
-        $r = $this->executeRequete($requete);
+        $resultat = $this->db->query($requete);
         $tableNoms = [];
-        if ($r->isOk()) {
-            foreach ($r->getResultat() as $ligne) {
+        if ($resultat === FALSE) {
+                $this->trace('Ko');
+                $this->trace($db->errorInfo()[0]);
+                $this->trace($db->errorInfo()[1]);
+                $this->trace($db->errorInfo()[2]);
+        } else {
+            $lignes = $resultat->fetchAll();
+            foreach ($lignes as $ligne) {
                 $nc = $ligne['column_name'];
                 $tab = [];
                 $liste_filtres = ["/^id_(VoF)_.*/", "/^id_(.+)_h_$/", "/^id_(.+)$/"];
@@ -101,8 +142,6 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
                 }
                 $tableNoms[$nc] = $dc;
             }
-        } else {
-            $r->affiche();
         }
 
         return $tableNoms;
@@ -119,10 +158,16 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
         
         $schema = $CXO->getParametrage()->getSchema();
         $requete = "select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = '$schema' AND `TABLE_NAME` = '$nom_table'";
-        $resultat = $this->executeRequete($requete);
+        $resultat = $this->db->query($requete);
         $n = 0;
-        if ($resultat->isOk()) {
-            foreach ($resultat->getResultat() as $ligne) {
+        if ($resultat === FALSE) {
+                $this->trace('Ko');
+                $this->trace($db->errorInfo()[0]);
+                $this->trace($db->errorInfo()[1]);
+                $this->trace($db->errorInfo()[2]);
+        } else {
+            $lignes = $resultat->fetchAll();
+            foreach ($lignes as $ligne) {
                 $n++;
             }
         }
@@ -138,11 +183,17 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
     public function getListeTablesPourUneColonne($base,$nom_colonne) {
         $requete = "SELECT `TABLE_NAME` as nom_table FROM `COLUMNS` WHERE `TABLE_SCHEMA` = '$base' and `COLUMN_NAME` = '$nom_colonne'";
         
-        $rlt = $this->executeRequete($requete);
+        $resultat = $this->db->query($requete);
         
         $tab = [];
-        if ($rlt->isOk()) {
-            foreach ($rlt->getResultat() as $value) {
+        if ($resultat === FALSE) {
+                $this->trace('Ko');
+                $this->trace($db->errorInfo()[0]);
+                $this->trace($db->errorInfo()[1]);
+                $this->trace($db->errorInfo()[2]);
+        } else {
+            $lignes = $resultat->fetchAll();
+            foreach ($lignes as $value) {
                 $tab[] = $value['nom_table'];
             }
         }

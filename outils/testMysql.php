@@ -1,7 +1,7 @@
 <?php
 
 $tm = new TEST_mysql();
-$tm->lecturePersonne();
+$tm->lectureArticle();
 $tm->informationSchema();
 
 class TEST_mysql {
@@ -21,15 +21,15 @@ class TEST_mysql {
 
     private function renseigneParametres() {
         if ($this->isDistant()) {
-            $this->database = 'db371772461';
-            $this->hostname = 'db371772461.db.1and1.com';
-            $this->password = 'ds4thp200';
-            $this->username = 'dbo371772461';
+            $this->database = 'dbs15734873';
+            $this->hostname = 'db5020579532.hosting-data.io';
+            $this->password = '>P1eTa&6XTiNe@ST_PieRRe<';
+            $this->username = 'dbu5155308';
         } else {
-            $this->database = 'photo';
-            $this->hostname = 'localhost';
-            $this->password = 'photo';
-            $this->username = 'photo';
+            $this->database = 'MklAnj';
+            $this->hostname = 'localhost:8889';
+            $this->password = 'MklAnj';
+            $this->username = 'MklAnj';
         }
     }
 
@@ -55,8 +55,8 @@ class TEST_mysql {
         echo "$texte<br>";
     }
 
-    public function lecturePersonne() {
-        $sql = "select nom,prenom from personne";
+    public function lectureArticle() {
+        $sql = "select nom from Commerce";
         $resultat = $this->db->query($sql);
         if ($resultat === FALSE) {
             $this->trace('Ko');
@@ -67,8 +67,7 @@ class TEST_mysql {
             $lignes = $resultat->fetchAll();
             foreach ($lignes as $ligne) {
                 $nom = $ligne['nom'];
-                $prenom = $ligne['prenom'];
-                $this->trace("$prenom $nom");
+                $this->trace("$nom");
             }
         }
     }
@@ -78,19 +77,19 @@ class TEST_mysql {
         $this->trace('Lecture information Schema');
         if ($this->isDistant()) {
             $database = 'information_schema';
-            $hostname = 'db371772461.db.1and1.com';
-            $password = 'ds4thp200';
-            $username = 'dbo371772461';
-            $schema = 'db371772461';
+            $hostname = 'db5020579532.hosting-data.io';
+            $password = '>P1eTa&6XTiNe@ST_PieRRe<';
+            $username = 'dbu5155308';
+            $schema = 'dbs15734873';
         } else {
             $database = 'information_schema';
             $hostname = 'localhost';
             $password = 'structure';
             $username = 'structure';
-            $schema = 'photo';
+            $schema = 'MklAnj';
         }
         try {
-            $db = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
+            $db = new PDO("mysql:host=$hostname;dbname=$database", $username, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
             $db->exec("SET CHARACTER SET utf8");
             $this->trace('Connexion information schema : Ok');
             $sql = "select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = '$schema'";
@@ -109,6 +108,7 @@ class TEST_mysql {
             }
         } catch (Exception $e) {
             $this->trace('Connexion information schema : Ko');
+            print_r($e);
         }
     }
 

@@ -18,7 +18,15 @@ class LIB_infos_systeme {
         $this->os = $this->getOs();
         $this->systeme = $this->getSysteme();
         
-        $this->local = $this->os == "Darwin" ? TRUE : FALSE;
+        LIB_Util::log("Os : '$this->os'");
+        if ($this->os == "Linux") {
+            $this->local = 'non';
+            LIB_Util::log("C'est Linux donc distant");
+        } else {
+            $this->local = 'oui';
+            LIB_Util::log("Ce n'est pas Linux donc local");
+        }
+        LIB_Util::log("Local : ".$this->local);
     }
     public function affiche() {
         ?>
@@ -64,7 +72,10 @@ class LIB_infos_systeme {
     }
 
     public function getLocal() {
-        return $this->local;
+        if ($this->local == "oui") {
+            return true;
+        }
+        return false;
     }
     
     public function isMacBookPro() {

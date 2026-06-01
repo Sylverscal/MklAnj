@@ -15,7 +15,7 @@ global $CXO_C; // Pour accéder à la base "Courses"
 global $DOT;
 
 //LIB_Util::log("Entrée dans AJAX", $_POST['action']=='affichePosteDeCommande' ? FALSE : TRUE);
-LIB_Util::log("Entrée dans AJAX", $_POST['domaine']=='gestion_liste_courses' ? TRUE : FALSE);
+LIB_Util::log("Entrée dans AJAX", $_POST['domaine']=='acces' ? TRUE : FALSE);
 //LIB_Util::log("Entrée dans AJAX",true);
 //LIB_Util::log("Entrée dans AJAX");
 
@@ -29,10 +29,13 @@ abstract class AJX_MklAnj_Ajax {
 
     function __construct($post) {
         global $CXO;
-        $CXO = new LIB_BDD(new PRM_MklAnj());
+        LIB_Util::log("Avant création CXO");
+        $CXO_prm = new PRM_MklAnj();
+        $CXO = new LIB_BDD($CXO_prm);
+        LIB_Util::log("Après création CXO");
         
         global $CXO_C;
-        $CXO_C = new LIB_BDD(new PRM_Courses());
+        //$CXO_C = new LIB_BDD(new PRM_Courses());
         
         global $CXO_ST;
         $CXO_ST = new LIB_BDD_Structure();

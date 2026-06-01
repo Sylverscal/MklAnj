@@ -1,56 +1,407 @@
-29-05-2026 20:58:36 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-29-05-2026 20:58:36 : ? -> ? -> ? -> 0 : POST
-29-05-2026 20:58:36 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => gestion_liste_courses
-    [action] => get_liste_articles_interdits
-)
-
-31-05-2026 09:27:24 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-31-05-2026 09:27:24 : ? -> ? -> ? -> 0 : POST
-31-05-2026 09:27:24 : ? -> ? -> ? -> 0 : Array
+01-06-2026 11:34:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-06-2026 11:34:08 : ? -> ? -> ? -> 0 : POST
+01-06-2026 11:34:08 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => a
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => b
+                    [value] => 
+                )
+
+        )
+
+)
+
+01-06-2026 11:34:08 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Avant création CXO
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Local : oui
+01-06-2026 11:34:08 : PRM_MklAnj -> PRM_MklAnj -> __construct -> 33 : Os : Darwin
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:08 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Après création CXO
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-06-2026 11:34:08 : ? -> ? -> ? -> 0 : POST
+01-06-2026 11:34:08 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
     [action] => affiche
 )
 
-31-05-2026 09:32:11 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-31-05-2026 09:32:11 : ? -> ? -> ? -> 0 : POST
-31-05-2026 09:32:11 : ? -> ? -> ? -> 0 : Array
+01-06-2026 11:34:08 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Avant création CXO
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Local : oui
+01-06-2026 11:34:08 : PRM_MklAnj -> PRM_MklAnj -> __construct -> 33 : Os : Darwin
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:08 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Après création CXO
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:08 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-06-2026 11:34:09 : ? -> ? -> ? -> 0 : POST
+01-06-2026 11:34:09 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => acces
-    [action] => affiche
+    [domaine] => accueil
+    [action] => affiche_accueil_courses
 )
 
-31-05-2026 13:47:21 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-31-05-2026 13:47:21 : ? -> ? -> ? -> 0 : POST
-31-05-2026 13:47:21 : ? -> ? -> ? -> 0 : Array
+01-06-2026 11:34:09 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Avant création CXO
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Local : oui
+01-06-2026 11:34:09 : PRM_MklAnj -> PRM_MklAnj -> __construct -> 33 : Os : Darwin
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:09 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Après création CXO
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-06-2026 11:34:09 : ? -> ? -> ? -> 0 : POST
+01-06-2026 11:34:09 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => acces
+    [domaine] => barre_navigation
     [action] => affiche
+    [onglet] => COU_onglet_home
 )
 
-31-05-2026 16:35:26 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-31-05-2026 16:35:26 : ? -> ? -> ? -> 0 : POST
-31-05-2026 16:35:26 : ? -> ? -> ? -> 0 : Array
+01-06-2026 11:34:09 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Avant création CXO
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Local : oui
+01-06-2026 11:34:09 : PRM_MklAnj -> PRM_MklAnj -> __construct -> 33 : Os : Darwin
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:09 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Après création CXO
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : ? -> ? -> ? -> 0 : POST
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:09 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => acces
-    [action] => affiche
+    [domaine] => onglet
+    [action] => home
 )
 
-31-05-2026 16:39:24 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-31-05-2026 16:39:24 : ? -> ? -> ? -> 0 : POST
-31-05-2026 16:39:24 : ? -> ? -> ? -> 0 : Array
+01-06-2026 11:34:09 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Avant création CXO
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Local : oui
+01-06-2026 11:34:09 : PRM_MklAnj -> PRM_MklAnj -> __construct -> 33 : Os : Darwin
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:09 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Après création CXO
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:09 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:11 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-06-2026 11:34:11 : ? -> ? -> ? -> 0 : POST
+01-06-2026 11:34:11 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-06-2026 11:34:11 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => acces
+    [domaine] => barre_navigation
     [action] => affiche
+    [onglet] => CLA_onglet_tables
 )
 
-31-05-2026 16:51:06 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-31-05-2026 16:51:06 : ? -> ? -> ? -> 0 : POST
-31-05-2026 16:51:06 : ? -> ? -> ? -> 0 : Array
+01-06-2026 11:34:11 : ? -> ? -> ? -> 0 : POST
+01-06-2026 11:34:11 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Avant création CXO
+01-06-2026 11:34:11 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => acces
-    [action] => affiche
+    [domaine] => onglet
+    [action] => tables
 )
 
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Os : 'Darwin'
+01-06-2026 11:34:11 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Avant création CXO
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Local : oui
+01-06-2026 11:34:11 : PRM_MklAnj -> PRM_MklAnj -> __construct -> 33 : Os : Darwin
+01-06-2026 11:34:11 : PRM_MklAnj -> PRM_MklAnj -> __construct -> 33 : Os : Darwin
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:11 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Après création CXO
+01-06-2026 11:34:11 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Après création CXO
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:11 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-06-2026 11:34:12 : ? -> ? -> ? -> 0 : POST
+01-06-2026 11:34:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Course_AFaire
+)
+
+01-06-2026 11:34:12 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Avant création CXO
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Local : oui
+01-06-2026 11:34:12 : PRM_MklAnj -> PRM_MklAnj -> __construct -> 33 : Os : Darwin
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:12 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Après création CXO
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-06-2026 11:34:12 : ? -> ? -> ? -> 0 : POST
+01-06-2026 11:34:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Course_AFaire
+)
+
+01-06-2026 11:34:12 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Avant création CXO
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Local : oui
+01-06-2026 11:34:12 : PRM_MklAnj -> PRM_MklAnj -> __construct -> 33 : Os : Darwin
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:12 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Après création CXO
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:12 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-06-2026 11:34:13 : ? -> ? -> ? -> 0 : POST
+01-06-2026 11:34:13 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Personne
+)
+
+01-06-2026 11:34:13 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Avant création CXO
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Local : oui
+01-06-2026 11:34:13 : PRM_MklAnj -> PRM_MklAnj -> __construct -> 33 : Os : Darwin
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:13 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Après création CXO
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-06-2026 11:34:13 : ? -> ? -> ? -> 0 : POST
+01-06-2026 11:34:13 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Personne
+)
+
+01-06-2026 11:34:13 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Avant création CXO
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 25 : Local : oui
+01-06-2026 11:34:13 : PRM_MklAnj -> PRM_MklAnj -> __construct -> 33 : Os : Darwin
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:13 : AJX_MklAnj_Ajax -> AJX_MklAnj_Ajax -> __construct -> 26 : Après création CXO
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 39 : Local : oui
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 65 : Local : oui
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Os : 'Darwin'
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Ce n'est pas Linux donc local
+01-06-2026 11:34:13 : LIB_infos_systeme -> LIB_infos_systeme -> __construct -> 24 : Local : oui

@@ -14,7 +14,7 @@ abstract class LIB_BDD_PDO {
 
     protected $db;
     protected $erreur;
-    private $prm;
+    protected $prm;
 
     public function __construct($prm) {
         $this->db = NULL;
