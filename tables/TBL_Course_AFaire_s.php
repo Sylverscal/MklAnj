@@ -42,4 +42,26 @@ class TBL_Course_AFaire_s extends LIB_Table_s{
         $caf->chargeParNomColonne("id_Course",$course->getId());
         $caf->supprime();
     }
+    
+    /**
+     * Supprime toutes les lignes associées à une course
+     * 
+     * @param TBL_Course $course
+     * @global LIB_DistributeurObjetTable $DOT
+     * @global LIB_BDD $CXO 
+     */
+    public function supprimeCourse($course) {
+        global $DOT;
+        global $CXO;
+        
+        $id_course = $course->getId();
+        
+        $requete = "delete from Course_AFaire where id_Course = '$id_course'";
+        
+        $rlt = $CXO->executeRequete($requete);
+        
+        $crdu = $rlt->getCompteRendu();
+        
+        return $crdu;
+    }
 }

@@ -14,8 +14,8 @@ global $CXO_ST; // Pour accéder à la base "structure"
 global $CXO_C; // Pour accéder à la base "Courses"
 global $DOT;
 
-//LIB_Util::log("Entrée dans AJAX", $_POST['action']=='affichePosteDeCommande' ? FALSE : TRUE);
-LIB_Util::log("Entrée dans AJAX", $_POST['domaine']=='acces' ? TRUE : FALSE);
+LIB_Util::log("Entrée dans AJAX", $_POST['action']=='afficheTable' ? FALSE : TRUE);
+//LIB_Util::log("Entrée dans AJAX", $_POST['domaine']=='getsion_table' ? TRUE : FALSE);
 //LIB_Util::log("Entrée dans AJAX",true);
 //LIB_Util::log("Entrée dans AJAX");
 
@@ -29,10 +29,8 @@ abstract class AJX_MklAnj_Ajax {
 
     function __construct($post) {
         global $CXO;
-        LIB_Util::log("Avant création CXO");
         $CXO_prm = new PRM_MklAnj();
         $CXO = new LIB_BDD($CXO_prm);
-        LIB_Util::log("Après création CXO");
         
         global $CXO_C;
         //$CXO_C = new LIB_BDD(new PRM_Courses());
@@ -410,6 +408,21 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         
         $c = $DOT->getObjet("Course");
         $c->setId($id);
+        
+        $caf = $DOT->getObjet_s("Course_AFaire");
+        $crdu = $caf->supprimeCourse($c);
+        if ($crdu->isKo()) {
+            $crdu->emissionJson();
+            return;
+        }
+        
+        $cf = $DOT->getObjet_s("Course_Faite");
+        $crdu = $cf->supprimeCourse($c);
+        if ($crdu->isKo()) {
+            $crdu->emissionJson();
+            return;
+        }
+        
         $crdu = $c->supprime();
         
         $crdu->emissionJson();

@@ -12,6 +12,7 @@ include_once 'LIB_BDD_MySQL_PDO.php';
 class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
     protected $infos_systeme;
     protected $db;
+    private $schema;
     /**
      * Etablit la connexion à la base
      */
@@ -28,13 +29,13 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
             $hostname = 'db5020579532.hosting-data.io';
             $password = '>P1eTa&6XTiNe@ST_PieRRe<';
             $username = 'dbu5155308';
-            $schema = 'dbs15734873';
+            $this->schema = 'dbs15734873';
         } else {
             $database = 'information_schema';
             $hostname = 'localhost';
             $password = 'structure';
             $username = 'structure';
-            $schema = 'MklAnj';
+            $this->schema = 'MklAnj';
         }
         
         $this->db = new PDO("mysql:host=$hostname;dbname=$database", $username, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
@@ -44,15 +45,10 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
 
     /**
      * Renvoie un tableau contenant le nom des tables de la base
-     * @global LIB_BDD $CXO 
      * @return array
      */
-    public function getListeNomTables() {
-        global $CXO;
-        
-        $schema = $CXO->getSchema();
-//        $schema = $this->getParametrage()->schema;
-        $requete = "select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = '$schema'";
+    public function getListeNomTables() {        
+        $requete = "select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = '$this->schema'";
         $resultat = $this->db->query($requete);
         $tableNoms = [];
         if ($resultat === FALSE) {
@@ -72,14 +68,10 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
     
     /**
      * Renvoie la liste des colonnes d'une table
-     * @global LIB_BDD $CXO 
      * @param type $nom_table
      */
-    public function getListeNomsColonnesTable($nom_table) {
-        global $CXO;
-        
-        $schema = $CXO->getSchema();
-        $requete = "select COLUMN_NAME from `COLUMNS` where TABLE_SCHEMA = '$schema' and TABLE_NAME = '$nom_table' and COLUMN_NAME <> 'id'";
+    public function getListeNomsColonnesTable($nom_table) {        
+        $requete = "select COLUMN_NAME from `COLUMNS` where TABLE_SCHEMA = '$this->schema' and TABLE_NAME = '$nom_table' and COLUMN_NAME <> 'id'";
         $resultat = $this->db->query($requete);
         $tableNoms = [];
         if ($resultat === FALSE) {
@@ -99,15 +91,11 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
     
     /**
      * Renvoie le tableau de la liste des descriptions des colonnes de la table
-     * @global LIB_BDD $CXO 
      * @return array
      */
-    public function getListeDescriptionsColonnes($nom_table) {
-        global $CXO;
-        
+    public function getListeDescriptionsColonnes($nom_table) {      
         $nt = $nom_table;
-        $s = $CXO->getSchema();
-        $requete = "select column_name,column_comment from columns where table_schema = '$s' and table_name = '$nt'";
+        $requete = "select column_name,column_comment from columns where table_schema = '$this->schema' and table_name = '$nt'";
         $resultat = $this->db->query($requete);
         $tableNoms = [];
         if ($resultat === FALSE) {
@@ -118,19 +106,19 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
         } else {
             $lignes = $resultat->fetchAll();
             foreach ($lignes as $ligne) {
-                $nc = $ligne['column_name'];
+                $nc = $ligne[0];
                 $tab = [];
                 $liste_filtres = ["/^id_(VoF)_.*/", "/^id_(.+)_h_$/", "/^id_(.+)$/"];
                 foreach ($liste_filtres as $filtre) {
                     $test = preg_match($filtre, $nc, $tab);
                     if ($test === 1) {
                         $ntl = $tab[1];
-                        $requete_table_liee = "select table_comment from `tables` where table_schema = '$s' and table_name = '$ntl'";
+                        $requete_table_liee = "select table_comment from `tables` where table_schema = '$this->schema' and table_name = '$ntl'";
                         $r = $this->executeRequete($requete_table_liee);
                         $desc = "Description ?";
                         if ($r->isOk()) {
                             foreach ($r->getResultat() as $ligne) {
-                                $desc = $ligne['table_comment'];
+                                $desc = $ligne[0];
                             }
                         }
                         $dc = new LIB_Description($desc);
@@ -138,7 +126,7 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
                     }
                 }
                 if (preg_match("/^id_.*/", $nc, $tab) == 0) {
-                    $dc = new LIB_Description($ligne['column_comment']);
+                    $dc = new LIB_Description($ligne[1]);
                 }
                 $tableNoms[$nc] = $dc;
             }
@@ -150,14 +138,10 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
     /**
      * Renvoie si une table existe
      * @param type $nom_table
-     * @global LIB_BDD $CXO 
      * @return type
      */
-    public function isExisteTable($nom_table) {
-        global $CXO;
-        
-        $schema = $CXO->getParametrage()->getSchema();
-        $requete = "select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = '$schema' AND `TABLE_NAME` = '$nom_table'";
+    public function isExisteTable($nom_table) {        
+        $requete = "select `TABLE_NAME` from `TABLES` where `TABLE_SCHEMA` = '$this->schema' AND `TABLE_NAME` = '$nom_table'";
         $resultat = $this->db->query($requete);
         $n = 0;
         if ($resultat === FALSE) {
@@ -181,7 +165,7 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
      * @param type $nom_colonne
      */
     public function getListeTablesPourUneColonne($base,$nom_colonne) {
-        $requete = "SELECT `TABLE_NAME` as nom_table FROM `COLUMNS` WHERE `TABLE_SCHEMA` = '$base' and `COLUMN_NAME` = '$nom_colonne'";
+        $requete = "SELECT `TABLE_NAME` as nom_table FROM `COLUMNS` WHERE `TABLE_SCHEMA` = '$this->schema' and `COLUMN_NAME` = '$nom_colonne'";
         
         $resultat = $this->db->query($requete);
         
@@ -201,6 +185,8 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
         return $tab;
     }
     
-    
+    public function getSchema() {
+        return $this->schema;
+    }
 
 }

@@ -363,21 +363,9 @@ class LIB_TableColonne {
 
         switch ($type_mysql) {
             case 'int':
-                $taille = $matches[2];
-                switch ($taille) {
-                    case 1:
-                        $type = 'booleen';
-                        break;
-                    case 11:
-                        if (substr($this->nomColonne,0,3) == 'id_') {
-                            $type = 'menu';
-                        } else {
-                            $type = 'nombre';
-                        }
-                        break;
-                    default:
-                        $type = 'nombre';
-                        break;
+                $type = 'nombre';
+                if (substr($this->nomColonne,0,3) == 'id_') {
+                    $type = 'menu';
                 }
 
                 break;
@@ -484,10 +472,12 @@ class LIB_TableColonne {
      * @return string
      */
     private function initDescription() {
+        global $CXO;
         global $CXO_ST;
         global $DOT;
 
-        $r = $CXO_ST->executeRequete("select column_comment from `COLUMNS` where table_schema = '$this->schema' and table_name = '$this->nomTable' and column_name = '$this->nomColonne'");
+        $schema = $CXO_ST->getSchema();
+        $r = $CXO_ST->executeRequete("select column_comment from `COLUMNS` where table_schema = '$schema' and table_name = '$this->nomTable' and column_name = '$this->nomColonne'");
         if ($r->isOk()) {
             foreach ($r->getResultat() as $ligne) {
                 $tab = [];
@@ -503,7 +493,7 @@ class LIB_TableColonne {
                     }
                 }
                 if (preg_match("/^id_.*/", $this->nomColonne, $tab) == 0) {
-                    $description = $ligne['column_comment'];
+                    $description = $ligne[0];
                     $d = new LIB_Description($description);
                 }
             }
@@ -528,12 +518,15 @@ class LIB_TableColonne {
      * @return string
      */
     private function getTypeColonne() {
+        global $CXO;
         global $CXO_ST;
         
-        $r = $CXO_ST->executeRequete("select column_type from `COLUMNS` where table_schema = '$this->schema' and table_name = '$this->nomTable' and column_name = '$this->nomColonne'");
+        $schema = $CXO_ST->getSchema();
+        $requete = "select column_type from `COLUMNS` where table_schema = '$schema' and table_name = '$this->nomTable' and column_name = '$this->nomColonne'";
+        $r = $CXO_ST->executeRequete($requete);
         if ($r->isOk()) {
             foreach ($r->getResultat() as $ligne) {
-                $dt = $ligne['column_type'];
+                $dt = $ligne[0];
             }
         } else {
             $r->affiche();

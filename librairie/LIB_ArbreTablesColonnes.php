@@ -215,16 +215,16 @@ class LIB_ArbreTablesColonnes {
             switch ($type) {
                 case 'nombre':
                     if ($valeur == 0) {
-                        continue;
+                        break;
                     }
                     $partie_where = sprintf(" and %s = '%s' ",$tablonne_avec_point,$valeur);
                 case 'texte':
                     if ($valeur == "-" || $valeur == "") {
-                        continue;
+                        break;
                     }
                     $partie_where = sprintf(" and %s like '%s%s%s' ",$tablonne_avec_point,'%',$valeur,'%');
                 default:
-                    continue;
+                    break;
             }
 
             

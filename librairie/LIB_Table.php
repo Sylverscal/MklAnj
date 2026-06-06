@@ -868,7 +868,7 @@ $tab
 
         $nomIdCleEtrangere = $this->getNomCleEtrangere();
 
-        $s = $CXO->getSchema();
+        $s = $CXO_ST->getSchema();
         $requeteST = "select `TABLE_NAME` from columns where table_schema = '$s' and column_name = '$nomIdCleEtrangere'";
         $retST = $CXO_ST->executeRequete($requeteST);
         if ($retST->isOk()) {
@@ -903,7 +903,7 @@ $tab
 
         $nomIdCleEtrangere = $this->getNomCleEtrangere();
 
-        $s = $CXO->getSchema();
+        $s = $CXO_ST->getSchema();
         $requeteST = "select `TABLE_NAME` from columns where table_schema = '$s' and column_name = '$nomIdCleEtrangere'";
         $retST = $CXO_ST->executeRequete($requeteST);
         if ($retST->isOk()) {
@@ -1219,12 +1219,12 @@ $tab
         global $CXO_ST;
 
         $nt = $this->nom_table;
-        $s = $CXO->getSchema();
+        $s = $CXO_ST->getSchema();
         $requete = "select table_comment from `tables` where table_schema = '$s' and table_name = '$nt'";
         $r = $CXO_ST->executeRequete($requete);
         if ($r->isOk()) {
             foreach ($r->getResultat() as $ligne) {
-                $description = $ligne['table_comment'];
+                $description = $ligne[0];
             }
         } else {
             $r->affiche();

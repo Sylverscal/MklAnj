@@ -17,7 +17,7 @@ class LIB_BDD_MySQL_PDO extends LIB_BDD_PDO {
             $this->db->exec("SET CHARACTER SET utf8");
         } catch (Exception $e) {
             $this->erreur = $e->getMessage();
-            LIB_Util::logPrintR($e);
+            LIB_Util::logPrintR($e,sprintf("Erreur connexion base : H = '%s' , DB = '%s' , UN = '%s', PW = '%s'",$this->getParametrage()->hostname,$this->getParametrage()->database,$this->getParametrage()->username, $this->getParametrage()->password));
         }
     }
     

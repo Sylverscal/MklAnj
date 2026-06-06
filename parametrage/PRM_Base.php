@@ -36,8 +36,8 @@ abstract class PRM_Base {
         $this->schema = $schema;
         $this->database = $database;
         $this->hostname = $hostname;
-        $this->username = $password;
-        $this->password = $username;
+        $this->username = $username;
+        $this->password = $password;
         $this->is_distant = $this->isDistant();
     }
     
