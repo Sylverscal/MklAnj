@@ -245,7 +245,7 @@ class TBL_Course extends LIB_Table{
         global $CXO;
         
         $id = $this->getId();
-        $requete = "SELECT count(Course_AFaire.id) as nb FROM MklAnj.Course_AFaire
+        $requete = "SELECT count(Course_AFaire.id) as nb FROM Course_AFaire
             where id_Course = $id";
 
         $is_faite = false;
@@ -524,7 +524,7 @@ class TBL_Course extends LIB_Table{
     public function isCourseExistePourArticle($nom_article) {
         global $CXO;
         
-        $requete = "SELECT count(Course.id) as nb FROM MklAnj.Course
+        $requete = "SELECT count(Course.id) as nb FROM Course
         join Article on Article.id = Course.id_Article
         where Article.nom = '$nom_article'";
         
