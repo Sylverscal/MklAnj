@@ -14,7 +14,7 @@ global $CXO_ST; // Pour accéder à la base "structure"
 global $CXO_C; // Pour accéder à la base "Courses"
 global $DOT;
 
-LIB_Util::log("Entrée dans AJAX", $_POST['action']=='afficheTable' ? FALSE : TRUE);
+LIB_Util::log("Entrée dans AJAX", $_POST['action']=='valide_nouvelle_course' ? FALSE : TRUE);
 //LIB_Util::log("Entrée dans AJAX", $_POST['domaine']=='getsion_table' ? TRUE : FALSE);
 //LIB_Util::log("Entrée dans AJAX",true);
 //LIB_Util::log("Entrée dans AJAX");
@@ -398,6 +398,7 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         $nom_article = $post['nom_article'];
         
         $c->creationNouvelleCourse($nom_article);
+        
         
     }
     
