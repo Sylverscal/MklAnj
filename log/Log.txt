@@ -1,17 +1,17 @@
-07-06-2026 08:35:14 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-07-06-2026 08:35:14 : ? -> ? -> ? -> 0 : POST
-07-06-2026 08:35:14 : ? -> ? -> ? -> 0 : Array
+07-06-2026 20:27:27 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+07-06-2026 20:27:27 : ? -> ? -> ? -> 0 : POST
+07-06-2026 20:27:27 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => affiche_nouvelle_course
 )
 
-07-06-2026 08:35:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-07-06-2026 08:35:25 : ? -> ? -> ? -> 0 : POST
-07-06-2026 08:35:25 : ? -> ? -> ? -> 0 : Array
+07-06-2026 20:27:34 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+07-06-2026 20:27:34 : ? -> ? -> ? -> 0 : POST
+07-06-2026 20:27:34 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => valide_nouvelle_course
-    [nom_article] => Abricot sec
+    [nom_article] => Abricot
 )
 

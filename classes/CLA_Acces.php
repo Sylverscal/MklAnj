@@ -28,6 +28,7 @@ class CLA_Acces {
             <input class="w3-input w3-border" name="b"type="text">
             </p>
             <input id="FRM_ACCES_SUBMIT" class="w3-input w3-border" type="submit" value="Connexion"/>            
+            <input id="FRM_ACCES_SUBMIT_MOBILE" class="w3-input w3-border" type="submit" value="Connexion Mobile"/>            
             <p>
         </form>
         <div class="w3-modal" id="MDL_ACCES">

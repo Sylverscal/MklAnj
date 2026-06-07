@@ -37,6 +37,11 @@ class C_Acces {
             g_acces.traite_acces(donnees);
             e.preventDefault();
         });
+        $('#FRM_ACCES_SUBMIT_MOBILE').click(function (e) {
+            var donnees = $('#FRM_ACCES').serializeArray();
+            g_acces.traite_acces_mobile(donnees);
+            e.preventDefault();
+        });
     }
     
     traite_acces = function (donnees) {
@@ -60,5 +65,28 @@ class C_Acces {
                     }
                 }
             });
-};
+    };
+    
+    traite_acces_mobile = function (donnees) {
+    var json = {
+        domaine: 'acces',
+        action: 'controle',
+        donnees: donnees
+    };
+    $.ajax(
+            {
+                type: 'POST',
+                url: g_chemin_ajax + 'ajax.php',
+                data: json,
+                dataType: 'json',
+                success: function (data) {
+                    if (data.erreur === "non") {
+                        g_liste_courses = new C_ListeCourses();
+                        g_liste_courses.affiche_mobile();
+                    } else {
+                        document.getElementById('MDL_ACCES').style.display='block';
+                    }
+                }
+            });
+    };
 }

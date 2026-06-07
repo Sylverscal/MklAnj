@@ -39,6 +39,35 @@ class C_ListeCourses {
         g_filtrage = new C_Filtrage();
         g_filtrage.affiche();
     }
+    
+    affiche_mobile() {
+        $('#DIV_ACCUEIL').html("<h4>Op&eacuteration en cours</h4>");
+        var json = {
+            domaine: 'liste_courses',
+            action: 'affiche_vue_principale'
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'html',
+                    async: 'false',
+                    success: function (html) {
+                        g_liste_courses.affiche_mobile_retour(html);
+                    }
+                }
+        );
+    }
+    
+    affiche_mobile_retour(html) {
+        $("#DIV_ACCUEIL").html(html);
+        g_liste_courses.gestion_liste.affiche();
+        g_recherche = new C_Recherche();
+        g_recherche.affiche();
+        g_filtrage = new C_Filtrage();
+        g_filtrage.affiche();
+    }
 
 }
     
