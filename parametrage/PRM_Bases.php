@@ -23,7 +23,6 @@ class PRM_MklAnj extends PRM_Base {
 
     public function __construct() {
         $o = new LIB_infos_systeme();
-        LIB_Util::log("Os : ".$o->getOs());
         if ($o->getOs() == "Linux") {
             $this->setParametres('MklAnj', 'dbs15734873', 'db5020579532.hosting-data.io', '>P1eTa&6XTiNe@ST_PieRRe<', 'dbu5155308');
         } else {

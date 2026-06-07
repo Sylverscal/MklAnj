@@ -491,10 +491,13 @@ class TBL_Course extends LIB_Table{
         
         $crdu = $this->valideFormulaire($donnees);
         
+        
         if ($crdu->isKo()) {
             $crdu->affiche();
             return;
         }
+        
+        $this->majEtatCourseFaite(0);
         
         $this->affiche();
     }
