@@ -457,25 +457,31 @@ class TBL_Course extends LIB_Table{
         
         ?>
             <tr id="<?php echo $id; ?>" class="w3-hover-pale-yellow">
-                <td>
-                    <select id="SEL_NOM_ARTICLE" class="w3-select">
-                        <?php
-                                foreach ($tab_articles as $value) {
-                                    ?>
-                                    <option value="<?php echo $value['libelle'] ?>"><?php echo $value['libelle'] ?></option>
+                <td colspan="4">
+                    <div class="w3-container ">
+                        <div class="w3-row">
+                            <div class="w3-col" style="width:100px">
+                                <button id="BTN_LIGNE_EDITABLE_KO" class="w3-button w3-red w3-circle w3-right"><i class="fa fa-ban"></i></button>
+                                <button id="BTN_LIGNE_EDITABLE_OK" class="w3-button w3-green w3-circle w3-right"><i class="fa fa-check"></i></button>
+                            </div>
+                            <div class="w3-rest">
+                                <select id="SEL_NOM_ARTICLE" class="w3-select w3-left">
                                     <?php
-                                }
-                        ?>
-                    </select>
-                    <input id="INP_LIGNE_EDITABLE_VALEUR" class="w3-input" type="text" name="nom_article" value="">
+                                            foreach ($tab_articles as $value) {
+                                                ?>
+                                                <option value="<?php echo $value['libelle'] ?>"><?php echo $value['libelle'] ?></option>
+                                                <?php
+                                            }
+                                    ?>
+                                </select>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container ">
+                            <input id="INP_LIGNE_EDITABLE_VALEUR" class="w3-input" type="text" name="nom_article" value="">
+                    </div>
                 </td>
-                <td colspan="3">
-                    <button id="BTN_LIGNE_EDITABLE_KO" class="w3-button w3-red w3-circle w3-right"><i class="fa fa-ban"></i></button>
-                    <button id="BTN_LIGNE_EDITABLE_OK" class="w3-button w3-green w3-circle w3-right"><i class="fa fa-check"></i></button>
-                </td>
-            <?php
-
-            ?>
             </tr>
         <?php
     }

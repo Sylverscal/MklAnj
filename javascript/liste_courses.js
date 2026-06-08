@@ -478,11 +478,11 @@ class C_GestionListe {
         $('#BTN_LIGNE_EDITABLE_OK').on("click",function(){
             let nom_article = $('#INP_LIGNE_EDITABLE_VALEUR').val();
             
-            $(this).parent().parent().remove();
+            $(this).parents('tr').remove();
             g_liste_courses.gestion_liste.valideNouvelleCourse(nom_article);
         });
         $('#BTN_LIGNE_EDITABLE_KO').on("click",function(){
-            $(this).parent().parent().remove();
+            $(this).parents('tr').remove();
         });
         $('#SEL_NOM_ARTICLE').on("change",function(){
             let val = $(this).val();
