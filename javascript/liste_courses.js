@@ -12,7 +12,6 @@ class C_ListeCourses {
     }
     
     affiche() {
-        $('#ONG_contenu').html("<h4>Op&eacuteration en cours</h4>");
         var json = {
             domaine: 'liste_courses',
             action: 'affiche_vue_principale'
@@ -32,7 +31,7 @@ class C_ListeCourses {
     }
     
     affiche_retour(html) {
-        $("#DIV_FONCTION_LISTE_COURSES").html(html);
+        $(g_acces.div_accueil_fonction_liste_course).html(html);
         g_liste_courses.gestion_liste.affiche();
         g_recherche = new C_Recherche();
         g_recherche.affiche();
@@ -40,35 +39,6 @@ class C_ListeCourses {
         g_filtrage.affiche();
     }
     
-    affiche_mobile() {
-        $('#DIV_ACCUEIL').html("<h4>Op&eacuteration en cours</h4>");
-        var json = {
-            domaine: 'liste_courses',
-            action: 'affiche_vue_principale'
-        };
-        $.ajax(
-                {
-                    type: 'POST',
-                    url: 'ajax/ajax.php',
-                    data: json,
-                    dataType: 'html',
-                    async: 'false',
-                    success: function (html) {
-                        g_liste_courses.affiche_mobile_retour(html);
-                    }
-                }
-        );
-    }
-    
-    affiche_mobile_retour(html) {
-        $("#DIV_ACCUEIL").html(html);
-        g_liste_courses.gestion_liste.affiche();
-        g_recherche = new C_Recherche();
-        g_recherche.affiche();
-        g_filtrage = new C_Filtrage();
-        g_filtrage.affiche();
-    }
-
 }
     
 class C_GestionListe {
@@ -240,7 +210,7 @@ class C_GestionListe {
     }
     
     affiche_formulaire_retour(html) {
-        $("#DIV_FONCTION_LISTE_COURSES").html(html);
+        $(g_acces.div_accueil_fonction_liste_course).html(html);
         g_liste_courses.gestion_liste.getListeArticlesInterdits();
     }
     
@@ -290,7 +260,6 @@ class C_GestionListe {
         $('#BTN_FRM_SUPPRIMER').on("click",function(e){
             e.preventDefault();
             let id = $('#FRM_COURSE input[name=id]').val();
-            console.log(id);
             g_liste_courses.gestion_liste.supprimeCourse(id);
         });
         $('#FRM_COURSE select').change(function(){

@@ -6,6 +6,10 @@
 var g_acces;
 
 class C_Acces {
+    constructor () {
+        this.div_accueil_fonction_liste_course = "";
+    }
+    
     affiche() {
         $('#DIV_ACCUEIL').html("Chargement en cours");
         var json = {
@@ -33,11 +37,13 @@ class C_Acces {
     
     ecoute_evenements_acces() {
         $('#FRM_ACCES_SUBMIT').click(function (e) {
+            g_acces.div_accueil_fonction_liste_course = "#DIV_FONCTION_LISTE_COURSES";
             var donnees = $('#FRM_ACCES').serializeArray();
             g_acces.traite_acces(donnees);
             e.preventDefault();
         });
         $('#FRM_ACCES_SUBMIT_MOBILE').click(function (e) {
+            g_acces.div_accueil_fonction_liste_course = "#DIV_ACCUEIL";
             var donnees = $('#FRM_ACCES').serializeArray();
             g_acces.traite_acces_mobile(donnees);
             e.preventDefault();
@@ -68,6 +74,7 @@ class C_Acces {
     };
     
     traite_acces_mobile = function (donnees) {
+        
     var json = {
         domaine: 'acces',
         action: 'controle',
@@ -82,7 +89,7 @@ class C_Acces {
                 success: function (data) {
                     if (data.erreur === "non") {
                         g_liste_courses = new C_ListeCourses();
-                        g_liste_courses.affiche_mobile();
+                        g_liste_courses.affiche();
                     } else {
                         document.getElementById('MDL_ACCES').style.display='block';
                     }
