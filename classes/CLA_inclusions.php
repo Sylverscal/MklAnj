@@ -63,6 +63,7 @@ class CLA_inclusions {
         $this->inclutTables('TBL_Course_Faite_s.php');
         $this->inclutTables('TBL_Course_AFaire_s.php');
         $this->inclutTables('TBL_Personne.php');
+        $this->inclutTables('TBL_Requete_s.php');
         
     }
 

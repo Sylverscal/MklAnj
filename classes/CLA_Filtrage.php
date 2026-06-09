@@ -21,6 +21,7 @@ class CLA_Filtrage {
         $r_s = $DOT->getObjet_s("Requete");
         
         $tab = $r_s->getItemsPourInputSelect();
+        $tab = $r_s->getListeRequetes();
         
         ?>
         <div class="w3-container w3-lime w3-padding">
