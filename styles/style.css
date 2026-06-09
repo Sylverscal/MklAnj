@@ -21,3 +21,7 @@ input.CBX_COURSE_FAITE {
   padding-left: 0px;
 }
 
+td.TD_COURSE {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}

@@ -332,8 +332,12 @@ class TBL_Course extends LIB_Table{
         
         $couleur = "";
         if (!$this->isCourseFaite()) {
-            if ($datation->isInferieureOuEgaleA($d_ahui)) {
+            if ($datation->isInferieureA($d_ahui)) {
                 $couleur = "w3-red";
+            }
+
+            if ($datation->isEgaleA($d_ahui)) {
+                $couleur = "w3-blue";
             }
 
             if ($datation->isSuperieureA($d_ahui)) {
