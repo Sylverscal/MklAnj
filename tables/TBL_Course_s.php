@@ -20,7 +20,7 @@ class TBL_Course_s extends LIB_Table_s{
         $this->charge($recherche,$filtrage);
         
         ?>
-        <div class="w3-container" style="overflow-y: scroll; height:600px">
+        <div class="w3-container" style="overflow-y: scroll; height:400px">
     
             <table id="TBL_LISTE_COURSES" class="w3-table-all w3-hoverable">
                 <tbody id="TBL_LISTE_COURSES_BODY">

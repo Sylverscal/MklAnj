@@ -1,3 +1,23 @@
 #TBL_LISTE_COURSES tr {
     padding: 1px
 }
+
+input.CBX_COURSE_FAITE {
+    width: 15px;
+    height: 15px;
+}
+
+#DIV_ACCUEIL {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+#DIV_VUE_PRINCIPALE {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+

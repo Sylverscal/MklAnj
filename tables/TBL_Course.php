@@ -41,7 +41,7 @@ class TBL_Course extends LIB_Table{
                     <?php $this->afficheDatation(); ?>
                 </td>
                 <td>
-                    <button class="w3-button w3-green w3-border w3-large w3-ripple w3-circle w3-right BTN_FORMULAIRE"><i class="fa fa-edit"></i></button>
+                    <button class="w3-button w3-green w3-tiny w3-border w3-ripple w3-circle w3-right BTN_FORMULAIRE"><i class="fa fa-edit"></i></button>
                 </td>
             <?php
 
@@ -461,8 +461,8 @@ class TBL_Course extends LIB_Table{
                     <div class="w3-container ">
                         <div class="w3-row">
                             <div class="w3-col" style="width:100px">
-                                <button id="BTN_LIGNE_EDITABLE_KO" class="w3-button w3-red w3-circle w3-right"><i class="fa fa-ban"></i></button>
-                                <button id="BTN_LIGNE_EDITABLE_OK" class="w3-button w3-green w3-circle w3-right"><i class="fa fa-check"></i></button>
+                                <button id="BTN_LIGNE_EDITABLE_KO" class="w3-button w3-red w3-circle w3-right w3-tiny"><i class="fa fa-ban"></i></button>
+                                <button id="BTN_LIGNE_EDITABLE_OK" class="w3-button w3-green w3-circle w3-right w3-tiny"><i class="fa fa-check"></i></button>
                             </div>
                             <div class="w3-rest">
                                 <select id="SEL_NOM_ARTICLE" class="w3-select w3-left">

@@ -8,13 +8,18 @@
  * @author veroscal
  */
 class CLA_onglet_home extends CLA_onglet_principal {
-
+    
     /**
      * Affiche la page d'accueil
      */
     #[\Override]
     final function affiche() {
-        $chemin_image = "https://mklanj:8890/image/Liste_courses_MichalAnge.jpg";
+        $is = new LIB_infos_systeme();
+        if ($is->getLocal()) {
+            $chemin_image = "https://mklanj:8890/image/Liste_courses_MichelAnge.jpg";
+        } else {
+            $chemin_image = "http://mklanj.sylverscal.net/image/Liste_courses_MichelAnge.jpg";
+        }
     ?>
         <div class="w3-container">
             <div class="w3-panel ">
