@@ -254,21 +254,21 @@ class TBL_Course_s extends LIB_Table_s{
             $requete = $rq->getValeurColonne("requete");
         }
         
-        // Requête recherche
-//        $requete = "select Course.id as id,id_Article,id_Marque,id_Commerce,id_Ville,id_Zone,datation,nombre,capacite,id_Unite,commentaire from Course
-//            join Article on Article.id = Course.id_Article where upper(Article.nom) like '%$recherche%'";
+        $requetes = explode("@", $requete);
         
-        $r = $CXO->executeRequete($requete);
-        if ($r->isOk()) {
-            foreach ($r->getResultat() as $ligne) {
-                $o = $DOT->getObjet($this->getNomClasseTable());
-                $o->setDeLigne($ligne);
-                if ($o->isCorrespond($recherche)) {
-                    $this->ajoute($o);
+        foreach ($requetes as $requete) {
+            $r = $CXO->executeRequete($requete);
+            if ($r->isOk()) {
+                foreach ($r->getResultat() as $ligne) {
+                    $o = $DOT->getObjet($this->getNomClasseTable());
+                    $o->setDeLigne($ligne);
+                    if ($o->isCorrespond($recherche)) {
+                        $this->ajoute($o);
+                    }
                 }
+            } else {
+                $r->affiche();
             }
-        } else {
-            $r->affiche();
         }
     }
 }

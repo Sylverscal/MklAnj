@@ -15,6 +15,7 @@ class LIB_BDD_MySQL_PDO extends LIB_BDD_PDO {
         try {
             $this->db = new PDO(sprintf("mysql:host=%s;dbname=%s",$this->getParametrage()->hostname,$this->getParametrage()->database), $this->getParametrage()->username, $this->getParametrage()->password);
             $this->db->exec("SET CHARACTER SET utf8");
+            $this->db->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, false);
         } catch (Exception $e) {
             $this->erreur = $e->getMessage();
             LIB_Util::logPrintR($e,sprintf("Erreur connexion base : H = '%s' , DB = '%s' , UN = '%s', PW = '%s'",$this->getParametrage()->hostname,$this->getParametrage()->database,$this->getParametrage()->username, $this->getParametrage()->password));

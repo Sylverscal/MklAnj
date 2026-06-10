@@ -1,50 +1,38 @@
-10-06-2026 13:40:36 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-10-06-2026 13:40:36 : ? -> ? -> ? -> 0 : POST
-10-06-2026 13:40:36 : ? -> ? -> ? -> 0 : Array
+10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : POST
+10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => filtrage
     [action] => affiche
 )
 
-10-06-2026 13:40:37 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-10-06-2026 13:40:37 : ? -> ? -> ? -> 0 : POST
-10-06-2026 13:40:37 : ? -> ? -> ? -> 0 : Array
+10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => recherche
+    [action] => affiche
+)
+
+10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : POST
+10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_fonctions
 )
 
-10-06-2026 13:40:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-10-06-2026 13:40:39 : ? -> ? -> ? -> 0 : POST
-10-06-2026 13:40:39 : ? -> ? -> ? -> 0 : Array
+10-06-2026 16:42:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+10-06-2026 16:42:48 : ? -> ? -> ? -> 0 : POST
+10-06-2026 16:42:48 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses_filtree
     [recherche] => 
-    [filtrage] => 1
+    [filtrage] => 4
 )
 
-10-06-2026 13:40:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-10-06-2026 13:40:40 : ? -> ? -> ? -> 0 : POST
-10-06-2026 13:40:40 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-10-06-2026 13:40:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-10-06-2026 13:40:42 : ? -> ? -> ? -> 0 : POST
-10-06-2026 13:40:42 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses_filtree
-    [recherche] => 
-    [filtrage] => 0
-)
-
-10-06-2026 13:40:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-10-06-2026 13:40:42 : ? -> ? -> ? -> 0 : POST
-10-06-2026 13:40:42 : ? -> ? -> ? -> 0 : Array
+10-06-2026 16:42:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+10-06-2026 16:42:48 : ? -> ? -> ? -> 0 : POST
+10-06-2026 16:42:48 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_fonctions
