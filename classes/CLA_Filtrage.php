@@ -20,7 +20,6 @@ class CLA_Filtrage {
         
         $r_s = $DOT->getObjet_s("Requete");
         
-        $tab = $r_s->getItemsPourInputSelect();
         $tab = $r_s->getListeRequetes();
         
         ?>
@@ -31,7 +30,6 @@ class CLA_Filtrage {
                 </div>
                 <div class="w3-rest">
                     <select id="SEL_FTR" class="w3-select">
-                        <option value="0">Sans filtre</option>
                         <?php
                         foreach ($tab as $value) {
                             ?>
@@ -39,6 +37,7 @@ class CLA_Filtrage {
                             <?php
                         }
                         ?>
+                        <option value="0">Sans filtre</option>
                     </select>
                 </div>
             </div>

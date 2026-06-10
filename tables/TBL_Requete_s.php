@@ -34,4 +34,25 @@ class TBL_Requete_s extends LIB_Table_s{
         
         return $items;
     }
+    
+    /**
+     * renvoie la requête à envoyer par défaut
+     * @global LIB_BDD $CXO
+     */
+    public function getIdRequeteParDefaut() {
+        global $CXO;
+        
+        $requete = "select id from Requete where defaut = 1";
+        
+        $rlt = $CXO->executeRequete($requete);
+        
+        $id = 0;
+        if ($rlt->isOk()) {
+            foreach ($rlt->getResultat() as $value) {
+                $id = $value['id'];
+            }
+        }
+        
+        return $id;
+    }
 }

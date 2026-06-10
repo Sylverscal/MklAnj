@@ -328,13 +328,19 @@ class CLA_liste_courses_Ajax extends AJX_MklAnj_Ajax {
     }
     
     protected function affiche_liste_courses($post) {
+        global $DOT;
+        
+        $r_s = $DOT->getObjet_s("Requete");
+        $idRequeteDefaut = $r_s->getIdRequeteParDefaut();
+        
         $lc = new CLA_ListeCourses();
-        $lc->afficheListeCourses();
+        $lc->afficheListeCourses("",$idRequeteDefaut);
     }
     
     protected function affiche_liste_courses_filtree($post) {
         $recherche = $post['recherche'];
         $filtrage = $post['filtrage'];
+        
         $lc = new CLA_ListeCourses();
         $lc->afficheListeCourses($recherche,$filtrage);
     }
