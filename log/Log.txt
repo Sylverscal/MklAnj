@@ -1,38 +1,16 @@
-10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : POST
-10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => filtrage
-    [action] => affiche
-)
-
-10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => recherche
-    [action] => affiche
-)
-
-10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : POST
-10-06-2026 16:42:45 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
-10-06-2026 16:42:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-10-06-2026 16:42:48 : ? -> ? -> ? -> 0 : POST
-10-06-2026 16:42:48 : ? -> ? -> ? -> 0 : Array
+11-06-2026 06:58:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+11-06-2026 06:58:55 : ? -> ? -> ? -> 0 : POST
+11-06-2026 06:58:55 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses_filtree
     [recherche] => 
-    [filtrage] => 4
+    [filtrage] => 6
 )
 
-10-06-2026 16:42:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-10-06-2026 16:42:48 : ? -> ? -> ? -> 0 : POST
-10-06-2026 16:42:48 : ? -> ? -> ? -> 0 : Array
+11-06-2026 06:58:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+11-06-2026 06:58:55 : ? -> ? -> ? -> 0 : POST
+11-06-2026 06:58:55 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_fonctions

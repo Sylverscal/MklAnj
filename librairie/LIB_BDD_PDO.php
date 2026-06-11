@@ -60,7 +60,7 @@ abstract class LIB_BDD_PDO {
     public function executeRequete($requete) : LIB_ResultatRequete {
         set_time_limit(120);
         $retour = new LIB_ResultatRequete();
-        $test = preg_match("@^SELECT@i", $requete);
+        $test = preg_match("@^SELECT@i", trim($requete));
         if ($test == 1) {
             try {
                 $resultat = $this->db->query($requete);

@@ -256,7 +256,7 @@ class TBL_Course_s extends LIB_Table_s{
         
         $requetes = explode("@", $requete);
         
-        foreach ($requetes as $requete) {
+        foreach ($requetes as $index => $requete) {
             $r = $CXO->executeRequete($requete);
             if ($r->isOk()) {
                 foreach ($r->getResultat() as $ligne) {
