@@ -108,6 +108,9 @@ class LIB_TableColonne {
             case 'texte':
                 $this->afficheLigneInputTexte();
                 break;
+            case 'texte_grand':
+                $this->afficheLigneInputTexteGrand();
+                break;
             case 'datation':
                 $this->afficheLigneInputTexte();
                 break;
@@ -132,6 +135,15 @@ class LIB_TableColonne {
     private function afficheLigneInputTexte() {
         ?>
         <input type="text" class="w3-input" id="<?php echo $this->nomColonne; ?>" <?php $this->afficheValeur(); ?> name="<?php echo $this->nomColonne; ?>">
+        <?php
+    }
+
+    /**
+     * Affiche la ligne d'input pour un champ texte
+     */
+    private function afficheLigneInputTexteGrand() {
+        ?>
+        <textarea rows="5" class="w3-input" id="<?php echo $this->nomColonne; ?>" name="<?php echo $this->nomColonne; ?>"><?php $this->afficheValeur(); ?></textarea>
         <?php
     }
 
@@ -226,6 +238,9 @@ class LIB_TableColonne {
             case 'texte':
                 $this->afficheValeurTexte();
                 break;
+            case 'texte_grand':
+                $this->afficheValeurTexteGrand();
+                break;
             case 'datation':
                 $this->afficheValeurdatation();
                 break;
@@ -275,6 +290,21 @@ class LIB_TableColonne {
      * Affiche la valeur du champ texte
      */
     private function afficheValeurTexte() {
+        if ($this->valeurBrute == '') {
+            ?>
+            placeholder="<?php echo 'Renseigner ' . $this->initDescription()->get_decription_titre() . ' ...'; ?>"
+            <?php
+        } else {
+            ?>
+            value="<?php echo $this->valeurBrute; ?>"
+            <?php
+        }
+    }
+
+    /**
+     * Affiche la valeur du champ texte
+     */
+    private function afficheValeurTexteGrand() {
         if ($this->valeurBrute == '') {
             ?>
             placeholder="<?php echo 'Renseigner ' . $this->initDescription()->get_decription_titre() . ' ...'; ?>"
@@ -371,6 +401,14 @@ class LIB_TableColonne {
                 break;
             case 'datetime':
                 $type = 'datation';
+                break;
+            
+            case 'varchar':
+                $type = 'texte';
+                break;
+                        
+            case 'text':
+                $type = 'texte_grand';
                 break;
                         
             default:
@@ -537,8 +575,6 @@ class LIB_TableColonne {
     }
     
     public function collecteInformationsRequeteSelectLibelle($requete_select_libelle) {
-//        LIB_Util::log("Table   : $this->nomTable");
-//        LIB_Util::log("Colonne : $this->nomColonne");
         $requete_select_libelle->ajoutePartie($this->nomTable,$this->nomColonne);
     }
     

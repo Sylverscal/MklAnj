@@ -219,6 +219,7 @@ class LIB_ArbreTablesColonnes {
                     }
                     $partie_where = sprintf(" and %s = '%s' ",$tablonne_avec_point,$valeur);
                 case 'texte':
+                case 'texte_grand':
                     if ($valeur == "-" || $valeur == "") {
                         break;
                     }

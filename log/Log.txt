@@ -1,18 +1,46 @@
-11-06-2026 08:30:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-06-2026 08:30:56 : ? -> ? -> ? -> 0 : POST
-11-06-2026 08:30:56 : ? -> ? -> ? -> 0 : Array
+11-06-2026 12:23:58 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+11-06-2026 12:23:58 : ? -> ? -> ? -> 0 : POST
+11-06-2026 12:23:58 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses_filtree
-    [recherche] => 
-    [filtrage] => 1
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Requete
 )
 
-11-06-2026 08:30:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-11-06-2026 08:30:56 : ? -> ? -> ? -> 0 : POST
-11-06-2026 08:30:56 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : nom : varchar(100) - varchar - texte
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : nom : varchar(100) - varchar - texte
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id_Article : int(11) - int - menu
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id_Marque : int(11) - int - menu
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id_Commerce : int(11) - int - menu
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id_Ville : int(11) - int - menu
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id_Zone : int(11) - int - menu
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : nombre : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : capacite : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id_Unite : int(11) - int - menu
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : commentaire : varchar(100) - varchar - texte
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id_Course : int(11) - int - menu
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id_Course : int(11) - int - menu
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : nom : varchar(100) - varchar - texte
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : nom : varchar(100) - varchar - texte
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : prenom : varchar(100) - varchar - texte
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : login : varchar(100) - varchar - texte
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : mot_de_passe : varchar(100) - varchar - texte
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : is_administrateur : int(1) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : nom : varchar(50) - varchar - texte
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : requete : text - text - texte_grand
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : ordre : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : defaut : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : nom : varchar(10) - varchar - texte
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : nom : varchar(100) - varchar - texte
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : id : int(11) - int - nombre
+11-06-2026 12:23:58 : LIB_TableColonne -> LIB_TableColonne -> initType -> 60 : Type colonne : nom : varchar(100) - varchar - texte
