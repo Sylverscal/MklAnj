@@ -306,13 +306,8 @@ class LIB_TableColonne {
      */
     private function afficheValeurTexteGrand() {
         if ($this->valeurBrute == '') {
-            ?>
-            placeholder="<?php echo 'Renseigner ' . $this->initDescription()->get_decription_titre() . ' ...'; ?>"
-            <?php
         } else {
-            ?>
-            value="<?php echo $this->valeurBrute; ?>"
-            <?php
+            echo $this->valeurBrute;
         }
     }
 

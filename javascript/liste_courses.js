@@ -439,6 +439,8 @@ class C_GestionListe {
     afficheNouvelleCourse_retour(html) {
         $('#TBL_LISTE_COURSES_BODY').append(html);
         
+        $('TR[id=0]').on('focus');
+        
         $('#INP_LIGNE_EDITABLE_VALEUR').on("input",function(){
             let nom_article = $('#INP_LIGNE_EDITABLE_VALEUR').val();
             
