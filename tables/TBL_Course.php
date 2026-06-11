@@ -332,6 +332,7 @@ class TBL_Course extends LIB_Table{
         $d_ahui = new LIB_Datation();
         
         $couleur = "";
+        $txt_datation = "-";
         if (!$this->isCourseFaite()) {
             if ($datation->isInferieureA($d_ahui)) {
                 $couleur = "w3-red";
@@ -344,10 +345,13 @@ class TBL_Course extends LIB_Table{
             if ($datation->isSuperieureA($d_ahui)) {
                 $couleur = "w3-green";
             }
+            
+            $txt_datation = $datation->getDate_pourAffichage();
         }
         
+        
         ?>
-        <span class="<?php echo $couleur; ?>"><?php echo $datation->getDate_pourAffichage(); ?></span>
+        <span class="<?php echo $couleur; ?>"><?php echo $txt_datation ?></span>
         <?php
     }
     
