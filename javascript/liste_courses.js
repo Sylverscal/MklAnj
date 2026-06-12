@@ -119,7 +119,7 @@ class C_GestionListe {
     }
     
     ecouteEvenementsDerniereLigne() {
-        let id = $('#TBL_LISTE_COURSES_BODY').find('tr').last().attr('id');
+        let id = $('#TBL_LISTE_COURSES_BODY').find('tr').first().attr('id');
 
         g_liste_courses.gestion_liste.majCouleurLignes();
        
@@ -437,7 +437,7 @@ class C_GestionListe {
     }
     
     afficheNouvelleCourse_retour(html) {
-        $('#TBL_LISTE_COURSES_BODY').append(html);
+        $('#TBL_LISTE_COURSES_BODY').prepend(html);
         
         $('TR[id=0]').on('focus');
         
@@ -511,7 +511,7 @@ class C_GestionListe {
     }
     
     valideNouvelleCourse_retour(html) {
-        $('#TBL_LISTE_COURSES_BODY').append(html);
+        $('#TBL_LISTE_COURSES_BODY').prepend(html);
         g_liste_courses.gestion_liste.ecouteEvenementsDerniereLigne();        
     }
 }  
