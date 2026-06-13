@@ -35,7 +35,7 @@ class C_Filtrage {
             g_filtrage.applique_filtrage();
         });
         $('#BTN_FTR_RAZ').click(function(){
-            $('#SEL_FTR').val(0);
+            $('#SEL_FTR').val($('#SEL_FTR option:first').val());
             g_recherche.applique_recherche();
         });
     }

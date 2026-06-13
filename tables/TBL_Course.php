@@ -41,7 +41,7 @@ class TBL_Course extends LIB_Table{
                     <?php $this->afficheDatation(); ?>
                 </td>
                 <td>
-                    <button class="w3-button w3-green w3-tiny w3-border w3-ripple w3-circle w3-right BTN_FORMULAIRE"><i class="fa fa-edit"></i></button>
+                    <button class="w3-button w3-green w3-tiny w3-border w3-ripple w3-circlexxx w3-right BTN_FORMULAIRE"><i class="fa fa-edit"></i></button>
                 </td>
             <?php
 
