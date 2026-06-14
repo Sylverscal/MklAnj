@@ -271,4 +271,37 @@ class TBL_Course_s extends LIB_Table_s{
             }
         }
     }
+    
+    /**
+     * Renvoie les éléments d'une table associés à des courses.
+     * Ex : Toutes les zones associées à des courses
+     * @param string $nom_table
+     * @global LIB_BDD $CXO
+     * @return $tab Tableau des éléments sous forme compatible avec le tag select.
+     * C'est donc un tableau dont les éléments sont un couple (valeur,libellé)
+     */
+    public function getElementsAssocies($nom_table) {
+        global $CXO;
+        
+        $requete = "select $nom_table.id as id,$nom_table.nom as nom from $nom_table where $nom_table.id in "
+                . "(select distinct($nom_table.id) as id from $nom_table join Course on Course.id_$nom_table = $nom_table.id where $nom_table.nom <> '-')";
+        
+        $rlt = $CXO->executeRequete($requete);
+        
+        $items = [];
+        if ($rlt->isOk()) {
+            foreach ($rlt->getResultat() as $value) {
+                $id = $value['id'];
+                $nom = $value['nom'];
+                
+                $valeur = "$nom_table@$id";
+                $libelle = "$nom_table : $nom";
+                
+                $items[] = ["valeur" => $valeur , "libelle" => $libelle];
+            }
+        }
+        
+        return $items;
+        
+    }
 }

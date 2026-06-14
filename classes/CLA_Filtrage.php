@@ -16,11 +16,7 @@ class CLA_Filtrage {
      * @global LIB_DistributeurObjetTable $DOT
      */
     public function affiche() {
-        global $DOT;
-        
-        $r_s = $DOT->getObjet_s("Requete");
-        
-        $tab = $r_s->getListeRequetes();
+        $tab = $this->getDonneesMenuFiltres();
         
         ?>
         <div class="w3-container w3-lime w3-padding">
@@ -44,4 +40,28 @@ class CLA_Filtrage {
         </div>
         <?php
     }
+    
+    /**
+     * Renvoie les données pour le menu filtre.
+     * Il contient :
+     * - Les requêtes de la table requête
+     * - Les données constituées à partir des tables Commerce,Ville,Zone 
+     * pour créer automatiquement des requêtes sur ces données
+     */
+    private function getDonneesMenuFiltres() {
+        global $DOT;
+        
+        $r_s = $DOT->getObjet_s("Requete");
+        
+        $tab = $r_s->getListeRequetes();
+        
+        $f_s = $DOT->getObjet_s("Course");
+        
+        $tab = array_merge($tab,$f_s->getElementsAssocies("Commerce"));
+        $tab = array_merge($tab,$f_s->getElementsAssocies("Ville"));
+        $tab = array_merge($tab,$f_s->getElementsAssocies("Zone"));
+        
+        return $tab;
+    }
+    
 }
