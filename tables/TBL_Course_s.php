@@ -246,13 +246,19 @@ class TBL_Course_s extends LIB_Table_s{
             return;
         }
         
-        if ($filtrage == 0) {
-            $requete = "select * from Course";
-        } else {
+        if (is_numeric($filtrage)) {
             $rq = $DOT->getObjet("Requete");
-            $rq->charge($filtrage);
-            $requete = $rq->getValeurColonne("requete");
+            if ($filtrage == 0) {
+                $requete = "select * from Course";
+            } else {
+                $rq->charge($filtrage);
+                $requete = $rq->getValeurColonne("requete");
+            }
+        } else {
+            $rqs = $DOT->getObjet_s("Requete");
+            $requete = $rqs->getRequeteCreeSelonElementTable($filtrage);
         }
+        
         
         $requetes = explode("@", $requete);
         

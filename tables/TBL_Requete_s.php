@@ -55,4 +55,40 @@ class TBL_Requete_s extends LIB_Table_s{
         
         return $id;
     }
+    
+    /**
+     * Renvoie une requête composée à partir d'une donnée choisie 
+     * dans les tables de données Commerce, ...
+     * @param string $donnee Donnée filtre
+     * Pour la donnée "Alpha park" de la table "Zone", 
+     * la donnée fournie est "Zone@2" : Nom table + id de la ligne
+     * @global LIB_DistributeurObjetTable $DOT
+     */
+    public function getRequeteCreeSelonElementTable($donnee) {
+        global $DOT;
+        
+        // récupérer la requête par défaut
+        $id_requete = $this->getIdRequeteParDefaut();
+        
+        $r = $DOT->getObjet('Requete');
+        $r->charge($id_requete);
+        $requete = $r->getValeurColonne("requete");
+        
+        
+        // Contrôle validité $donnee
+        if (preg_match("/^.*@\d*$/", $donnee,$tab) == 0) {
+            return $requete;
+        }
+        
+        $tab = explode("@", $donnee);
+        
+        $nom_table = $tab[0];
+        $id = $tab[1];
+        
+        $where = " Course.id_$nom_table = '$id' ";
+        
+        $requete_modifiee = str_replace("1=1", $where, $requete);
+        
+        return $requete_modifiee;
+    }
 }
