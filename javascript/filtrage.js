@@ -6,6 +6,9 @@
 var g_filtrage;
 
 class C_Filtrage {
+    construct () {
+        this.filtrage_courant = "";
+    }
     affiche() {
         $('#DIV_FILTRAGE').html("<h4>Op&eacuteration en cours</h4>");
         var json = {
@@ -32,6 +35,7 @@ class C_Filtrage {
     
     ecoute_evenements() {
         $('#SEL_FTR').change(function(){
+            g_filtrage.filtrage_courant = $("#SEL_FTR").val();
             g_filtrage.applique_filtrage();
         });
         $('#BTN_FTR_RAZ').click(function(){
