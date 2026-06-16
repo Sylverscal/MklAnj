@@ -256,7 +256,6 @@ class C_GestionListe {
         });
         $('#BTN_FRM_ANNULER').on( "click", function( e ){
             e.preventDefault();
-//            g_liste_courses.affiche();
             g_liste_courses.gestion_liste.affiche_filtree("",g_filtrage.filtrage_courant);
         });
         $('#BTN_FRM_SUPPRIMER').on("click",function(e){
@@ -387,7 +386,6 @@ class C_GestionListe {
                     dataType: 'json',
                     success: function (crdu) {
                         if (crdu.erreur === "non") {
-//                            g_liste_courses.affiche();
                               g_liste_courses.gestion_liste.affiche_filtree("",g_filtrage.filtrage_courant);
                         } else {
                             afficheModalCompteRendu(crdu);
@@ -411,7 +409,6 @@ class C_GestionListe {
                     dataType: 'json',
                     success: function (crdu) {
                         if (crdu.erreur === "non") {
-//                            g_liste_courses.affiche();
                             g_liste_courses.gestion_liste.affiche_filtree("",g_filtrage.filtrage_courant);
                         } else {
                             afficheModalCompteRendu(crdu);
