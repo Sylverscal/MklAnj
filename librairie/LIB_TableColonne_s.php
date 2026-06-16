@@ -38,7 +38,6 @@ class LIB_TableColonne_s extends LIB_Liste {
                 $colonne->afficheEdition();
             }
         }
-        LIB_Util::log("Fin");
     }
 
     /**
@@ -51,7 +50,6 @@ class LIB_TableColonne_s extends LIB_Liste {
                 $colonne->afficheEditionTransfert();
             }
         }
-        LIB_Util::log("Fin");
     }
 
     /**
@@ -93,14 +91,16 @@ class LIB_TableColonne_s extends LIB_Liste {
 
     /**
      * Renvoie la section colonnes d'une requête Update
+     * @global LIB_BDD $CXO
      * @return string
      */
     public function getSqlInsertSectionColonnes() {
+        global $CXO;
         $tab = [];
 
         foreach ($this->liste as $nomColonne => $colonne) {
             if ($nomColonne != 'id' && !is_numeric($nomColonne)) {
-                $tab[] = "`$nomColonne`";
+                $tab[] = $nomColonne;
             }
         }
 
@@ -111,15 +111,17 @@ class LIB_TableColonne_s extends LIB_Liste {
 
     /**
      * Renvoie la section valeurs d'une requête sql Insert
+     * @global LIB_BDD $CXO
      * @return string
      */
     public function getSqlInsertSectionValeurs() {
+        global $CXO;
         $tab = [];
 
         foreach ($this->liste as $nomColonne => $colonne) {
             if ($nomColonne != 'id' && !is_numeric($nomColonne)) {
-                $v = LIB_Util::formateChainePourSQL($colonne->getValeur());
-                $tab[] = "'$v'";
+                $v = $CXO->quote($colonne->getValeur());
+                $tab[] = "$v";
             }
         }
 
@@ -151,7 +153,7 @@ class LIB_TableColonne_s extends LIB_Liste {
     }
 
     /**
-     * Renvoie la séquence where d'une requete pour rechercher un élément 
+     * Renvoie la séquence where d'une requete pour rechercher un élément str_
      * @return string
      */
     public function getSqlSelectWhere() {

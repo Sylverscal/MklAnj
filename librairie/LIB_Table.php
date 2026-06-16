@@ -209,9 +209,7 @@ $tab
     
     public function setDeJson($libelle_json) {
         $tab_de_json = unserialize($libelle_json);
-        
-        LIB_Util::logPrintR($tab_de_json);
-        
+                
         $tab = [];
         foreach ($tab_de_json as $value) {
             $tab[] = $value;
@@ -249,9 +247,7 @@ $tab
                 // Contrôle format bon si colonne est une datation
                 if ($colonne->isColonneDatation()) {
                     if (strlen($valeur) == 0) {
-                        LIB_Util::log($valeur);
                         $valeur = null;
-                        LIB_Util::log($valeur);
                         continue;
                     }
                     $d = new LIB_Datation($valeur);
@@ -709,7 +705,7 @@ $tab
     public function chargeIdParNom($cree_auto = false) {
         global $CXO;
         // Recherche de l'élément en fonction de son nom
-        $requete = sprintf("select id from %s where nom = '%s'",$this->nom_table,$this->getNom());
+        $requete = sprintf("select id from %s where nom = %s",$this->nom_table,$CXO->quote($this->getNom()));
         $ret = $CXO->executeRequete($requete);
         if ($ret->isOk()) {
             $lignes = $ret->getResultat();

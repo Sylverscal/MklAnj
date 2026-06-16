@@ -563,7 +563,6 @@ class TBL_Course extends LIB_Table{
             return true;
         }
         $nom = $this->getValeurDeColonne("Article_nom");
-        LIB_Util::log($nom." ".$recherche);
         
         if (preg_match("/$recherche/i", $nom) == 1) {
             return true;

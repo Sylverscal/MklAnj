@@ -92,4 +92,8 @@ abstract class LIB_BDD_PDO {
         return $this->prm->schema;
     }
     
+    public function quote($valeur) {
+        return $this->db->quote($valeur);
+    }
+    
 }

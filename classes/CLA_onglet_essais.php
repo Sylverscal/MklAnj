@@ -22,61 +22,85 @@ class CLA_onglet_essais extends CLA_onglet_principal {
     #[\Override]
     /**
      * 
-     * @global LIB_BDD $CXOXXX
+     * @global LIB_BDD $CXO
      * @global LIB_BDD_Structure $CXO_ST
      * @global LIB_DistributeurObjetTable $DOT
      * @return type
      */
     final function affiche() {
-        $this->erreur = "";
-        try {
-	    // H = 'db5020579532.hosting-data.io' , DB = 'MklAnj' , UN = 'dbu5155308', PW = '>P1eTa&6XTiNe@ST_PieRRe<'
-            $this->db = new PDO(sprintf("mysql:host=%s;dbname=%s",'db5020579532.hosting-data.io','dbs15734873'), 'dbu5155308', '>P1eTa&6XTiNe@ST_PieRRe<');
-            $this->db->exec("SET CHARACTER SET utf8");
-        } catch (Exception $e) {
-            $this->erreur = $e->getMessage();
-            LIB_Util::logPrintR($e);
+        global $CXO;
+        global $DOT;
+        
+        $texte_ins = "Rock'n'roll";
+        $texte_ins_prepare = $CXO->quote($texte_ins);
+        
+//        $z = $DOT->getObjet("Zone");
+//        
+//        $z->setNom($texte);
+//        
+//        $z->sauve();
+        
+        $r_ins = "insert into Zone (nom) values ($texte_ins_prepare)"; 
+        $ret_ins = $CXO->executeRequete($r_ins);
+        
+        if ($ret_ins->isKo()) {
+            $ret_ins->affiche();
+            return;
         }
         
-        $requete = "select id,nom from Unite";
+        $filtre = $CXO->quote("rock");
+        $r_sel_ins = "select id,nom from Zone where Zone.nom like 'rock%'";
         
-        $resultat = $this->db->query($requete);
-        if ($resultat === FALSE) {
-            $this->trace('Ko');
-            $this->trace($this->db->errorInfo()[0]);
-            $this->trace($this->db->errorInfo()[1]);
-            $this->trace($this->db->errorInfo()[2]);
-        } else {
-            $lignes = $resultat->fetchAll();
-            foreach ($lignes as $ligne) {
-                LIB_Util::printR($ligne);
-                $nom = $ligne['nom'];
-                $id = $ligne['id'];
-                LIB_Util::trace("$id $nom");
+        $ret_sel_ins = $CXO->executeRequete($r_sel_ins);
+        
+        $id = 0;
+        if ($ret_sel_ins->isOk()) {
+            foreach ($ret_sel_ins->getResultat() as $value) {
+                LIB_Util::printR($value);
+                $id = $value['id'];
+                break;
             }
+        } else {
+            $ret_sel_ins->affiche();
+            return;
         }
         
-        LIB_Util::trace("-------------");
+        $texte_upd = "Rythm'and'blues" ;
+        $texte_upd_prepare = $CXO->quote($texte_upd);
         
-        $CXO_ST = new LIB_BDD_Structure();
+        $r_upd = "update Zone set nom = $texte_upd_prepare where id=$id";
         
-        $tab = $CXO_ST->getListeNomTables();
+        $ret_upd = $CXO->executeRequete($r_upd);
         
-        LIB_Util::printR($tab);
+        if ($ret_upd->isKo()) {
+            $ret_upd->affiche();
+            return;
+        }
         
-        $tab = $CXO_ST->getListeNomsColonnesTable("Course");
+        $r_sel_upd = "select id,nom from Zone where Zone.id = $id";
         
-        LIB_Util::printR($tab);
+        $ret_sel_upd = $CXO->executeRequete($r_sel_upd);
         
-        $is = $CXO_ST->isExisteTable("Course");
-        LIB_Util::trace($is ? "Existe" : "Existe pas");
-        $is = $CXO_ST->isExisteTable("Foo");
-        LIB_Util::trace($is ? "Existe" : "Existe pas");
+        if ($ret_sel_upd->isOk()) {
+            foreach ($ret_sel_upd->getResultat() as $value) {
+                LIB_Util::printR($value);
+                break;
+            }
+        } else {
+            $ret_sel_upd->affiche();
+            return;
+        }
         
-        $tab = $CXO_ST->getListeTablesPourUneColonne("MklAnj", "nom");
         
-        LIB_Util::printR($tab);
         
+        $r_del = "delete from Zone where id=$id";
+        
+        $ret_del = $CXO->executeRequete($r_del);
+        
+        if ($ret_del->isKo()) {
+            $ret_del->affiche();
+            return;
+        }
         
         return;
     }
