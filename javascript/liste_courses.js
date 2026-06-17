@@ -8,7 +8,7 @@ var g_liste_courses;
 class C_ListeCourses {
     constructor() {
         this.gestion_liste = new C_GestionListe();
-        this.gestion_fonctions = new C_GestionFonctions();
+        this. gestion_fonctions = new C_GestionFonctions();
     }
     
     affiche() {
@@ -91,6 +91,7 @@ class C_GestionListe {
         $("#DIV_LISTE_COURSES").html(html);
         g_liste_courses.gestion_liste.ecouteEvenements();
         g_liste_courses.gestion_fonctions.affiche();
+
     }
 
     ecouteEvenements() {
@@ -386,6 +387,7 @@ class C_GestionListe {
                     dataType: 'json',
                     success: function (crdu) {
                         if (crdu.erreur === "non") {
+                              g_filtrage.affiche();
                               g_liste_courses.gestion_liste.affiche_filtree("",g_filtrage.filtrage_courant);
                         } else {
                             afficheModalCompteRendu(crdu);

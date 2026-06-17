@@ -40,7 +40,8 @@ class C_Filtrage {
         });
         $('#BTN_FTR_RAZ').click(function(){
             $('#SEL_FTR').val($('#SEL_FTR option:first').val());
-            g_recherche.applique_recherche();
+            g_filtrage.applique_filtrage();
+            g_filtrage.affiche();
         });
     }
     
