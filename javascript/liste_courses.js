@@ -192,6 +192,8 @@ class C_GestionListe {
     }
     
     affiche_formulaire(id) {
+        g_filtrage.filtrage_courant = $("#SEL_FTR").val();
+
         var json = {
             domaine: 'gestion_liste_courses',
             action: 'affiche_formulaire',
