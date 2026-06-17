@@ -282,6 +282,7 @@ class TBL_Course extends LIB_Table{
             $cf->ferme($this);
             $caf = $DOT->getObjet_s("Course_Afaire");
             $caf->ferme($this);
+            $this->razDatation();
         } else {
             $caf = $DOT->getObjet_s("Course_Afaire");
             $caf->ouvre($this);
@@ -295,7 +296,7 @@ class TBL_Course extends LIB_Table{
      * @return LIB_Datation Date
      */
     public function getDatation() {
-        $datation = new LIB_Datation("01-01-1900");
+        $datation = new LIB_Datation("01-01-2000");
         
         if (isset($this->valeurs['Course_datation'])) {
             $datation = new LIB_Datation($this->valeurs['Course_datation']);
@@ -568,6 +569,27 @@ class TBL_Course extends LIB_Table{
             return true;
         }
         
-        return $false;
+        return false;
+    }
+
+    /**
+     * Met l'état "Pas de date" dans la datation
+     * @global LIB_BDD $CXO
+     */
+    private function razDatation() {
+        global $CXO;
+        
+        $id = $this->getId();
+        
+        $d_ref = new LIB_Datation("01-01-2000");
+        $sd =$d_ref->getDate_pourEcritureMySQLCourte();
+
+        
+        $requete = "update Course set datation = '$sd' where Course.id = $id";
+        
+        $rlt = $CXO->executeRequete($requete);
+        
+        $rlt->afficheSiKo();
+        
     }
 }
