@@ -361,6 +361,10 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
         $c = $DOT->getObjet("Course");
         $c->setId($id);
         $c->majEtatCourseFaite($etat);
+        
+        // Juste pour que le retour soit reçu dans le javascript
+        // et pouvoir déclencher une action
+        LIB_Util::jsonise(0);
     }
     
     protected function affiche_formulaire($post) {

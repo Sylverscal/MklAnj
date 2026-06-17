@@ -80,9 +80,9 @@ class TBL_Course extends LIB_Table{
                     </p>
                 </div>
                 <div class="w3-container w3-pale-blue">
-                    <button id="BTN_FRM_VALIDER" class="w3-button w3-green w3-right">Valider</button>
-                    <button id="BTN_FRM_SUPPRIMER" class="w3-button w3-red w3-right">Supprimer</button>
-                    <button id="BTN_FRM_ANNULER" class="w3-button w3-yellow w3-left">Annuler</button>
+                    <button id="BTN_FRM_VALIDER" class="w3-button w3-green w3-right"><i class="fa fa-check"></i></button>
+                    <button id="BTN_FRM_SUPPRIMER" class="w3-button w3-red w3-right"><i class="fa fa-trash"></i></button>
+                    <button id="BTN_FRM_ANNULER" class="w3-button w3-yellow w3-left"><i class="fa fa-close"></i></button>
                 </div>
             </form>
         <?php

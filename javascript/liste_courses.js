@@ -185,6 +185,7 @@ class C_GestionListe {
                     dataType: 'json',
                     async: 'false',
                     success: function (data) {
+                        g_filtrage.applique_filtrage();
                     }
                 }
         );
