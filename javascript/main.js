@@ -190,7 +190,7 @@ function affiche_onglet_essais() {
                 dataType: 'html',
                 async: 'false',
                 success: function (data) {
-                    affiche_onglet_home_retour(data);
+                    affiche_onglet_essais_retour(data);
                 }
             }
     );
@@ -198,6 +198,8 @@ function affiche_onglet_essais() {
 
 function affiche_onglet_essais_retour(data) {
     $('#onglet').html(data);
+    g_essais = new C_Essais();
+    g_essais.ecoute_evenements();
 }
 
 function affiche_onglet(domaine, action) {

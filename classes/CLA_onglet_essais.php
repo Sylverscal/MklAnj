@@ -31,76 +31,31 @@ class CLA_onglet_essais extends CLA_onglet_principal {
         global $CXO;
         global $DOT;
         
-        $texte_ins = "Rock'n'roll";
-        $texte_ins_prepare = $CXO->quote($texte_ins);
+        ?>
+        <div id="DIV_TEST_MODAL_DATATION">
+        <p>
+            <label>Date</label>
+            <input id="INP_DATATION" class="w3-input input-datation w3-border" type="text" name="Course_datation" value="">
+            <button id="BTN_DATATION" class="w3-button w3-blue" type="button">Le choix dans la date</button>
+        </p>
+        </div>
+        <div class="w3-modal" id="COU_MODAL_DATATION">
+            <div class="w3-modal-content">
+                <div class="w3-container w3-aqua">
+                    <div id="COU_MODAL_DATATION_TITRE"><h4>Datation</h4></div>
+                </div>
+                <div class="w3-container w3-light-blue">
+                    <div id="COU_MODAL_DATATION_CALENDRIER" class="w3-blue"><h4>Voulez-vous vraiment faire cette opération</h4></div>
+
+                </div>
+                <div class="w3-container w3-aqua">
+                    <button id="COU_MODAL_DATATION_SANS" class="w3-button w3-deep-purple w3-right w3-circle" type="button" onclick="document.getElementById('COU_MODAL_DATATION').style.display='none'">-</button>
+                    <button id="COU_MODAL_DATATION_VENDREDI_PROCHAIN" class="w3-button w3-deep-purple w3-right w3-circle" type="button" onclick="document.getElementById('COU_MODAL_DATATION').style.display='none'">->V</button>
+                </div>
+            </div>
+        </div>
+        <?php 
         
-//        $z = $DOT->getObjet("Zone");
-//        
-//        $z->setNom($texte);
-//        
-//        $z->sauve();
-        
-        $r_ins = "insert into Zone (nom) values ($texte_ins_prepare)"; 
-        $ret_ins = $CXO->executeRequete($r_ins);
-        
-        if ($ret_ins->isKo()) {
-            $ret_ins->affiche();
-            return;
-        }
-        
-        $filtre = $CXO->quote("rock");
-        $r_sel_ins = "select id,nom from Zone where Zone.nom like 'rock%'";
-        
-        $ret_sel_ins = $CXO->executeRequete($r_sel_ins);
-        
-        $id = 0;
-        if ($ret_sel_ins->isOk()) {
-            foreach ($ret_sel_ins->getResultat() as $value) {
-                LIB_Util::printR($value);
-                $id = $value['id'];
-                break;
-            }
-        } else {
-            $ret_sel_ins->affiche();
-            return;
-        }
-        
-        $texte_upd = "Rythm'and'blues" ;
-        $texte_upd_prepare = $CXO->quote($texte_upd);
-        
-        $r_upd = "update Zone set nom = $texte_upd_prepare where id=$id";
-        
-        $ret_upd = $CXO->executeRequete($r_upd);
-        
-        if ($ret_upd->isKo()) {
-            $ret_upd->affiche();
-            return;
-        }
-        
-        $r_sel_upd = "select id,nom from Zone where Zone.id = $id";
-        
-        $ret_sel_upd = $CXO->executeRequete($r_sel_upd);
-        
-        if ($ret_sel_upd->isOk()) {
-            foreach ($ret_sel_upd->getResultat() as $value) {
-                LIB_Util::printR($value);
-                break;
-            }
-        } else {
-            $ret_sel_upd->affiche();
-            return;
-        }
-        
-        
-        
-        $r_del = "delete from Zone where id=$id";
-        
-        $ret_del = $CXO->executeRequete($r_del);
-        
-        if ($ret_del->isKo()) {
-            $ret_del->affiche();
-            return;
-        }
         
         return;
     }
