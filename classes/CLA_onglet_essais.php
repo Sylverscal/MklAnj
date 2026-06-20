@@ -45,7 +45,7 @@ class CLA_onglet_essais extends CLA_onglet_principal {
                     <div id="COU_MODAL_DATATION_TITRE"><h4>Datation</h4></div>
                 </div>
                 <div class="w3-container w3-light-blue">
-                    <div id="COU_MODAL_DATATION_CALENDRIER" class="w3-blue"><h4>Voulez-vous vraiment faire cette opération</h4></div>
+                    <div id="COU_MODAL_DATATION_CALENDRIER" class="w3-blue"><h4>En construction</h4></div>
 
                 </div>
                 <div class="w3-container w3-aqua">

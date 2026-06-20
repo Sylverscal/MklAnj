@@ -17,19 +17,17 @@ class C_Datation {
     
     getDateProchainVendredi() {
         var d_ahui = new Date();
-        console.log(d_ahui);
         
         let d_ahui_j = d_ahui.getDay();
-        console.log(d_ahui_j);
         
         let diff = g_datation.getDifferenceJoursAvecProchainVendredi(d_ahui);
-        
-        console.log(diff);
         
         var d_v = new Date();
         d_v.setDate(d_ahui.getDate() + diff);
         
-        return d_v;
+        
+        
+        return g_datation.getdateFormatee(d_v);
     }
     
     getDifferenceJoursAvecProchainVendredi(d) {
@@ -54,5 +52,25 @@ class C_Datation {
         }
         
         return diff;
+    }
+    
+    getdateFormatee(d) {
+        let jj = d.getDate();
+        let mm = d.getMonth()+1;
+        let aaaa = d.getFullYear();
+        
+        let jj0 = "";
+        if (jj < 10) {
+            jj0 = "0";
+        }
+        
+        let mm0 = "";
+        if (mm < 10) {
+            mm0 = "0";
+        }
+        
+        let datation = jj0+jj+"-"+mm0+mm+"-"+aaaa;
+        
+        return datation ;
     }
 }

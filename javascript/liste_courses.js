@@ -294,6 +294,12 @@ class C_GestionListe {
                 $(tag).css('color','red');
             }
         });
+        $('#BTN_DATATION').click(function(e){
+            e.preventDefault();
+            document.getElementById('COU_MODAL_DATATION').style.display='block';
+            g_datation = new C_Datation();
+            g_datation.ecouteEvenements();
+        });
         $('#FRM_COURSE input[type="checkbox"').change(function(){
             const etat = $(this).prop('checked') ? 1 : 0;
             

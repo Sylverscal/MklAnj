@@ -140,8 +140,14 @@ class TBL_Course extends LIB_Table{
         ?>
         <p>
             <label>Date</label>
-            <div id="inline" data-date="05/22/2026"></div>
-            <input class="w3-input input-datation" type="text" name="Course_datation" value="<?php echo $d->getDate_pourFormulaire(); ?>">
+            <div class="w3-row">
+                <div class="w3-col w3-right" style="width: 50px">
+                    <button id="BTN_DATATION" class="w3-button w3-green w3-border w3-tiny w3-ripple w3-circle w3-right"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+                </div>
+                <div class="w3-rest">
+                <input id="INP_DATATION" class="w3-input input-datation" type="text" name="Course_datation" value="<?php echo $d->getDate_pourFormulaire(); ?>">
+                </div>
+            </div>
         </p>
         <?php
     }
