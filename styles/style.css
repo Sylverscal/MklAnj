@@ -3,8 +3,8 @@
 }
 
 input.CBX_COURSE_FAITE {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 
 #DIV_ACCUEIL {
@@ -24,4 +24,12 @@ input.CBX_COURSE_FAITE {
 td.TD_COURSE {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.centre-bouton {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
