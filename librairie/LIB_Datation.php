@@ -425,6 +425,14 @@ class LIB_Datation {
             return FALSE;
         }
     }
+    
+    public function getNomMois() {
+        $no_mois = $this->getDate_MM();
+        
+        $nom_mois = self::TableauMois()[$no_mois-1];
+        
+        return $nom_mois;
+    }
 
     public function __toString() {
         return $this->getDate_DD_MM_AAAA();
@@ -440,6 +448,10 @@ class LIB_Datation {
 
     static function DelaiRouge() {
         return 6;
+    }
+    
+    public static function TableauMois() {
+        return array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre");
     }
 
     public static function convertitSecondesVersHHMMSS($s) {

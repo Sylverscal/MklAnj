@@ -46,6 +46,7 @@ class CLA_Datation extends LIB_Datation {
                 ?>
                 <div class="w3-container w3-aqua w3-block">
                     <button class="w3-button w3-yellow w3-left w3-circle" type="button" onclick="document.getElementById('COU_MODAL_DATATION').style.display='none'"><i class="fa fa-close"></i></button>
+                    <button id="COU_MODAL_DATATION_OK" class="w3-button w3-green w3-left w3-circle" type="button" onclick="document.getElementById('COU_MODAL_DATATION').style.display='none'"><i class="fa fa-check"></i></button>
                     <button id="COU_MODAL_DATATION_SANS" class="w3-button w3-deep-purple w3-right w3-circle" type="button" onclick="document.getElementById('COU_MODAL_DATATION').style.display='none'">-</button>
                     <button id="COU_MODAL_DATATION_VENDREDI_PROCHAIN" class="w3-button w3-deep-purple w3-right w3-circle" type="button" onclick="document.getElementById('COU_MODAL_DATATION').style.display='none'">->V</button>
                 </div>
@@ -55,13 +56,12 @@ class CLA_Datation extends LIB_Datation {
     }
     
     private function afficheCalendrier() {
-        $d = new LIB_Datation();
         ?>
         <div class="w3-container w3-light-blue">
             <div class="w3-container w3-cyan">
-                <button id="BTN_MOIS_PREC" class="w3-button w3-cobalt w3-left"><i class="fa fa-chevron-left"></i></button>
-                <button id="BTN_AHUI" class="w3-button w3-cobalt w3-center"><i class="fa fa-chevron-down"></i></button>
-                <button id="BTN_MOIS_SUCC" class="w3-button w3-cobalt w3-right"><i class="fa fa-chevron-right"></i></button>
+                <button id="COU_MODAL_DATATION_MOIS_PREC" class="w3-button w3-cobalt w3-left"><i class="fa fa-chevron-left"></i></button>
+                <button id="COU_MODAL_DATATION_AHUI" class="w3-button w3-cobalt w3-center"><i class="fa fa-chevron-down"></i></button>
+                <button id="COU_MODAL_DATATION_MOIS_SUCC" class="w3-button w3-cobalt w3-right"><i class="fa fa-chevron-right"></i></button>
             </div>
         </div>
         <div class="w3-container w3-light-blue">
@@ -71,8 +71,8 @@ class CLA_Datation extends LIB_Datation {
         </div>
         <div class="w3-container w3-light-blue">
             <div class="w3-container w3-cyan">
-                <div class="w3-container w3-pale-blue centre_bouton">
-                    <button id="BTN_MOIS_SUCC" class="w3-button w3-cobalt" style="width: 150px"><?php echo $d->getDate_DD_MM_AAAA(); ?></button>
+                <div class="w3-container w3-pale-blue w3-center">
+                    <h3 id="COU_MODAL_DATE_CHOISIE" class="w3-cobalt"><?php echo $this->getDate_DD_MM_AAAA(); ?></h3>
                 </div>
             </div>
         </div>
@@ -82,7 +82,18 @@ class CLA_Datation extends LIB_Datation {
     private function afficheMois() {
         ?>
             <div class="w3-container w3-cyan">
-                <h1>Ici sera la grille</h1>
+                <table class="w3-table">
+                    <thead>
+                    <div class="w3-container w3-indigo w3-center">
+                        <h3 id="COU_MODAL_MOIS" ><?php echo $this->getNomMois(); ?></h3>
+                    </div>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>L</th><th>M</th><th>m</th><th>J</th><th>V</th><th>S</th><th>D</th>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         <?php
         

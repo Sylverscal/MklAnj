@@ -7,27 +7,59 @@ var g_datation;
 
 class C_Datation {
     ecouteEvenements() {
+        $('#COU_MODAL_DATATION_OK').click(function(){
+            let d = $('#COU_MODAL_DATE_CHOISIE').text();
+            $('#INP_DATATION').val(d);
+        });
         $('#COU_MODAL_DATATION_SANS').click(function(){
             $('#INP_DATATION').val("-");
         });
         $('#COU_MODAL_DATATION_VENDREDI_PROCHAIN').click(function(){
-            $('#INP_DATATION').val(g_datation.getDateProchainVendredi());
+            $('#INP_DATATION').val(g_datation.getdateFormateeDDMMAAAA(g_datation.getDateProchainVendredi()));
         });
+        $('#COU_MODAL_DATATION_MOIS_PREC').click(function(){
+            let d = g_datation.getDateMoisPrec();
+            $('#COU_MODAL_DATE_CHOISIE').text(g_datation.getdateFormateeDDMMAAAA(d));
+            g_datation.afficheNomMois(d);
+        });
+        $('#COU_MODAL_DATATION_AHUI').click(function(){
+            $('#COU_MODAL_DATE_CHOISIE').text(g_datation.getdateFormateeDDMMAAAA(g_datation.getDateAhui()));
+        });
+        $('#COU_MODAL_DATATION_MOIS_SUCC').click(function(){
+            
+        });
+    }
+    
+    getDateAhui() {
+        var d_ahui = new Date();
+        
+        return d_ahui;
+    }
+    
+    getDateMoisPrec() {
+        let s_d_actuelle_text = $('#COU_MODAL_DATE_CHOISIE').text();
+        console.log("s_d_actuelle_text : "+s_d_actuelle_text);
+        
+        let d_actuelle = g_datation.getDateConvertieFormatIso(s_d_actuelle_text);
+        console.log("d_actuelle : "+d_actuelle);
+        
+        var d_mois_prec = new Date();
+        d_mois_prec.setDate(d_actuelle.getDate() - 30);
+//        d_mois_prec.setDate(d_actuelle.getDate() - g_datation.getNbJoursMois(d_actuelle));
+        console.log("d_mois_prec : "+d_mois_prec);
+        
+        return d_mois_prec;
     }
     
     getDateProchainVendredi() {
         var d_ahui = new Date();
-        
-        let d_ahui_j = d_ahui.getDay();
         
         let diff = g_datation.getDifferenceJoursAvecProchainVendredi(d_ahui);
         
         var d_v = new Date();
         d_v.setDate(d_ahui.getDate() + diff);
         
-        
-        
-        return g_datation.getdateFormatee(d_v);
+        return d_v;
     }
     
     getDifferenceJoursAvecProchainVendredi(d) {
@@ -54,7 +86,7 @@ class C_Datation {
         return diff;
     }
     
-    getdateFormatee(d) {
+    getdateFormateeDDMMAAAA(d) {
         let jj = d.getDate();
         let mm = d.getMonth()+1;
         let aaaa = d.getFullYear();
@@ -72,5 +104,45 @@ class C_Datation {
         let datation = jj0+jj+"-"+mm0+mm+"-"+aaaa;
         
         return datation ;
+    }
+    
+    getDateConvertieFormatIso(s_d) {
+        let tab = s_d.split("-");
+        
+        let s_d_iso = tab[2]+"-"+tab[1]+"-"+tab[0];
+        
+        let d_iso = new Date(s_d_iso);
+        
+        return d_iso ;
+    }
+    
+    getNomMois(d) {
+        let mm = d.getMonth();
+        
+        return g_datation.getListeNomsMois()[mm];
+    }
+    
+    getNbJoursMois(d) {
+        console.log("Date : "+d);
+        let mm = d.getMonth();
+        console.log("mm : "+mm);
+        
+        let nb_jours = g_datation.getListeNbJoursMois()[mm];
+        console.log("nb_jours : "+nb_jours);
+        return nb_jours;
+    }
+    
+    getListeNomsMois() {
+        return ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"];
+    }
+    
+    getListeNbJoursMois() {
+        return [31,28,31,30,31,30,31,31,30,31,30,31];
+    }
+    
+    afficheNomMois(d) {
+        let nom_mois = g_datation.getNomMois(d);
+        
+        $('#COU_MODAL_MOIS').text(nom_mois);
     }
 }
