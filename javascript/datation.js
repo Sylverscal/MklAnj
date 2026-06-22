@@ -23,10 +23,14 @@ class C_Datation {
             g_datation.afficheNomMois(d);
         });
         $('#COU_MODAL_DATATION_AHUI').click(function(){
-            $('#COU_MODAL_DATE_CHOISIE').text(g_datation.getdateFormateeDDMMAAAA(g_datation.getDateAhui()));
+            let d = g_datation.getDateAhui();
+            $('#COU_MODAL_DATE_CHOISIE').text(g_datation.getdateFormateeDDMMAAAA(d));
+            g_datation.afficheNomMois(d);
         });
         $('#COU_MODAL_DATATION_MOIS_SUCC').click(function(){
-            
+            let d = g_datation.getDateMoisSucc();
+            $('#COU_MODAL_DATE_CHOISIE').text(g_datation.getdateFormateeDDMMAAAA(d));
+            g_datation.afficheNomMois(d);
         });
     }
     
@@ -38,15 +42,22 @@ class C_Datation {
     
     getDateMoisPrec() {
         let s_d_actuelle_text = $('#COU_MODAL_DATE_CHOISIE').text();
-        console.log("s_d_actuelle_text : "+s_d_actuelle_text);
         
         let d_actuelle = g_datation.getDateConvertieFormatIso(s_d_actuelle_text);
-        console.log("d_actuelle : "+d_actuelle);
         
-        var d_mois_prec = new Date();
-        d_mois_prec.setDate(d_actuelle.getDate() - 30);
-//        d_mois_prec.setDate(d_actuelle.getDate() - g_datation.getNbJoursMois(d_actuelle));
-        console.log("d_mois_prec : "+d_mois_prec);
+        var d_mois_prec = new Date(d_actuelle);
+        d_mois_prec.setDate(d_mois_prec.getDate() - (g_datation.getNbJoursMois(d_mois_prec)));
+        
+        return d_mois_prec;
+    }
+    
+    getDateMoisSucc() {
+        let s_d_actuelle_text = $('#COU_MODAL_DATE_CHOISIE').text();
+        
+        let d_actuelle = g_datation.getDateConvertieFormatIso(s_d_actuelle_text);
+        
+        var d_mois_prec = new Date(d_actuelle);
+        d_mois_prec.setDate(d_mois_prec.getDate() + (g_datation.getNbJoursMois(d_mois_prec)));
         
         return d_mois_prec;
     }
@@ -123,12 +134,9 @@ class C_Datation {
     }
     
     getNbJoursMois(d) {
-        console.log("Date : "+d);
         let mm = d.getMonth();
-        console.log("mm : "+mm);
         
         let nb_jours = g_datation.getListeNbJoursMois()[mm];
-        console.log("nb_jours : "+nb_jours);
         return nb_jours;
     }
     
@@ -141,7 +149,7 @@ class C_Datation {
     }
     
     afficheNomMois(d) {
-        let nom_mois = g_datation.getNomMois(d);
+        let nom_mois = g_datation.getNomMois(d)+" "+d.getFullYear();
         
         $('#COU_MODAL_MOIS').text(nom_mois);
     }
