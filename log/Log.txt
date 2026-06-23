@@ -1,58 +1,88 @@
-23-06-2026 16:04:24 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:04:24 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:04:24 : ? -> ? -> ? -> 0 : Array
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : POST
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_vue_principale
 )
 
-23-06-2026 16:04:24 : CLA_Datation -> CLA_Datation -> afficheGrilleJours -> 93 : 01-06-2026
-23-06-2026 16:04:24 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:04:24 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:04:24 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:04:25 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:04:25 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:04:25 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:04:25 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => recherche
-    [action] => affiche
-)
-
-23-06-2026 16:04:25 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => filtrage
-    [action] => affiche
-)
-
-23-06-2026 16:04:25 : ? -> ? -> ? -> 0 : Array
+23-06-2026 16:10:13 : CLA_Datation -> CLA_Datation -> afficheGrilleJours -> 93 : 01-06-2026
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : POST
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_liste_courses
 )
 
-23-06-2026 16:04:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:04:25 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:04:25 : ? -> ? -> ? -> 0 : Array
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : POST
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => recherche
+    [action] => affiche
+)
+
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : POST
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => filtrage
+    [action] => affiche
+)
+
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : POST
+23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => liste_courses
     [action] => affiche_fonctions
 )
 
-23-06-2026 16:04:26 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:04:26 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:04:26 : ? -> ? -> ? -> 0 : Array
+23-06-2026 16:10:15 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+23-06-2026 16:10:15 : ? -> ? -> ? -> 0 : POST
+23-06-2026 16:10:15 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => affiche_formulaire
-    [id] => 74
+    [id] => 90
 )
 
-23-06-2026 16:04:26 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:04:26 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:04:26 : ? -> ? -> ? -> 0 : Array
+23-06-2026 16:10:15 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+23-06-2026 16:10:15 : ? -> ? -> ? -> 0 : POST
+23-06-2026 16:10:15 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_liste_courses
     [action] => get_liste_articles_interdits
 )
 
+23-06-2026 16:10:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+23-06-2026 16:10:18 : ? -> ? -> ? -> 0 : POST
+23-06-2026 16:10:18 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => datation
+    [action] => affiche_grille_jours
+    [datation] => 23-07-2026
+)
+
+23-06-2026 16:10:18 : CLA_Datation -> CLA_Datation -> afficheGrilleJours -> 496 : 01-07-2026
+23-06-2026 16:10:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+23-06-2026 16:10:23 : ? -> ? -> ? -> 0 : POST
+23-06-2026 16:10:23 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => datation
+    [action] => affiche_grille_jours
+    [datation] => 23-08-2026
+)
+
+23-06-2026 16:10:23 : CLA_Datation -> CLA_Datation -> afficheGrilleJours -> 496 : 01-08-2026
+23-06-2026 16:10:34 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+23-06-2026 16:10:34 : ? -> ? -> ? -> 0 : POST
+23-06-2026 16:10:34 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => datation
+    [action] => affiche_grille_jours
+    [datation] => 23-09-2026
+)
+
+23-06-2026 16:10:34 : CLA_Datation -> CLA_Datation -> afficheGrilleJours -> 496 : 01-09-2026

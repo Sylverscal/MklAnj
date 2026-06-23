@@ -21,19 +21,46 @@ class C_Datation {
             let d = g_datation.getDateMoisPrec();
             $('#COU_MODAL_DATE_CHOISIE').text(g_datation.getdateFormateeDDMMAAAA(d));
             g_datation.afficheNomMois(d);
+            g_datation.afficheGrilleJours();
         });
         $('#COU_MODAL_DATATION_AHUI').click(function(){
             let d = g_datation.getDateAhui();
             $('#COU_MODAL_DATE_CHOISIE').text(g_datation.getdateFormateeDDMMAAAA(d));
             g_datation.afficheNomMois(d);
+            g_datation.afficheGrilleJours();
         });
         $('#COU_MODAL_DATATION_MOIS_SUCC').click(function(){
             let d = g_datation.getDateMoisSucc();
             $('#COU_MODAL_DATE_CHOISIE').text(g_datation.getdateFormateeDDMMAAAA(d));
             g_datation.afficheNomMois(d);
+            g_datation.afficheGrilleJours();
         });
     }
     
+    afficheGrilleJours() {
+        let datation = $('#COU_MODAL_DATE_CHOISIE').text();
+        var json = {
+            domaine: 'datation',
+            action: 'affiche_grille_jours',
+            datation: datation
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'html',
+                    async: 'false',
+                    success: function (html) {
+                        g_datation.afficheGrilleJours_retour(html);
+                    }
+                }
+        );
+    }
+    
+    afficheGrilleJours_retour(html) {
+        $('#COU_MODAL_GRILLE_JOURS').html(html);
+    }
     getDateAhui() {
         var d_ahui = new Date();
         
