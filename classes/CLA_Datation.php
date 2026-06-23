@@ -88,10 +88,7 @@ class CLA_Datation extends LIB_Datation {
                         <h3 id="COU_MODAL_MOIS" ><?php echo $this->getNomMois(); ?></h3>
                     </div>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th>L</th><th>M</th><th>m</th><th>J</th><th>V</th><th>S</th><th>D</th>
-                        </tr>
+                    <tbody id="COU_MODAL_GRILLE_JOURS">
                         <?php 
                         $this->afficheGrilleJours();
                         ?>
@@ -102,7 +99,17 @@ class CLA_Datation extends LIB_Datation {
         
     }
     
-    private function afficheGrilleJours() {
+    public function afficheGrilleJours() {
+        ?>
+        <tr>
+            <th>L</th><th>M</th><th>m</th><th>J</th><th>V</th><th>S</th><th>D</th>
+        </tr>
+        <?php
+        $datation = new CLA_Datation();
+        $datation = clone($this);
+        $datation->passeAuPremierJourDuMois();
+        LIB_Util::log($datation);
+        $dans_mois = false;
         for ($num_semaine = 1; $num_semaine <= $this->getNbSemainesMois(); $num_semaine++) {
             ?>
             <tr>
@@ -110,7 +117,20 @@ class CLA_Datation extends LIB_Datation {
                 for ($num_jour = 1;$num_jour<=7;$num_jour++) {
                     ?>
                     <td>
-                        <?php echo $num_semaine." ".$num_jour; ?>
+                        <?php 
+                            LIB_Util::trace($num_semaine." ".$num_jour); 
+                            if ($num_jour == $datation->getNumeroJourUnDuMois()) {
+                                $dans_mois = true;
+                            }
+                            if ($dans_mois) {
+                                LIB_Util::trace($datation->getDate_DD());
+                                if ((int)$datation->getDate_DD() == $datation->getNbJoursMois()) {
+                                    $dans_mois = false;
+                                } else {
+                                    $datation->incrementeJour();
+                                }
+                            }
+                        ?>
                     </td>
                     <?php
                 }
