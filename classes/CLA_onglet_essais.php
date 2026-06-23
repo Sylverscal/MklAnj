@@ -34,14 +34,42 @@ class CLA_onglet_essais extends CLA_onglet_principal {
         $d = new LIB_Datation();
         $nbj = $d->getNbJoursMois();
         LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$nbj);
+        LIB_Util::trace($d->isBissextile()?"Bissextile":"Pff");
+        LIB_Util::trace($d->getNbSemainesMois());
+        LIB_Util::trace($d->getNumeroJourSemaine());
+        LIB_Util::trace();
         
         $d = new LIB_Datation("25-02-2024");
         $nbj = $d->getNbJoursMois();
         LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$nbj);
+        LIB_Util::trace($d->isBissextile()?"Bissextile":"Pff");
+        LIB_Util::trace($d->getNbSemainesMois());
+        LIB_Util::trace($d->getNumeroJourSemaine());
+        LIB_Util::trace();
         
-        $d = new LIB_Datation("25-02-2026");
+        
+        $d = new LIB_Datation("21-06-2026");
         $nbj = $d->getNbJoursMois();
         LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$nbj);
+        LIB_Util::trace($d->isBissextile()?"Bissextile":"Pff");
+        LIB_Util::trace($d->getNbSemainesMois());
+        LIB_Util::trace($d->getNumeroJourSemaine());
+        LIB_Util::trace();
+        
+        $d = new LIB_Datation("25-02-2021");
+        $nbj = $d->getNbJoursMois();
+        LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$nbj);
+        LIB_Util::trace($d->isBissextile()?"Bissextile":"Pff");
+        LIB_Util::trace($d->getNbSemainesMois());
+        LIB_Util::trace($d->getNumeroJourSemaine());
+        LIB_Util::trace();
+        
+        $d = new LIB_Datation();
+        for ($i = 0;$i < 7;$i++) {
+            LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$d->getNumeroJourSemaine());
+            $d->incrementeJour();
+            
+        }
         
         return;
     }

@@ -12,7 +12,7 @@ class LIB_Util {
         return '<br>';
     }
 
-    static function trace($s) {
+    static function trace($s=" ") {
         echo ($s == NULL ? 'NULL' : $s) . LIB_Util::EOL();
     }
 

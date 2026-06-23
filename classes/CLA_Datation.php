@@ -103,7 +103,20 @@ class CLA_Datation extends LIB_Datation {
     }
     
     private function afficheGrilleJours() {
-        for ($i = 0; $i < 35; $i++) {
+        for ($num_semaine = 1; $num_semaine <= $this->getNbSemainesMois(); $num_semaine++) {
+            ?>
+            <tr>
+                <?php
+                for ($num_jour = 1;$num_jour<=7;$num_jour++) {
+                    ?>
+                    <td>
+                        <?php echo $num_semaine." ".$num_jour; ?>
+                    </td>
+                    <?php
+                }
+                ?>
+            </tr>
+            <?php
             
         }
         

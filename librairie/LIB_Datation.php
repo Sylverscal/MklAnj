@@ -137,12 +137,28 @@ class LIB_Datation {
         return $this->datation->format('m');
     }
 
+    function getDate_DD() {
+        return $this->datation->format('d');
+    }
+
     function getDate_AA_MM() {
         return $this->datation->format('Y-m');
     }
 
     function getTime_HHMMSS() {
         return $this->datation->format("H:i:s");
+    }
+    
+    function getNumeroJourSemaine() {
+        $jd=gregoriantojd((int)$this->getDate_MM(),(int)$this->getDate_DD(),(int)$this->getDate_AA());
+        $no_dd = jddayofweek($jd,0); 
+        return $no_dd == 0 ? 7 : $no_dd;    
+    }
+
+    function getNumeroJourUnDuMois() {
+        $jd=gregoriantojd((int)$this->getDate_MM(),1,(int)$this->getDate_AA());
+        $no_dd = jddayofweek($jd,0); 
+        return $no_dd == 0 ? 7 : $no_dd;    
     }
 
     function decrementeMois() {
@@ -446,11 +462,21 @@ class LIB_Datation {
     }
     
     /**
-     * 
+     * Renvoie le nombre de semaines occupées par le mois
      * @return int Nombre de semaines du mois
      */
     public function getNbSemainesMois() {
+        if ($this->isBissextile()) {
+            return 5;
+        }
+        if ((int)$this->getDate_MM() != 2) {
+            return 5;
+        }
+        if ($this->getNumeroJourUnDuMois() != 1) {
+            return 5;
+        }
         
+        return 4;
     }
 
     public function __toString() {
@@ -642,6 +668,10 @@ class LIB_Datation {
             
             
         return true;
+    }
+    
+    public function isBissextile() {
+        return $this->isAnneeBisextile($this->getDate_AA());
     }
     
 }
