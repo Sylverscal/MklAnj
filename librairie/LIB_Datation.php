@@ -433,6 +433,25 @@ class LIB_Datation {
         
         return $nom_mois;
     }
+    
+    /**
+     * Renvoie le nombre de jours du mois de la date courante
+     * @return int Nombre de jours du mois
+     */
+    public function getNbJoursMois() {
+        $tab = array(31,$this->isAnneeBisextile($this->getDate_AA())?29:28,31,30,31,30,31,31,30,31,30);
+        $mm = $this->getDate_MM();
+        $nbj = $tab[(int)$mm-1];
+        return $nbj;
+    }
+    
+    /**
+     * 
+     * @return int Nombre de semaines du mois
+     */
+    public function getNbSemainesMois() {
+        
+    }
 
     public function __toString() {
         return $this->getDate_DD_MM_AAAA();
@@ -453,7 +472,7 @@ class LIB_Datation {
     public static function TableauMois() {
         return array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre");
     }
-
+    
     public static function convertitSecondesVersHHMMSS($s) {
         $hh = floor($s / 3600);
         $reste = $s % 3600;

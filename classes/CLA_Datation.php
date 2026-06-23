@@ -92,10 +92,20 @@ class CLA_Datation extends LIB_Datation {
                         <tr>
                             <th>L</th><th>M</th><th>m</th><th>J</th><th>V</th><th>S</th><th>D</th>
                         </tr>
+                        <?php 
+                        $this->afficheGrilleJours();
+                        ?>
                     </tbody>
                 </table>
             </div>
         <?php
+        
+    }
+    
+    private function afficheGrilleJours() {
+        for ($i = 0; $i < 35; $i++) {
+            
+        }
         
     }
 }

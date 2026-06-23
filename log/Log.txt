@@ -1,35 +1,22 @@
-22-06-2026 16:42:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-22-06-2026 16:42:18 : ? -> ? -> ? -> 0 : POST
-22-06-2026 16:42:18 : ? -> ? -> ? -> 0 : Array
+23-06-2026 13:55:11 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+23-06-2026 13:55:11 : ? -> ? -> ? -> 0 : POST
+23-06-2026 13:55:11 : ? -> ? -> ? -> 0 : POST
+23-06-2026 13:55:11 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => gestion_liste_courses
-    [action] => affiche_formulaire
-    [id] => 90
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
 )
 
-22-06-2026 16:42:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-22-06-2026 16:42:18 : ? -> ? -> ? -> 0 : POST
-22-06-2026 16:42:18 : ? -> ? -> ? -> 0 : Array
+23-06-2026 13:55:11 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => gestion_liste_courses
-    [action] => get_liste_articles_interdits
+    [domaine] => onglet
+    [action] => essais
 )
 
-22-06-2026 16:42:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-22-06-2026 16:42:53 : ? -> ? -> ? -> 0 : POST
-22-06-2026 16:42:53 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses_filtree
-    [recherche] => 
-    [filtrage] => 2
-)
-
-22-06-2026 16:42:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-22-06-2026 16:42:53 : ? -> ? -> ? -> 0 : POST
-22-06-2026 16:42:53 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
-)
-
+23-06-2026 13:55:11 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 35 : 6
+23-06-2026 13:55:11 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 35 : 30
+23-06-2026 13:55:11 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 39 : 2
+23-06-2026 13:55:11 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 39 : 29
+23-06-2026 13:55:11 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 43 : 2
+23-06-2026 13:55:11 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 43 : 28
