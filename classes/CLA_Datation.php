@@ -39,7 +39,7 @@ class CLA_Datation extends LIB_Datation {
         <div class="w3-modal" id="COU_MODAL_DATATION">
             <div class="w3-modal-content">
                 <div class="w3-container w3-aqua">
-                    <div id="COU_MODAL_DATATION_TITRE"><h4>Datation</h4></div>
+                    <div id="COU_MODAL_DATATION_TITRE"><h4>Le choix dans la date</h4></div>
                 </div>
                 <?php
                 $this->afficheCalendrier();
@@ -72,7 +72,7 @@ class CLA_Datation extends LIB_Datation {
         <div class="w3-container w3-light-blue">
             <div class="w3-container w3-cyan">
                 <div class="w3-container w3-pale-blue w3-center">
-                    <h3 id="COU_MODAL_DATE_CHOISIE" class="w3-cobalt"><?php echo $this->getDate_DD_MM_AAAA(); ?></h3>
+                    <h5 id="COU_MODAL_DATE_CHOISIE" class="w3-cobalt"><?php echo $this->getDate_DD_MM_AAAA(); ?></h5>
                 </div>
             </div>
         </div>
@@ -82,10 +82,10 @@ class CLA_Datation extends LIB_Datation {
     private function afficheMois() {
         ?>
             <div class="w3-container w3-cyan">
-                <table class="w3-table">
+                <table class="" cellspacing="1">
                     <thead>
                     <div class="w3-container w3-indigo w3-center">
-                        <h3 id="COU_MODAL_MOIS" ><?php echo $this->getNomMois(); ?></h3>
+                        <h5 id="COU_MODAL_MOIS" ><?php echo $this->getNomMois(); ?></h5>
                     </div>
                     </thead>
                     <tbody id="COU_MODAL_GRILLE_JOURS">
@@ -139,7 +139,7 @@ class CLA_Datation extends LIB_Datation {
                                     $disabled = "disabled";
                                 }
                                 ?>
-                                <button id="<?php echo $datation->getDate_DD_MM_AAAA(); ?>" class="w3-button <?php echo $style_bouton; ?> w3-circle COU_MODAL_JOUR" <?php echo $disabled; ?>><?php echo $datation->getDate_DD(); ?></button>
+                                <button id="<?php echo $datation->getDate_DD_MM_AAAA(); ?>" class="w3-button <?php echo $style_bouton; ?> w3-tiny w3-normal w3-padding-small COU_MODAL_JOUR" <?php echo $disabled; ?>><?php echo $datation->getDate_DD(); ?></button>
                                 <?php
                             }
                         ?>
