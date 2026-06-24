@@ -107,6 +107,7 @@ class CLA_Datation extends LIB_Datation {
         <?php
         $datation = new CLA_Datation($this->getDate_DD_MM_AAAA());
         
+        $datation_ahui = new LIB_Datation();
         $datation->passeAuPremierJourDuMois();
         $nb_semaine_mois = $datation->getNbSemainesMois();
         $nb_jours_mois = $datation->getNbJoursMois();
@@ -131,8 +132,14 @@ class CLA_Datation extends LIB_Datation {
                                 } else {
                                     $datation->incrementeJour();
                                 }
+                                $style_bouton = "w3-blue";
+                                $disabled = "";
+                                if ($datation->isInferieureA($datation_ahui)) {
+                                    $style_bouton = "w3-crimson";
+                                    $disabled = "disabled";
+                                }
                                 ?>
-                                <button id="<?php echo $datation->getDate_DD_MM_AAAA(); ?>" class="w3-button w3-blue w3-circle COU_MODAL_JOUR"><?php echo $datation->getDate_DD(); ?></button>
+                                <button id="<?php echo $datation->getDate_DD_MM_AAAA(); ?>" class="w3-button <?php echo $style_bouton; ?> w3-circle COU_MODAL_JOUR" <?php echo $disabled; ?>><?php echo $datation->getDate_DD(); ?></button>
                                 <?php
                             }
                         ?>

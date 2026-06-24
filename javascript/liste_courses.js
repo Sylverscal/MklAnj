@@ -297,7 +297,9 @@ class C_GestionListe {
         $('#BTN_DATATION').click(function(e){
             e.preventDefault();
             g_datation = new C_Datation();
-            $('#COU_MODAL_DATE_CHOISIE').text(g_datation.getdateFormateeDDMMAAAA(g_datation.getDateAhui()));
+            let d_ahui = g_datation.getDateAhui();
+            $('#COU_MODAL_DATE_CHOISIE').text(g_datation.getdateFormateeDDMMAAAA(d_ahui));
+            $('#COU_MODAL_MOIS').text(g_datation.getNomMois(d_ahui)+" "+d_ahui.getFullYear());
             document.getElementById('COU_MODAL_DATATION').style.display='block';
             g_datation.ecouteEvenements();
         });

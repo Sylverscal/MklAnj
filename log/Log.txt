@@ -1,9 +1,119 @@
-24-06-2026 12:11:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-24-06-2026 12:11:02 : ? -> ? -> ? -> 0 : POST
-24-06-2026 12:11:02 : ? -> ? -> ? -> 0 : Array
+24-06-2026 13:31:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 13:31:41 : ? -> ? -> ? -> 0 : POST
+24-06-2026 13:31:41 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => datation
     [action] => affiche_grille_jours
-    [datation] => 24-10-2026
+    [datation] => 22-06-2026
+)
+
+24-06-2026 13:31:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 13:31:56 : ? -> ? -> ? -> 0 : POST
+24-06-2026 13:31:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => valide_formulaire
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => id
+                    [value] => 74
+                )
+
+            [1] => Array
+                (
+                    [name] => Article_nom
+                    [value] => Mayonnaise
+                )
+
+            [2] => Array
+                (
+                    [name] => Marque_nom
+                    [value] => -
+                )
+
+            [3] => Array
+                (
+                    [name] => Commerce_nom
+                    [value] => Intermarché
+                )
+
+            [4] => Array
+                (
+                    [name] => Ville_nom
+                    [value] => -
+                )
+
+            [5] => Array
+                (
+                    [name] => Zone_nom
+                    [value] => Courses du vendredi
+                )
+
+            [6] => Array
+                (
+                    [name] => Course_datation
+                    [value] => -
+                )
+
+            [7] => Array
+                (
+                    [name] => Course_nombre
+                    [value] => 1
+                )
+
+            [8] => Array
+                (
+                    [name] => Course_capacite
+                    [value] => 0
+                )
+
+            [9] => Array
+                (
+                    [name] => Unite_nom
+                    [value] => -
+                )
+
+            [10] => Array
+                (
+                    [name] => Course_commentaire
+                    [value] => -
+                )
+
+            [11] => Array
+                (
+                    [name] => Course_faite
+                    [value] => 0
+                )
+
+        )
+
+)
+
+24-06-2026 13:31:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 13:31:56 : ? -> ? -> ? -> 0 : POST
+24-06-2026 13:31:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => filtrage
+    [action] => affiche
+)
+
+24-06-2026 13:31:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 13:31:56 : ? -> ? -> ? -> 0 : POST
+24-06-2026 13:31:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses_filtree
+    [recherche] => 
+    [filtrage] => 2
+)
+
+24-06-2026 13:31:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 13:31:56 : ? -> ? -> ? -> 0 : POST
+24-06-2026 13:31:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
 )
 
