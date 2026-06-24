@@ -120,20 +120,20 @@ class CLA_Datation extends LIB_Datation {
                     ?>
                     <td>
                         <?php 
-                            LIB_Util::trace($num_semaine." ".$num_jour." ".$numero_jour_un_du_mois); 
-                            LIB_Util::trace($dans_mois?"Oui":"Non"); 
                             if ($dans_mois == 0) {
                                 if ($num_jour == $numero_jour_un_du_mois) {
                                     $dans_mois = 1;
                                 }
                             }
                             if ($dans_mois == 1) {
-                                LIB_Util::trace($datation->getDate_DD()." ".$nb_jours_mois);
                                 if ((int)$datation->getDate_DD() == $nb_jours_mois) {
                                     $dans_mois = 2;
                                 } else {
                                     $datation->incrementeJour();
                                 }
+                                ?>
+                                <button id="<?php echo $datation->getDate_DD_MM_AAAA(); ?>" class="w3-button w3-blue w3-circle COU_MODAL_JOUR"><?php echo $datation->getDate_DD(); ?></button>
+                                <?php
                             }
                         ?>
                     </td>

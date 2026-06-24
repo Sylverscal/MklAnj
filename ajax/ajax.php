@@ -494,7 +494,5 @@ class CLA_datation_Ajax extends AJX_MklAnj_Ajax {
         $c = new CLA_Datation($datation);
         
         $c->afficheGrilleJours();
-        
-        
     }
 }

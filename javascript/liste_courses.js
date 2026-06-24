@@ -296,8 +296,9 @@ class C_GestionListe {
         });
         $('#BTN_DATATION').click(function(e){
             e.preventDefault();
-            document.getElementById('COU_MODAL_DATATION').style.display='block';
             g_datation = new C_Datation();
+            $('#COU_MODAL_DATE_CHOISIE').text(g_datation.getdateFormateeDDMMAAAA(g_datation.getDateAhui()));
+            document.getElementById('COU_MODAL_DATATION').style.display='block';
             g_datation.ecouteEvenements();
         });
         $('#FRM_COURSE input[type="checkbox"').change(function(){
@@ -320,10 +321,6 @@ class C_GestionListe {
                 $(this).css('color','black');
             }
         });
-        const elem = document.querySelector('#FRM_COURSE input[name="Course_datation"]');
-//        const datepicker = new DatePicker(elem,{
-//            
-//        });
     }
     
     isValeurDansMenu(menu,valeur) {

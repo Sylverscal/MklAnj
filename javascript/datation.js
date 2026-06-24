@@ -35,6 +35,7 @@ class C_Datation {
             g_datation.afficheNomMois(d);
             g_datation.afficheGrilleJours();
         });
+        g_datation.ecouteEvenementsGrille();
     }
     
     afficheGrilleJours() {
@@ -60,7 +61,18 @@ class C_Datation {
     
     afficheGrilleJours_retour(html) {
         $('#COU_MODAL_GRILLE_JOURS').html(html);
+        
+        g_datation.ecouteEvenementsGrille();
     }
+    
+    ecouteEvenementsGrille() {
+        $('.COU_MODAL_JOUR').click(function(){
+            let jour = $(this).attr("id");
+            
+            $('#COU_MODAL_DATE_CHOISIE').text(jour);
+        });
+    }
+    
     getDateAhui() {
         var d_ahui = new Date();
         
