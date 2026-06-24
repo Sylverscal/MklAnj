@@ -14,7 +14,7 @@ global $CXO_ST; // Pour accéder à la base "structure"
 global $CXO_C; // Pour accéder à la base "Courses"
 global $DOT;
 
-LIB_Util::log("Entrée dans AJAX", $_POST['action']=='affiche_vue_principale' ? TRUE : FALSE);
+LIB_Util::log("Entrée dans AJAX", $_POST['action']=='affiche_grille_jours' ? TRUE : FALSE);
 //LIB_Util::log("Entrée dans AJAX", $_POST['domaine']=='filtrage' ? TRUE : FALSE);
 //LIB_Util::log("Entrée dans AJAX",true);
 //LIB_Util::log("Entrée dans AJAX");

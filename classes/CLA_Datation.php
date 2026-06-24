@@ -105,12 +105,12 @@ class CLA_Datation extends LIB_Datation {
             <th>L</th><th>M</th><th>m</th><th>J</th><th>V</th><th>S</th><th>D</th>
         </tr>
         <?php
-        $datation = new CLA_Datation();
-        $datation = clone($this);
+        $datation = new CLA_Datation($this->getDate_DD_MM_AAAA());
         $datation->passeAuPremierJourDuMois();
-        LIB_Util::log($datation);
+        LIB_Util::log("Datation      : ",$datation->getDate_DD_MM_AAAA());
+        LIB_Util::log("Nb jours mois : ",$datation->getNbSemainesMois());
         $dans_mois = false;
-        for ($num_semaine = 1; $num_semaine <= $this->getNbSemainesMois(); $num_semaine++) {
+        for ($num_semaine = 1; $num_semaine <= $datation->getNbSemainesMois(); $num_semaine++) {
             ?>
             <tr>
                 <?php

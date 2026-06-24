@@ -455,8 +455,9 @@ class LIB_Datation {
      * @return int Nombre de jours du mois
      */
     public function getNbJoursMois() {
-        $tab = array(31,$this->isAnneeBisextile($this->getDate_AA())?29:28,31,30,31,30,31,31,30,31,30);
-        $mm = $this->getDate_MM();
+        $tab = array(31,$this->isAnneeBisextile($this->getDate_AA())?29:28,31,30,31,30,31,31,30,31,30,31);
+        $mm = (int)$this->getDate_MM();
+        LIB_Util::log("mm : ".$mm);
         $nbj = $tab[(int)$mm-1];
         return $nbj;
     }
@@ -466,17 +467,14 @@ class LIB_Datation {
      * @return int Nombre de semaines du mois
      */
     public function getNbSemainesMois() {
-        if ($this->isBissextile()) {
-            return 5;
-        }
-        if ((int)$this->getDate_MM() != 2) {
-            return 5;
-        }
-        if ($this->getNumeroJourUnDuMois() != 1) {
-            return 5;
-        }
+        $x = $this->getNumeroJourUnDuMois() - 1 + $this->getNbJoursMois();
+        $a = 2.0/14.0;
+        $b = 5.0 - (29.0 * 2.0/14.0);
+        $y = $a*$x+$b+0.000000001;
         
-        return 4;
+        $nb_semaines = floor($y);
+        
+        return $nb_semaines;
     }
 
     public function __toString() {

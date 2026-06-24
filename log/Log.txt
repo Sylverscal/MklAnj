@@ -1,88 +1,395 @@
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Array
+23-06-2026 21:00:15 : CLA_Datation -> CLA_Datation -> afficheGrilleJours -> 496 : Nb jours mois : 
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 127 : mm : 8
+23-06-2026 21:00:15 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+24-06-2026 06:39:37 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:39:37 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:39:37 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => liste_courses
-    [action] => affiche_vue_principale
-)
-
-23-06-2026 16:10:13 : CLA_Datation -> CLA_Datation -> afficheGrilleJours -> 93 : 01-06-2026
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => liste_courses
-    [action] => affiche_liste_courses
-)
-
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Array
-(
-    [domaine] => recherche
+    [domaine] => acces
     [action] => affiche
 )
 
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Array
+24-06-2026 06:39:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:39:39 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:39:39 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => filtrage
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => a
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => b
+                    [value] => 
+                )
+
+        )
+
+)
+
+24-06-2026 06:39:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:39:39 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:39:39 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
     [action] => affiche
 )
 
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:10:13 : ? -> ? -> ? -> 0 : Array
+24-06-2026 06:39:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:39:40 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:39:40 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => liste_courses
-    [action] => affiche_fonctions
+    [domaine] => accueil
+    [action] => affiche_accueil_courses
 )
 
-23-06-2026 16:10:15 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:10:15 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:10:15 : ? -> ? -> ? -> 0 : Array
+24-06-2026 06:39:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:39:40 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:39:40 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => gestion_liste_courses
-    [action] => affiche_formulaire
-    [id] => 90
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_home
 )
 
-23-06-2026 16:10:15 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:10:15 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:10:15 : ? -> ? -> ? -> 0 : Array
+24-06-2026 06:39:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:39:40 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:39:40 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => gestion_liste_courses
-    [action] => get_liste_articles_interdits
+    [domaine] => onglet
+    [action] => home
 )
 
-23-06-2026 16:10:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:10:18 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:10:18 : ? -> ? -> ? -> 0 : Array
+24-06-2026 06:39:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:39:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:39:41 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:39:41 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:39:41 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => datation
-    [action] => affiche_grille_jours
-    [datation] => 23-07-2026
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
 )
 
-23-06-2026 16:10:18 : CLA_Datation -> CLA_Datation -> afficheGrilleJours -> 496 : 01-07-2026
-23-06-2026 16:10:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:10:23 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:10:23 : ? -> ? -> ? -> 0 : Array
+24-06-2026 06:39:41 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => datation
-    [action] => affiche_grille_jours
-    [datation] => 23-08-2026
+    [domaine] => onglet
+    [action] => essais
 )
 
-23-06-2026 16:10:23 : CLA_Datation -> CLA_Datation -> afficheGrilleJours -> 496 : 01-08-2026
-23-06-2026 16:10:34 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-23-06-2026 16:10:34 : ? -> ? -> ? -> 0 : POST
-23-06-2026 16:10:34 : ? -> ? -> ? -> 0 : Array
+24-06-2026 06:39:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 35 : mm : 6
+24-06-2026 06:39:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:39:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 42 : mm : 2
+24-06-2026 06:39:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:39:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 50 : mm : 6
+24-06-2026 06:39:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:39:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 57 : mm : 2
+24-06-2026 06:39:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:39:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 64 : mm : 8
+24-06-2026 06:39:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+24-06-2026 06:41:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:41:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:41:33 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:41:33 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:41:33 : ? -> ? -> ? -> 0 : Array
 (
-    [domaine] => datation
-    [action] => affiche_grille_jours
-    [datation] => 23-09-2026
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
 )
 
-23-06-2026 16:10:34 : CLA_Datation -> CLA_Datation -> afficheGrilleJours -> 496 : 01-09-2026
+24-06-2026 06:41:33 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+24-06-2026 06:41:33 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 35 : mm : 6
+24-06-2026 06:41:33 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:41:33 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 42 : mm : 2
+24-06-2026 06:41:33 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:41:33 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 50 : mm : 6
+24-06-2026 06:41:33 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:41:33 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 57 : mm : 2
+24-06-2026 06:41:33 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:41:33 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 64 : mm : 8
+24-06-2026 06:41:33 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+24-06-2026 06:42:07 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:42:07 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:42:07 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+24-06-2026 06:42:07 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:42:07 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:42:07 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+24-06-2026 06:42:07 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 35 : mm : 6
+24-06-2026 06:42:07 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:42:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:42:22 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:42:22 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+24-06-2026 06:42:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:42:22 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:42:22 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+24-06-2026 06:42:22 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 35 : mm : 6
+24-06-2026 06:42:22 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:42:22 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 42 : mm : 2
+24-06-2026 06:42:22 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:42:22 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 50 : mm : 6
+24-06-2026 06:42:22 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:42:22 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 57 : mm : 2
+24-06-2026 06:42:22 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:42:22 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 64 : mm : 8
+24-06-2026 06:42:22 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+24-06-2026 06:43:07 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:43:07 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:43:07 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+24-06-2026 06:43:07 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:43:07 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:43:07 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+24-06-2026 06:43:07 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 35 : mm : 6
+24-06-2026 06:43:07 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:43:07 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 42 : mm : 2
+24-06-2026 06:43:07 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:43:07 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 50 : mm : 6
+24-06-2026 06:43:07 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:43:07 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 57 : mm : 2
+24-06-2026 06:43:07 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:43:07 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 64 : mm : 8
+24-06-2026 06:43:07 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+24-06-2026 06:43:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:43:41 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:43:41 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+24-06-2026 06:43:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:43:41 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:43:41 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+24-06-2026 06:43:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 35 : mm : 6
+24-06-2026 06:43:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:43:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 42 : mm : 2
+24-06-2026 06:43:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:43:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 50 : mm : 6
+24-06-2026 06:43:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:43:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 57 : mm : 2
+24-06-2026 06:43:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:43:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 64 : mm : 8
+24-06-2026 06:43:41 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+24-06-2026 06:44:35 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:44:35 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:44:35 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+24-06-2026 06:44:35 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:44:35 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:44:35 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+24-06-2026 06:44:35 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 35 : mm : 6
+24-06-2026 06:44:35 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:44:35 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 42 : mm : 2
+24-06-2026 06:44:35 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:44:35 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 49 : mm : 11
+24-06-2026 06:44:35 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 11
+24-06-2026 06:44:35 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 56 : mm : 6
+24-06-2026 06:44:35 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:44:35 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 63 : mm : 2
+24-06-2026 06:44:35 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:44:35 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 70 : mm : 8
+24-06-2026 06:44:35 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+24-06-2026 06:45:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:45:42 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:45:42 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+24-06-2026 06:45:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:45:42 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:45:42 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 35 : mm : 6
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 42 : mm : 2
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 49 : mm : 11
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 11
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 56 : mm : 12
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 12
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 63 : mm : 6
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 6
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 70 : mm : 2
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 2
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 77 : mm : 8
+24-06-2026 06:45:42 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 470 : mm : 8
+24-06-2026 06:48:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:48:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:48:44 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:48:44 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:48:44 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+24-06-2026 06:48:44 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+24-06-2026 06:48:44 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 35 : mm : 6
+24-06-2026 06:48:44 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 6
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 6
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 42 : mm : 2
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 2
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 2
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 49 : mm : 11
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 11
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 11
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 56 : mm : 12
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 12
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 12
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 63 : mm : 6
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 6
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 6
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 70 : mm : 2
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 2
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 2
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 77 : mm : 8
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 8
+24-06-2026 06:48:45 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 8
+24-06-2026 06:49:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:49:13 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:49:13 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+24-06-2026 06:49:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+24-06-2026 06:49:13 : ? -> ? -> ? -> 0 : POST
+24-06-2026 06:49:13 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 35 : mm : 6
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 6
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 6
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 42 : mm : 2
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 2
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 2
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 49 : mm : 11
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 11
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 11
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 56 : mm : 12
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 12
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 12
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 63 : mm : 6
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 6
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 6
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 70 : mm : 2
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 2
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 2
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 77 : mm : 8
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 471 : mm : 8
+24-06-2026 06:49:13 : LIB_Datation -> LIB_Datation -> getNbJoursMois -> 472 : mm : 8
