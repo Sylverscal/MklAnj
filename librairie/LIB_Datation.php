@@ -457,7 +457,6 @@ class LIB_Datation {
     public function getNbJoursMois() {
         $tab = array(31,$this->isAnneeBisextile($this->getDate_AA())?29:28,31,30,31,30,31,31,30,31,30,31);
         $mm = (int)$this->getDate_MM();
-        LIB_Util::log("mm : ".$mm);
         $nbj = $tab[(int)$mm-1];
         return $nbj;
     }
