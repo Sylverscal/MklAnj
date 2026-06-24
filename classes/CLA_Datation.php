@@ -109,7 +109,8 @@ class CLA_Datation extends LIB_Datation {
         $datation = new CLA_Datation($this->getDate_DD_MM_AAAA());
         
         $datation->passeAuPremierJourDuMois();
-        LIB_Util::log("Datation      : ",$datation->getDate_DD_MM_AAAA());
+        LIB_Util::logPrintR($datation);
+        LIB_Util::log("Datation : ".$datation->getDate_DD_MM_AAAA());
         $nb_semaine_mois = $datation->getNbSemainesMois();
         $nb_jours_mois = $datation->getNbJoursMois();
         $dans_mois = false;
@@ -123,6 +124,7 @@ class CLA_Datation extends LIB_Datation {
                     <td>
                         <?php 
                             LIB_Util::trace($num_semaine." ".$num_jour); 
+                            LIB_Util::trace($dans_mois?"Oui":"Non"); 
                             if ($num_jour == $datation->getNumeroJourUnDuMois()) {
                                 $dans_mois = true;
                             }
