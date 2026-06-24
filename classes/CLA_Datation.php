@@ -105,17 +105,14 @@ class CLA_Datation extends LIB_Datation {
             <th>L</th><th>M</th><th>m</th><th>J</th><th>V</th><th>S</th><th>D</th>
         </tr>
         <?php
-        LIB_Util::log($this->getDate_DD_MM_AAAA());
         $datation = new CLA_Datation($this->getDate_DD_MM_AAAA());
         
         $datation->passeAuPremierJourDuMois();
-        LIB_Util::logPrintR($datation);
-        LIB_Util::log("Datation : ".$datation->getDate_DD_MM_AAAA());
         $nb_semaine_mois = $datation->getNbSemainesMois();
         $nb_jours_mois = $datation->getNbJoursMois();
-        $dans_mois = false;
+        $numero_jour_un_du_mois = $datation->getNumeroJourUnDuMois();
+        $dans_mois = 0;
         for ($num_semaine = 1; $num_semaine <= $nb_semaine_mois; $num_semaine++) {
-            LIB_Util::log($nb_semaine_mois." -> ".$num_semaine);
             ?>
             <tr>
                 <?php
@@ -123,15 +120,17 @@ class CLA_Datation extends LIB_Datation {
                     ?>
                     <td>
                         <?php 
-                            LIB_Util::trace($num_semaine." ".$num_jour); 
+                            LIB_Util::trace($num_semaine." ".$num_jour." ".$numero_jour_un_du_mois); 
                             LIB_Util::trace($dans_mois?"Oui":"Non"); 
-                            if ($num_jour == $datation->getNumeroJourUnDuMois()) {
-                                $dans_mois = true;
+                            if ($dans_mois == 0) {
+                                if ($num_jour == $numero_jour_un_du_mois) {
+                                    $dans_mois = 1;
+                                }
                             }
-                            if ($dans_mois) {
-                                LIB_Util::trace($datation->getDate_DD());
+                            if ($dans_mois == 1) {
+                                LIB_Util::trace($datation->getDate_DD()." ".$nb_jours_mois);
                                 if ((int)$datation->getDate_DD() == $nb_jours_mois) {
-                                    $dans_mois = false;
+                                    $dans_mois = 2;
                                 } else {
                                     $datation->incrementeJour();
                                 }
