@@ -62,8 +62,8 @@ class TBL_Course extends LIB_Table{
                     $this->afficheFormulaireElement("Ville","Ville","Ville_nom");  
                     $this->afficheFormulaireElement("Zone","Zone","Zone_nom");  
                     $this->afficheFormulaireDate();  
-                    $this->afficheFormulaireNombre("Nombre", "Course_nombre");
-                    $this->afficheFormulaireCapacite("Capacité", "Course_capacite");
+                    $this->afficheFormulaireElement("Quantité","Quantite","Quantite_nom");  
+                    $this->afficheFormulaireElement("Capacité","Capacite","Capacite_nom");  
                     $this->afficheFormulaireElement("Unité","Unite","Unite_nom");  
                     ?>
                     <p>
@@ -199,13 +199,13 @@ class TBL_Course extends LIB_Table{
             $texte = $texte." ".$this->valeurs['Marque_nom'];
         }
 
-        $nombre = $this->valeurs['Course_nombre'];
+        $quantite = $this->valeurs['Quantite_nom'];
 
-        if ($nombre > 1) {
-            $texte = sprintf("%s x %d",$texte,$nombre);
+        if ($quantite > 1) {
+            $texte = sprintf("%s x %d",$texte,$quantite);
         }
 
-        $capacite = $this->valeurs['Course_capacite'];
+        $capacite = $this->valeurs['Capacite_nom'];
 
         if ($capacite > 0) {
             $unite = $this->valeurs['Unite_nom'];
@@ -433,8 +433,6 @@ class TBL_Course extends LIB_Table{
             return $crdu;
         }
         
-        $nombre = $donnees['Course_nombre'];
-        $capacite = $donnees['Course_capacite'];
         $commentaire = $donnees['Course_commentaire'];
         $course_faite = $donnees['Course_faite'];
         
@@ -448,6 +446,8 @@ class TBL_Course extends LIB_Table{
         $idCommerce = $this->prepareColonne("Commerce", trim($donnees['Commerce_nom']));
         $idVille = $this->prepareColonne("Ville", trim($donnees['Ville_nom']));
         $idZone = $this->prepareColonne("Zone", trim($donnees['Zone_nom']));
+        $idQuantite = $this->prepareColonne("Quantite", trim($donnees['Quantite_nom']));
+        $idCapacite = $this->prepareColonne("Capacite", trim($donnees['Capacite_nom']));
         $idUnite = $this->prepareColonne("Unite", trim($donnees['Unite_nom']));
         
         
@@ -464,8 +464,8 @@ class TBL_Course extends LIB_Table{
         $this->setValeurColonne('id_Ville', "$idVille");
         $this->setValeurColonne('id_Zone', "$idZone");
         $this->setValeurColonne('datation', $datation->getDate_pourEcritureMySQLCourte());
-        $this->setValeurColonne('nombre', "$nombre");
-        $this->setValeurColonne('capacite', "$capacite");
+        $this->setValeurColonne('id_Quantite', "$idQuantite");
+        $this->setValeurColonne('id_Capacite', "$idCapacite");
         $this->setValeurColonne('id_Unite', "$idUnite");
         $this->setValeurColonne('commentaire', $commentaire);
         
@@ -568,8 +568,8 @@ class TBL_Course extends LIB_Table{
         $tab['Ville_nom'] = "-";
         $tab['Zone_nom'] = "-";
         $tab['Course_datation'] = "01-01-2000";
-        $tab['Course_nombre'] = 1;
-        $tab['Course_capacite'] = 0;
+        $tab['Quantite_nom'] = 1;
+        $tab['Capacite_nom'] = 0;
         $tab['Unite_nom'] = "-";
         $tab['Course_commentaire'] = "-";
         $tab['Course_faite'] = 1;

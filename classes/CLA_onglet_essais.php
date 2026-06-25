@@ -31,60 +31,42 @@ class CLA_onglet_essais extends CLA_onglet_principal {
         global $CXO;
         global $DOT;
         
-        $d = new LIB_Datation();
-        $nbj = $d->getNbJoursMois();
-        LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$nbj);
-        LIB_Util::trace($d->isBissextile()?"Bissextile":"Pff");
-        LIB_Util::trace("Nb semaines : ".$d->getNbSemainesMois());
-        LIB_Util::trace();
+        $requete_lecture = "select id,nombre,capacite from Course";
         
-        $d = new LIB_Datation("25-02-2024");
-        $nbj = $d->getNbJoursMois();
-        LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$nbj);
-        LIB_Util::trace($d->isBissextile()?"Bissextile":"Pff");
-        LIB_Util::trace("Nb semaines : ".$d->getNbSemainesMois());
-        LIB_Util::trace();
+        $rlt = $CXO->executeRequete($requete_lecture);
         
-        $d = new LIB_Datation("25-11-2026");
-        $nbj = $d->getNbJoursMois();
-        LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$nbj);
-        LIB_Util::trace($d->isBissextile()?"Bissextile":"Pff");
-        LIB_Util::trace("Nb semaines : ".$d->getNbSemainesMois());
-        LIB_Util::trace();
-        
-        $d = new LIB_Datation("25-12-2026");
-        $nbj = $d->getNbJoursMois();
-        LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$nbj);
-        LIB_Util::trace($d->isBissextile()?"Bissextile":"Pff");
-        LIB_Util::trace("Nb semaines : ".$d->getNbSemainesMois());
-        LIB_Util::trace();
-        
-        $d = new LIB_Datation("21-06-2026");
-        $nbj = $d->getNbJoursMois();
-        LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$nbj);
-        LIB_Util::trace($d->isBissextile()?"Bissextile":"Pff");
-        LIB_Util::trace("Nb semaines : ".$d->getNbSemainesMois());
-        LIB_Util::trace();
-        
-        $d = new LIB_Datation("25-02-2021");
-        $nbj = $d->getNbJoursMois();
-        LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$nbj);
-        LIB_Util::trace($d->isBissextile()?"Bissextile":"Pff");
-        LIB_Util::trace("Nb semaines : ".$d->getNbSemainesMois());
-        LIB_Util::trace();
-        
-        $d = new LIB_Datation("25-08-2026");
-        $nbj = $d->getNbJoursMois();
-        LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$nbj);
-        LIB_Util::trace($d->isBissextile()?"Bissextile":"Pff");
-        LIB_Util::trace("Nb semaines : ".$d->getNbSemainesMois());
-        LIB_Util::trace();
-        
-        $d = new LIB_Datation();
-        for ($i = 0;$i < 7;$i++) {
-            LIB_Util::trace($d->getDate_DD_MM_AAAA()." : ".$d->getNumeroJourSemaine());
-            $d->incrementeJour();
-            
+        if ($rlt->isOk()) {
+            foreach ($rlt->getResultat() as $value) {
+                LIB_Util::printR($value);
+                $id = $value['id'];
+                $nombre = $value['nombre'];
+                $capacite = $value['capacite'];
+                
+                $q = $DOT->getObjet("Quantite");
+                $tab = array($nombre);
+                $q->set(...$tab);
+                $q->sauve();
+                $q->set(...$tab);
+                $q->chargeIdParNom($nombre);
+                $id_q = $q->getId();
+                LIB_Util::trace("Id q : $id_q");
+                
+                $c = $DOT->getObjet("Capacite");
+                $tab = array($capacite);
+                $c->set(...$tab);
+                $c->sauve();
+                $c->set(...$tab);
+                $c->chargeIdParNom($nombre);
+                $id_c = $c->getId();
+                LIB_Util::trace("Id c : $id_c");
+                
+                $requete_maj = "update Course set id_Quantite = $id_q ,id_capacite = $id_c where id = $id ";
+                
+                $rlt = $CXO->executeRequete($requete_maj);
+                $rlt->affiche();
+            }
+        } else {
+            $rlt->affiche();
         }
         
         return;

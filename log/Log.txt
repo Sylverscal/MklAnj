@@ -599,3 +599,1740 @@
     [action] => affiche_fonctions
 )
 
+25-06-2026 16:32:14 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 16:32:14 : ? -> ? -> ? -> 0 : POST
+25-06-2026 16:32:14 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+25-06-2026 16:34:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 16:34:25 : ? -> ? -> ? -> 0 : POST
+25-06-2026 16:34:25 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+25-06-2026 17:03:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:08 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:08 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => a
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => b
+                    [value] => 
+                )
+
+        )
+
+)
+
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_vue_principale
+)
+
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses
+)
+
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => recherche
+    [action] => affiche
+)
+
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => filtrage
+    [action] => affiche
+)
+
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:09 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
+25-06-2026 17:03:18 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:18 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:18 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+25-06-2026 17:03:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:19 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:19 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => a
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => b
+                    [value] => 
+                )
+
+        )
+
+)
+
+25-06-2026 17:03:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:19 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:19 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche
+)
+
+25-06-2026 17:03:21 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:21 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:21 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche_accueil_courses
+)
+
+25-06-2026 17:03:21 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:21 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:21 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:21 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:21 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_home
+)
+
+25-06-2026 17:03:21 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+25-06-2026 17:03:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:22 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:22 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_tables
+)
+
+25-06-2026 17:03:22 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:22 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => tables
+)
+
+25-06-2026 17:03:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:25 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:25 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Capacite
+)
+
+25-06-2026 17:03:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:25 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:25 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Capacite
+)
+
+25-06-2026 17:03:28 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:28 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:28 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Capacite
+    [id] => 0
+)
+
+25-06-2026 17:03:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:31 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:31 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => Capacite
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => nom
+                    [value] => 0
+                )
+
+        )
+
+)
+
+25-06-2026 17:03:31 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 236 : 
+25-06-2026 17:03:31 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 236 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+25-06-2026 17:03:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:31 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:31 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Capacite
+)
+
+25-06-2026 17:03:35 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:35 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:35 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Quantite
+)
+
+25-06-2026 17:03:35 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:35 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:35 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Quantite
+)
+
+25-06-2026 17:03:37 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:37 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:37 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Quantite
+    [id] => 0
+)
+
+25-06-2026 17:03:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:41 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:41 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => Quantite
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => nom
+                    [value] => 1
+                )
+
+        )
+
+)
+
+25-06-2026 17:03:41 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 236 : 
+25-06-2026 17:03:41 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 236 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+25-06-2026 17:03:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:41 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:41 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Quantite
+)
+
+25-06-2026 17:03:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:47 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:47 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Course
+)
+
+25-06-2026 17:03:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:03:47 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:03:47 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Course
+)
+
+25-06-2026 17:59:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:59:12 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:59:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Course
+    [id] => 108
+)
+
+25-06-2026 17:59:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:59:19 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:59:19 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteModification
+    [nom_table] => Course
+    [id] => 108
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => id_Article
+                    [value] => 650
+                )
+
+            [1] => Array
+                (
+                    [name] => id_Marque
+                    [value] => 1
+                )
+
+            [2] => Array
+                (
+                    [name] => id_Commerce
+                    [value] => 30
+                )
+
+            [3] => Array
+                (
+                    [name] => id_Ville
+                    [value] => 1
+                )
+
+            [4] => Array
+                (
+                    [name] => id_Zone
+                    [value] => 1
+                )
+
+            [5] => Array
+                (
+                    [name] => datation
+                    [value] => 01-01-2000
+                )
+
+            [6] => Array
+                (
+                    [name] => nombre
+                    [value] => 1
+                )
+
+            [7] => Array
+                (
+                    [name] => id_Quantite
+                    [value] => 1
+                )
+
+            [8] => Array
+                (
+                    [name] => capacite
+                    [value] => 0
+                )
+
+            [9] => Array
+                (
+                    [name] => id_Capacite
+                    [value] => 1
+                )
+
+            [10] => Array
+                (
+                    [name] => id_Unite
+                    [value] => 4
+                )
+
+            [11] => Array
+                (
+                    [name] => commentaire
+                    [value] => -
+                )
+
+        )
+
+)
+
+25-06-2026 17:59:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 17:59:19 : ? -> ? -> ? -> 0 : POST
+25-06-2026 17:59:19 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Course
+)
+
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_liste_courses
+)
+
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => liste_courses
+)
+
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_vue_principale
+)
+
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => recherche
+    [action] => affiche
+)
+
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses
+)
+
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => filtrage
+    [action] => affiche
+)
+
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:18:31 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
+25-06-2026 18:18:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:18:40 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:18:40 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses_filtree
+    [recherche] => 
+    [filtrage] => 0
+)
+
+25-06-2026 18:18:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:18:40 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:18:40 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
+25-06-2026 18:22:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:22:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:22:42 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:22:42 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:22:42 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => administration
+)
+
+25-06-2026 18:22:42 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_administration
+)
+
+25-06-2026 18:24:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:24:22 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:24:22 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_administration
+    [action] => afficheAdministration
+    [nom_administration] => INIT_BASE
+)
+
+25-06-2026 18:24:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:24:25 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:24:25 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_administration
+    [action] => afficheAdministration
+    [nom_administration] => INIT_BASE
+)
+
+25-06-2026 18:37:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:37:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:37:09 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:37:09 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:37:09 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 18:37:09 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 18:42:03 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:03 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:03 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 18:42:03 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:03 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:03 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 18:42:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:12 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+25-06-2026 18:42:14 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:14 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:14 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => a
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => b
+                    [value] => 
+                )
+
+        )
+
+)
+
+25-06-2026 18:42:14 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:14 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:14 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche
+)
+
+25-06-2026 18:42:15 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:15 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:15 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche_accueil_courses
+)
+
+25-06-2026 18:42:15 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:15 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:15 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:15 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:15 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_home
+)
+
+25-06-2026 18:42:15 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+25-06-2026 18:42:17 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:17 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:17 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:17 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:17 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => tables
+)
+
+25-06-2026 18:42:17 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_tables
+)
+
+25-06-2026 18:42:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:23 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:23 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Quantite
+)
+
+25-06-2026 18:42:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:23 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:23 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Quantite
+)
+
+25-06-2026 18:42:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:46 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:46 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 18:42:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:46 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:46 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 18:42:52 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:52 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:52 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Quantite
+)
+
+25-06-2026 18:42:52 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:42:52 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:42:52 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Quantite
+)
+
+25-06-2026 18:43:32 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:43:32 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:43:32 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:43:32 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 18:43:32 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:43:32 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 18:43:37 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:43:37 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:43:37 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:43:37 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 18:43:37 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:43:37 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 18:43:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:43:41 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:43:41 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_tables
+)
+
+25-06-2026 18:43:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:43:41 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:43:41 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => tables
+)
+
+25-06-2026 18:43:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:43:43 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:43:43 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Capacite
+)
+
+25-06-2026 18:43:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:43:43 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:43:43 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Capacite
+)
+
+25-06-2026 18:45:01 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:45:01 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:45:01 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 18:45:01 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:45:01 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:45:01 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 18:45:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:45:49 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:45:49 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 18:45:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:45:49 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:45:49 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 18:46:37 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:46:37 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:46:37 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 18:46:37 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:46:37 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:46:37 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 18:46:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:46:49 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:46:49 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Quantite
+)
+
+25-06-2026 18:46:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:46:49 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:46:49 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Quantite
+)
+
+25-06-2026 18:49:05 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:49:05 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:49:05 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 18:49:05 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:49:05 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:49:05 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 18:49:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:49:13 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:49:13 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_tables
+)
+
+25-06-2026 18:49:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:49:13 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:49:13 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => tables
+)
+
+25-06-2026 18:49:16 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:49:16 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:49:16 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Capacite
+)
+
+25-06-2026 18:49:16 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:49:16 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:49:16 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Capacite
+)
+
+25-06-2026 18:49:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:49:19 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:49:19 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Quantite
+)
+
+25-06-2026 18:49:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:49:19 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:49:19 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Quantite
+)
+
+25-06-2026 18:51:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:51:25 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:51:25 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 18:51:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:51:25 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:51:25 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 18:53:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:53:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:53:46 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:53:46 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:53:47 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 18:53:47 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 18:55:24 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:55:24 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 18:55:24 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:55:24 : ? -> ? -> ? -> 0 : POST
+25-06-2026 18:55:24 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 18:55:24 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 19:45:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:45:40 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:45:40 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+25-06-2026 19:45:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:45:44 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:45:44 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => a
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => b
+                    [value] => 
+                )
+
+        )
+
+)
+
+25-06-2026 19:45:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:45:44 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:45:44 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche
+)
+
+25-06-2026 19:45:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:45:46 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:45:46 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche_accueil_courses
+)
+
+25-06-2026 19:45:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:45:47 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:45:47 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_home
+)
+
+25-06-2026 19:45:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:45:47 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:45:47 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+25-06-2026 19:45:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:45:47 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:45:47 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:45:47 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:45:47 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 19:45:47 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 19:50:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:50:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:50:41 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:50:41 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:50:41 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+25-06-2026 19:50:41 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+25-06-2026 19:50:54 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:50:54 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:50:54 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => a
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => b
+                    [value] => 
+                )
+
+        )
+
+)
+
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_vue_principale
+)
+
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses
+)
+
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => recherche
+    [action] => affiche
+)
+
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => filtrage
+    [action] => affiche
+)
+
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:50:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
+25-06-2026 19:52:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:52:33 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:52:33 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => affiche_formulaire
+    [id] => 75
+)
+
+25-06-2026 19:52:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:52:33 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:52:33 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => get_liste_articles_interdits
+)
+
+25-06-2026 19:53:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:53:23 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:53:23 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses_filtree
+    [recherche] => 
+    [filtrage] => 2
+)
+
+25-06-2026 19:53:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:53:23 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:53:23 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
+25-06-2026 19:53:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:53:25 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:53:25 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => affiche_formulaire
+    [id] => 74
+)
+
+25-06-2026 19:53:25 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:53:25 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:53:25 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => get_liste_articles_interdits
+)
+
+25-06-2026 19:53:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:53:33 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:53:33 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses_filtree
+    [recherche] => 
+    [filtrage] => 2
+)
+
+25-06-2026 19:53:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:53:33 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:53:33 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
+25-06-2026 19:59:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:59:22 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:59:22 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => a
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => b
+                    [value] => 
+                )
+
+        )
+
+)
+
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_vue_principale
+)
+
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses
+)
+
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => recherche
+    [action] => affiche
+)
+
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => filtrage
+    [action] => affiche
+)
+
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:59:23 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
+25-06-2026 19:59:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:59:45 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:59:45 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => affiche_formulaire
+    [id] => 88
+)
+
+25-06-2026 19:59:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:59:45 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:59:45 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => get_liste_articles_interdits
+)
+
+25-06-2026 19:59:51 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:59:51 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:59:51 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => valide_formulaire
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => id
+                    [value] => 88
+                )
+
+            [1] => Array
+                (
+                    [name] => Article_nom
+                    [value] => Banane
+                )
+
+            [2] => Array
+                (
+                    [name] => Marque_nom
+                    [value] => -
+                )
+
+            [3] => Array
+                (
+                    [name] => Commerce_nom
+                    [value] => -
+                )
+
+            [4] => Array
+                (
+                    [name] => Ville_nom
+                    [value] => -
+                )
+
+            [5] => Array
+                (
+                    [name] => Zone_nom
+                    [value] => Courses du vendredi
+                )
+
+            [6] => Array
+                (
+                    [name] => Course_datation
+                    [value] => 26-06-2026
+                )
+
+            [7] => Array
+                (
+                    [name] => Quantite_nom
+                    [value] => 2
+                )
+
+            [8] => Array
+                (
+                    [name] => Capacite_nom
+                    [value] => 0
+                )
+
+            [9] => Array
+                (
+                    [name] => Unite_nom
+                    [value] => -
+                )
+
+            [10] => Array
+                (
+                    [name] => Course_commentaire
+                    [value] => -
+                )
+
+            [11] => Array
+                (
+                    [name] => Course_faite
+                    [value] => 0
+                )
+
+        )
+
+)
+
+25-06-2026 19:59:52 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 19:59:52 : ? -> ? -> ? -> 0 : POST
+25-06-2026 19:59:52 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => valide_formulaire
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => id
+                    [value] => 88
+                )
+
+            [1] => Array
+                (
+                    [name] => Article_nom
+                    [value] => Banane
+                )
+
+            [2] => Array
+                (
+                    [name] => Marque_nom
+                    [value] => -
+                )
+
+            [3] => Array
+                (
+                    [name] => Commerce_nom
+                    [value] => -
+                )
+
+            [4] => Array
+                (
+                    [name] => Ville_nom
+                    [value] => -
+                )
+
+            [5] => Array
+                (
+                    [name] => Zone_nom
+                    [value] => Courses du vendredi
+                )
+
+            [6] => Array
+                (
+                    [name] => Course_datation
+                    [value] => 26-06-2026
+                )
+
+            [7] => Array
+                (
+                    [name] => Quantite_nom
+                    [value] => 2
+                )
+
+            [8] => Array
+                (
+                    [name] => Capacite_nom
+                    [value] => 0
+                )
+
+            [9] => Array
+                (
+                    [name] => Unite_nom
+                    [value] => -
+                )
+
+            [10] => Array
+                (
+                    [name] => Course_commentaire
+                    [value] => -
+                )
+
+            [11] => Array
+                (
+                    [name] => Course_faite
+                    [value] => 0
+                )
+
+        )
+
+)
+
+25-06-2026 20:00:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:00:44 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:00:44 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses_filtree
+    [recherche] => 
+    [filtrage] => 2
+)
+
+25-06-2026 20:00:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:00:44 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:00:44 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
+25-06-2026 20:00:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:00:48 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:00:48 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => affiche_formulaire
+    [id] => 72
+)
+
+25-06-2026 20:00:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:00:48 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:00:48 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => get_liste_articles_interdits
+)
+
+25-06-2026 20:00:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:00:56 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:00:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => valide_formulaire
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => id
+                    [value] => 72
+                )
+
+            [1] => Array
+                (
+                    [name] => Article_nom
+                    [value] => Encre Waterman bleue
+                )
+
+            [2] => Array
+                (
+                    [name] => Marque_nom
+                    [value] => -
+                )
+
+            [3] => Array
+                (
+                    [name] => Commerce_nom
+                    [value] => -
+                )
+
+            [4] => Array
+                (
+                    [name] => Ville_nom
+                    [value] => -
+                )
+
+            [5] => Array
+                (
+                    [name] => Zone_nom
+                    [value] => -
+                )
+
+            [6] => Array
+                (
+                    [name] => Course_datation
+                    [value] => -
+                )
+
+            [7] => Array
+                (
+                    [name] => Quantite_nom
+                    [value] => 2
+                )
+
+            [8] => Array
+                (
+                    [name] => Capacite_nom
+                    [value] => 0
+                )
+
+            [9] => Array
+                (
+                    [name] => Unite_nom
+                    [value] => -
+                )
+
+            [10] => Array
+                (
+                    [name] => Course_commentaire
+                    [value] => -
+                )
+
+            [11] => Array
+                (
+                    [name] => Course_faite
+                    [value] => 0
+                )
+
+        )
+
+)
+
+25-06-2026 20:00:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:00:56 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:00:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:00:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => filtrage
+    [action] => affiche
+)
+
+25-06-2026 20:00:56 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:00:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses_filtree
+    [recherche] => 
+    [filtrage] => 2
+)
+
+25-06-2026 20:00:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:00:56 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:00:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
+25-06-2026 20:01:00 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:01:00 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:01:00 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => affiche_formulaire
+    [id] => 74
+)
+
+25-06-2026 20:01:00 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:01:00 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:01:00 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => get_liste_articles_interdits
+)
+
+25-06-2026 20:01:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:01:12 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:01:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_liste_courses
+    [action] => valide_formulaire
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => id
+                    [value] => 74
+                )
+
+            [1] => Array
+                (
+                    [name] => Article_nom
+                    [value] => Mayonnaise
+                )
+
+            [2] => Array
+                (
+                    [name] => Marque_nom
+                    [value] => -
+                )
+
+            [3] => Array
+                (
+                    [name] => Commerce_nom
+                    [value] => Intermarché
+                )
+
+            [4] => Array
+                (
+                    [name] => Ville_nom
+                    [value] => -
+                )
+
+            [5] => Array
+                (
+                    [name] => Zone_nom
+                    [value] => Courses du vendredi
+                )
+
+            [6] => Array
+                (
+                    [name] => Course_datation
+                    [value] => -
+                )
+
+            [7] => Array
+                (
+                    [name] => Quantite_nom
+                    [value] => 1
+                )
+
+            [8] => Array
+                (
+                    [name] => Capacite_nom
+                    [value] => 250
+                )
+
+            [9] => Array
+                (
+                    [name] => Unite_nom
+                    [value] => g
+                )
+
+            [10] => Array
+                (
+                    [name] => Course_commentaire
+                    [value] => -
+                )
+
+            [11] => Array
+                (
+                    [name] => Course_faite
+                    [value] => 0
+                )
+
+        )
+
+)
+
+25-06-2026 20:01:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:01:12 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:01:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => filtrage
+    [action] => affiche
+)
+
+25-06-2026 20:01:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:01:12 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:01:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_liste_courses_filtree
+    [recherche] => 
+    [filtrage] => 2
+)
+
+25-06-2026 20:01:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+25-06-2026 20:01:12 : ? -> ? -> ? -> 0 : POST
+25-06-2026 20:01:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => liste_courses
+    [action] => affiche_fonctions
+)
+
