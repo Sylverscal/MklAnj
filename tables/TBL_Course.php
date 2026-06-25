@@ -63,7 +63,7 @@ class TBL_Course extends LIB_Table{
                     $this->afficheFormulaireElement("Zone","Zone","Zone_nom");  
                     $this->afficheFormulaireDate();  
                     $this->afficheFormulaireNombre("Nombre", "Course_nombre");
-                    $this->afficheFormulaireNombre("Capacité", "Course_capacite");
+                    $this->afficheFormulaireCapacite("Capacité", "Course_capacite");
                     $this->afficheFormulaireElement("Unité","Unite","Unite_nom");  
                     ?>
                     <p>
@@ -86,12 +86,46 @@ class TBL_Course extends LIB_Table{
     }
     
     private function afficheFormulaireNombre($titre,$tablonne) {
-        global $DOT;
+        $tab_items = array(1,2,3,4,5,7,8,9,10,12);
         
         $valeur = $this->valeurs[$tablonne];
         ?>
         <p>
             <label><?php echo $titre ?></label>
+            <select class="w3-select">
+                <?php foreach ($tab_items as $item) { ?>
+                    <?php 
+                    $selected = "";
+                    if ($valeur == $item) {
+                        $selected = "selected";
+                    }
+                    ?>
+                    <option value="<?php echo $item ?>" <?php echo $selected; ?>><?php echo $item; ?></option>
+                <?php } ?>
+            </select>
+            <input class="w3-input input-nombre-entier" type="text" name="<?php echo $tablonne ?>" value="<?php echo $valeur; ?>">
+        </p>
+        <?php
+    }
+    
+    private function afficheFormulaireCapacite($titre,$tablonne) {
+        $tab_items = array(0,50,100,150,200,250,500,1000);
+        
+        $valeur = $this->valeurs[$tablonne];
+        ?>
+        <p>
+            <label><?php echo $titre ?></label>
+            <select class="w3-select">
+                <?php foreach ($tab_items as $item) { ?>
+                    <?php 
+                    $selected = "";
+                    if ($valeur == $item) {
+                        $selected = "selected";
+                    }
+                    ?>
+                    <option value="<?php echo $item ?>" <?php echo $selected; ?>><?php echo $item; ?></option>
+                <?php } ?>
+            </select>
             <input class="w3-input input-nombre-entier" type="text" name="<?php echo $tablonne ?>" value="<?php echo $valeur; ?>">
         </p>
         <?php
