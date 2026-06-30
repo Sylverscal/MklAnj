@@ -139,6 +139,11 @@ class CLA_gestion_administration_Ajax extends AJX_MklAnj_Ajax {
         $o->affiche_bloc();
     }
     
+    private function GESTION_REQUETES() {
+        $o = new CLA_GestionRequetes();
+        $o->affiche_bloc();
+    }
+    
 }
 
 /**
