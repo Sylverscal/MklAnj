@@ -148,10 +148,6 @@ class LIB_Liste implements Iterator {
         $this->liste = array_reverse($this->liste, $preserve_index);
     }
     
-    protected function trie($filtre) {
-        
-    }
-    
     /**
      * Initialise la liste
      */

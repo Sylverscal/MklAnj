@@ -195,9 +195,6 @@ class LIB_Table_s extends LIB_Liste {
         global $CXO;
         global $DOT;
         
-        global $CXO;
-        global $DOT;
-        
         $requete = sprintf("select * from %s where id_%s = '%s'",$this->getNomTable(),$nom_table_liee,$id);
         
         $r = $CXO->executeRequete($requete);
@@ -224,10 +221,14 @@ class LIB_Table_s extends LIB_Liste {
         return "select * from $nt";
     }
 
-    protected function trie($filtre) {
+    public function trie($filtre = "") {
         
     }
-
+    
+    public function comparaison(mixed $a,mixed $b) {
+        
+    }
+    
     /**
      * Renvoie le nom de la classe de l'objet
      * @return string

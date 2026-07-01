@@ -53,7 +53,7 @@ class CLA_Filtrage {
         
         $r_s = $DOT->getObjet_s("Requete");
         
-        $tab = $r_s->getListeRequetes();
+        $tab = $r_s->getListeRequetesPourMenu();
         
         $f_s = $DOT->getObjet_s("Course");
         

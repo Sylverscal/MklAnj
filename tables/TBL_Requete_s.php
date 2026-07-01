@@ -15,7 +15,7 @@ class TBL_Requete_s extends LIB_Table_s{
      * renvoie la liste des requêtes
      * @global LIB_BDD $CXO
      */
-    public function getListeRequetes(){
+    public function getListeRequetesPourMenu(){
         global $CXO;
         
         $requete = "select id,nom from Requete order by ordre";

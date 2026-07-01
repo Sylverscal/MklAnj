@@ -4348,3 +4348,140 @@ order by Article.nom asc
     [nom_administration] => GESTION_REQUETES
 )
 
+01-07-2026 10:21:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 10:21:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 10:21:56 : ? -> ? -> ? -> 0 : POST
+01-07-2026 10:21:56 : ? -> ? -> ? -> 0 : POST
+01-07-2026 10:21:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_tables
+)
+
+01-07-2026 10:21:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => tables
+)
+
+01-07-2026 10:21:57 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 10:21:57 : ? -> ? -> ? -> 0 : POST
+01-07-2026 10:21:57 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Requete
+)
+
+01-07-2026 10:21:57 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 10:21:57 : ? -> ? -> ? -> 0 : POST
+01-07-2026 10:21:57 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Requete
+)
+
+01-07-2026 17:00:27 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 17:00:27 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 17:00:27 : ? -> ? -> ? -> 0 : POST
+01-07-2026 17:00:27 : ? -> ? -> ? -> 0 : POST
+01-07-2026 17:00:27 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+01-07-2026 17:00:27 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+01-07-2026 17:00:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 17:00:30 : ? -> ? -> ? -> 0 : POST
+01-07-2026 17:00:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 17:00:30 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+01-07-2026 17:00:30 : ? -> ? -> ? -> 0 : POST
+01-07-2026 17:00:30 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+01-07-2026 17:01:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 17:01:02 : ? -> ? -> ? -> 0 : POST
+01-07-2026 17:01:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+01-07-2026 17:01:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 17:01:02 : ? -> ? -> ? -> 0 : POST
+01-07-2026 17:01:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+01-07-2026 17:37:34 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 17:37:34 : ? -> ? -> ? -> 0 : POST
+01-07-2026 17:37:34 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+01-07-2026 17:37:34 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 17:37:34 : ? -> ? -> ? -> 0 : POST
+01-07-2026 17:37:34 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+01-07-2026 17:38:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 17:38:12 : ? -> ? -> ? -> 0 : POST
+01-07-2026 17:38:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+01-07-2026 17:38:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 17:38:12 : ? -> ? -> ? -> 0 : POST
+01-07-2026 17:38:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+
+01-07-2026 18:16:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 18:16:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-07-2026 18:16:29 : ? -> ? -> ? -> 0 : POST
+01-07-2026 18:16:29 : ? -> ? -> ? -> 0 : POST
+01-07-2026 18:16:29 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_essais
+)
+
+01-07-2026 18:16:29 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => essais
+)
+

@@ -610,10 +610,23 @@ $tab
      * @param type $index ("Table_colonne")
      * @return string Valeur trouvée
      */
-    public function getValeurDeColonne($index) {
+    public function getValeurDeColonne($tablonne) {
         $liste = $this->getDonneesPourAffichage();
-        $valeur = $liste[$index];
+        $valeur = $liste[$tablonne];
         return $valeur;
+    }
+    
+    /**
+     * Renvoie si un tablonne existe pour la tabvle courante
+     * @param type $tablonne
+     * @return type
+     */
+    public function isExisteTablonne($tablonne) {
+        $liste = $this->getDonneesPourAffichage();
+        
+        $is = isset($liste[$tablonne]);
+        
+        return $is;
     }
 
     /**

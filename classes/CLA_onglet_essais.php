@@ -31,42 +31,20 @@ class CLA_onglet_essais extends CLA_onglet_principal {
         global $CXO;
         global $DOT;
         
-        $requete_lecture = "select id,nombre,capacite from Course";
+        $c_s = $DOT->getObjet_s("Course");
+        $c_s->charge();
         
-        $rlt = $CXO->executeRequete($requete_lecture);
-        
-        if ($rlt->isOk()) {
-            foreach ($rlt->getResultat() as $value) {
-                LIB_Util::printR($value);
-                $id = $value['id'];
-                $nombre = $value['nombre'];
-                $capacite = $value['capacite'];
-                
-                $q = $DOT->getObjet("Quantite");
-                $tab = array($nombre);
-                $q->set(...$tab);
-                $q->sauve();
-                $q->set(...$tab);
-                $q->chargeIdParNom($nombre);
-                $id_q = $q->getId();
-                LIB_Util::trace("Id q : $id_q");
-                
-                $c = $DOT->getObjet("Capacite");
-                $tab = array($capacite);
-                $c->set(...$tab);
-                $c->sauve();
-                $c->set(...$tab);
-                $c->chargeIdParNom($nombre);
-                $id_c = $c->getId();
-                LIB_Util::trace("Id c : $id_c");
-                
-                $requete_maj = "update Course set id_Quantite = $id_q ,id_capacite = $id_c where id = $id ";
-                
-                $rlt = $CXO->executeRequete($requete_maj);
-                $rlt->affiche();
-            }
-        } else {
-            $rlt->affiche();
+        foreach ($c_s as $c) {
+            LIB_Util::printR($c->getDonnees());
+            LIB_Util::trace($c->getValeurDeColonne("Marque_nom"));
+            
+            $tablonne = "Requete_requete";
+            
+            $c->isExisteTablonne($tablonne) ? LIB_Util::trace("$tablonne existe") : LIB_Util::trace("$tablonne existe");
+            
+            $tablonne = "Requete_rexete";
+            
+            $c->isExisteTablonne($tablonne) ? LIB_Util::trace("$tablonne existe") : LIB_Util::trace("$tablonne existe");
         }
         
         return;
