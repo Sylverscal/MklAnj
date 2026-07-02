@@ -221,7 +221,11 @@ class LIB_Table_s extends LIB_Liste {
         return "select * from $nt";
     }
 
-    public function trie($filtre = "") {
+    /**
+     * Trie sur la valeur de la tablonne passée en paramètre
+     * @param string $tablonne
+     */
+    public function trie($tablonne = "") {
         
     }
     

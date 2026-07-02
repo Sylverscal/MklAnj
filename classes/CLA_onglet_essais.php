@@ -38,13 +38,15 @@ class CLA_onglet_essais extends CLA_onglet_principal {
             LIB_Util::printR($c->getDonnees());
             LIB_Util::trace($c->getValeurDeColonne("Marque_nom"));
             
-            $tablonne = "Requete_requete";
+            $tablonne = "Marque_nom";
             
-            $c->isExisteTablonne($tablonne) ? LIB_Util::trace("$tablonne existe") : LIB_Util::trace("$tablonne existe");
+            $c->isExisteTablonne($tablonne) ? LIB_Util::trace("$tablonne existe") : LIB_Util::trace("$tablonne inconnu");
             
             $tablonne = "Requete_rexete";
             
-            $c->isExisteTablonne($tablonne) ? LIB_Util::trace("$tablonne existe") : LIB_Util::trace("$tablonne existe");
+            if ($c->isExisteTablonne($tablonne)) {
+            LIB_Util::trace("$tablonne existe");}else{LIB_Util::trace("$tablonne inconnu");
+            }
         }
         
         return;

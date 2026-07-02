@@ -185,7 +185,9 @@ class C_GestionListe {
                     dataType: 'json',
                     async: 'false',
                     success: function (data) {
-                        g_filtrage.applique_filtrage();
+                        // g_filtrage.applique_filtrage();
+                        // Ne plus rafraichifr la liste quand on coche ou décoche une course
+                        // En test avant suppression définitive
                     }
                 }
         );

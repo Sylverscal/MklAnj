@@ -617,16 +617,14 @@ $tab
     }
     
     /**
-     * Renvoie si un tablonne existe pour la tabvle courante
+     * Renvoie si un tablonne existe pour la table courante
      * @param type $tablonne
      * @return type
      */
     public function isExisteTablonne($tablonne) {
         $liste = $this->getDonneesPourAffichage();
         
-        $is = isset($liste[$tablonne]);
-        
-        return $is;
+        return isset($liste[$tablonne]);
     }
 
     /**
