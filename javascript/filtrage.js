@@ -8,6 +8,7 @@ var g_filtrage;
 class C_Filtrage {
     construct () {
         this.filtrage_courant = "";
+        this.filtrage_defaut = 0;
     }
     affiche() {
         $('#DIV_FILTRAGE').html("<h4>Op&eacuteration en cours</h4>");
@@ -30,7 +31,8 @@ class C_Filtrage {
     }
     affiche_retour(html) {
         $('#DIV_FILTRAGE').html(html);
-        g_filtrage.ecoute_evenements();
+        g_filtrage.getFiltrageDefaut();
+        // g_filtrage.ecoute_evenements();
     }
     
     ecoute_evenements() {
@@ -39,7 +41,7 @@ class C_Filtrage {
             g_filtrage.applique_filtrage();
         });
         $('#BTN_FTR_RAZ').click(function(){
-            $('#SEL_FTR').val($('#SEL_FTR option:first').val());
+            $('#SEL_FTR').val(g_filtrage.filtrage_defaut);
             g_filtrage.applique_filtrage();
             g_filtrage.affiche();
         });
@@ -51,4 +53,29 @@ class C_Filtrage {
         
         g_liste_courses.gestion_liste.affiche_filtree(recherche,filtrage);
     }
+    
+    getFiltrageDefaut() {
+        var json = {
+            domaine: 'filtrage',
+            action: 'get_filtrage_defaut'
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: 'ajax/ajax.php',
+                    data: json,
+                    dataType: 'json',
+                    async: 'false',
+                    success: function (data) {
+                        g_filtrage.getFiltrageDefaut_retour(data);
+                    }
+                }
+        );
+    }
+
+    getFiltrageDefaut_retour(data) {
+        g_filtrage.filtrage_defaut = data;
+        g_filtrage.ecoute_evenements();
+    }
+    
 }

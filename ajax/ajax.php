@@ -487,8 +487,14 @@ class CLA_filtrage_Ajax extends AJX_MklAnj_Ajax {
         $r = new CLA_Filtrage();
         
         $r->affiche();
+    }
+    
+    protected function get_filtrage_defaut($post) {
+        $f = new CLA_Filtrage();
         
+        $fd = $f->getFiltrageDefaut();
         
+        LIB_Util::jsonise($fd);
     }
 }
 

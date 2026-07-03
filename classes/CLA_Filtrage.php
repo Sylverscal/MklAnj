@@ -17,6 +17,7 @@ class CLA_Filtrage {
      */
     public function affiche() {
         $tab = $this->getDonneesMenuFiltres();
+        $id_requete_defaut = $this->getFiltrageDefaut();
         
         ?>
         <div class="w3-container w3-lime w3-padding">
@@ -28,8 +29,12 @@ class CLA_Filtrage {
                     <select id="SEL_FTR" class="w3-select">
                         <?php
                         foreach ($tab as $value) {
+                            $selected = "";
+                            if ($value['valeur'] == $id_requete_defaut) {
+                                $selected = "selected";
+                            }
                             ?>
-                            <option value="<?php echo $value['valeur'] ?>"><?php echo $value['libelle'] ?></option>
+                            <option value="<?php echo $value['valeur'] ?>" <?php echo $selected; ?>><?php echo $value['libelle'] ?></option>
                             <?php
                         }
                         ?>
@@ -62,6 +67,31 @@ class CLA_Filtrage {
         $tab = array_merge($tab,$f_s->getElementsAssocies("Zone"));
         
         return $tab;
+    }
+    
+    /**
+     * Renvoie l'id de la requete du filtrage par défaut
+     * @return int id Requete
+     * @global LIB_DistributeurObjetTable $DOT
+     * @global LIB_BDD $CXO
+     */
+    public function getFiltrageDefaut() {
+        global $CXO;
+        global $DOT;
+        
+        $requete = "select id from Requete where defaut = 1";
+        
+        $rlt = $CXO->executeRequete($requete);
+        
+        $id = 1;
+        
+        if ($rlt->isOk()) {
+            foreach ($rlt->getResultat() as $value) {
+                $id = $value['id'];
+            }
+        }
+        
+        return $id;
     }
     
 }
