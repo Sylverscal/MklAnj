@@ -257,6 +257,23 @@ class LIB_ArbreTablesColonnes {
         return $this->parties_de_from->getExtraitArguments($arguments_table_mere);
     }
     
+    /**
+     * Renvoie la liste des tablonnes de la table
+     * @return array
+     * ex :
+Array
+(
+    [0] => Article_nom
+    [1] => Marque_nom
+    [2] => Commerce_nom
+    [3] => Ville_nom
+    [4] => Zone_nom
+    [5] => Course_datation
+    [6] => Quantite_nom
+    [7] => Capacite_nom
+    [8] => Unite_nom
+    [9] => Course_commentaire
+)     */
     public function getTableauArguments() {
         return $this->parties_de_from->getTableauArguments();
     }

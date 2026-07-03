@@ -65,6 +65,7 @@ class CLA_inclusions {
         $this->inclutTables('TBL_Personne.php');
         $this->inclutTables('TBL_Requete_s.php');
         
+        $this->inclutFonctions("callbacks_tris.php");
     }
 
     /**

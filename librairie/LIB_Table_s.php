@@ -49,7 +49,13 @@ class LIB_Table_s extends LIB_Liste {
      * @var array
      */
     private $liste_noms_colonnes;
-
+    
+    /**
+     * Tablonne utilisé pour le tri
+     * @var string
+     */
+    public static $tablonne_tri;
+    
     /**
      * 
      * @global LIB_DistributeurObjetTable $DOT
@@ -224,14 +230,26 @@ class LIB_Table_s extends LIB_Liste {
     /**
      * Trie sur la valeur de la tablonne passée en paramètre
      * @param string $tablonne
+     * @global LIB_DistributeurObjetTable $DOT
      */
-    public function trie($tablonne = "") {
+    public function trie($tablonne = "",$ascendant =  true) {
+        global $DOT;
         
+        $c = $DOT->getObjet($this->getNomTable());
+        
+        if (!$c->isTablonneExiste($tablonne)) {
+            $tablonne = sprintf("%s_Nom",$this->getNomTable());
+        }
+        
+        if (!$c->isTablonneExiste($tablonne)) {
+            $tablonne = sprintf("%s_Id",$this->getNomTable());
+        }
+        
+        LIB_Table_s::$tablonne_tri = $tablonne;
+        
+        usort($this->liste,$ascendant ? "comparaisonAscendante" : "comparaisonDescendante");
     }
     
-    public function comparaison(mixed $a,mixed $b) {
-        
-    }
     
     /**
      * Renvoie le nom de la classe de l'objet
@@ -376,7 +394,7 @@ class LIB_Table_s extends LIB_Liste {
     public function getListeNomsColonnes() {
         return $this->liste_noms_colonnes;
     }
-
+    
     /**
      * Renvoie la section des noms de colonnes de la table pour une requête select
      * @return string

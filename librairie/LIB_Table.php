@@ -1327,6 +1327,20 @@ $tab
         return $this->arbre_tables_colonnes;
     }
     
+    /**
+     * Renvoie la listes tablonnes de la table
+     * @return array
+     */
+    public function getListeTablonnes() {
+        return $this->arbre_tables_colonnes->getTableauArguments();
+    }
+    
+    public function isTablonneExiste($tablonne) {
+        $liste_tablonnes = $this->getListeTablonnes();
+        
+        return in_array($tablonne, $liste_tablonnes);
+    }
+    
     public function getTypeColonne($nom_colonne) {
         $colonne = $this->colonnes->get($nom_colonne);
         

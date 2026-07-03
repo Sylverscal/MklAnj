@@ -34,19 +34,29 @@ class CLA_onglet_essais extends CLA_onglet_principal {
         $c_s = $DOT->getObjet_s("Course");
         $c_s->charge();
         
+        $c = $DOT->getObjet("Course");
+        
+        $tab = $c->getListeTablonnes();
+        LIB_Util::printR($tab);
+        
+        
+        
+        LIB_Util::trace($c_s->getSqlSelectColonnes());
+        
+        $tablonne = "Article_nom";
+        
+        $c_s->trie($tablonne);
+        
         foreach ($c_s as $c) {
-            LIB_Util::printR($c->getDonnees());
-            LIB_Util::trace($c->getValeurDeColonne("Marque_nom"));
-            
-            $tablonne = "Marque_nom";
-            
-            $c->isExisteTablonne($tablonne) ? LIB_Util::trace("$tablonne existe") : LIB_Util::trace("$tablonne inconnu");
-            
-            $tablonne = "Requete_rexete";
-            
-            if ($c->isExisteTablonne($tablonne)) {
-            LIB_Util::trace("$tablonne existe");}else{LIB_Util::trace("$tablonne inconnu");
-            }
+//            LIB_Util::printR($c->getDonnees());
+            LIB_Util::trace($c->getValeurDeColonne($tablonne));
+        }
+        
+        $c_s->trie($tablonne, false);
+        
+        foreach ($c_s as $c) {
+//            LIB_Util::printR($c->getDonnees());
+            LIB_Util::trace($c->getValeurDeColonne($tablonne));
         }
         
         return;
