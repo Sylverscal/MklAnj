@@ -4207,3 +4207,11 @@ order by Article.nom asc
     [action] => essais
 )
 
+03-08-2026 09:15:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+03-08-2026 09:15:02 : ? -> ? -> ? -> 0 : POST
+03-08-2026 09:15:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
