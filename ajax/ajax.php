@@ -6,6 +6,7 @@
 
 include_once $_SERVER['DOCUMENT_ROOT'] . "/classes/CLA_inclusions.php";
 
+
 $i = new CLA_inclusions();
 $i->inclut();
 

@@ -16,16 +16,16 @@ class CLA_Acces {
     public function affiche() {
         ?>
         <div class="w3-container w3-deep-orange w3-center w3-block">
-            <h2>COURSES</h2>
+            <h2>LISTE DES COURSES</h2>
         </div>
-        <form id="FRM_ACCES" class="w3-container">
+        <form id="FRM_ACCES" class="w3-container" action="index.htmls">
             <p>
             <label class="w3-text-blue">Compte</label>
-            <input class="w3-input w3-border" name="a"type="text">
+            <input class="w3-input w3-border" name="username" type="text" autocomplete="username" required>
             </p>
             <p>
             <label class="w3-text-blue">Mot de passe</label>
-            <input class="w3-input w3-border" name="b"type="text">
+            <input class="w3-input w3-border" name="password" type="text" autocomplete="current-password" required>
             </p>
             <input id="FRM_ACCES_SUBMIT" class="w3-input w3-border" type="submit" value="Connexion"/>            
             <input id="FRM_ACCES_SUBMIT_MOBILE" class="w3-input w3-border" type="submit" value="Connexion Mobile"/>            
