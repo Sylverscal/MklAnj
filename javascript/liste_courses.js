@@ -216,7 +216,6 @@ class C_GestionListe {
     }
     
     affiche_formulaire_retour(html) {
-//        $(g_acces.div_accueil_fonction_liste_course).html(html);
         $('#DIV_LISTE_COURSES').html(html);
         g_liste_courses.gestion_liste.getListeArticlesInterdits();
     }
