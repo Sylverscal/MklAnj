@@ -22,6 +22,12 @@ class LIB_Util {
      * @param type $raz Si TRUE : Efface le fichier de log avant d'enregistrer le texte
      */
     static function log($s, $raz = FALSE) {
+        return;
+        
+        LIB_Util::trace ("current user: ".get_current_user());
+
+        LIB_Util::trace ("script was executed under user: ".exec('whoami'));
+
         LIB_Util::$i = 0;
         $d = new LIB_Datation();
         

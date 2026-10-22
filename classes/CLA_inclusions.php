@@ -185,7 +185,7 @@ class CLA_inclusions {
      * @return string
      */
     public function getRacine() {
-        return $this->document_root . '/';
+        return $this->document_root . '';
     }
 
 }

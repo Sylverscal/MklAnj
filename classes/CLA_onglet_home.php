@@ -16,7 +16,7 @@ class CLA_onglet_home extends CLA_onglet_principal {
     final function affiche() {
         $is = new LIB_infos_systeme();
         if ($is->getLocal()) {
-            $chemin_image = "https://mklanj:8890/image/Liste_courses_MichelAnge.jpg";
+            $chemin_image = "http://mklanj/image/Liste_courses_MichelAnge.jpg";
         } else {
             $chemin_image = "http://mklanj.sylverscal.net/image/Liste_courses_MichelAnge.jpg";
         }
