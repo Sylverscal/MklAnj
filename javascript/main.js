@@ -1,18 +1,51 @@
 /* global g_achats */
 
-class C_Params {
+class C_ModeAcces {
     constructor (){
+        acces = "normal";
+    }
+    
+    analyseParametres () {
+        const urlParams = new URLSearchParams(window.location.search);
         
+        const valeur = urlParams.get("acces");
+        
+        acces = "normal";
+        
+        if (valeur == null) {
+            return;
+        } 
+        
+        if (valeur === "direct") {
+            acces = "direct";
+        } 
+    }
+    
+    isAccesDirect() {
+        if (acces === "direct") {
+            return true;
+        }
+        
+        return false;
     }
 }
 
 $(function () {
+    
+    g_mode_acces = new C_ModeAcces();
+    g_mode_acces.analyseParametres();
     
     if ($("#barre_navigation").length) {
         affiche_barre_navigation("COU_onglet_home");
         affiche_onglet_home();
     }      
     if ($("#DIV_ACCUEIL").length) {
+        if (g_mode_acces.isAccesDirect()) {
+            console.log("Accès direct");
+        } else {
+            console.log("Accès normal");
+            
+        }
         g_acces = new C_Acces();
         g_acces.affiche();
     }      
