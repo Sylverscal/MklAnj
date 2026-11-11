@@ -1,7 +1,13 @@
 /* global g_achats */
 
+class C_Params {
+    constructor (){
+        
+    }
+}
+
 $(function () {
-//    g_achats = new C_Achats();
+    
     if ($("#barre_navigation").length) {
         affiche_barre_navigation("COU_onglet_home");
         affiche_onglet_home();
