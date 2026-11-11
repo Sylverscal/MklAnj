@@ -1,8 +1,8 @@
-/* global g_achats */
+/* global g_achats g_mode_acces */
 
 class C_ModeAcces {
     constructor (){
-        acces = "normal";
+        var acces = "normal";
     }
     
     analyseParametres () {
@@ -10,19 +10,20 @@ class C_ModeAcces {
         
         const valeur = urlParams.get("acces");
         
-        acces = "normal";
+        this.acces = "normal";
         
         if (valeur == null) {
             return;
         } 
         
         if (valeur === "direct") {
-            acces = "direct";
+            this.acces = "direct";
         } 
     }
     
     isAccesDirect() {
-        if (acces === "direct") {
+        console.log(this.acces);
+        if (this.acces === "direct") {
             return true;
         }
         
