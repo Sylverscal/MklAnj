@@ -43,12 +43,18 @@ $(function () {
     if ($("#DIV_ACCUEIL").length) {
         if (g_mode_acces.isAccesDirect()) {
             console.log("Accès direct");
+            
+            g_acces = new C_Acces();
+            g_acces.div_accueil_fonction_liste_course = "#DIV_ACCUEIL";
+            g_liste_courses = new C_ListeCourses();
+            g_liste_courses.affiche();
+            
         } else {
             console.log("Accès normal");
             
+            g_acces = new C_Acces();
+            g_acces.affiche();
         }
-        g_acces = new C_Acces();
-        g_acces.affiche();
     }      
     $.extend( $.fn.dataTableExt.oSort, {
         "extract-date-fr-pre": function(value) {
